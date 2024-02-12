@@ -1,0 +1,23 @@
+{
+    "Status-Code": 200,
+    "Accept-Ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "Age": "16271192",
+    "Content-Type": "image/png",
+    "Date": "Mon, 12 Feb 2024 07:02:55 GMT",
+    "Etag": "\"qCGHgjzdg6n5FSUmZaPmmw==\"",
+    "expires": "Tue, 11 Feb 2025 07:02:55 GMT",
+    "last-modified": "Fri, 21 Oct 2022 18:27:54 GMT",
+    "perf": "7626143928",
+    "Server": "ECAcc (lac/55D0)",
+    "strict-transport-security": "max-age=631138519",
+    "surrogate-key": "twitter-assets",
+    "timing-allow-origin": "https://twitter.com, https://mobile.twitter.com",
+    "X-Cache": "HIT",
+    "x-connection-hash": "220f5c3dbaf8dfb5ba866c050dd1f254201c90419b0c7d81ec181a4a769862cb",
+    "x-content-type-options": "nosniff",
+    "x-response-time": "10",
+    "x-ton-expected-size": "1906",
+    "x-transaction-id": "101d5826f5f3edf6",
+    "Content-Length": "1906"
+}
