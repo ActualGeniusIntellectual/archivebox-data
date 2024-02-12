@@ -1,0 +1,14 @@
+{
+    "Status-Code": 404,
+    "Content-Encoding": "gzip",
+    "Age": "89212",
+    "Cache-Control": "max-age=604800",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Mon, 12 Feb 2024 05:50:45 GMT",
+    "Expires": "Mon, 19 Feb 2024 05:50:45 GMT",
+    "Last-Modified": "Sun, 11 Feb 2024 05:03:53 GMT",
+    "Server": "ECS (laa/7B0F)",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "404-HIT",
+    "Content-Length": "301"
+}

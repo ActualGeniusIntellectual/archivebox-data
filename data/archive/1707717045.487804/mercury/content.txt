@@ -1,0 +1,5 @@
+The namespace name http://www.w3.org/1999/xhtml is intended for use
+in various specifications such as:The charters of the following W3C Working Groups include work on HTML that
+may impact this namespace: For more information about XML namespaces, please refer to
+Namespaces in
+XML.
