@@ -1,0 +1,381 @@
+{
+    "archive_path": "archive/1707717218.228955",
+    "base_url": "www.bea.gov/itable",
+    "basename": "",
+    "bookmarked_date": "2024-02-12 05:53",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/www.bea.gov/itable",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=www.bea.gov",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "www.bea.gov/itable/index.html"
+    },
+    "domain": "www.bea.gov",
+    "extension": "",
+    "hash": "1S98X3RBD83GXHRYRHC2",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:39:25.984147+00:00",
+                "index_texts": null,
+                "output": "ArchiveError: Failed to find \"content-location\" URL header in Archive.org response.",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:39:18.952344+00:00",
+                "status": "failed"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:38:57.774459+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:38:56.117144+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=www.bea.gov"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:38:41.465845+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:38:41.289654+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:38:41.897050+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:38:41.473101+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:39:18.945408+00:00",
+                "index_texts": [
+                    "",
+                    "1\n00:00:02,470 --> 00:00:06,110\n\n[Music]\n\n2\n00:00:06,110 --> 00:00:06,120\n\n \n\n3\n00:00:06,120 --> 00:00:08,810\n\nlet's take a closer look at Bea's\n\n4\n00:00:08,810 --> 00:00:08,820\nlet's take a closer look at Bea's\n \n\n5\n00:00:08,820 --> 00:00:10,790\nlet's take a closer look at Bea's\ninteractive data tables\n\n6\n00:00:10,790 --> 00:00:10,800\ninteractive data tables\n \n\n7\n00:00:10,800 --> 00:00:12,589\ninteractive data tables\nyou'll see five sections on the left\n\n8\n00:00:12,589 --> 00:00:12,599\nyou'll see five sections on the left\n \n\n9\n00:00:12,599 --> 00:00:14,749\nyou'll see five sections on the left\nhand side of the website General\n\n10\n00:00:14,749 --> 00:00:14,759\nhand side of the website General\n \n\n11\n00:00:14,759 --> 00:00:16,670\nhand side of the website General\nNational\n\n12\n00:00:16,670 --> 00:00:16,680\nNational\n \n\n13\n00:00:16,680 --> 00:00:18,050\nNational\nindustry\n\n14\n00:00:18,050 --> 00:00:18,060\nindustry\n \n\n15\n00:00:18,060 --> 00:00:21,650\nindustry\nInternational and Regional data\n\n16\n00:00:21,650 --> 00:00:21,660\nInternational and Regional data\n \n\n17\n00:00:21,660 --> 00:00:24,109\nInternational and Regional data\nyou can hover over each section to see\n\n18\n00:00:24,109 --> 00:00:24,119\nyou can hover over each section to see\n \n\n19\n00:00:24,119 --> 00:00:26,210\nyou can hover over each section to see\nwhat each section includes\n\n20\n00:00:26,210 --> 00:00:26,220\nwhat each section includes\n \n\n21\n00:00:26,220 --> 00:00:27,650\nwhat each section includes\nlet's say you're looking for a national\n\n22\n00:00:27,650 --> 00:00:27,660\nlet's say you're looking for a national\n \n\n23\n00:00:27,660 --> 00:00:30,529\nlet's say you're looking for a national\nGDP statistics or national consumer\n\n24\n00:00:30,529 --> 00:00:30,539\nGDP statistics or national consumer\n \n\n25\n00:00:30,539 --> 00:00:31,970\nGDP statistics or national consumer\nspending figures\n\n26\n00:00:31,970 --> 00:00:31,980\nspending figures\n \n\n27\n00:00:31,980 --> 00:00:34,850\nspending figures\nor business investment Nationwide then\n\n28\n00:00:34,850 --> 00:00:34,860\nor business investment Nationwide then\n \n\n29\n00:00:34,860 --> 00:00:37,670\nor business investment Nationwide then\nclick on GDP and personal income under\n\n30\n00:00:37,670 --> 00:00:37,680\nclick on GDP and personal income under\n \n\n31\n00:00:37,680 --> 00:00:39,770\nclick on GDP and personal income under\nthe National Data section\n\n32\n00:00:39,770 --> 00:00:39,780\nthe National Data section\n \n\n33\n00:00:39,780 --> 00:00:42,110\nthe National Data section\nlooking for how Industries are doing and\n\n34\n00:00:42,110 --> 00:00:42,120\nlooking for how Industries are doing and\n \n\n35\n00:00:42,120 --> 00:00:43,729\nlooking for how Industries are doing and\ntheir contributions to the overall\n\n36\n00:00:43,729 --> 00:00:43,739\ntheir contributions to the overall\n \n\n37\n00:00:43,739 --> 00:00:44,930\ntheir contributions to the overall\neconomy\n\n38\n00:00:44,930 --> 00:00:44,940\neconomy\n \n\n39\n00:00:44,940 --> 00:00:48,110\neconomy\nclick on GDP by industry under the\n\n40\n00:00:48,110 --> 00:00:48,120\nclick on GDP by industry under the\n \n\n41\n00:00:48,120 --> 00:00:50,029\nclick on GDP by industry under the\nindustry data section if you're\n\n42\n00:00:50,029 --> 00:00:50,039\nindustry data section if you're\n \n\n43\n00:00:50,039 --> 00:00:51,290\nindustry data section if you're\ninterested in trade and direct\n\n44\n00:00:51,290 --> 00:00:51,300\ninterested in trade and direct\n \n\n45\n00:00:51,300 --> 00:00:53,270\ninterested in trade and direct\ninvestment statistics between the United\n\n46\n00:00:53,270 --> 00:00:53,280\ninvestment statistics between the United\n \n\n47\n00:00:53,280 --> 00:00:55,069\ninvestment statistics between the United\nStates and other countries\n\n48\n00:00:55,069 --> 00:00:55,079\nStates and other countries\n \n\n49\n00:00:55,079 --> 00:00:57,290\nStates and other countries\nthen select International transactions\n\n50\n00:00:57,290 --> 00:00:57,300\nthen select International transactions\n \n\n51\n00:00:57,300 --> 00:00:59,209\nthen select International transactions\nfor trade and the direct investment\n\n52\n00:00:59,209 --> 00:00:59,219\nfor trade and the direct investment\n \n\n53\n00:00:59,219 --> 00:01:01,910\nfor trade and the direct investment\noptions for direct investment data\n\n54\n00:01:01,910 --> 00:01:01,920\noptions for direct investment data\n \n\n55\n00:01:01,920 --> 00:01:04,070\noptions for direct investment data\nif you want to see personal income or\n\n56\n00:01:04,070 --> 00:01:04,080\nif you want to see personal income or\n \n\n57\n00:01:04,080 --> 00:01:07,730\nif you want to see personal income or\nGDP for your state metro area or County\n\n58\n00:01:07,730 --> 00:01:07,740\nGDP for your state metro area or County\n \n\n59\n00:01:07,740 --> 00:01:10,910\nGDP for your state metro area or County\nselect GDP and personal income under the\n\n60\n00:01:10,910 --> 00:01:10,920\nselect GDP and personal income under the\n \n\n61\n00:01:10,920 --> 00:01:12,710\nselect GDP and personal income under the\nregional data section\n\n62\n00:01:12,710 --> 00:01:12,720\nregional data section\n \n\n63\n00:01:12,720 --> 00:01:15,170\nregional data section\nthose are just a few examples of what we\n\n64\n00:01:15,170 --> 00:01:15,180\nthose are just a few examples of what we\n \n\n65\n00:01:15,180 --> 00:01:16,310\nthose are just a few examples of what we\nhave to offer\n\n66\n00:01:16,310 --> 00:01:16,320\nhave to offer\n \n\n67\n00:01:16,320 --> 00:01:18,770\nhave to offer\nfor a quick tour let's explore GDP\n\n68\n00:01:18,770 --> 00:01:18,780\nfor a quick tour let's explore GDP\n \n\n69\n00:01:18,780 --> 00:01:20,870\nfor a quick tour let's explore GDP\nstatistics on a national level\n\n70\n00:01:20,870 --> 00:01:20,880\nstatistics on a national level\n \n\n71\n00:01:20,880 --> 00:01:22,969\nstatistics on a national level\nspecifically let's look up the United\n\n72\n00:01:22,969 --> 00:01:22,979\nspecifically let's look up the United\n \n\n73\n00:01:22,979 --> 00:01:25,609\nspecifically let's look up the United\nStates economy's growth rate in a given\n\n74\n00:01:25,609 --> 00:01:25,619\nStates economy's growth rate in a given\n \n\n75\n00:01:25,619 --> 00:01:28,550\nStates economy's growth rate in a given\nquarter select GDP and personal income\n\n76\n00:01:28,550 --> 00:01:28,560\nquarter select GDP and personal income\n \n\n77\n00:01:28,560 --> 00:01:31,010\nquarter select GDP and personal income\nunder the National Data section and then\n\n78\n00:01:31,010 --> 00:01:31,020\nunder the National Data section and then\n \n\n79\n00:01:31,020 --> 00:01:33,950\nunder the National Data section and then\nselect interactive data tables\n\n80\n00:01:33,950 --> 00:01:33,960\nselect interactive data tables\n \n\n81\n00:01:33,960 --> 00:01:35,810\nselect interactive data tables\nyou'll see there are a lot of options to\n\n82\n00:01:35,810 --> 00:01:35,820\nyou'll see there are a lot of options to\n \n\n83\n00:01:35,820 --> 00:01:37,130\nyou'll see there are a lot of options to\nchoose from\n\n84\n00:01:37,130 --> 00:01:37,140\nchoose from\n \n\n85\n00:01:37,140 --> 00:01:39,830\nchoose from\nyou want Section 1 domestic product and\n\n86\n00:01:39,830 --> 00:01:39,840\nyou want Section 1 domestic product and\n \n\n87\n00:01:39,840 --> 00:01:42,649\nyou want Section 1 domestic product and\nincome now click on table 111 for\n\n88\n00:01:42,649 --> 00:01:42,659\nincome now click on table 111 for\n \n\n89\n00:01:42,659 --> 00:01:44,170\nincome now click on table 111 for\npercent change in real or\n\n90\n00:01:44,170 --> 00:01:44,180\npercent change in real or\n \n\n91\n00:01:44,180 --> 00:01:46,609\npercent change in real or\ninflation-adjusted GDP you can see\n\n92\n00:01:46,609 --> 00:01:46,619\ninflation-adjusted GDP you can see\n \n\n93\n00:01:46,619 --> 00:01:49,249\ninflation-adjusted GDP you can see\ngrowth rates or declines for GDP by\n\n94\n00:01:49,249 --> 00:01:49,259\ngrowth rates or declines for GDP by\n \n\n95\n00:01:49,259 --> 00:01:51,530\ngrowth rates or declines for GDP by\nquarter if you want data for different\n\n96\n00:01:51,530 --> 00:01:51,540\nquarter if you want data for different\n \n\n97\n00:01:51,540 --> 00:01:54,109\nquarter if you want data for different\nquarters or even years click on the\n\n98\n00:01:54,109 --> 00:01:54,119\nquarters or even years click on the\n \n\n99\n00:01:54,119 --> 00:01:55,550\nquarters or even years click on the\nmodify icon\n\n100\n00:01:55,550 --> 00:01:55,560\nmodify icon\n \n\n101\n00:01:55,560 --> 00:01:58,490\nmodify icon\nquarterly data goes back to 1947 and\n\n102\n00:01:58,490 --> 00:01:58,500\nquarterly data goes back to 1947 and\n \n\n103\n00:01:58,500 --> 00:02:01,370\nquarterly data goes back to 1947 and\nannual data goes back to 1929. here's\n\n104\n00:02:01,370 --> 00:02:01,380\nannual data goes back to 1929. here's\n \n\n105\n00:02:01,380 --> 00:02:03,230\nannual data goes back to 1929. here's\nhow you can pull data for different time\n\n106\n00:02:03,230 --> 00:02:03,240\nhow you can pull data for different time\n \n\n107\n00:02:03,240 --> 00:02:06,050\nhow you can pull data for different time\nperiods using the modify button\n\n108\n00:02:06,050 --> 00:02:06,060\nperiods using the modify button\n \n\n109\n00:02:06,060 --> 00:02:07,969\nperiods using the modify button\nlet's do years\n\n110\n00:02:07,969 --> 00:02:07,979\nlet's do years\n \n\n111\n00:02:07,979 --> 00:02:10,190\nlet's do years\nyou can select the box next to first\n\n112\n00:02:10,190 --> 00:02:10,200\nyou can select the box next to first\n \n\n113\n00:02:10,200 --> 00:02:12,530\nyou can select the box next to first\nyear and select the earliest year of\n\n114\n00:02:12,530 --> 00:02:12,540\nyear and select the earliest year of\n \n\n115\n00:02:12,540 --> 00:02:13,610\nyear and select the earliest year of\nyour choice\n\n116\n00:02:13,610 --> 00:02:13,620\nyour choice\n \n\n117\n00:02:13,620 --> 00:02:16,010\nyour choice\nnext click the button next to last year\n\n118\n00:02:16,010 --> 00:02:16,020\nnext click the button next to last year\n \n\n119\n00:02:16,020 --> 00:02:18,290\nnext click the button next to last year\nand select the most recent year of your\n\n120\n00:02:18,290 --> 00:02:18,300\nand select the most recent year of your\n \n\n121\n00:02:18,300 --> 00:02:20,270\nand select the most recent year of your\nchoice you can also gather your\n\n122\n00:02:20,270 --> 00:02:20,280\nchoice you can also gather your\n \n\n123\n00:02:20,280 --> 00:02:22,550\nchoice you can also gather your\ninformation by quarters or annual in the\n\n124\n00:02:22,550 --> 00:02:22,560\ninformation by quarters or annual in the\n \n\n125\n00:02:22,560 --> 00:02:24,770\ninformation by quarters or annual in the\nseries section if you selected many\n\n126\n00:02:24,770 --> 00:02:24,780\nseries section if you selected many\n \n\n127\n00:02:24,780 --> 00:02:26,390\nseries section if you selected many\nyears you'll notice you can take the\n\n128\n00:02:26,390 --> 00:02:26,400\nyears you'll notice you can take the\n \n\n129\n00:02:26,400 --> 00:02:28,010\nyears you'll notice you can take the\nhorizontal bar on the bottom of the\n\n130\n00:02:28,010 --> 00:02:28,020\nhorizontal bar on the bottom of the\n \n\n131\n00:02:28,020 --> 00:02:30,290\nhorizontal bar on the bottom of the\ntable and scroll side to side and\n\n132\n00:02:30,290 --> 00:02:30,300\ntable and scroll side to side and\n \n\n133\n00:02:30,300 --> 00:02:33,050\ntable and scroll side to side and\ncompare figures for GDP and its major\n\n134\n00:02:33,050 --> 00:02:33,060\ncompare figures for GDP and its major\n \n\n135\n00:02:33,060 --> 00:02:35,030\ncompare figures for GDP and its major\ncomponents over the years\n\n136\n00:02:35,030 --> 00:02:35,040\ncomponents over the years\n \n\n137\n00:02:35,040 --> 00:02:37,550\ncomponents over the years\nwant to drop the data you pulled click\n\n138\n00:02:37,550 --> 00:02:37,560\nwant to drop the data you pulled click\n \n\n139\n00:02:37,560 --> 00:02:39,050\nwant to drop the data you pulled click\nthe drop button located next to the\n\n140\n00:02:39,050 --> 00:02:39,060\nthe drop button located next to the\n \n\n141\n00:02:39,060 --> 00:02:40,850\nthe drop button located next to the\nmodify button\n\n142\n00:02:40,850 --> 00:02:40,860\nmodify button\n \n\n143\n00:02:40,860 --> 00:02:42,949\nmodify button\nafter selecting the chart button you'll\n\n144\n00:02:42,949 --> 00:02:42,959\nafter selecting the chart button you'll\n \n\n145\n00:02:42,959 --> 00:02:44,869\nafter selecting the chart button you'll\nautomatically see your economic data in\n\n146\n00:02:44,869 --> 00:02:44,879\nautomatically see your economic data in\n \n\n147\n00:02:44,879 --> 00:02:47,690\nautomatically see your economic data in\nthe line chart format you can select a\n\n148\n00:02:47,690 --> 00:02:47,700\nthe line chart format you can select a\n \n\n149\n00:02:47,700 --> 00:02:50,030\nthe line chart format you can select a\nmaximum of 10 categories to chart at one\n\n150\n00:02:50,030 --> 00:02:50,040\nmaximum of 10 categories to chart at one\n \n\n151\n00:02:50,040 --> 00:02:50,809\nmaximum of 10 categories to chart at one\ntime\n\n152\n00:02:50,809 --> 00:02:50,819\ntime\n \n\n153\n00:02:50,819 --> 00:02:52,850\ntime\nif you prefer a bar chart just click the\n\n154\n00:02:52,850 --> 00:02:52,860\nif you prefer a bar chart just click the\n \n\n155\n00:02:52,860 --> 00:02:54,949\nif you prefer a bar chart just click the\nbar chart icon located between category\n\n156\n00:02:54,949 --> 00:02:54,959\nbar chart icon located between category\n \n\n157\n00:02:54,959 --> 00:02:57,530\nbar chart icon located between category\nsections and the chart\n\n158\n00:02:57,530 --> 00:02:57,540\nsections and the chart\n \n\n159\n00:02:57,540 --> 00:02:59,990\nsections and the chart\nalso take notice of the gray and blue\n\n160\n00:02:59,990 --> 00:03:00,000\nalso take notice of the gray and blue\n \n\n161\n00:03:00,000 --> 00:03:02,210\nalso take notice of the gray and blue\nline at the very bottom of the chart at\n\n162\n00:03:02,210 --> 00:03:02,220\nline at the very bottom of the chart at\n \n\n163\n00:03:02,220 --> 00:03:03,830\nline at the very bottom of the chart at\nthe end of the bar you'll see something\n\n164\n00:03:03,830 --> 00:03:03,840\nthe end of the bar you'll see something\n \n\n165\n00:03:03,840 --> 00:03:06,530\nthe end of the bar you'll see something\nthat looks like a pause button hover\n\n166\n00:03:06,530 --> 00:03:06,540\nthat looks like a pause button hover\n \n\n167\n00:03:06,540 --> 00:03:08,690\nthat looks like a pause button hover\nover one of those two buttons and drag\n\n168\n00:03:08,690 --> 00:03:08,700\nover one of those two buttons and drag\n \n\n169\n00:03:08,700 --> 00:03:11,570\nover one of those two buttons and drag\nthem to the left or right this allows\n\n170\n00:03:11,570 --> 00:03:11,580\nthem to the left or right this allows\n \n\n171\n00:03:11,580 --> 00:03:13,369\nthem to the left or right this allows\nyou to zoom in and focus on specific\n\n172\n00:03:13,369 --> 00:03:13,379\nyou to zoom in and focus on specific\n \n\n173\n00:03:13,379 --> 00:03:15,350\nyou to zoom in and focus on specific\nyears of your choice the remaining\n\n174\n00:03:15,350 --> 00:03:15,360\nyears of your choice the remaining\n \n\n175\n00:03:15,360 --> 00:03:17,149\nyears of your choice the remaining\nbuttons are the download and print\n\n176\n00:03:17,149 --> 00:03:17,159\nbuttons are the download and print\n \n\n177\n00:03:17,159 --> 00:03:20,030\nbuttons are the download and print\nbutton in the current chart format these\n\n178\n00:03:20,030 --> 00:03:20,040\nbutton in the current chart format these\n \n\n179\n00:03:20,040 --> 00:03:21,710\nbutton in the current chart format these\nare all grayed out but don't worry\n\n180\n00:03:21,710 --> 00:03:21,720\nare all grayed out but don't worry\n \n\n181\n00:03:21,720 --> 00:03:24,229\nare all grayed out but don't worry\nthat's not a glitch the download and\n\n182\n00:03:24,229 --> 00:03:24,239\nthat's not a glitch the download and\n \n\n183\n00:03:24,239 --> 00:03:26,270\nthat's not a glitch the download and\nprint options are available on the graph\n\n184\n00:03:26,270 --> 00:03:26,280\nprint options are available on the graph\n \n\n185\n00:03:26,280 --> 00:03:27,530\nprint options are available on the graph\nitself\n\n186\n00:03:27,530 --> 00:03:27,540\nitself\n \n\n187\n00:03:27,540 --> 00:03:29,449\nitself\nif you want to download your chart just\n\n188\n00:03:29,449 --> 00:03:29,459\nif you want to download your chart just\n \n\n189\n00:03:29,459 --> 00:03:30,710\nif you want to download your chart just\nclick the arrow in the upper right\n\n190\n00:03:30,710 --> 00:03:30,720\nclick the arrow in the upper right\n \n\n191\n00:03:30,720 --> 00:03:33,290\nclick the arrow in the upper right\ncorner of the chart this gives you the\n\n192\n00:03:33,290 --> 00:03:33,300\ncorner of the chart this gives you the\n \n\n193\n00:03:33,300 --> 00:03:35,449\ncorner of the chart this gives you the\noption to download or save the chart to\n\n194\n00:03:35,449 --> 00:03:35,459\noption to download or save the chart to\n \n\n195\n00:03:35,459 --> 00:03:37,970\noption to download or save the chart to\nyour computer to download share or print\n\n196\n00:03:37,970 --> 00:03:37,980\nyour computer to download share or print\n \n\n197\n00:03:37,980 --> 00:03:40,369\nyour computer to download share or print\ninformation in the table format you need\n\n198\n00:03:40,369 --> 00:03:40,379\ninformation in the table format you need\n \n\n199\n00:03:40,379 --> 00:03:42,289\ninformation in the table format you need\nto select the table button to get out of\n\n200\n00:03:42,289 --> 00:03:42,299\nto select the table button to get out of\n \n\n201\n00:03:42,299 --> 00:03:43,670\nto select the table button to get out of\nthe chart format\n\n202\n00:03:43,670 --> 00:03:43,680\nthe chart format\n \n\n203\n00:03:43,680 --> 00:03:46,670\nthe chart format\nnext click the download button we offer\n\n204\n00:03:46,670 --> 00:03:46,680\nnext click the download button we offer\n \n\n205\n00:03:46,680 --> 00:03:49,130\nnext click the download button we offer\nthree downloadable formats Microsoft\n\n206\n00:03:49,130 --> 00:03:49,140\nthree downloadable formats Microsoft\n \n\n207\n00:03:49,140 --> 00:03:54,470\nthree downloadable formats Microsoft\nExcel Adobe PDF or CSV format you can\n\n208\n00:03:54,470 --> 00:03:54,480\nExcel Adobe PDF or CSV format you can\n \n\n209\n00:03:54,480 --> 00:03:57,289\nExcel Adobe PDF or CSV format you can\nalso map your data let's get started by\n\n210\n00:03:57,289 --> 00:03:57,299\nalso map your data let's get started by\n \n\n211\n00:03:57,299 --> 00:03:59,570\nalso map your data let's get started by\nselecting GDP and personal income under\n\n212\n00:03:59,570 --> 00:03:59,580\nselecting GDP and personal income under\n \n\n213\n00:03:59,580 --> 00:04:01,930\nselecting GDP and personal income under\nthe regional data section then select\n\n214\n00:04:01,930 --> 00:04:01,940\nthe regional data section then select\n \n\n215\n00:04:01,940 --> 00:04:04,309\nthe regional data section then select\ninteractive data mapping\n\n216\n00:04:04,309 --> 00:04:04,319\ninteractive data mapping\n \n\n217\n00:04:04,319 --> 00:04:06,470\ninteractive data mapping\nyou can see the economic data by state\n\n218\n00:04:06,470 --> 00:04:06,480\nyou can see the economic data by state\n \n\n219\n00:04:06,480 --> 00:04:09,050\nyou can see the economic data by state\nmetro area or County\n\n220\n00:04:09,050 --> 00:04:09,060\nmetro area or County\n \n\n221\n00:04:09,060 --> 00:04:11,210\nmetro area or County\nlet's find the personal income of some\n\n222\n00:04:11,210 --> 00:04:11,220\nlet's find the personal income of some\n \n\n223\n00:04:11,220 --> 00:04:13,250\nlet's find the personal income of some\nof the counties in Alabama\n\n224\n00:04:13,250 --> 00:04:13,260\nof the counties in Alabama\n \n\n225\n00:04:13,260 --> 00:04:15,050\nof the counties in Alabama\nsince we're searching for economic\n\n226\n00:04:15,050 --> 00:04:15,060\nsince we're searching for economic\n \n\n227\n00:04:15,060 --> 00:04:17,090\nsince we're searching for economic\ninformation by County let's select\n\n228\n00:04:17,090 --> 00:04:17,100\ninformation by County let's select\n \n\n229\n00:04:17,100 --> 00:04:19,250\ninformation by County let's select\npersonal income and employment by County\n\n230\n00:04:19,250 --> 00:04:19,260\npersonal income and employment by County\n \n\n231\n00:04:19,260 --> 00:04:21,650\npersonal income and employment by County\nhere we can set the criteria for what we\n\n232\n00:04:21,650 --> 00:04:21,660\nhere we can set the criteria for what we\n \n\n233\n00:04:21,660 --> 00:04:22,550\nhere we can set the criteria for what we\nwant\n\n234\n00:04:22,550 --> 00:04:22,560\nwant\n \n\n235\n00:04:22,560 --> 00:04:24,350\nwant\nlet's leave the state selection on\n\n236\n00:04:24,350 --> 00:04:24,360\nlet's leave the state selection on\n \n\n237\n00:04:24,360 --> 00:04:26,210\nlet's leave the state selection on\nAlabama and we'll leave other\n\n238\n00:04:26,210 --> 00:04:26,220\nAlabama and we'll leave other\n \n\n239\n00:04:26,220 --> 00:04:28,490\nAlabama and we'll leave other\npreferences as it is select the year of\n\n240\n00:04:28,490 --> 00:04:28,500\npreferences as it is select the year of\n \n\n241\n00:04:28,500 --> 00:04:31,430\npreferences as it is select the year of\nyour choice then select Next Step\n\n242\n00:04:31,430 --> 00:04:31,440\nyour choice then select Next Step\n \n\n243\n00:04:31,440 --> 00:04:33,469\nyour choice then select Next Step\ntake your cursor and hover over any\n\n244\n00:04:33,469 --> 00:04:33,479\ntake your cursor and hover over any\n \n\n245\n00:04:33,479 --> 00:04:35,270\ntake your cursor and hover over any\nCounty of your choice and you'll see\n\n246\n00:04:35,270 --> 00:04:35,280\nCounty of your choice and you'll see\n \n\n247\n00:04:35,280 --> 00:04:37,249\nCounty of your choice and you'll see\npersonal income features for that County\n\n248\n00:04:37,249 --> 00:04:37,259\npersonal income features for that County\n \n\n249\n00:04:37,259 --> 00:04:39,710\npersonal income features for that County\nyou can take that number and compare it\n\n250\n00:04:39,710 --> 00:04:39,720\nyou can take that number and compare it\n \n\n251\n00:04:39,720 --> 00:04:42,170\nyou can take that number and compare it\nto the legend at the bottom of the map\n\n252\n00:04:42,170 --> 00:04:42,180\nto the legend at the bottom of the map\n \n\n253\n00:04:42,180 --> 00:04:44,270\nto the legend at the bottom of the map\nhover over the down arrow or the\n\n254\n00:04:44,270 --> 00:04:44,280\nhover over the down arrow or the\n \n\n255\n00:04:44,280 --> 00:04:46,129\nhover over the down arrow or the\ndownload button located in the upper\n\n256\n00:04:46,129 --> 00:04:46,139\ndownload button located in the upper\n \n\n257\n00:04:46,139 --> 00:04:48,290\ndownload button located in the upper\nright section of the map and you'll see\n\n258\n00:04:48,290 --> 00:04:48,300\nright section of the map and you'll see\n \n\n259\n00:04:48,300 --> 00:04:50,270\nright section of the map and you'll see\nthe three download options for the map\n\n260\n00:04:50,270 --> 00:04:50,280\nthe three download options for the map\n \n\n261\n00:04:50,280 --> 00:04:52,550\nthe three download options for the map\nyou can also change from the map format\n\n262\n00:04:52,550 --> 00:04:52,560\nyou can also change from the map format\n \n\n263\n00:04:52,560 --> 00:04:55,430\nyou can also change from the map format\nto either the chart or table format by\n\n264\n00:04:55,430 --> 00:04:55,440\nto either the chart or table format by\n \n\n265\n00:04:55,440 --> 00:04:57,890\nto either the chart or table format by\nclicking on your preferred button do you\n\n266\n00:04:57,890 --> 00:04:57,900\nclicking on your preferred button do you\n \n\n267\n00:04:57,900 --> 00:04:58,969\nclicking on your preferred button do you\nhave questions\n\n268\n00:04:58,969 --> 00:04:58,979\nhave questions\n \n\n269\n00:04:58,979 --> 00:05:03,290\nhave questions\ncheck out the FAQs methodologies and Bea\n\n270\n00:05:03,290 --> 00:05:03,300\ncheck out the FAQs methodologies and Bea\n \n\n271\n00:05:03,300 --> 00:05:06,170\ncheck out the FAQs methodologies and Bea\ncontact emails on our website or call\n\n272\n00:05:06,170 --> 00:05:06,180\ncontact emails on our website or call\n \n\n273\n00:05:06,180 --> 00:05:07,850\ncontact emails on our website or call\nour customer service line at\n\n274\n00:05:07,850 --> 00:05:07,860\nour customer service line at\n \n\n275\n00:05:07,860 --> 00:05:12,409\nour customer service line at\n301-278-9004\n\n276\n00:05:12,409 --> 00:05:12,419\n\n \n\n277\n00:05:12,419 --> 00:05:14,689\n\nwe'll help you find the data you need to\n\n278\n00:05:14,689 --> 00:05:14,699\nwe'll help you find the data you need to\n \n\n279\n00:05:14,699 --> 00:05:16,969\nwe'll help you find the data you need to\nbetter understand the economy\n\n280\n00:05:16,969 --> 00:05:16,979\nbetter understand the economy\n \n\n281\n00:05:16,979 --> 00:05:20,900\nbetter understand the economy\nthat's what we do at Bea"
+                ],
+                "output": "media",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:39:14.927315+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "http://www.bea.gov/itable/",
+                    "--format=text"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:39:14.907043+00:00",
+                "index_texts": null,
+                "output": "ArchiveError: Mercury was not able to get article text from the URL",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:39:14.634517+00:00",
+                "status": "failed"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:38:54.074406+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:38:52.172319+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmp2nw73hfg",
+                    "http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:39:14.628602+00:00",
+                "index_texts": [
+                    "What is the Interactive Data Application?\n    BEA's interactive data application is the one stop shop for accessing BEA data on the fly. The interactive application makes it easier to access and use our statistics by providing a common look and feel for users accessing national, international, regional or industry statistics. The application makes the data easier to print, save and export. The charting features are robust and visually appealing. The application also allows for data sharing with others via a number of social tools.\n     BEA updates its data in near real time. During BEA news releases there might be a slight delay in accessing the most recent data but access to supplemental data files is always available. \n     The interactive data application organizes data by account and topic. The application uses a \"tabbed\" browser experience common to many e-commerce and other standard Web sites. Navigating between data sets and accessing and changing query parameters is easy, as they are similar across all datasets. \n    \n  \n\n\n\n\n    \n    \n                Page last modified on 9/15/23"
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:39:14.323180+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:38:56.111230+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:38:54.081043+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "http://www.bea.gov/itable/",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:38:52.165517+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:38:41.902954+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:39:14.319048+00:00",
+                "index_texts": null,
+                "output": "Interactive Data Application | U.S. Bureau of Economic Analysis (BEA)",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:39:14.314197+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707717218.228955/warc/1707719937",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "http://www.bea.gov/itable/"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:39:14.308671+00:00",
+                "index_texts": null,
+                "output": "www.bea.gov/itable/index.html",
+                "pwd": "/data/archive/1707717218.228955",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:38:57.780766+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "ArchiveError: Failed to find \"content-location\" URL header in Archive.org response.",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "Interactive Data Application | U.S. Bureau of Economic Analysis (BEA)",
+        "warc": null,
+        "wget": "www.bea.gov/itable/index.html"
+    },
+    "link_dir": "/data/archive/1707717218.228955",
+    "newest_archive_date": "2024-02-12T06:39:18.952344+00:00",
+    "num_failures": 2,
+    "num_outputs": 10,
+    "oldest_archive_date": "2024-02-12T06:38:41.289654+00:00",
+    "path": "/itable/",
+    "schema": "Link",
+    "scheme": "http",
+    "snapshot_id": "6ba4ab0f-c8df-4975-9e67-67a346a4cf59",
+    "sources": [
+        "/data/sources/1707717217.88551-crawl-www.bea.gov.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707717218.228955",
+    "title": "Interactive Data Application | U.S. Bureau of Economic Analysis (BEA)",
+    "updated": "2024-02-12T06:38:41.288164+00:00",
+    "updated_date": "2024-02-12 06:38",
+    "url": "http://www.bea.gov/itable/"
+}
