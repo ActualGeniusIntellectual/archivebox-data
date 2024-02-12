@@ -1,0 +1,15 @@
+{
+    "Status-Code": 200,
+    "Content-Length": "7992",
+    "Content-Type": "text/html",
+    "Content-Encoding": "gzip",
+    "Last-Modified": "Thu, 12 Oct 2023 14:08:00 GMT",
+    "Accept-Ranges": "bytes",
+    "ETag": "\"1d1efb8115fdd91:0\"",
+    "Vary": "Accept-Encoding",
+    "Server": "Microsoft-IIS/10.0",
+    "X-Powered-By": "ASP.NET",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Date": "Mon, 12 Feb 2024 06:32:40 GMT"
+}

@@ -1,0 +1,377 @@
+{
+    "archive_path": "archive/1707717218.228982",
+    "base_url": "apps.bea.gov/API/signup",
+    "basename": "",
+    "bookmarked_date": "2024-02-12 05:53",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/apps.bea.gov/API/signup",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=apps.bea.gov",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "apps.bea.gov/API/signup/index.html"
+    },
+    "domain": "apps.bea.gov",
+    "extension": "",
+    "hash": "1WWXW147ZK6W6J04PV6W",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:33:27.549847+00:00",
+                "index_texts": null,
+                "output": "https://web.archive.org/web/20240212063311/https://apps.bea.gov/API/signup/",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:33:08.484842+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:32:55.880345+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:32:53.256242+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=apps.bea.gov"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:32:40.258844+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:32:40.085114+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:32:40.904997+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:32:40.265671+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:33:08.464118+00:00",
+                "index_texts": [],
+                "output": "media",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:33:07.280118+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:33:07.261897+00:00",
+                "index_texts": null,
+                "output": "mercury",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:33:05.630733+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:32:51.506440+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:32:49.951786+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmpplc4pmqp",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:33:05.623722+00:00",
+                "index_texts": [
+                    "Home\n                Tools\n                BEA Data Application Programming Interface (API)\n            \n        \n        \n                \n                \n                    Note to users: Our API is now hosted on a new subdomain: https://apps.bea.gov. API users must use this new subdomain to retrieve data.\n                    What is it?\n                    The data API provides programmatic access to BEA published economic statistics using  industry-standard methods and procedures. BEA's data API includes methods for retrieving a subset of our  statistical data and the meta-data that describes it.\n                    The data API and its documentation are  for programmers who are familiar  with the concepts and techniques of retrieving data from Web Services.\n                    What is available?\u00a0API User Guides \n                    \n                        \n                            \n                                 UnderlyingGDPbyIndustry\u00a0New\n                                 Underlying Detail estimates of value added, gross output, and intermediate inputs by industry. \n                            \n                            \n                                 InputOutput \n                                 Make and use tables, direct requirements, and total requirements statistics. \n                            \n                            \n                                Regional\u00a0\n                                Detailed income and employment statistics by state, county, and metropolitan area. Detailed GDP statistics by state and metropolitan statistical area. Price parities statistics by state and MSA. \n                            \n                            \n                                 NIPA \n                                 NIPA tables with options. \n                            \n                            \n                                 NIUnderlyingDetail \n                                 NI  Underlying Detail tables with options. \n                            \n                            \n                                 FixedAssets \n                                 Fixed Assets  tables with options \n                            \n                            \n                                 ITA \n                                 International  Transactions dataset by indicator, area or country, frequency, and year \n                            \n                            \n                                 IntlServTrade\n                                 International Services Trade dataset by type of service, trade  direction, affiliation, area or country, and year \n                            \n                            \n                                 IntlServSTA \u00a0New\n                                 International Services Supplied Through Affiliates dataset by channel, destination, industry, area or country, and year \n                            \n                            \n                                 IIP \n                                 International Investment  Position dataset by type of investment, component, frequency, and year \n                            \n                            \n                                 GDPByIndustry \n                                 Estimates of value added,  gross output, intermediate inputs, KLEMS, and employment statistics by industry \n                            \n                            \n                                 MNE \n                                 Direct Investment by  direction of investment, series, classification, year, country, and industry;  and activities of Multinational Enterprises (MNE) by direction of investment,  ownership, bank/non-bank, series, classification, year, country, industry, and  state. \n                            \n                        \n                        \n                    \n                \n                \n                        \n                            Register\n                        \n                        \n                                Please provide your name (or organization name), a valid email address, and agree to the published terms of service."
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:33:05.275329+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:32:53.251100+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:32:51.512332+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "https://apps.bea.gov/API/signup/",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:32:49.945784+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:32:40.911062+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:33:05.269375+00:00",
+                "index_texts": null,
+                "output": "BEA Data Application Programming Interface (API)",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:33:05.264623+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707717218.228982/warc/1707719575",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "https://apps.bea.gov/API/signup/"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:33:05.258207+00:00",
+                "index_texts": null,
+                "output": "apps.bea.gov/API/signup/index.html",
+                "pwd": "/data/archive/1707717218.228982",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:32:55.886770+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "https://web.archive.org/web/20240212063311/https://apps.bea.gov/API/signup/",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "BEA Data Application Programming Interface (API)",
+        "warc": null,
+        "wget": "apps.bea.gov/API/signup/index.html"
+    },
+    "link_dir": "/data/archive/1707717218.228982",
+    "newest_archive_date": "2024-02-12T06:33:08.484842+00:00",
+    "num_failures": 0,
+    "num_outputs": 12,
+    "oldest_archive_date": "2024-02-12T06:32:40.085114+00:00",
+    "path": "/API/signup/",
+    "schema": "Link",
+    "scheme": "https",
+    "snapshot_id": "8ea79539-4f4f-4dfa-aca0-05ad57c31587",
+    "sources": [
+        "/data/sources/1707717217.88551-crawl-www.bea.gov.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707717218.228982",
+    "title": "BEA Data Application Programming Interface (API)",
+    "updated": "2024-02-12T06:32:40.083679+00:00",
+    "updated_date": "2024-02-12 06:32",
+    "url": "https://apps.bea.gov/API/signup/"
+}
