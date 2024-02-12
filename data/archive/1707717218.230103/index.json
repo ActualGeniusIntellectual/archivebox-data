@@ -1,0 +1,378 @@
+{
+    "archive_path": "archive/1707717218.230103",
+    "base_url": "www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023",
+    "basename": "us-international-trade-goods-and-services-december-and-annual-2023",
+    "bookmarked_date": "2024-02-12 05:53",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=www.bea.gov",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023.html"
+    },
+    "domain": "www.bea.gov",
+    "extension": "",
+    "hash": "7XB9TZE4N5V48TSJQQ16",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:11:49.475379+00:00",
+                "index_texts": null,
+                "output": "ArchiveError: Failed to find \"content-location\" URL header in Archive.org response.",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:36.765659+00:00",
+                "status": "failed"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:11:17.950088+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:14.763033+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=www.bea.gov"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:10:57.646229+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:10:56.683254+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:10:58.566414+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:10:57.666144+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:11:36.745401+00:00",
+                "index_texts": [],
+                "output": "media",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:35.693779+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023",
+                    "--format=text"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:11:35.671289+00:00",
+                "index_texts": null,
+                "output": "ArchiveError: Mercury was not able to get article text from the URL",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:35.101198+00:00",
+                "status": "failed"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:11:11.678093+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:08.342775+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmpe2h5tl4b",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:11:35.094612+00:00",
+                "index_texts": [
+                    "The U.S. Census Bureau and the U.S. Bureau of Economic Analysis announced today that the goods and services deficit was $62.2 billion in December, up $0.3 billion from $61.9 billion in November, revised.\n\n\n\n\n\n\n\tU.S. International Trade in Goods and Services Deficit\n\t\n\t\t\n\t\t\tDeficit:\n\t\t\t\n\t\t\t$62.2 Billion\n\t\t\t\n\t\t\t\n\t\t\t+0.5%\u00b0\n\t\t\t\n\t\t\n\t\t\n\t\t\tExports:\n\t\t\t\n\t\t\t$258.2 Billion\n\t\t\t\n\t\t\t\n\t\t\t+1.5%\u00b0\n\t\t\t\n\t\t\n\t\t\n\t\t\tImports:\n\t\t\t\n\t\t\t$320.4 Billion\n\t\t\t\n\t\t\t\n\t\t\t+1.3%\u00b0\n\t\t\t\n\t\t\n\t\n\t\n\t\t\n\t\t\t\n\t\t\tNext release: Thursday, March 7, 2024\n\n\t\t\t(\u00b0)Statistical significance is not applicable or not measurable. Data adjusted for seasonality but not price changes\n\n\t\t\tSource: U.S. Census Bureau, U.S. Bureau of Economic Analysis; U.S. International Trade in Goods and Services, February 7, 2024\n\t\t\t\n\t\t\n\t\n\n\n\n\n\n\nExports, Imports, and Balance (exhibit 1)\n\nDecember exports were $258.2 billion, $3.9 billion more than November exports. December imports were $320.4 billion, $4.2 billion more than November imports.\n\nThe December increase in the goods and services deficit reflected an increase in the goods deficit of $0.7 billion to $89.1 billion and an increase in the services surplus of $0.4 billion to $26.9 billion.\n\nFor 2023, the goods and services deficit decreased $177.8 billion, or 18.7 percent, from 2022. Exports increased $35.0 billion or 1.2 percent. Imports decreased $142.7 billion or 3.6 percent.\n\nThree-Month Moving Averages (exhibit 2)\n\nThe average goods and services deficit increased $0.5 billion to $62.7 billion for the three months ending in December.\n\n\n\tAverage exports decreased $1.0 billion to $257.0 billion in December.\n\tAverage imports decreased $0.4 billion to $319.6 billion in December.\n\n\nYear-over-year, the average goods and services deficit decreased $8.5 billion from the three months ending in December 2022.\n\n\n\tAverage exports increased $4.1 billion from December 2022.\n\tAverage imports decreased $4.4 billion from December 2022.\n\n\nExports (exhibits 3, 6, and 7)\n\nExports of goods increased $3.1 billion to $171.2 billion in December.\n\n\u00a0\u00a0Exports of goods on a Census basis increased $4.2 billion.\n\n\n\tIndustrial supplies and materials increased $3.3 billion.\n\t\n\t\tNonmonetary gold increased $0.9 billion.\n\t\tOther petroleum products increased $0.8 billion.\n\t\tCrude oil increased $0.6 billion.\n\t\n\t\n\tConsumer goods increased $0.7 billion.\n\tFoods, feeds, and beverages increased $0.7 billion.\n\n\n\u00a0\u00a0Net balance of payments adjustments decreased $1.1 billion.\n\nExports of services increased $0.8 billion to $87.0 billion in December.\n\n\n\tTravel increased $0.4 billion.\n\tTransport increased $0.2 billion.\n\tFinancial services increased $0.2 billion.\n\n\nImports (exhibits 4, 6, and 8)\n\nImports of goods increased $3.8 billion to $260.3 billion in December.\n\n\u00a0\u00a0Imports of goods on a Census basis increased $3.7 billion.\n\n\n\tConsumer goods increased $3.3 billion.\n\t\n\t\tPharmaceutical preparations increased $1.5 billion.\n\t\tCell phones and other household goods increased $1.0 billion.\n\t\n\t\n\tIndustrial supplies and materials increased $1.2 billion.\n\t\n\t\tFuel oil increased $0.4 billion.\n\t\tNuclear fuel materials increased $0.4 billion.\n\t\tCrude oil decreased $0.4 billion\n\t\tFinished metal shapes decreased $0.4 billion\n\t\n\t\n\tCapital goods decreased $0.4 billion.\n\tAutomotive vehicles, parts, and engines decreased $0.4 billion.\n\n\n\u00a0\u00a0Net balance of payments adjustments increased less than $0.1 billion.\n\nImports of services increased $0.5 billion to $60.1 billion in December.\n\n\n\tTransport increased $0.6 billion.\n\tTravel decreased $0.1 billion.\n\n\nReal Goods in 2017 Dollars \u2013 Census Basis (exhibit 11)\n\nThe real goods deficit decreased $1.2 billion, or 1.4 percent, to $82.8 billion in December, compared to a 0.5 percent decrease in the nominal deficit.\n\n\n\tReal exports of goods increased $5.1 billion, or 3.7 percent, to $145.9 billion, compared to a 2.5 percent increase in nominal exports.\n\tReal imports of goods increased $4.0 billion, or 1.8 percent, to $228.7 billion, compared to a 1.5 percent increase in nominal imports.\n\n\nRevisions\n\nIn addition to revisions to source data for the November statistics, the seasonally adjusted goods data were revised for January through November so that the totals of the seasonally adjusted months equal the annual totals.\n\nRevisions to November exports\n\n\n\tExports of goods were revised up $0.2 billion.\n\tExports of services were revised up $0.4 billion.\n\n\nRevisions to November imports\n\n\n\tImports of goods were revised down $0.9 billion.\n\tImports of services were revised up $0.1 billion.\n\n\nGoods by Selected Countries and Areas: Monthly \u2013 Census Basis (exhibit 19)\n\nThe December figures show surpluses, in billions of dollars, with South and Central America ($4.7), Netherlands ($4.4), United Kingdom ($1.9), Australia ($1.8), Hong Kong ($1.6), Singapore ($1.2), and Belgium ($0.5). Deficits were recorded, in billions of dollars, with China ($22.8), European Union ($17.6), Mexico ($13.7), Vietnam ($10.0), Germany ($7.2), Ireland ($5.7), Canada ($5.5), Japan ($5.2), South Korea ($5.0), India ($4.3), Taiwan ($3.3), Italy ($3.2), Switzerland ($2.5), Malaysia ($2.2), France ($1.0), Israel ($0.2), Brazil ($0.1), and Saudi Arabia ($0.1).\n\n\n\tThe deficit with Canada decreased $2.0 billion to $5.5 billion in December. Exports increased $0.8 billion to $30.5 billion and imports decreased $1.2 billion to $36.1 billion.\n\tThe deficit with Japan decreased $1.8 billion to $5.2 billion in December. Exports decreased $0.1 billion to $6.1 billion and imports decreased $1.9 billion to $11.3 billion.\n\tThe deficit with the European Union increased $2.1 billion to $17.6 billion in December. Exports increased $1.9 billion to $32.6 billion and imports increased $4.0 billion to $50.2 billion.\n\n\nAnnual Summary for 2023\n\nExports, Imports, and Balance (exhibit 1)\n\nFor 2023, the goods and services deficit was $773.4 billion, down $177.8 billion from $951.2 billion in 2022. Exports were $3,053.5 billion, up $35.0 billion from 2022. Imports were $3,826.9 billion, down $142.7 billion from 2022.\n\n\n\nThe 2023 decrease in the goods and services deficit reflected a decrease in the goods deficit of $121.3 billion, or 10.3 percent, to $1,061.7 billion and an increase in the services surplus of $56.4 billion, or 24.3 percent, to $288.2 billion.\n\nThe goods and services deficit was 2.8 percent of current-dollar gross domestic product in 2023, down from 3.7 percent in 2022.\n\nExports (exhibits 3, 6, and 7)\n\nExports of goods decreased $39.2 billion to $2,050.7 billion in 2023.\n\n\u00a0\u00a0Exports of goods on a Census basis decreased $45.6 billion.\n\n\n\tIndustrial supplies and materials decreased $102.8 billion.\n\t\n\t\tNatural gas decreased $21.1 billion.\n\t\tOther petroleum products decreased $13.9 billion.\n\t\tFuel oil decreased $10.6 billion.\n\t\tNonmonetary gold decreased $10.5 billion.\n\t\n\t\n\tFoods, feeds, and beverages decreased $17.4 billion.\n\tCapital goods increased $28.5 billion.\n\tAutomotive vehicles, parts, and engines increased $19.3 billion.\n\tConsumer goods increased $14.7 billion.\n\n\n\u00a0\u00a0Net balance of payments adjustments increased $6.4 billion.\n\nExports of services increased $74.2 billion to $1,002.8 billion in 2023.\n\n\n\tTravel increased $38.3 billion.\n\tFinancial services increased $7.4 billion.\n\tTransport increased $7.3 billion.\n\tTelecommunications, computer, and information services increased $7.1 billion.\n\n\nImports (exhibits 4, 6, and 8)\n\nImports of goods decreased $160.5 billion to $3,112.4 billion in 2023.\n\n\u00a0\u00a0Imports of goods on a Census basis decreased $158.4 billion.\n\n\n\tIndustrial supplies and materials decreased $130.8 billion.\n\t\n\t\tCrude oil decreased $32.8 billion.\n\t\tFuel oil decreased $9.6 billion.\n\t\tOrganic chemicals decreased $8.6 billion.\n\t\n\t\n\tConsumer goods decreased $80.7 billion.\n\t\n\t\tCotton apparel and household goods decreased $12.8 billion.\n\t\tCell phones and other household goods decreased $12.6 billion.\n\t\tToys, games, and sporting goods decreased $12.0 billion.\n\t\tOther textile apparel and household goods decreased $11.8 billion.\n\t\tPharmaceutical preparations increased $13.6 billion.\n\t\n\t\n\tAutomotive vehicles, parts, and engines increased $59.5 billion.\n\t\n\t\tPassenger cars increased $41.1 billion.\n\t\n\t\n\n\n\u00a0\u00a0Net balance of payments adjustments decreased $2.1 billion.\n\nImports of services increased $17.8 billion to $714.5 billion in 2023.\n\n\n\tTravel increased $34.5 billion.\n\tTransport decreased $14.7 billion.\n\n\nReal Goods in 2017 Dollars \u2013 Census Basis (exhibit 11)\n\nThe real goods deficit decreased $90.1 billion, or 8.0 percent, to $1,035.1 billion in 2023, compared to a 9.6 percent decrease in the nominal deficit.\n\n\n\tReal exports of goods increased $32.5 billion, or 1.9 percent, to $1,701.9 billion, compared to a 2.2 percent decrease in nominal exports.\n\tReal imports of goods decreased $57.6 billion, or 2.1 percent, to $2,737.0 billion, compared to a 4.9 percent decrease in nominal imports.\n\n\nGoods by Selected Countries and Areas \u2013 Census Basis (exhibits 14 and 14a)\n\nThe 2023 figures show surpluses, in billions of dollars, with South and Central America ($54.9), Netherlands ($43.7), Hong Kong ($23.6), Australia ($17.7), Belgium ($15.8), and United Kingdom ($9.8). Deficits were recorded, in billions of dollars, with China ($279.4), European Union ($208.2), Mexico ($152.4), Vietnam ($104.6), Germany ($83.0), Japan ($71.2), Canada ($67.9), Ireland ($65.3), South Korea ($51.4), Taiwan ($48.0), Italy ($44.0), India ($43.7), Thailand ($40.7), Malaysia ($26.7), Switzerland ($24.3), Indonesia ($16.9), Austria ($13.6), France ($13.4), and Sweden ($9.8).\n\n\n\tThe deficit with China decreased $102.9 billion to $279.4 billion in 2023. Exports decreased $6.2 billion to $147.8 billion and imports decreased $109.1 billion to $427.2 billion.\n\tThe deficit with Canada decreased $12.2 billion to $67.9 billion in 2023. Exports decreased $3.2 billion to $353.2 billion and imports decreased $15.5 billion to $421.1 billion.\n\tThe deficit with Mexico increased $21.9 billion to $152.4 billion in 2023. Exports decreased $1.1 billion to $323.2 billion and imports increased $20.8 billion to $475.6 billion.\n\n\nAll statistics referenced are seasonally adjusted; statistics are on a balance of payments basis unless otherwise specified. Additional statistics, including not seasonally adjusted statistics and details for goods on a Census basis, are available in exhibits 1-20b of this release. For information on data sources, definitions, and revision procedures, see the explanatory notes in this release. The full release can be found at www.census.gov/foreign-trade/Press-Release/current_press_release/index.html or www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services. The full schedule is available in the Census Bureau\u2019s Economic Briefing Room at www.census.gov/economic-indicators/ or on BEA\u2019s website at www.bea.gov/news/schedule.\n\n\n\nNext release: March 7, 2024, at 8:30 a.m. EST\nU.S. International Trade in Goods and Services, January 2024"
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:34.715542+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:11:14.757798+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:11.684521+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:11:08.336678+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:10:58.572966+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:11:34.709501+00:00",
+                "index_texts": null,
+                "output": "U.S. International Trade in Goods and Services, December and Annual 2023 | U.S. Bureau of Economic Analysis (BEA)",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:34.702576+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707717218.230103/warc/1707718277",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:11:34.696365+00:00",
+                "index_texts": null,
+                "output": "www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023.html",
+                "pwd": "/data/archive/1707717218.230103",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:11:17.955452+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "ArchiveError: Failed to find \"content-location\" URL header in Archive.org response.",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "U.S. International Trade in Goods and Services, December and Annual 2023 | U.S. Bureau of Economic Analysis (BEA)",
+        "warc": null,
+        "wget": "www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023.html"
+    },
+    "link_dir": "/data/archive/1707717218.230103",
+    "newest_archive_date": "2024-02-12T06:11:36.765659+00:00",
+    "num_failures": 2,
+    "num_outputs": 10,
+    "oldest_archive_date": "2024-02-12T06:10:56.683254+00:00",
+    "path": "/news/2024/us-international-trade-goods-and-services-december-and-annual-2023",
+    "schema": "Link",
+    "scheme": "https",
+    "snapshot_id": "e2df354e-4aec-4ae5-920a-c417079e3244",
+    "sources": [
+        "/data/sources/1707717217.88551-crawl-www.bea.gov.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707717218.230103",
+    "title": "U.S. International Trade in Goods and Services, December and Annual 2023 | U.S. Bureau of Economic Analysis (BEA)",
+    "updated": "2024-02-12T06:10:56.681789+00:00",
+    "updated_date": "2024-02-12 06:10",
+    "url": "https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023"
+}
