@@ -1,0 +1,216 @@
+
+> /usr/local/bin/archivebox init --setup; TS=2024-02-12__05:41:35 VERSION=0.7.3 IN_DOCKER=True IS_TTY=True
+
+> /usr/local/bin/archivebox init --setup; TS=2024-02-12__05:41:36 VERSION=0.7.3 IN_DOCKER=True IS_TTY=True
+
+> /usr/local/bin/archivebox init --setup; TS=2024-02-12__05:41:36 VERSION=0.7.3 IN_DOCKER=True IS_TTY=True
+
+> /usr/local/bin/archivebox init --setup; TS=2024-02-12__05:41:36 VERSION=0.7.3 IN_DOCKER=True IS_TTY=True
+
+> /usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; TS=2024-02-12__05:44:08 VERSION=0.7.3 IN_DOCKER=True IS_TTY=False
+
+> /usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; TS=2024-02-12__05:44:08 VERSION=0.7.3 IN_DOCKER=True IS_TTY=False
+
+> /usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; TS=2024-02-12__05:44:09 VERSION=0.7.3 IN_DOCKER=True IS_TTY=False
+
+> /usr/local/bin/archivebox add --depth=1 https://example.com/some/feed.rss; TS=2024-02-12__05:50:45 VERSION=0.7.3 IN_DOCKER=True IS_TTY=True
+
+Exception in archive_methods.save_htmltotext(Link(url=http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd)) command=/usr/local/bin/archivebox add --depth=1 https://example.com/some/feed.rss; ts=2024-02-12__05:50:54
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://www.w3.org/1999/xhtml)) command=/usr/local/bin/archivebox add --depth=1 https://example.com/some/feed.rss; ts=2024-02-12__05:51:15
+cannot access local variable 'cmd' where it is not associated with a value
+
+> /usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; TS=2024-02-12__05:53:37 VERSION=0.7.3 IN_DOCKER=True IS_TTY=True
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.bea.gov/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__05:54:12
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.youtube.com/channel/UCCP9QD1x_z__duUivA6Yb5w)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__05:55:39
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.usa.gov/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:06:01
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.linkedin.com/company/bureau-of-economic-analysis)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:06:41
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.instagram.com/usbeagov/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:07:34
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.googletagmanager.com/gtag/js?id=G-J4698JNNFT)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:07:48
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.facebook.com/usbeagov)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:08:06
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.drupal.org)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:09:34
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.commerce.gov/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:10:17
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:11:35
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://www.bea.gov/about/working-at-bea)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:12:29
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/bea_news)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:13:52
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://search.bea.gov/search)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:15:24
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://s2.go-mpulse.net/boomerang/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:16:22
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://s.go-mpulse.net/boomerang/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:16:35
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://js-agent.newrelic.com/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:16:49
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://business.usa.gov)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:17:19
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/well-being/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:18:25
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/status/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:19:13
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/scb/subjects.htm)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:20:42
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/scb/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:22:14
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/rss/rss.xml)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:23:00
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/regional/rims/rimsii/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:24:40
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/regional/bearfacts/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:26:34
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/itable/?ReqID=99&step=1)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:28:28
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/international/factsheet/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:30:06
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/industry/factsheet/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:30:51
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/efile)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:31:38
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://apps.bea.gov/API/signup/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:33:07
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://xmlns.com/foaf/0.1/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:33:44
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/tariqnasheed)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:33:46
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://www.w3.org/2004/02/skos/core#)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:34:58
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/shaunking)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:35:04
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://www.w3.org/2001/XMLSchema#)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:36:07
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://www.w3.org/2000/01/rdf-schema#)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:36:32
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/mmfa)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:36:36
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/keffals)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:37:57
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://www.osec.doc.gov/ocr/nofear/nofear.htm)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:38:06
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://www.bea.gov/itable/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:39:14
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/hasanthehun)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:39:23
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://schema.org/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:39:34
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/VaushV)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:40:46
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/TheOmniLiberal)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:42:09
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/TheDemocrats)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:43:29
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/KamalaHarris)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:44:52
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/JoeBiden)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:46:15
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/Hbomberguy)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:47:39
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://purl.org/rss/1.0/modules/content/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:47:58
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/GretaThunberg)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:49:01
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://purl.org/dc/terms/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:49:02
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://osec.doc.gov/opog/FOIA/default.html)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:49:48
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/ContraPoints)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:50:24
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://ogp.me/ns#)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:50:37
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/BadEmpanada)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:51:48
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://get.adobe.com/reader/)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:52:10
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=http://custom.transaction)) command=/usr/local/bin/archivebox add --depth=1 https://www.bea.gov/; ts=2024-02-12__06:52:55
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/AOC)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:53:09
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion/)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:54:18
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/tos)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:54:40
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://twitter.com/privacy)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:56:02
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/runtime.a22f4a7a.js.map)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:57:09
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://support.twitter.com/articles/20170514)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:57:36
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://legal.twitter.com/imprint.html)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__06:59:04
+cannot access local variable 'cmd' where it is not associated with a value
+
+Exception in archive_methods.save_htmltotext(Link(url=https://help.twitter.com/using-twitter/twitter-supported-browsers)) command=/usr/local/bin/archivebox server --quick-init 0.0.0.0:8000; ts=2024-02-12__07:00:17
+cannot access local variable 'cmd' where it is not associated with a value
