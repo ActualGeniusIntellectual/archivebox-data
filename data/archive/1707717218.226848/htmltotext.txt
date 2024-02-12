@@ -1,0 +1,15 @@
+XML Schema  XML Schema 15 October 2014   Table of contents Introduction  Resources    Introduction This document describes the XML Schema namespace.
+It also contains a directory of links to these related resources, using (http://www.rddl.org/) Resource Directory Description Language .  Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1  A (non-normative) DTD (http://www.w3.org/2009/XMLSchema/XMLSchema.dtd) XMLSchema.dtd for XML Schema.
+It incorporates an auxiliary DTD, (http://www.w3.org/2009/XMLSchema/datatypes.dtd) datatypes.dtd .   XML Schema 1.0  A (non-normative) DTD (http://www.w3.org/2001/XMLSchema.dtd) XMLSchema.dtd for XML Schema.  It
+incorporates an auxiliary DTD, (http://www.w3.org/2001/datatypes.dtd) datatypes.dtd .     XML Schema XML Schema 1.1  An (http://www.w3.org/2009/XMLSchema/XMLSchema.xsd) XML Schema schema
+document for XML Schema schema documents.   XML Schema 1.0  An (http://www.w3.org/2001/XMLSchema.xsd) XML Schema schema document for XML
+Schema schema documents. Last updated with release of XML Schema 2nd
+edition in July 2004.     Normative References (http://www.w3.org/TR/xmlschema11-1/) W3C XML Schema
+Definition Language (XSD) 1.1 Part 1:
+	      Structures  , (http://www.w3.org/TR/xmlschema11-2/) W3C XML Schema
+Definition Language (XSD) 1.1 Part 2:
+	      Datatypes   (http://www.w3.org/TR/xmlschema-1/) XML Schema Part 1:
+	      Structures (2nd Edition) , (http://www.w3.org/TR/xmlschema-2/) XML Schema Part 2:
+	      Datatypes (2nd Edition) , (http://www.w3.org/TR/xmlschema-0/) XML Schema Part 0:
+	      Primer (2nd Edition)  (http://www.w3.org/TR/xpath-functions-31/) XPath and XQuery
+    Functions and Operators 3.1  introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .       
