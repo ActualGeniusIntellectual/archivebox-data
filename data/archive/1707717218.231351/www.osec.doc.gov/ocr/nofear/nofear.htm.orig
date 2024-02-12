@@ -1,0 +1,2529 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-43SPHKNB7Z"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);ga('require', 'GTM-K9DFFGH');gtag("config", "G-43SPHKNB7Z", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location","allow_ad_personalization_signals":false});gtag("config", "UA-122485059-1", {"groups":"default","anonymize_ip":true,"page_placeholder":"PLACEHOLDER_page_path","allow_ad_personalization_signals":false});</script>
+<link rel="canonical" href="https://www.commerce.gov/cr/reports-and-resources/no-fear-act" />
+<link rel="shortlink" href="https://www.commerce.gov/node/1955" />
+<meta name="generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="description" content="For information about the No FEAR Act Training, please go here. " />
+<meta name="keywords" content="," />
+<meta property="og:site_name" content="U.S. Department of Commerce" />
+<meta property="og:type" content="Website" />
+<meta property="og:url" content="https://www.commerce.gov/cr/reports-and-resources/no-fear-act" />
+<meta property="og:title" content="No FEAR Act" />
+<meta property="og:description" content="For information about the No FEAR Act Training, please go here. " />
+<meta property="og:image:url" content="https://www.commerce.gov/sites/default/files/2021-03/commerce_twittercard_default.png" />
+<meta property="og:updated_time" content="2024-01-30T14:18:54-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@CommerceGov" />
+<meta name="twitter:description" content="For information about the No FEAR Act Training, please go here. " />
+<meta name="twitter:title" content="No FEAR Act" />
+<meta name="twitter:url" content="https://www.commerce.gov/cr/reports-and-resources/no-fear-act" />
+<meta name="twitter:image" content="https://www.commerce.gov/sites/default/files/2021-03/commerce_twittercard_default.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/commerce/assets/img/favicons/favicon.svg" type="image/svg+xml" />
+
+    <title>No FEAR Act | U.S. Department of Commerce</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_ku9G4hbXM7SnXi3D2BQLmE26i45m4zXslEhF7Gy3q5A.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_GLNmULIUbUVGf-7onJ9YhOY0x1mYlqCKCfapcIbd2P4.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_-MgH_iQ3DBRia-V80WM2glGDDMdkd_ijP2V3g4P9bxk.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_H2qJJZMBDXJDRAn79ZqReZfPAUAiQzPBIn1VCgStVGg.css" />
+
+    <script src="//use.fontawesome.com/releases/v5.12.0/js/all.js" defer crossorigin="anonymous"></script>
+<script src="//use.fontawesome.com/releases/v5.12.0/js/v4-shims.js" defer crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/commerce/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/commerce/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/commerce/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/themes/custom/commerce/assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/themes/custom/commerce/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">  
+  </head>
+  <body class="ocr-site ocr-frontpage path-node page-node-type-page">
+        <div class="skip-main" role="complementary" aria-label="skip-to-main">
+      <a href="#main-content" class="visually-hidden focusable skip-link">
+        Skip to main content
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+  <section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/themes/custom/commerce/assets/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/commerce/assets/img/icon-dot-gov.svg" role="presentation" alt="Dot gov">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>
+                Official websites use .gov              </strong>
+              <br/>
+                              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+                          </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/commerce/assets/img/icon-https.svg" role="presentation" alt="Https">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>
+                Secure .gov websites use HTTPS              </strong>
+              <br/>
+              A <strong>lock</strong>
+                (<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="presentation" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>)
+                or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="usa-overlay"></div>
+
+
+<header class="usa-header usa-header--extended usa-header--extended-megamenu" role="banner">
+        <div class="usa-navbar">
+          <div class="region region-header">
+    <div class="usa-logo" id="office-logo">
+  <a class="logo-img" href="/" title="Department of Commerce Home" aria-label="Department of Commerce Home">
+    <img src="/themes/custom/commerce/assets/img/doc_logo.png" width="92" height="92" alt="Department of Commerce logo"/>
+  </a>
+
+  <h1 class="usa-logo-text">
+    <a class="office-of-style" href="/cr" accesskey="1" title="Civil Rights Home" aria-label="Office of">Office of</a><br>
+    <a href="/cr" accesskey="2" title="Civil Rights Home" aria-label="Civil Rights">Civil Rights
+    </a>
+
+  </h1>
+
+</div>
+
+  </div>
+
+        <button class="usa-menu-btn">Menu</button>
+      </div>
+
+      <nav class="usa-nav" role="navigation">
+        <button class="usa-nav__close">
+          <img src="/themes/custom/commerce/assets/img/close.svg" alt="close" />
+        </button>
+                  <div class="usa-nav__inner">
+        
+                  <div class="usa-nav-mobile">
+              <div class="region region-mobile-menu">
+    <div id="block-fixed-block-content-ocr-mobile-search-fixed-block" class="block block-fixed-block-content block-fixed-block-contentocr-mobile-search-fixed-block">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="usasearch-search-block-form usa-form-large block block-usasearch block-usasearch-search-form-block" data-drupal-selector="usasearch-search-block-form" id="block-usasearchform-mobile">
+<form accept-charset="UTF-8" action="https://search.commerce.gov/search/docs" id="usasearch-search-block-form" method="GET">
+<div class="js-form-item form-item js-form-type-search form-item-query js-form-item-query form-no-label"><label class="visually-hidden" for="desktop_query">Search</label><br />
+<input aria-autocomplete="list" aria-haspopup="" autocomplete="off" class="usagov-search-autocomplete form-search ui-autocomplete-input" data-drupal-selector="edit-query" id="desktop_query" maxlength="128" name="query" placeholder="Search" size="60" title="Enter the terms you wish to search for." type="search" value="" /></div>
+<input data-drupal-selector="edit-affiliate" name="affiliate" type="hidden" value="www.commerce.gov" />
+<input name="dc" type="hidden" value="8427" />
+<div class="form-actions js-form-wrapper form-wrapper" data-drupal-selector="edit-actions-mobile" id="edit-actions">
+<input class="button js-form-submit form-submit" data-drupal-selector="edit-submit" id="edit-submit-mobile" type="submit" value="Search" /></div>
+</form>
+</div>
+</div>
+      
+  </div>
+    
+  
+  
+          <ul class="usa-nav__mobile usa-accordion" aria-multiselectable="true">
+    
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link  aria-expanded="false"  aria-controls="basic-mega-nav-section-/cr/about-us">
+          <span>About Us</span>
+        </button>
+      
+                
+  
+          <div id="basic-mega-nav-section-/cr/about-us" class="usa-nav__submenu usa-megamenu"  hidden="" >
+    
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr" >
+          <span>OCR Homepage </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/about-us/about-ocr" >
+          <span>About OCR </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/about-us/organizational-chart" >
+          <span>Organizational Chart </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels  aria-expanded="false"  aria-controls="basic-nav-section-/cr/about-us/office-civil-rights-staff">
+          <span>OCR Staff</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/about-us/office-civil-rights-staff" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/about-us/ocr-staff/bureau-eeo-officers" >
+          <span>Bureau EEO Officers </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="https://staff.commerce.gov" >
+          <span>Staff Directory </span>
+        </a>
+        
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </div>
+      
+    
+          </div>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link  aria-expanded="false"  aria-controls="basic-mega-nav-section-/cr/ocr-policies">
+          <span>Policies</span>
+        </button>
+      
+                
+  
+          <div id="basic-mega-nav-section-/cr/ocr-policies" class="usa-nav__submenu usa-megamenu"  hidden="" >
+    
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/policies/anti-harassment-policy-statement" >
+          <span>Allegations of Harassment Prohibited by Federal Law </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/policies/equal-employment-opportunity-policy-statement" >
+          <span>EEO Policy Statement </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/policies/legal-authorities-ocr" >
+          <span>Legal Authorities for OCR </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/policies/department-commerce-organizational-orders-and-administrative-orders" >
+          <span>Departmental Administrative Orders (DAOs) </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/about/policies/ipv6-policy" >
+          <span>IPv6 Policy </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+          </div>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link  aria-expanded="false"  aria-controls="basic-mega-nav-section-/cr/programs-and-services">
+          <span>Programs and Services</span>
+        </button>
+      
+                
+  
+          <div id="basic-mega-nav-section-/cr/programs-and-services" class="usa-nav__submenu usa-megamenu"  hidden="" >
+    
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/how-can-you-support-deia" >
+          <span>Diversity, Equity, Inclusion and Accessibility </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels  aria-expanded="false"  aria-controls="basic-nav-section-/cr/programs-and-services/special-emphasis-programs">
+          <span>Special Emphasis Programs</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/programs-and-services/special-emphasis-programs" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/programs-and-services/special-emphasis-programs/american-indian-and-alaska-native-program" >
+          <span>American Indian and Alaska Native Program </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/programs-and-services/special-emphasis-programs/asian-american-and-native-hawaiian/pacific" >
+          <span>Asian American and Native Hawaiian/Pacific Islander (AANHPI) Heritage Month </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/programs-and-services/special-emphasis-programs/african-american-employment-program" >
+          <span>African American Employment Program </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/programs-and-services/special-emphasis-programs/federal-womens-program" >
+          <span>Federal Women&#039;s Program </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/Hispanic" >
+          <span>Hispanic Employment Program </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/programs-and-services/special-emphasis-programs/individuals-disabilities-program" >
+          <span>Individuals with Disabilities Program </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/programs-and-services/special-emphasis-programs/lesbian-gay-bisexual-transgender-and-queer-lgbtq" >
+          <span>Lesbian, Gay, Bisexual, Transgender, and Queer  (LGBTQ+) Program </span>
+        </a>
+        
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/workforce-demographics-data-request" >
+          <span>Demographics Data Requests </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/training-opportunities" >
+          <span>Training Opportunities </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/inclusion-us-campaign" >
+          <span>Inclusion is on US </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels  aria-expanded="false"  aria-controls="basic-nav-section-/cr/programs-and-services/first-generation-professionals-initiative">
+          <span>First Generation Professionals Initiative</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/programs-and-services/first-generation-professionals-initiative" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-2">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels  aria-expanded="false"  aria-controls="basic-nav-section-/cr/FGP-Events">
+          <span>First Generation Professionals (FGP) Events</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/FGP-Events" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-3">
+      
+      
+      
+                <a href="/cr/2019FirstGenSummit" >
+          <span>2019 First Generation Professionals Summit </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-3">
+      
+      
+      
+                <a href="/cr/calendar/events/vision-journey-and-opportunity-workshop" >
+          <span>Securities and Exchange Commission&#039;s FGP Workshop </span>
+        </a>
+        
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels  aria-expanded="false"  aria-controls="basic-nav-section-/cr/programs-and-services/reasonable-accommodations-program">
+          <span>Reasonable Accommodations Program</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/programs-and-services/reasonable-accommodations-program" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/programs-and-services/reasonable-accommodations-program/reasonable-accommodation-coordinators" >
+          <span>Reasonable Accommodation Coordinators </span>
+        </a>
+        
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/external-compliance-program" >
+          <span>External Compliance Program </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/limited-english-proficiency-lep" >
+          <span>Limited English Proficiency (LEP) Program </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/minority-serving-institutions-msi-program" >
+          <span>Minority Serving Institutions (MSI) Program </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/accessible-services-deaf-and-hard-hearing-individuals" >
+          <span>Accessible Services for Deaf and Hard of Hearing (Hoh) Individuals </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/eeo-awards" >
+          <span>EEO Awards </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/programs-and-services/executive-orders-diversity-equity-inclusion-and-accessibility" >
+          <span>Executive Orders on Diversity, Equity, Inclusion and Accessibility </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+          </div>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link  aria-expanded="false"  aria-controls="basic-mega-nav-section-/cr/eeo-complaints-process">
+          <span>Complaints</span>
+        </button>
+      
+                
+  
+          <div id="basic-mega-nav-section-/cr/eeo-complaints-process" class="usa-nav__submenu usa-megamenu"  hidden="" >
+    
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/complaints/alternative-dispute-resolution-adr" >
+          <span>Alternative Dispute Resolution </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/eeo-complaints-process" >
+          <span>EEO Complaints Process </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/complaints/section-508-architectural-barriers-act-aba-notice-rights" >
+          <span>Section 508 &amp; Architectural Barriers Act (ABA) </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/complaints/complaint-investigations" >
+          <span>Complaint Investigations FAQs </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/complaints/sexual-orientation-discrimination-complaint-process" >
+          <span>Sexual Orientation Discrimination Complaint Process </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+          </div>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link usa-current" aria-expanded="true"  aria-controls="basic-mega-nav-section-/cr/reports-and-resources">
+          <span>Reports and Resources</span>
+        </button>
+      
+                
+  
+          <div id="basic-mega-nav-section-/cr/reports-and-resources" class="usa-nav__submenu usa-megamenu"  hidden="" >
+    
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/reports-and-resources/addressing-workplace-issues" >
+          <span>Addressing Workplace Issues </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/reports-and-resources/affirmative-action-plan-people-disabilities" >
+          <span>Affirmative Action Plan for People with Disabilities </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels  aria-expanded="false"  aria-controls="basic-nav-section-/cr/reports-and-resources/discrimination-quick-facts">
+          <span>Discrimination Quick Facts</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/reports-and-resources/discrimination-quick-facts" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/age-discrimination" >
+          <span>Age Discrimination </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/eeo-complaint-investigations" >
+          <span>EEO Complaint Investigations </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/eeo-complaint-process" >
+          <span>EEO Complaint Process </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/mixed-case-complaints" >
+          <span>Mixed Case Complaints </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/national-origin-discrimination" >
+          <span>National Origin Discrimination </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/pregnancy-discrimination" >
+          <span>Pregnancy Discrimination </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/race-and-color-discrimination" >
+          <span>Race and Color Discrimination </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/religious-discrimination" >
+          <span>Religious Discrimination </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/sexual-harassment" >
+          <span>Sexual Harassment </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels  aria-expanded="false"  aria-controls="basic-nav-section-/cr/reports-and-resources/discrimination-quick-facts/sexual-orientation-discrimination">
+          <span>Sexual Orientation Discrimination</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/reports-and-resources/discrimination-quick-facts/sexual-orientation-discrimination" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-3">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/sexual-orientation-discrimination/overview" >
+          <span>Overview </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-3">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/sexual-orientation-discrimination/preface" >
+          <span>Preface </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-3">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/sexual-orientation-discrimination/avenues" >
+          <span>Avenues of Redress </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-3">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/sexual-orientation-discrimination/other-issues" >
+          <span>Other Issues </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-3">
+      
+      
+      
+                <a href="/cr/reports-and-resources/discrimination-quick-facts/sexual-orientation-discrimination/sexual" >
+          <span>Complaint Process </span>
+        </a>
+        
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels  aria-expanded="false"  aria-controls="basic-nav-section-/cr/reports-and-resources/eeo-mediation-guide">
+          <span>EEO Mediation Guide</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/reports-and-resources/eeo-mediation-guide" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/eeo-mediation-guide-preface" >
+          <span>EEO Mediation Guide: Preface </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/what-alternative-dispute-resolution" >
+          <span>What is Alternative Dispute Resolution? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/what-mediation" >
+          <span>What is Mediation? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/what-are-departmental-reasons-using-adr-and-mediation" >
+          <span>What are the Departmental Reasons for Using ADR and Mediation? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/what-are-typical-organizational-experiences-mediation" >
+          <span>What are Typical Organizational Experiences with Mediation? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/what-are-goals-mediation" >
+          <span>What are the goals of mediation? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/when-mediation-appropriate" >
+          <span>When is Mediation Appropriate? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/when-mediation-inappropriate" >
+          <span>When is Mediation Inappropriate? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/what-are-some-concerns-expressed-about-mediation" >
+          <span>What Are Some Concerns Expressed About Mediation? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/how-mediation-elected" >
+          <span>How is Mediation Elected? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/who-participates-mediation" >
+          <span>Who Participates in Mediation? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/what-happens-mediation-session" >
+          <span>What Happens in a Mediation Session? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/how-will-mediators-be-selected" >
+          <span>How Will Mediators Be Selected? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/how-can-party-prepare-mediation" >
+          <span>How Can a Party Prepare for Mediation? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/how-does-mediation-end" >
+          <span>How Does Mediation End? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/are-settlement-agreements-binding" >
+          <span>Are Settlement Agreements Binding? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/what-can-you-do-if-you-believe-department-not-adhering" >
+          <span>What Can You Do if You Believe the Department is not Adhering to the Terms of the Settlement Agreement? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/how-does-participation-mediation-affect-employees" >
+          <span>How Does Participation in Mediation Affect An Employee&#039;s Rights? </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/appendix-time-frames-eeo-complaint-process" >
+          <span>Appendix A: Time Frames in the EEO Complaint Process </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/appendix-b-pre-complaint-election-form" >
+          <span>Appendix B: Pre-Complaint Election Form </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/appendix-c-formal-complaint-mediation-election-form" >
+          <span>Appendix C: Formal Complaint Mediation Election Form </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/eeo-mediation-guide/appendix-d-department-commerce-alternate-dispute" >
+          <span>Appendix D: Department of Commerce Alternate Dispute Resolution Agreement to Mediate </span>
+        </a>
+        
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/reports-and-resources/md-715-reports" >
+          <span>MD-715 Reports </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+              <button class="usa-accordion__button usa-nav__link commerce-menu-sub-levels usa-current" aria-expanded="true"  aria-controls="basic-nav-section-/cr/reports-and-resources/no-fear-act">
+          <span>No FEAR Act</span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-/cr/reports-and-resources/no-fear-act" class="usa-nav__submenu-list"  hidden="">
+          
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/no-fear-act/no-fear-act-training" >
+          <span>No FEAR Act Training </span>
+        </a>
+        
+      
+              </li>
+      
+    
+              <div class="usa-col level-2">
+      
+      
+      
+                <a href="/cr/reports-and-resources/no-fear-act/no-fear-act-training/no-fear-act-reports" >
+          <span>No FEAR Act Reports </span>
+        </a>
+        
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </div>
+      
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/reports-and-resources/workforce-demographics-data" >
+          <span>Workforce Data Analytics </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+          </div>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link  aria-expanded="false"  aria-controls="basic-mega-nav-section-/cr/calendar">
+          <span>Events</span>
+        </button>
+      
+                
+  
+          <div id="basic-mega-nav-section-/cr/calendar" class="usa-nav__submenu usa-megamenu"  hidden="" >
+    
+    
+              <div class="usa-col level-1">
+      
+      
+      
+                  <div class="usa-nav__submenu-item">
+                <a href="/cr/calendar" >
+          <span>Event Calendar </span>
+        </a>
+                  </div>
+        
+      
+              </div>
+      
+    
+          </div>
+    
+  
+
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+
+
+    
+  
+  
+          <ul class="usa-nav__mobile usa-accordion" aria-multiselectable="true">
+    
+    
+              <li class="usa-nav__primary-item">
+      
+      
+      
+                <a href="/" >
+          <span>Commerce.gov </span>
+        </a>
+        
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+
+
+
+  </div>
+
+          </div>
+        
+                  <div class="usa-nav__secondary">
+              <div class="region region-secondary-menu">
+        <div class="usa-nav__secondary">
+
+  
+    <ul class="usa-nav__secondary-links">
+
+  
+      <li>
+      <a href="/">
+        Commerce.gov
+      </a>
+    </li>
+  
+  </ul>
+  
+</div>
+
+<div class="secondary-menu-search block block-fixed-block-content block-fixed-block-contentocr-search-block" id="block-fixed-block-content-ocr-search-block">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="usasearch-search-block-form usa-form-large block block-usasearch block-usasearch-search-form-block" data-drupal-selector="usasearch-search-block-form" id="block-usasearchform">
+<form accept-charset="UTF-8" action="https://search.commerce.gov/search/docs" class="usasearch-search-block-form-desktop" method="GET">
+<div class="js-form-item form-item js-form-type-search form-item-query js-form-item-query form-no-label"><label class="visually-hidden" for="desktop_query">Search</label><br />
+<input aria-autocomplete="list" aria-haspopup="" autocomplete="off" class="usagov-search-autocomplete form-search ui-autocomplete-input" data-drupal-selector="edit-query" id="desktop_query" maxlength="128" name="query" placeholder="Search" size="60" title="Enter the terms you wish to search for." type="search" value="" /></div>
+<input data-drupal-selector="edit-affiliate" name="affiliate" type="hidden" value="www.commerce.gov" />
+<input name="dc" type="hidden" value="8427" />
+<div class="form-actions js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions-desktop">
+<input class="usa-button js-form-submit form-submit" data-drupal-selector="edit-submit" id="edit-submit" type="submit" value="Search" /></div>
+</form>
+</div>
+</div>
+      
+  </div>
+
+  </div>
+
+          </div>
+
+                      <div class="usa-nav-desktop">
+                <div class="region region-primary-menu">
+        
+  
+  
+          <ul class="usa-nav__primary usa-accordion">
+    
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-nav-section-1">
+          <span>About Us </span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-1" class="usa-nav__submenu" hidden="">
+
+          
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr">
+          <span>OCR Homepage</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/about-us/about-ocr">
+          <span>About OCR</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/about-us/organizational-chart">
+          <span>Organizational Chart</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/about-us/office-civil-rights-staff">
+          <span>OCR Staff</span>
+        </a>
+              
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-nav-section-2">
+          <span>Policies </span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-2" class="usa-nav__submenu" hidden="">
+
+          
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/policies/anti-harassment-policy-statement">
+          <span>Allegations of Harassment Prohibited by Federal Law</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/policies/equal-employment-opportunity-policy-statement">
+          <span>EEO Policy Statement</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/policies/legal-authorities-ocr">
+          <span>Legal Authorities for OCR</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/policies/department-commerce-organizational-orders-and-administrative-orders">
+          <span>Departmental Administrative Orders (DAOs)</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/about/policies/ipv6-policy">
+          <span>IPv6 Policy</span>
+        </a>
+              
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-nav-section-3">
+          <span>Programs and Services </span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-3" class="usa-nav__submenu" hidden="">
+
+          
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/how-can-you-support-deia">
+          <span>Diversity, Equity, Inclusion and Accessibility</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/special-emphasis-programs">
+          <span>Special Emphasis Programs</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/workforce-demographics-data-request">
+          <span>Demographics Data Requests</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/training-opportunities">
+          <span>Training Opportunities</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/inclusion-us-campaign">
+          <span>Inclusion is on US</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/first-generation-professionals-initiative">
+          <span>First Generation Professionals Initiative</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/reasonable-accommodations-program">
+          <span>Reasonable Accommodations Program</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/external-compliance-program">
+          <span>External Compliance Program</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/limited-english-proficiency-lep">
+          <span>Limited English Proficiency (LEP) Program</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/minority-serving-institutions-msi-program">
+          <span>Minority Serving Institutions (MSI) Program</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/accessible-services-deaf-and-hard-hearing-individuals">
+          <span>Accessible Services for Deaf and Hard of Hearing (Hoh) Individuals</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/eeo-awards">
+          <span>EEO Awards</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/programs-and-services/executive-orders-diversity-equity-inclusion-and-accessibility">
+          <span>Executive Orders on Diversity, Equity, Inclusion and Accessibility</span>
+        </a>
+              
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-nav-section-4">
+          <span>Complaints </span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-4" class="usa-nav__submenu" hidden="">
+
+          
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/complaints/alternative-dispute-resolution-adr">
+          <span>Alternative Dispute Resolution</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/eeo-complaints-process">
+          <span>EEO Complaints Process</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/complaints/section-508-architectural-barriers-act-aba-notice-rights">
+          <span>Section 508 &amp; Architectural Barriers Act (ABA)</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/complaints/complaint-investigations">
+          <span>Complaint Investigations FAQs</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/complaints/sexual-orientation-discrimination-complaint-process">
+          <span>Sexual Orientation Discrimination Complaint Process</span>
+        </a>
+              
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link usa-current" aria-expanded="false" aria-controls="basic-nav-section-5">
+          <span>Reports and Resources </span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-5" class="usa-nav__submenu" hidden="">
+
+          
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/reports-and-resources/addressing-workplace-issues">
+          <span>Addressing Workplace Issues</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/reports-and-resources/affirmative-action-plan-people-disabilities">
+          <span>Affirmative Action Plan for People with Disabilities</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/reports-and-resources/discrimination-quick-facts">
+          <span>Discrimination Quick Facts</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/reports-and-resources/eeo-mediation-guide">
+          <span>EEO Mediation Guide</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/reports-and-resources/md-715-reports">
+          <span>MD-715 Reports</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/reports-and-resources/no-fear-act">
+          <span>No FEAR Act</span>
+        </a>
+              
+              </li>
+      
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/reports-and-resources/workforce-demographics-data">
+          <span>Workforce Data Analytics</span>
+        </a>
+              
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </li>
+      
+    
+              <li class="usa-nav__primary-item">
+      
+              <button class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-nav-section-6">
+          <span>Events </span>
+        </button>
+      
+                
+  
+          <ul id="basic-nav-section-6" class="usa-nav__submenu" hidden="">
+
+          
+    
+              <li class="usa-nav__submenu-item">
+      
+      
+                      <a href="/cr/calendar">
+          <span>Event Calendar</span>
+        </a>
+              
+              </li>
+      
+    
+          </ul>
+    
+  
+
+      
+              </li>
+      
+    
+          </ul>
+    
+  
+
+
+
+
+  </div>
+
+            </div>
+          
+        
+                  </div>
+             </nav>
+
+  
+</header>
+
+
+<main class="usa-section">
+  <a id="main-content" tabindex="-1"></a>
+   <div class="grid-container">
+     <div class="grid-row grid-gap">
+       <div class="grid-col-12">
+         
+           <div class="region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+         
+      </div>
+     </div>
+
+     <div class="grid-row grid-gap">
+
+              <aside class="tablet:grid-col-3">
+            <div class="region region-sidebar-first">
+        
+
+  
+  
+    
+          <ul class="usa-sidenav">
+    
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/addressing-workplace-issues">
+          <span>Addressing Workplace Issues</span>
+        </a>
+
+        
+      </li>
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/affirmative-action-plan-people-disabilities">
+          <span>Affirmative Action Plan for People with Disabilities</span>
+        </a>
+
+        
+      </li>
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/discrimination-quick-facts">
+          <span>Discrimination Quick Facts</span>
+        </a>
+
+        
+      </li>
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/eeo-mediation-guide">
+          <span>EEO Mediation Guide</span>
+        </a>
+
+        
+      </li>
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/md-715-reports">
+          <span>MD-715 Reports</span>
+        </a>
+
+        
+      </li>
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/no-fear-act" class="usa-current">
+          <span>No FEAR Act</span>
+        </a>
+
+                    
+  
+    
+          <ul class="usa-sidenav__sublist">
+    
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/no-fear-act/no-fear-act-training">
+          <span>No FEAR Act Training</span>
+        </a>
+
+        
+      </li>
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/no-fear-act/no-fear-act-training/no-fear-act-reports">
+          <span>No FEAR Act Reports</span>
+        </a>
+
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+          <li class="usa-sidenav__item">
+        <a href="/cr/reports-and-resources/workforce-demographics-data">
+          <span>Workforce Data Analytics</span>
+        </a>
+
+        
+      </li>
+        </ul>
+  
+
+
+<div id="block-votingblock-2" class="block block-voting-modal block-modal-block">
+  
+      <h2>Was this page helpful?</h2>
+    
+      <button type="submit" href="/voting/modal/1955/true" class="usa-button-secondary use-ajax" data-dialog-type="modal"><i alt="Thumbs up icon to indicate helpful" class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Helpful&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><button type="submit" href="/voting/modal/1955/false" class="usa-button-secondary use-ajax" data-dialog-type="modal"><i alt="Thumbs down icon to indicate not helpful" class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Not helpful</button>
+  </div>
+
+  </div>
+
+        </aside>
+      
+               <div class="region-content tablet:grid-col-fill">
+           <div class="region region-content">
+    <div class="block block-system block-system-breadcrumb-block">
+  
+    
+      <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+<ol class="add-list-reset uswds-breadcrumbs uswds-horizontal-list">
+  <li>
+          <a href="/">Home</a>
+      </li>
+  <li>
+          <a href="/cr">Cr</a>
+      </li>
+  <li>
+          <a href="/cr/reports-and-resources">Reports and Resources</a>
+      </li>
+</ol>
+
+  </div>
+<div id="block-votingblock" class="block block-voting-modal block-modal-block">
+  
+      <h2>Was this page helpful?</h2>
+    
+      <button type="submit" href="/voting/modal/1955/true" class="usa-button-secondary use-ajax" data-dialog-type="modal"><i alt="Thumbs up icon to indicate helpful" class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Helpful&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><button type="submit" href="/voting/modal/1955/false" class="usa-button-secondary use-ajax" data-dialog-type="modal"><i alt="Thumbs down icon to indicate not helpful" class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Not helpful</button>
+  </div>
+<div class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="uswds-page-title page-title"><span property="schema:name" class="field field--name-title field--type-string field--label-hidden">No FEAR Act</span>
+</h1>
+
+
+  </div>
+<div id="block-commerce-content" class="block block-system block-system-main-block">
+  
+    
+      <article data-history-node-id="1955" role="article" about="/cr/reports-and-resources/no-fear-act" typeof="schema:WebPage">
+
+  
+      <span property="schema:name" content="No FEAR Act" class="rdf-meta hidden"></span>
+
+
+  
+  <div>
+
+    
+    
+            <div property="schema:text" class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>For information about the No FEAR Act Training, please go<a href="//www.commerce.gov/cr/reports-and-resources/no-fear-act/no-fear-act-training"> here</a>. </p>
+<p>On May 15, 2002, President Bush signed legislation called the No FEAR Act (Notification and Federal Antidiscrimination and Retaliation Act of 2002). This act, which took effect on October 1, 2003, makes Federal agencies individually accountable for violations of anti-discrimination and whistleblower protection laws. Requirements and agency responsibilities under the No FEAR Act include:</p>
+<ul><li>Payment of settlements and judgments. Agencies that lose or settle discrimination and whistleblower cases must pay judgments out of their individual budgets. In the past, most of these settlements and judgments were paid from a government-wide “judgment fund”. Under the new law, agencies must now reimburse the fund for court judgments and settlement payments to complainants.</li>
+<li>Employee information and education. Agencies must give their employees, former employees and applicants for employment written notification of discrimination and whistleblower protection laws. This written notification must include posting the information on the agency’s web site. Agencies are also required to provide their employees with training regarding the rights and remedies applicable to them under these laws. The U.S. Office of Special Counsel (OSC) (<a href="http://www.osc.gov" rel="noreferrer">www.osc.gov</a>) is responsible for ensuring that agencies meet their obligations to inform and educate their employees regarding the WPA. The Office of Special Counsel is an independent federal investigative and prosecutorial agency whose basic mission is to guard against prohibited personnel practices in the federal workplace, with a special emphasis on protecting government whistleblowers.</li>
+<li>Training for managers. Agencies should ensure that managers have adequate training in the management of a diverse workforce and in dispute resolution and other essential communication skills. For training requirements, please see <a href="https://ecfr.io/Title-05/se5.2.724_1203" rel="noreferrer">5 C.F.R., Chapter I, Subchapter B, Part 724, Subpart B, <span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif">§</span></span></span>724.203</a>).</li>
+<li>Annual reports to Congress. Each agency must file an annual report with Congress, the Equal Employment Opportunity Commission, and the Attorney General providing information about discrimination and whistleblower cases filed against the agency, including details on how cases were resolved and any disciplinary actions against agency employees resulting from violations of discrimination and whistleblower protection laws.</li>
+<li>Posting of EEO complaint data on the Internet. Each Federal agency must post on its public web site summary statistical data relating to equal opportunity complaints filed against the agency. The agency must post data for the current fiscal year on a cumulative basis (year-to-date information), updated quarterly. An agency also must post year-end data for the five previous fiscal years for comparison purposes. In addition, section 302 of the No FEAR Act requires the Equal Employment Opportunity Commission (EEOC) to post government-wide, summary statistical data pertaining to hearings requested under 29 C.F.R. Part 1614 and appeals filed with EEOC. The posting of EEO data on agency public web sites is intended to assist Congress, Federal agencies and the public to assess whether and the extent to which agencies are living up to their equal employment opportunity responsibilities.  (The specific data to be posted is described in section 301(b) of the No FEAR Act and 29 C.F.R. 1614.704. See the <a href="https://www.govinfo.gov/content/pkg/FR-2004-01-26/html/04-1505.htm" rel="noreferrer">Final Rule</a> regarding Posting Requirements in Federal Sector Equal Employment Opportunity).</li>
+<li>On January 1, 2021, the Elijah Cummings Federal Employee Antidiscrimination Act of 2020 was signed into law.  The law amended the No FEAR Act.  As part of this law, Agencies are required to report findings of discrimination. Information regarding recent findings are displayed. <strong> </strong></li>
+</ul><div data-embed-button="media" data-entity-embed-display="view_mode:media.float_image_w_caption" data-entity-type="media" data-entity-uuid="5c8eac49-ab0c-4ae3-8858-5dc7af27da52" data-langcode="en" class="align-center embedded-entity">
+<article class="media media--type-file media--view-mode-"><div class="field field--name-name field--type-string field--label-hidden field__item">FY2023 Findings</div>
+<div class="field field--name-field-media-file field--type-file field--label-visually_hidden">
+<div class="field__label visually-hidden">File</div>
+<div class="field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="//www.commerce.gov/sites/default/files/2023-11/FY2023%20%20Findings.pdf" type="application/pdf">FY2023  Findings.pdf</a></span>
+</div>
+</div>
+</article></div>
+<p style="margin-bottom:8px"><span style="font-size:11pt"><span style="line-height:normal"><span style="tab-stops:261.0pt"><span style="font-family:Calibri,sans-serif"><span lang="EN" style="font-size:14.0pt" xml:lang="EN" xml:lang="EN"><span style="font-family:&quot;Source Sans Pro&quot;,sans-serif"><span style="color:black">Read the No FEAR Act <a data-entity-substitution="canonical" data-entity-type="media" data-entity-uuid="52b18d4d-f5db-41cc-b21e-6f8ac0aed334" href="//www.commerce.gov/cr/files/no-fear-act-public-law">here </a>(you will be redirected to a PDF file). </span></span></span></span></span></span></span></p>
+<p style="margin-bottom:8px"><span style="font-size:11pt"><span style="line-height:normal"><span style="tab-stops:261.0pt"><span style="font-family:Calibri,sans-serif"><span lang="EN" style="font-size:14.0pt" xml:lang="EN" xml:lang="EN"><span style="font-family:&quot;Source Sans Pro&quot;,sans-serif"><span style="color:black">For additional information about the No FEAR Act, please read the<a href="https://www.eeoc.gov/eeoc/statistics/nofear/qanda.cfm" rel="noreferrer"> EEOC's Questions and Answers: No FEAR Act Page. </a></span></span></span></span></span></span></span></p>
+<hr /><h3>Equal Employment Opportunity Data Posted Pursuant to the No FEAR Act</h3>
+<p><em>(These data tables have been revised to follow the new EEOC format.)</em></p>
+<p>*If you have trouble viewing the PDF files, right click the PDF link and click "Save As" to download and view.</p>
+<h4>2024 (1st Quarter)</h4>
+<ul><li><a data-entity-substitution="file" data-entity-type="file" data-entity-uuid="5c0f5c6a-93b7-4d74-9af3-5d25220aa094" href="//www.commerce.gov/sites/default/files/2024-01/DOC%20%28excluding%20PTO%29%20-%201st%20Qt%20FY%2024.pdf">Department of Commerce Aggregate (excluding PTO)</a></li>
+<li><a data-entity-substitution="file" data-entity-type="file" data-entity-uuid="b3e36665-e161-4afe-b3b3-76d9099b0893" href="//www.commerce.gov/sites/default/files/2024-01/Bureau%20of%20the%20Census%20-%20Permanent%20-%201st%20Qt%20FY%2024.pdf">Bureau of the Census</a></li>
+<li><a data-entity-substitution="file" data-entity-type="file" data-entity-uuid="6e87868d-9c53-46e2-b036-c2f939dce7cc" href="//www.commerce.gov/sites/default/files/2024-01/Bureau%20of%20the%20Census%20-%20Decennial%20-%201st%20Qt.%20FY%2024.pdf">Bureau of the Census - Decennial</a></li>
+<li><a data-entity-substitution="file" data-entity-type="file" data-entity-uuid="f3bf825e-a12f-440a-91da-76e8295a7da4" href="//www.commerce.gov/sites/default/files/2024-01/ITA%20-%201st%20Qt.%20FY%2024.pdf">International Trade Administration (ITA)</a></li>
+<li><a data-entity-substitution="file" data-entity-type="file" data-entity-uuid="f2df74fa-9557-478e-b961-851fe5756c4c" href="//www.commerce.gov/sites/default/files/2024-01/NIST%20-%201st%20Qt.%20FY%2024.pdf">National Institute of Standards &amp; Technologies (NIST)</a></li>
+<li><a data-entity-substitution="file" data-entity-type="file" data-entity-uuid="5adeaea7-8e82-454d-83c4-a45d0d970ec7" href="//www.commerce.gov/sites/default/files/2024-01/NOAA%20-%201st%20Qt.%20FY%2024.pdf">National Oceanic and Atmospheric Administration (NOAA)</a></li>
+</ul><h4>2023 (4th Quarter)</h4>
+<ul><li><a href="//www.commerce.gov/DOC%20%28excluding%20PTO%29%204th%20Qt.%20FY%2023%20">Department of Commerce Aggregate (excluding PTO)</a></li>
+<li><a data-entity-substitution="canonical" data-entity-type="media" data-entity-uuid="f56ba4a6-068a-4376-961a-d779260f7222" href="//www.commerce.gov/cr/files/census-4th-qt-fy-23">Bureau of the Census</a></li>
+<li><a data-entity-substitution="canonical" data-entity-type="media" data-entity-uuid="da2d46c1-7607-4679-a5f3-9589c37ef6da" href="//www.commerce.gov/cr/files/decennial-4th-qt-fy-23">Bureau of the Census - Decennial</a></li>
+<li><a data-entity-substitution="canonical" data-entity-type="media" data-entity-uuid="3f2ff00c-accb-4ce9-af7c-c7c9c93efa1f" href="//www.commerce.gov/cr/files/ita-4th-qt-fy-23">International Trade Administration (ITA)</a></li>
+<li><a data-entity-substitution="file" data-entity-type="file" data-entity-uuid="dae336f4-66b7-4b8a-9b2f-896be3c88135" href="//www.commerce.gov/sites/default/files/2023-11/NIST%204th%20Qt.%20FY%2023.pdf">National Institute of Standards &amp; Technologies (NIST)</a></li>
+<li><a data-entity-substitution="file" data-entity-type="file" data-entity-uuid="67e56b04-f992-44e6-ac35-59f1522dd489" href="//www.commerce.gov/sites/default/files/2023-11/NOAA%204th%20Qt.%20FY%2023.pdf">National Oceanic and Atmospheric Administration (NOAA)</a></li>
+</ul><p><a href="http://www.uspto.gov/web/offices/ac/ahrpa/ocr/nofearreports.htm" rel="noreferrer">See the Patent and Trademark Office (PTO) website for postings from PTO related to the No FEAR Act.</a></p>
+<p> </p>
+<p> </p>
+<p> </p>
+</div>
+      
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+       </div>
+
+      
+    </div>
+   </div>
+
+   </main>
+
+
+<footer class="usa-footer usa-footer--big" role="contentinfo">
+  <div class="usa-grid usa-footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+
+    <div class="usa-footer__primary-section">
+    <div class="grid-container">
+                                          <div class="region region-footer-menu">
+        
+
+                    <div class="grid-row grid-gap">
+        
+    
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+        <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+          <h4 class="usa-footer__primary-link">Explore </h4>
+                    <ul class="usa-list usa-list--unstyled add-list-reset">
+                        
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="/cr/programs-and-services/training-opportunities" data-drupal-link-system-path="node/2068">Training</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="/cr/programs-and-services/first-generation-professionals-initiative" data-drupal-link-system-path="node/2065">First Generation Professionals</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="/cr/programs-and-services/special-emphasis-programs" data-drupal-link-system-path="node/2066">Special Emphasis Programs</a>
+      </li>
+      
+    
+        
+  
+          </ul>
+                  </section>
+      </div>
+      
+    
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+        <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+          <h4 class="usa-footer__primary-link">Know Your Rights </h4>
+                    <ul class="usa-list usa-list--unstyled add-list-reset">
+                        
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="/cr/reports-and-resources/discrimination-quick-facts" data-drupal-link-system-path="node/2104">FAQs on Discrimination</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="/cr/complaints/complaint-process-manual/eeo-complaint-process" data-drupal-link-system-path="node/1940">EEO Complaint Process</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="/cr/programs-and-services/reasonable-accommodations-program" data-drupal-link-system-path="node/2067">Reasonable Accommodations</a>
+      </li>
+      
+    
+        
+  
+          </ul>
+                  </section>
+      </div>
+      
+    
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+        <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+          <h4 class="usa-footer__primary-link">Get in Touch</h4>
+                    <ul class="usa-list usa-list--unstyled add-list-reset">
+                        
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="/cr/about-us/office-civil-rights-staff" data-drupal-link-system-path="node/1937">OCR Staff</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="/cr/about-us/ocr-staff/bureau-eeo-officers" data-drupal-link-system-path="node/1962">Bureau EEO Officers</a>
+      </li>
+      
+    
+        
+  
+          </ul>
+                  </section>
+      </div>
+      
+    
+                </div>
+        
+  
+
+
+
+
+  </div>
+
+                          </div>
+      
+      
+    </div>
+  </div>
+  
+      <div class="usa-footer__secondary-section">
+        <div class="grid-container">
+
+                  <div class="grid-row grid-gap">
+            <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+              <div class="mobile-lg:grid-col-auto">
+                <a href="/">
+                  <img class="usa-footer__logo-img" src="/themes/custom/commerce/assets/img/doc_logo.png" width="80" height="80" alt="Department of Commerce logo"/>
+                </a>
+            </div>
+              <div class="mobile-lg:grid-col-auto">
+                <div class="footer-address">
+                  1401 Constitution Ave NW<br/>
+                  Washington, DC 20230
+                </div>
+              </div>
+            </div>
+                          <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+                <div class="usa-footer__social-links grid-row">
+
+                  <a href="https://twitter.com/commercegov" aria-label="U. S. Department of Commerce Twitter page">
+                    <span class="fa-layers fa-fw usa-social_link">
+                      <i class="fas fa-square fa-2x" style="color:white" alt="Department of Commerce Twitter page" aria-label="Department of Commerce Twitter page"></i>
+                      <i title="Twitter" class="fab fa-twitter-square fa-2x" style="color:#1da1f2"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://www.facebook.com/Commercegov/" aria-label="U. S. Department of Commerce Facebook page">
+                    <span class="fa-layers fa-fw usa-social_link">
+                      <i class="fas fa-square fa-2x" style="color:white" alt="Department of Commerce Facebook page" aria-label="Department of Commerce Facebook page"></i>
+                      <i title="Facebook" class="fab fa-facebook-square fa-2x" style="color:#3b5998"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://www.linkedin.com/company/u-s--department-of-commerce" aria-label="Department of Commerce Linkedin page">
+                    <span class="fa-layers fa-fw usa-social_link">
+                      <i class="fas fa-square fa-2x" style="color:white" alt="Department of Commerce Linkedin page" aria-label="Department of Commerce Linkedin page"></i>
+                      <i title="LinkedIn" class="fab fa-linkedin fa-2x" style="color:#0077b5"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://www.youtube.com/channel/UCDk7XARReoJChTwu1WojgRQ" aria-label="U. S. Department of Commerce YouTube page">
+                    <span class="fa-layers fa-fw usa-social_link">
+                      <i class="fas fa-square fa-2x" style="color:white" alt="Department of Commerce YouTube page" aria-label="Department of Commerce YouTube page"></i>
+                      <i title="YouTube" class="fab fa-youtube-square fa-2x" style="color:#ff0000"></i>
+                    </span>
+                  </a>
+
+                  <a href="/rss" aria-label="Department of Commerce rss feed">
+                    <span class="fa-layers fa-fw usa-social_link">
+                      <i class="fas fa-square fa-2x" style="color:white" alt="Department of Commerce rss feed" aria-label="Department of Commerce rss feed"></i>
+                      <i title="RSS" class="fas fa-rss-square fa-2x" style="color:#ffA500"></i>
+                    </span>
+                  </a>
+
+                </div>
+              </div>
+                      </div>
+        
+                  <div class="grid-row grid-gap">
+            <div class="mobile-lg:grid-col-12">
+                <div class="region region-footer-secondary">
+        
+
+  
+
+  <ol class="dotsbetween">
+
+  
+    <li>
+      <a href="/archives">Archives</a>
+    </li>
+
+  
+    <li>
+      <a href="/about/policies/accessibility">Accessibility</a>
+    </li>
+
+  
+    <li>
+      <a href="/ofm/agency-financial-reports">Agency Financial Report</a>
+    </li>
+
+  
+    <li>
+      <a href="/about/policies/comments">Comment policy</a>
+    </li>
+
+  
+    <li>
+      <a href="/digitalstrategy">Digital strategy</a>
+    </li>
+
+  
+    <li>
+      <a href="/about/policies/information-quality">Information quality</a>
+    </li>
+
+  
+    <li>
+      <a href="/cr/reports-and-resources/no-fear-act">No Fear Act</a>
+    </li>
+
+  
+    <li>
+      <a href="https://www.oig.doc.gov/">Inspector General</a>
+    </li>
+
+  
+    <li>
+      <a href="/about/policies/plain-language">Plain language</a>
+    </li>
+
+  
+    <li>
+      <a href="/about/policies/privacy">Privacy policy</a>
+    </li>
+
+  
+    <li>
+      <a href="https://www.commerce.gov/ofm/payment-integrity/department-commerce-payment-integrity-website">Payment Integrity</a>
+    </li>
+
+  
+    <li>
+      <a href="https://www.usa.gov/">USA.gov</a>
+    </li>
+
+  
+    <li>
+      <a href="/vulnerability-disclosure-policy">Vulnerability Disclosure Policy</a>
+    </li>
+
+  
+    <li>
+      <a href="https://www.oig.doc.gov/Pages/Hotline.aspx">Whistleblower Protection</a>
+    </li>
+
+  
+    <li>
+      <a href="https://www.whitehouse.gov/">WhiteHouse.gov</a>
+    </li>
+
+  
+  </ol>
+
+
+<div id="block-govdeliverysignup-fixed-block" class="block block-fixed-block-content block-fixed-block-contentgovdelivery-sign-up-fixed-block">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><form accept-charset="UTF-8" action="https://public.govdelivery.com/accounts/USDOC/subscribers/qualify" id="GD-snippet-form" method="post">
+<input name="utf8" type="hidden" value="✓" />
+<input name="authenticity_token" type="hidden" value="KYi9hmgKqvcMOKf453K61tlo2i3pCo8sVKFUH73sfXB1gecwmSLcalxpsqf6Vj4zDIv5vztIijVjsn5SGnDrfw==" />
+<fieldset>
+<legend> Sign up for email updates </legend>
+<div>
+<p>To sign up for updates or to access your subscriber preferences, please enter your contact information below.</p>
+</div>
+<ol class="form">
+<li class="email_fields" style="display: block"><label for="email"><img alt="Required" class="required" src="https://content.govdelivery.com/images/required.gif" />Email Address</label><br />
+<input class="long" id="email" name="email" type="text" /></li>
+</ol>
+<div class="button_panel">
+<input class="form-button usa-button" name="commit" type="submit" value="Subscribe" /></div>
+</fieldset>
+</form>
+</div>
+      
+  </div>
+
+  </div>
+
+            </div>
+          </div>
+              </div>
+      </div>
+    
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1955","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"q":"\/cr\/reports-and-resources\/no-fear-act"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"back_to_top\/back_to_top_icon,back_to_top\/back_to_top_js,classy\/base,classy\/file,classy\/messages,commerce\/accessibility,commerce\/digital_analytics_program,commerce\/footer,commerce\/govdelivery,commerce\/header,commerce\/offices,commerce\/openid_connect,commerce\/uswds,core\/drupal.dialog.ajax,core\/normalize,custom\/offices,entity_embed\/caption,extlink\/drupal.extlink,fontawesome\/fontawesome.svg,fontawesome\/fontawesome.svg.shim,google_analytics\/google_analytics,system\/base,uswds\/drupal,uswds\/footer,uswds\/header,uswds\/uswds","theme":"commerce","theme_token":null},"ajaxTrustedUrl":[],"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_prevent_on_mobile":false,"back_to_top_prevent_in_admin":false,"back_to_top_button_type":"image","back_to_top_button_text":"Back to top"},"google_analytics":{"account":"G-43SPHKNB7Z","trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":false,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":".\\.gov","extInclude":"","extCssExclude":".usa-footer-contact-links a, .usa-footer__social-links a","extCssExplicit":"","extAlert":true,"extAlertText":"The United States Department of Commerce\r\n\r\nYou are now leaving a Department of Commerce Web site.\r\n\r\nThe Department of Commerce does not endorse the organizations or views represented by this site and takes no responsibility for, and exercises no control over, the accuracy, accessibility, copyright or trademark compliance or legality of the material contained on this site. Thank you for visiting our site.","mailtoClass":"mailto","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"e9a22412fbff4b4af13117b9144b0dd2d0e2af631e1c0e8982e0e8845f07503d"}}</script>
+<script src="/sites/default/files/js/js_hW63Fut6k7ky8K_Ex0QpaVH_cUEVgN7HbLQc953_4pI.js"></script>
+<script src="/sites/default/files/js/js_kcBrTxnzjmhVKfnoVhm9paNB6H8-eQrjLC3u-TGj2wU.js"></script>
+<script src="/sites/default/files/js/js_XJRvibceJbDsOko_9SyiFm0HzNtH4Fudxarp397y2uM.js"></script>
+<script src="//content.govdelivery.com/overlay/js/1374.js"></script>
+<script src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC" id="_fed_an_ua_tag"></script>
+<script src="/sites/default/files/js/js_oiyrtTNxaFHw-ixjOaWbF1n-7lcbNYq__065GP4TAiE.js"></script>
+
+  </body>
+</html>
