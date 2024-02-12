@@ -1,0 +1,10 @@
+We officially support versions of the following browsers from the past year on X.com:
+Edge (https://microsoft.com/edge)Safari (https://www.apple.com/safari)Chrome (https://www.google.com/chrome)Firefox (https://www.mozilla.org/firefox)Any browser based on Webkit / Chromium engines (Opera, Samsung Internet, UCBrowser, etc.)Tor network (https://torproject.org, https://twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion)Additional domains used to enable parts of site functionality (twitterhbmit57bzbcjnujedrn7uk73geo4ackio4lxdj6t7w6f4zsid.onion, 
+twitterhpgjerufcvrmzerg2novpipy42rk3anvb5b7np4zggm4rwaqd.onion)
+
+If you use X on an older version of the above browsers, browsers not listed, or a browser extension which modifies your user agent, you may be unable to use X. In order to ensure the best possible X experience, including all the latest features and security updates, please make sure your browser and operating system are up-to-date.
+
+
+Please note that compatible browsers are included with most operating systems:
+
+Windows 10 - EdgeAndroid - ChromeMacOS / iOS - Safari
