@@ -1,0 +1,377 @@
+{
+    "archive_path": "archive/1707717218.231366",
+    "base_url": "osec.doc.gov/opog/FOIA/default.html",
+    "basename": "default.html",
+    "bookmarked_date": "2024-02-12 05:53",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/osec.doc.gov/opog/FOIA/default.html",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=osec.doc.gov",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "osec.doc.gov/opog/FOIA/default.html"
+    },
+    "domain": "osec.doc.gov",
+    "extension": "html",
+    "hash": "1MKM4JGEZ6Q211S47WD6",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:50:27.351477+00:00",
+                "index_texts": null,
+                "output": "https://web.archive.org/web/20240212065010/https://osec.doc.gov/opog/FOIA/default.html",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:50.266116+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:49:38.510697+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:36.089871+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=osec.doc.gov"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:49:24.574186+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:24.333492+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:49:25.437240+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:24.581385+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:49:50.246224+00:00",
+                "index_texts": [],
+                "output": "media",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:48.915587+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:49:48.892946+00:00",
+                "index_texts": null,
+                "output": "mercury",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:43.591819+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:49:34.541396+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:32.819620+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmpp93cdcva",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:49:43.585508+00:00",
+                "index_texts": [
+                    "March 16, 2023: The U.S. Department of Commerce is in the process of moving to new FOIA case management system.  March 31, 2023, at 5:00 p.m. Eastern, will be the final day and time to file FOIA requests through the FOIAonline portal for the U.S. Department of Commerce and its components.  To submit a FOIA request electronically after March 31, 2023, at 5:00 p.m. Eastern, please do so through www.FOIA.gov.  \n\t\t\n      The responsibility for the development and maintenance of Freedom of   Information Act (FOIA) policies, procedures, and guidance is handled   through the  Office of Privacy and Open Government, FOIA Program. The   FOIA Program Office is also reponsible for oversight of the Department   of Commerce's FOIA program.\n      The Department's FOIA operations are decentralized between 14   bureaus and operating units (BOUs).  From this page, you can link to   those BOUs and their electronic (on-line) FOIA libraries, learn about   how the FOIA program is structured, and/or review our guidance and   resources related to FOIA.  You can also file  and track the status of a   request.  The Department and its BOUs post a great deal of information   on-line.  If you are interested in making a request you may find the   information you seek has already been posted.  A good place to begin is   in the electronic FOIA Libraries.\n      \n      \n            \n              \n                                \n                \n                  \n                    DEPARTMENT FOIA OFFICE\n                    Department of Commerce Deputy Chief FOIA Officer and responsibilities,  FOIA Mission Statement, and FOIA Council\u2019s authority and responsibilities.\n                   \n                  \n                \n          \u00a0\n              \n                    \n                                  \n                    \n                      \n                        BOU FOIA PROGRAMS\n                        The responsibility for the development and maintenance of FOIA policies, procedures, and guidance is handled through the  Office of Privacy and Open Government, FOIA Program Office. \n                      \n                      \n                    \n          \u00a0\n              \n                    \n                             \n              \n                    \n                      \n                        The FOIA\n                        The FOIA generally provides that any person has the right to request access to federal agency records or information except to the extent the records are protected from disclosure by any of nine exemptions contained in the law or by one of three special law enforcement record exclusions.\n                       \n                      \n                    \n        \n        \n          \u00a0\n          \u00a0\n          \u00a0\n          \u00a0\n          Return to Top\n        \n        \n          \n                            \n            \u00a0\n            \n              \n                FOIA REQUESTS\n                A FOIA request is a request submitted to a federal agency asking for access to agency records on any topic. A FOIA request can generally be made by any person, to any federal agency, and only requires that requesters reasonably describe the records they are seeking and comply with agency regulations for making such requests.\n               \n              \n            \n          \u00a0\n          \n                           \n                      \n            \n\n  ELECTRONIC FOIA LIBRARY\n  The electronic FOIA Library contains materials such as certain agency manuals, specific agency policy statements, and opinions developed in the adjudication of cases. The information you are requesting may be located in our FOIA Library.  Please check the Library before submitting a FOIA request.\n \n\n            \n          \u00a0\n          \n                            \n            \n            \n              \n                FOIA REPORTS\n                All agencies are required by law to report to the Department of Justice on their FOIA compliance through submission of Annual FOIA Reports and Chief FOIA Officer Reports. All agencies are also required to provide quarterly reporting of four key FOIA statistics to the Department of Justice that will be posted on FOIA.gov.\n               \n              \n            \n        \n        \n          \u00a0\n          \u00a0\n          \u00a0\n          \u00a0\n          Return to Top\n        \n        \n          \n                \n                \n                          \n            \n              \n                RESOURCES\n                List of FOIA-related resources.\n               \n              \n            \n          \u00a0\n          \n                              \n            \n                TRAINING\n                \n                  List of FOIA-related training opportunities.\n                 \n          \u00a0\n          \n                            \n            \n            \n              \n                Frequently Asked Questions (FAQ)\n                Frequently asked questions and factual information about the website.\n               \n              \n            \n        \n        \n          \u00a0\n          \u00a0\n          \u00a0\n          \u00a0\n          Return to Top"
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:43.248183+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:49:36.084415+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:34.546827+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "http://osec.doc.gov/opog/FOIA/default.html",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:49:32.813375+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:25.444410+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:49:43.243508+00:00",
+                "index_texts": null,
+                "output": "FOIA, Office of Privacy and Open Government, U.S. Department of Commerce",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:43.236561+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707717218.231366/warc/1707720578",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "http://osec.doc.gov/opog/FOIA/default.html"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:49:43.230344+00:00",
+                "index_texts": null,
+                "output": "osec.doc.gov/opog/FOIA/default.html",
+                "pwd": "/data/archive/1707717218.231366",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:38.517874+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "https://web.archive.org/web/20240212065010/https://osec.doc.gov/opog/FOIA/default.html",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "FOIA, Office of Privacy and Open Government, U.S. Department of Commerce",
+        "warc": null,
+        "wget": "osec.doc.gov/opog/FOIA/default.html"
+    },
+    "link_dir": "/data/archive/1707717218.231366",
+    "newest_archive_date": "2024-02-12T06:49:50.266116+00:00",
+    "num_failures": 0,
+    "num_outputs": 12,
+    "oldest_archive_date": "2024-02-12T06:49:24.333492+00:00",
+    "path": "/opog/FOIA/default.html",
+    "schema": "Link",
+    "scheme": "http",
+    "snapshot_id": "ab387aef-72e0-425f-a271-12a3a03b4c24",
+    "sources": [
+        "/data/sources/1707717217.88551-crawl-www.bea.gov.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707717218.231366",
+    "title": "FOIA, Office of Privacy and Open Government, U.S. Department of Commerce",
+    "updated": "2024-02-12T06:49:24.331780+00:00",
+    "updated_date": "2024-02-12 06:49",
+    "url": "http://osec.doc.gov/opog/FOIA/default.html"
+}
