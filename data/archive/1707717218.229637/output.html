@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og: https://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct: https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# "><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<link rel="canonical" href="https://apps.bea.gov/">
+<link rel="shortlink" href="https://apps.bea.gov/">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="false">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--[if lte IE 8]>
+<script src="/_scripts/apps-scripts-ie8-shiv.js"></script>
+<![endif]-->
+<script>
+	$(document).ready(function () {
+		jQuery.extend(jQuery.expr[":"], { BEAExternal: function (e) { return "" != e.href.replace(/[ #]/g, "") && (!/^mailto\:/.test(e.href) && (/exit_site\.asp\?link=.+?\.gov/i.test(e.href) ? (e.href = /\?link=(.*)/i.exec(e.href)[1], !1) : /exit_site\.asp\?link=/i.test(e.href) ? (e.href = /\?link=(.*)/i.exec(e.href)[1], !0) : e.hostname != location.hostname && !/\.gov/i.test(e.hostname))) } }); $("a:BEAExternal").addClass("link-external").attr("rel", "external").on("click", function (e) { confirm("You are leaving the BEA web-site and going to a non-governmental web-site.") && (window.location = $(e.target).attr("href")), e.preventDefault(), e.stopPropagation() }), $('a[target*="_blank"]').addClass("link-new-window");
+
+		$('.panel-heading a').click(function() {
+			$('.panel-heading').removeClass('active');
+			//If the panel was open and would be closed by this click, do not active it
+			if(!$(this).closest('.panel').find('.panel-collapse').hasClass('in'))
+				$(this).parents('.panel-heading').addClass('active');
+		});
+	});
+</script>
+<script type="text/javascript" src="/_scripts/federated-analytics.js?agency=DOC&amp;subagency=BEA" id="_fed_an_ua_tag"></script>
+<link href="/_framework/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" media="all">
+<link rel="stylesheet" href="/_css/style.css" media="all">
+<title>BEA : Working at BEA</title>
+<script src="/_scripts/parallax/parallax.min.js"></script> 
+<script>
+	$( document ).ready(function() {
+		// Select all links with hashes
+		$('a[href*="#"]')
+		// Remove links that don't actually link to anything
+		.not('[href="#"]')
+		.not('[href="#0"]')
+		.not('[href="#Growth"]')
+		.not('[href="#Capita"]')
+		.not('[href="#Measures"]')
+		.not('[href="#Initiative"]')
+		.not('[href="#Distribution"]')
+    
+		.click(function(event) {
+		// On-page links
+		if (
+			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+			&& 
+			location.hostname == this.hostname
+		) {
+		// Figure out element to scroll to
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		// Does a scroll target exist?
+		if (target.length) {
+			// Only prevent default if animation is actually gonna happen
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000, function() {
+				// Callback after animation
+				// Must change focus!
+				var $target = $(target);
+				$target.focus();
+				if ($target.is(":focus")) { // Checking if the target was focused
+					return false;
+				} else {
+					$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+					$target.focus(); // Set focus again
+				};
+			});
+		}
+		}
+		});
+	   $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
+
+
+<style>
+
+
+     
+      
+body {
+      background-color: #fff;
+      xbackground: transparent !important;
+      position: relative;
+      z-index: 100;
+}
+.tooltip {
+      xfont-size: 100%;
+}
+.tooltip.bottom {
+      margin-top: 10px;
+}
+.tooltip-inner {
+      white-space: nowrap;
+      max-width: none;
+      padding: 8px 15px;
+      background-color: rgb(45,51,56);
+}
+nav .nav-title {
+      color: rgba(255,255,255,1.0);
+}
+.nav-block {
+      display: block;
+      border: solid 1px rgba(0,0,0,0.5);
+      border-radius: 6px;
+}
+.nav-block:hover {
+      color: rgba(255,255,255,1.0);
+      background-color: #ec6a1f;
+      display: block;
+      border: solid 1px rgba(0,0,0,0.5);
+      border-radius: 6px;
+}
+#accordion .panel .panel-body {
+      padding: 25px !important;
+}
+h4 {
+      margin-bottom: 20px;
+}
+#accordion .panel .panel-body h4 {
+      margin: 20px 0px 10px 0px;
+}
+#accordion .panel .panel-body h4:first-of-type {
+      margin: 0px 0px 10px 0px;
+}
+#content.parallax {
+      padding: 0px !important;
+}
+#content.parallax .parallax-container {
+      background-color: rgba(255,255,255, 1.0);
+      padding: 10px 30px;
+      xmargin-right: 30px;
+      xmargin-bottom: 0px;
+      xfont-weight: 500;
+}
+#content.parallax .parallax-window {
+      height: 150vh;
+      xmin-height: 40vh; /* 450px; */
+      xbackground-size: cover;/*100% auto;*/
+      xbackground-position: center;
+      /*-webkit-box-shadow: inset 26px 17px 26px -17px rgba(0, 0, 0, 1);
+      -moz-box-shadow: inset 26px 17px 26px -17px rgba(0, 0, 0, 1);
+      box-shadow: inset 26px 17px 26px -17px rgba(0, 0, 0, 1);*/
+      xborder-radius: 10px;
+      overflow: hidden;
+}
+/*#content.parallax .break-out {
+      width: 99.2vw;
+      position: relative;
+      left: calc(-1 * (100vw - 100%) / 2);
+      color: rgba(0, 0, 0, 0.6);
+      z-index: 500;
+}*/
+/*#content.parallax .orange-slice {
+      background-image: url(_images/orange-cloud-slice-reverse.jpg);
+      background-size: 500px auto;
+      background-repeat: no-repeat;
+      background-position: right top;
+}*/
+#content.parallax .main-container.orange-slice h1 {
+      font-size: 300%;
+}
+#content.parallax .orange-slice.orange-slice-buffer {
+      xpadding-top: 100px;
+}
+#content.parallax .glyphicon {
+      margin-right: 16px;
+}
+#content.parallax .down-arrow {
+      background-image: url(_images/icon-scroll-down.png);
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      padding-bottom: 250px;
+}
+#content.parallax .plus-marker {
+      margin-right: 15px;
+      padding: 25px 4px 8px 8px;
+      color: rgba(255, 255, 255, 1);
+      background-image: url(_images/plus-slice.png);
+      background-repeat: no-repeat;
+      background-position: top left;
+      font-weight: bold;
+      line-height: 20px;
+}
+#content.parallax ul.footnote, #content.parallax ol.footnote {
+      border-top: 1px solid #d9d9d9;
+      font-size: 80%;
+      color: #757575;
+      margin: 16px 0px 0px 0px;
+      padding: 16px 0px 0px 0px;
+}
+#content.parallax ul.footnote.col-sm-04, #content.parallax ol.footnote.col-sm-04 {
+      margin: 10px 0px 0px 0px;
+      padding: 10px 0px 0px 0px;
+}
+#content.parallax ul.footnote li, #content.parallax ol.footnote li {
+      background-image: none;
+      padding-left: 0px;
+      margin-left: 0px;
+}
+#content.parallax ul.footnote a, #content.parallax ol.footnote a {
+      border-bottom: dotted 1px #757575;
+      color: #757575;
+}
+#content.parallax ul.footnote a:hover, #content.parallax ol.footnote a:hover {
+      text-decoration: none;
+      border-bottom: solid 1px #333;
+      color: #333;
+}
+#content.parallax [class*="jump-link-"] {
+      text-align: center;
+}
+#content.parallax [class*="jump-link-"] a {
+      display: block;
+      margin: 10px 0px 20px 0px;
+      width: 45px;
+      height: 45px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 45px 45px;
+}
+#content.parallax .jump-link-up a {
+      background-image: url("_images/icon-scroll-up.png");
+}
+#content.parallax .jump-link-up a:hover {
+      background-image: url("_images/icon-scroll-up-hover.png");
+}
+#content.parallax .jump-link-down a {
+      background-image: url("_images/icon-scroll.png");
+      padding-left: 52px;
+      padding-top: 5px;
+      font-size: 140%;
+}
+#content.parallax .jump-link-down a:hover {
+      background-image: url("_images/icon-scroll-hover.png");
+}
+#content.parallax .jump-target {
+      display: block;
+      position: relative;
+      top: -75px;
+      visibility: hidden;
+}
+#content.parallax .jump-target a {
+      display: block;
+}
+#content.parallax .buffer-top-30 {
+      margin-top: 30px;
+}
+.text-blue {
+      color: #005188;
+}
+.text-orange {
+      color: #ec6a1f;
+}
+nav#scrollspy-nav {
+      position: fixed;
+      top: 87px;
+      width: 97%;
+      margin: auto;
+      left: 47%;
+      transform: translatex(-47%);
+      padding-top: 5px;
+      background-color: rgba(45,51,56,1);
+      /*x-webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+      x-moz-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+      xbox-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);*/
+      z-index: 900;
+      text-align: center;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+}
+nav#scrollspy-nav ul.nav {
+      margin: 0px auto;
+      text-align: center;
+}
+/*nav#scrollspy-nav:hover {
+	background-color: rgba(45,51,56,1);
+	-webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+}*/
+.center-pills {
+      display: inline-block;
+}
+nav#scrollspy-nav a {
+      color: rgba(255,255,255,1.0);
+      border: solid 1px rgba(45,51,56,0);
+      xwidth: 24px;
+      xheight: 24px;
+      margin: 3px!important;
+      padding: 2px 7px !important;
+      xbackground-image: url("_images/nav-bullet-hover.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 10px;
+      text-align: center;
+      font-size: min(max(10px, 2vw), 16px);
+}
+nav#scrollspy-nav a:hover {
+      color: rgba(255,255,255,1);
+      border: solid 1px rgb(255, 255, 255);
+      background-color: rgba(45,51,56,1);
+      xbackground-image: url("_images/nav-bullet.png");
+}
+nav#scrollspy-nav .nav-item.active a {
+      background-color: rgba(255,255,255,1.0);
+      border: solid 1px rgba(255,255,255,0);
+      /*color: rgba(45,51,56,.75);*/
+      color: rgba(0,0,0,1.0);
+      xbackground-image: url("_images/nav-bullet-active.png");
+}
+nav#scrollspy-nav .nav-item.active a:hover {
+      background-color: rgba(255,255,255,1);
+      border: solid 1px rgba(255,255,255,0);
+      color: rgba(45,51,56,.75);
+      xbackground-image: url("_images/nav-bullet-active-hover.png");
+      text-decoration: underline;
+}
+nav#scrollspy-nav .nav-item-start {
+      border-right: solid 1px rgba(255,255,255,.75);
+      xpadding-bottom: 5px;
+}
+nav#scrollspy-nav .nav-item-start a {
+      xbackground-image: url("_images/nav-bullet-start-active-hover.png");
+}
+nav#scrollspy-nav .nav-item-start.active a {
+      xbackground-image: url("_images/nav-bullet-active-hover.png");
+      xbackground-color: rgb(100,182,96);
+}
+nav#scrollspy-nav .nav-item-start a:hover {
+      xbackground-image: url("_images/nav-bullet-start-active-hover.png");
+}
+nav#scrollspy-nav .nav-item-end {
+      border-left: solid 1px rgba(255,255,255,.75);
+      xpadding-top: 5px;
+}
+nav#scrollspy-nav .nav-item-end a {
+      xcolor: rgba(219, 96, 37, 1);
+}
+nav#scrollspy-nav .nav-item-end.active a {
+      xbackground-color: rgba(219, 96, 37, 1);
+}
+nav#scrollspy-nav .nav-item-end a:hover {
+      xbackground-color: rgba(219, 96, 37, 1);
+      xcolor: rgba(255,255,255,1.00);
+      xborder-color: rgba(219, 96, 37, 1);
+}
+.slide-deck a {
+      display: block;
+      border: solid 3px rgba(0,0,0,.15);
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      padding: 4px;
+      margin-bottom: 25px;
+}
+.slide-deck a:hover {
+      border: solid 3px rgba(219, 96, 37, 1);
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+}
+.slide-deck .img-responsive {
+      width: 100%;
+      height: auto;
+}
+#content.parallax h1 {
+      font-size: 180%;
+      font-weight: 100;
+      xclear: both;
+      margin: 20px 0px 0px 0px;
+      padding: 0px;
+}
+#content.parallax h1 .h1-line-top, #content.parallax h1 .h1-line-middle, #content.parallax h1 .h1-line-bottom {
+      padding: 0px;
+      margin: 0px;
+}
+#content.parallax h1 .h1-line-top {
+      position: relative;
+}
+#content.parallax h1 .h1-line-middle {
+      position: relative;
+      top: -10px;
+      left: 40px;
+}
+#content.parallax h1 .h1-line-bottom {
+      position: relative;
+      top: -17px;
+      left: 20px;
+}
+#content.parallax h1 .text-massive {
+      font-size: 170%;
+      font-weight: bold;
+}
+#content.parallax h1 .text-bea-blue {
+      color: rgba(0, 81, 137, 1);
+}
+#content.parallax h1 .text-bea-orange {
+      color: rgba(219, 96, 37, 1);
+}
+#content.parallax h1 .text-italics {
+      font-style: italic;
+}
+#content.parallax h2 {
+      position: relative;
+      top: -10px;
+      left: 20px;
+      color: rgba(0, 81, 137, 1);
+      font-weight: 500;
+      padding: 0px;
+      margin: 0px;
+}
+#content.parallax h3 {
+      font-weight: normal !important;
+      text-align: center;
+}
+.link-block {
+      padding: 10px 0px;
+}
+.link-block div {
+}
+.link-block div a {
+      margin: 10px 0px;
+      font-size: 110%;
+      display: block;
+      height: 200px;
+      border: solid 3px #939698; /*rgba(219, 96, 37, 1);*/
+      border-radius: 6px;
+      -webkit-box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.12);
+      box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.12);
+      overflow: hidden;
+      color: rgba(255,255,255,1.0);
+}
+.link-block div a:hover {
+      border: solid 3px rgba(0, 0, 0, 1.0);
+      -webkit-box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.25);
+      box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.25);
+      color: rgba(255,255,255,1.0);
+}
+.link-block [class*="block-"] {
+      background-position: center;
+      background-size: cover;
+}
+.link-block .block-01 {
+      background-image: url("_images/backgrounds/link-block-01.jpg");
+}
+.link-block .block-02 {
+      background-image: url("_images/backgrounds/link-block-02.jpg");
+}
+.link-block .block-03 {
+      background-image: url("_images/backgrounds/link-block-03.jpg");
+}
+.link-block .block-04 {
+      background-image: url("_images/backgrounds/link-block-04.jpg");
+}
+.link-block .block-05 {
+      background-image: url("_images/backgrounds/link-block-05.jpg");
+}
+.link-block .block-06 {
+      background-image: url("_images/backgrounds/link-block-06.jpg");
+}
+.link-block div a span {
+      display: block;
+      padding: 4px 0px 6px 0px;
+      background-color: #939698; /*rgba(219, 96, 37, 1);*/
+}
+.link-block div a:hover span {
+      background-color: rgba(0, 0, 0, 1.0); /*rgba(219, 96, 37, 1);*/
+}
+#content.parallax [class*="slide-"] {
+      position: relative;
+      top: 56px;
+      margin: 10px;
+      border-radius: 5px;
+      -webkit-box-shadow: 10px 10px 30px 2px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 10px 10px 30px 2px rgba(0, 0, 0, 0.5);
+      box-shadow: 10px 10px 30px 2px rgba(0, 0, 0, 0.5);
+      background-image: url(_images/orange-cloud-slice-reverse.jpg);
+      background-size: 38vmin auto;
+      background-repeat: no-repeat;
+      background-position: right top;
+}
+#content.parallax .parallax-container.slide-01 {
+}
+</style>
+
+<!--<link rel="stylesheet" href="https://www.bea.gov/_css/apps-style-02.css" media="all" />-->
+<!--<link rel="stylesheet" href="https://www.bea.gov/_css/transfer-to-drupal.css" media="all" />-->
+</head>
+<body class="apps-bea-gov path-dummynotfoundhtm navbar-is-fixed-top has-glyphicons jp-Notebook" data-spy="scroll" data-target="#scrollspy-nav" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light"><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 2884.5px; width: 1440px;"><img class="parallax-slider" src="_images/backgrounds/slide-07.jpg" style="position: absolute; height: 2115px; width: 3173px; max-width: none;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 2884.5px; width: 1440px;"><img class="parallax-slider" src="_images/backgrounds/slide-06.jpg" style="position: absolute; height: 2115px; width: 3170px; max-width: none;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 2884.5px; width: 1440px;"><img class="parallax-slider" src="_images/backgrounds/slide-05.jpg" style="position: absolute; height: 2115px; width: 2116px; max-width: none;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 2884.5px; width: 1440px;"><img class="parallax-slider" src="_images/backgrounds/slide-04.jpg" style="position: absolute; height: 2115px; width: 3701px; max-width: none;"></div><div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 76px, 0px); height: 2884.5px; width: 1440px;"><img class="parallax-slider" src="_images/backgrounds/slide-02.jpg" style="transform: translate3d(0px, -60.8px, 0px); position: absolute; height: 2115px; width: 4688px; max-width: none;"></div>
+<a href="#main-content" class="sr-only focusable skip-link"> Skip to main content </a>
+<header class="navbar navbar-default navbar-fixed-top" id="navbar" role="banner">
+	<div class="usa-banner">
+		<div class="usa-banner-header container">
+			<div class="usa-grid usa-banner-inner"> <img src="/_images/favicon-57.png" alt="U.S. flag">
+				<p>An official website of the United States government</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="navbar-header"> <a class="navbar-brand" href="https://www.bea.gov/"> </a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		</div>
+		<div id="navbar-collapse" class="navbar-collapse collapse">
+			<div class="region region-navigation-collapsible">
+				<nav role="navigation" aria-labelledby="block-beagov-theme-main-menu-menu" id="block-beagov-theme-main-menu" data-block-plugin-id="system_menu_block:main">
+					<h2 class="sr-only" id="block-beagov-theme-main-menu-menu">Main navigation</h2>
+					<!-- ================================================= -->
+					
+					<ul region="navigation_collapsible" class="menu nav navbar-nav">
+						<li class="expanded dropdown active"> <a href="//www.bea.gov/data" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Data <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="//www.bea.gov/data/gdp" data-drupal-link-system-path="node/13541">by Topic</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/data/by-place-us" data-drupal-link-system-path="node/13656">by Place</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/data/economic-accounts" data-drupal-link-system-path="node/13646">by Economic Account</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="//www.bea.gov/tools" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Tools <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/itable">Interactive Data</a> </li>
+								<li class="expanded dropdown"> <a href="/API/signup/index.cfm">Application Programming Interface (API)</a> </li>
+								<li class="expanded dropdown"> <a href="/international/factsheet/">Country Facts</a> </li>
+								<li class="expanded dropdown"> <a href="/regional/bearfacts/">BEARFACTS</a> </li>
+								<li class="expanded dropdown"> <a href="/industry/factsheet/">Industry Facts</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/itable?reqid=99&amp;step=1#reqid=99&amp;step=1&amp;isuri=1">GDP &amp; Personal Income Mapping</a> </li>
+								<li class="expanded dropdown"> <a href="/regional/rims/rimsii/">RIMS II</a> </li>
+								<li class="expanded dropdown"> <a href="/efile">eFile</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="//www.bea.gov/news" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> News <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="//www.bea.gov/news/glance" data-drupal-link-system-path="node/20292">Economy at a Glance</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/news/current-releases" data-drupal-link-system-path="news/current-releases">News Releases</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/news/schedule" data-drupal-link-system-path="news/schedule">Release Schedule</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/news/blog" data-drupal-link-system-path="news/blog">The BEA Wire | BEA's Official Blog</a> </li>
+								<li class="expanded dropdown"> <a href="/scb/">Survey of Current Business</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/news/archive?field_related_product_target_id=All&amp;created_1=All&amp;title=" data-drupal-link-query="{&quot;created_1&quot;:&quot;All&quot;,&quot;field_related_product_target_id&quot;:&quot;All&quot;,&quot;title&quot;:&quot;&quot;}" data-drupal-link-system-path="news/archive">Archive</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/news/for-journalists" data-drupal-link-system-path="node/23916">For Journalists</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="//www.bea.gov/research" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Research <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="//www.bea.gov/research/office-chief-economist">Office of the Chief Economist</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/research/meet-the-researchers" data-drupal-link-system-path="research/meet-the-researchers">Meet the Researchers</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/research/papers" data-drupal-link-system-path="research/papers">Papers</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/research/seminars" data-drupal-link-system-path="node/11196">Seminars</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/research/special-sworn-researcher-program/papers" data-drupal-link-system-path="node/8211">Research Using Company-Level Data</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/research/special-sworn-researcher-program" data-drupal-link-system-path="node/8131">Special Sworn Researcher Program</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/research/fellowship-program" data-drupal-link-system-path="node/8136">Fellowship Program</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="//www.bea.gov/resources" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Resources <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="//www.bea.gov/resources/learning-center" data-drupal-link-system-path="node/14796">Learning Center</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/resources/methodologies" data-drupal-link-system-path="resources/methodologies">Methodologies</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/resources/multimedia" data-drupal-link-system-path="resources/multimedia">Multimedia</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/resources/article-collections" data-drupal-link-system-path="node/9391">Article Collections</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/congressional-users" title="congressional users">For Congressional Users</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/resources/for-developers" data-drupal-link-system-path="node/9396">For Developers</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/resources/learning-center/bea-in-the-classroom" data-drupal-link-system-path="node/22426">For Students</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="//www.bea.gov/about" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> About <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="//www.bea.gov/about/who-we-are" data-drupal-link-system-path="node/24146">Who We Are</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/about/directors-page" data-drupal-link-system-path="node/8076">Director's Page</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/about/leadership" data-drupal-link-system-path="node/24691">BEA Leadership</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/about/advisory-committees" data-drupal-link-system-path="node/6426">Advisory Committees</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/about/budget-and-performance" data-drupal-link-system-path="node/6431">Budget and Performance</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/about/policies-and-information" data-drupal-link-system-path="node/6436">Policies and Information</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/about/working-at-bea" data-drupal-link-system-path="node/8156">Working at BEA</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="//www.bea.gov/help" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="//www.bea.gov/help/contact-us" data-drupal-link-system-path="node/9106">Contact Us</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/form/ask-an-expert" data-drupal-link-system-path="webform/ask_an_expert">Ask an Expert</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/help/information-for-survey-respondents" data-drupal-link-system-path="node/9356">For Survey Respondents</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/help/faq" data-drupal-link-system-path="help/faq">Frequently Asked Questions (FAQ)</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/help/glossary" data-drupal-link-system-path="help/glossary">Glossary</a> </li>
+								<li class="expanded dropdown"> <a href="//www.bea.gov/help/guidelines-for-citing-bea" data-drupal-link-system-path="node/10936">Guidelines for Citing BEA</a> </li>
+							</ul>
+						</li>
+					</ul>
+					
+					<!--<ul region="navigation_collapsible" class="menu nav navbar-nav">
+						<li class="expanded dropdown"> <a href="https://www.bea.gov/data" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Data <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/data/gdp" data-drupal-link-system-path="node/13541">by Topic</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/data/by-place-us" data-drupal-link-system-path="node/13656">by Place</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/data/economic-accounts" data-drupal-link-system-path="node/13646">by Economic Account</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown active"> <a href="https://www.bea.gov/tools" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Tools <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/itable">Interactive Data</a> </li>
+								<li class="expanded dropdown"> <a href="/API/signup/index.cfm">Application Programming Interface (API)</a> </li>
+								<li class="expanded dropdown"> <a href="/international/factsheet/">Country Facts</a> </li>
+								<li class="expanded dropdown"> <a href="/regional/bearfacts/">BEARFACTS</a> </li>
+								<li class="expanded dropdown"> <a href="/industry/factsheet/">Industry Facts</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/itable?reqid=99&amp;step=1#reqid=99&amp;step=1&amp;isuri=1">GDP &amp; Personal Income Mapping</a> </li>
+								<li class="expanded dropdown"> <a href="/regional/rims/rimsii/">RIMS II</a> </li>
+								<li class="expanded dropdown"> <a href="/efile">eFile</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="https://www.bea.gov/news" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> News <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/news/glance" data-drupal-link-system-path="node/20292">Economy at a Glance</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/news/current-releases" data-drupal-link-system-path="news/current-releases">Current Releases</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/news/schedule" data-drupal-link-system-path="news/schedule">Release Schedule</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/news/blog" data-drupal-link-system-path="news/blog">The BEA Wire | BEA's Official Blog</a> </li>
+								<li class="expanded dropdown"> <a href="/scb/">Survey of Current Business</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/news/archive?field_related_product_target_id=All&amp;created_1=All&amp;title=" data-drupal-link-query="{&quot;created_1&quot;:&quot;All&quot;,&quot;field_related_product_target_id&quot;:&quot;All&quot;,&quot;title&quot;:&quot;&quot;}" data-drupal-link-system-path="news/archive">News Release Archive</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/news/for-journalists" data-drupal-link-system-path="node/23916">For Journalists</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="https://www.bea.gov/research" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Research <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/research/office-chief-economist">Office of the Chief Economist</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/research/meet-the-researchers" data-drupal-link-system-path="research/meet-the-researchers">Meet the Researchers</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/research/papers" data-drupal-link-system-path="research/papers">Papers</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/research/seminars" data-drupal-link-system-path="node/11196">Seminars</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/research/special-sworn-employee-program/papers" data-drupal-link-system-path="node/8211">Research Using BEA's Firm-Level Data</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/research/special-sworn-employee-program" data-drupal-link-system-path="node/8131">Special Sworn Employee Program</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/research/fellowship-program" data-drupal-link-system-path="node/8136">Fellowship Program</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="https://www.bea.gov/resources" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Resources <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/resources/learning-center" data-drupal-link-system-path="node/14796">Learning Center</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/resources/methodologies" data-drupal-link-system-path="resources/methodologies">Methodologies</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/resources/multimedia" data-drupal-link-system-path="resources/multimedia">Multimedia</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/resources/article-collection" data-drupal-link-system-path="node/9391">Article Collections</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/congressional-users" title="congressional users">For Congressional Users</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/resources/for-developers" data-drupal-link-system-path="node/9396">For Developers</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/classroom" data-drupal-link-system-path="node/22426">For Students</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="https://www.bea.gov/about" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> About <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/about/directors-page" data-drupal-link-system-path="node/8076">Director's Page</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/about/leadership" data-drupal-link-system-path="node/51">Leadership</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/about/advisory-committees" data-drupal-link-system-path="node/6426">Advisory Committees</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/about/budget-and-performance" data-drupal-link-system-path="node/6431">Budget and Performance</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/about/policies-and-information" data-drupal-link-system-path="node/6436">Policies and Information</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/about/working-at-bea" data-drupal-link-system-path="node/8156">Working at BEA</a> </li>
+							</ul>
+						</li>
+						<li class="expanded dropdown"> <a href="https://www.bea.gov/help" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
+							<ul region="navigation_collapsible" class="menu dropdown-menu">
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/help/contact-us" data-drupal-link-system-path="node/9106">Contact Us</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/form/ask-an-expert" data-drupal-link-system-path="webform/ask_an_expert">Ask an Expert</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/help/information-for-survey-respondents" data-drupal-link-system-path="node/9356">For Survey Respondents</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/help/faq" data-drupal-link-system-path="help/faq">Frequently Asked Questions (FAQ)</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/help/glossary" data-drupal-link-system-path="help/glossary">Glossary</a> </li>
+								<li class="expanded dropdown"> <a href="https://www.bea.gov/help/guidelines-for-citing-bea" data-drupal-link-system-path="node/10936">Guidelines for Citing BEA</a> </li>
+							</ul>
+						</li>
+					</ul>--> 
+					<!-- ================================================= --> 
+				</nav>
+				<section id="block-beagovsearchblock" data-block-plugin-id="beagov_search_block" class="block block-beagov-search block-beagov-search-block clearfix">
+					<form id="search-block-form" class="navbar-form navbar-right" role="search" action="https://search.bea.gov/search" method="get" accept-charset="UTF-8" data-drupal-form-fields="edit-keys">
+						<input id="affiliate" name="affiliate" type="hidden" value="u.s.bureauofeconomicanalysis">
+						<div class="form-group form-group-sm js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+							<input id="edit-keys" class="form-search form-control usagov-search-autocomplete" title="" data-drupal-selector="edit-keys" placeholder="Search" name="query" value="" type="search">
+						</div>
+						<button class="btn btn-default js-form-submit button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						<div id="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions"> </div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="main-content" role="main" class="bea-application main-container container-fluid">
+
+<div id="main-content" role="main" class="bea-application main-container container-fluid">
+      <nav id="scrollspy-nav"><!--<span class="nav-title">Menu</span>-->
+            <ul class="nav nav-pills center-pills">
+                  <li class="nav-item nav-item-start active"><a class="nav-link" href="#jump-99">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#jump-02">Careers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#jump-03">Benefits</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#jump-04">Location</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#jump-17">New Employees</a></li>
+                  <li class="nav-item nav-item-end"><a class="nav-link link-new-window" href="https://www.usajobs.gov/Search/Results?a=CM53&amp;p=1" data-toggle="tooltip" data-placement="bottom" data-container="body" title="" target="_blank" data-original-title="View Open Positions on USAJobs.com">View Open Positions</a></li>
+            </ul>
+      </nav>
+      <div id="content" class="parallax container-fluid"> 
+            
+            <!-- ====================================================================================== --> 
+            <!-- Intro ================================================================================ --> 
+            <!-- ====================================================================================== -->
+            <div id="jump-99" class="jump-target"></div>
+            <div style="clear: both;"></div>
+            <div class="parallax-window break-out" data-parallax="scroll" data-position="middle left" data-image-src="_images/backgrounds/slide-02.jpg">
+                  <div class="parallax-container slide-01 orang-slice clearfix">
+                        <h1>
+                              <div class="h1-line-top">Come be <strong class="text-bea-blue">a part</strong></div>
+                              <div class="h1-line-middle">of <span class="text-massive text-bea-orange">BEA</span></div>
+                              <div class="h1-line-bottom"></div>
+                        </h1>
+                        <p><strong>The U.S. economy is complex, diverse, dynamic.</strong>To understand it, Americans need the Bureau of Economic  Analysis. We take the economy's vital signs – how big, how fast, how it's  changing. From national  indicators to local insights, our statistics help businesses, leaders, and  people everywhere see trends, find opportunities, and make smart decisions.</p>
+                        <p>                              If you're passionate about a career that makes a  difference,&nbsp;take a closer  look at BEA&nbsp;and&nbsp;<a href="https://www.bea.gov/about/working-at-bea/how-to-apply">apply today</a>.</p>
+                        <div class="jump-link-down center-block clearfix"><a href="#jump-02">Explore</a></div>
+                  </div>
+            </div>
+            <!-- ====================================================================================== --> 
+            <!-- US GDP Per Capita ==================================================================== --> 
+            <!-- ====================================================================================== --> 
+            <!-- <div id="jump-01" class="jump-target"></div>
+            <div style="clear: both;"></div>
+            <div class="parallax-container">
+                  <h1>
+                        <div class="h1-line-top">Even if you don't <strong class="text-bea-blue">know our name</strong>,</div>
+                        <div class="h1-line-middle">you <span class=" text-massive text-bea-orange">know our work.</span></div>
+                        <div class="h1-line-bottom"></div>
+                  </h1>
+                  <div class="jump-link-down center-block clearfix"></div>
+                  <div class="row">
+                        <div class="col-sm-12">
+                              <div class="jump-link-up center-block clearfix"><a href="#jump-99"></a></div>
+
+                              <div class="jump-link-down center-block clearfix"><a href="#jump-02"></a> </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="parallax-window break-out" data-parallax="scroll" data-position="middle center" data-image-src="_images/backgrounds/slide-03.jpg"></div>--> 
+            <!-- ====================================================================================== --> 
+            <!-- Income Growth and Its Distribution =================================================== --> 
+            <!-- ==a==================================================================================== -->
+            <div id="jump-02" class="jump-target"></div>
+            <div style="clear: both;"></div>
+            <div class="parallax-window break-out" data-parallax="scroll" data-position="middle center" data-image-src="_images/backgrounds/slide-04.jpg">
+                  <div class="parallax-container slide-02">
+                        <h1>
+                              <div class="h1-line-top">Room <span class="text-bea-orange">for</span> <strong class="text-bea-orange">Everyone</strong></div>
+                              <div class="h1-line-middle">to <span class="text-massive text-bea-blue">Shine</span></div>
+                              <div class="h1-line-bottom"></div>
+                        </h1>
+                        <div class="row">
+                              <div class="col-sm-12">
+                                    <div class="jump-link-up center-block clearfix"><a href="#jump-99"></a></div>
+                                    <p>Though our influence in the world of economics looms large, we're a relatively small bureau. At BEA, you'll have the chance to really know and work with leaders. You can volunteer, join groups, make friends, and always keep growing and learning.</p>
+                                    <div class="row text-center link-block">
+                                          <div class="col-sm-12 col-md-4"><a href="https://www.bea.gov/about/who-we-are" class="block-01"><span>Who We Are</span></a></div>
+                                          <div class="col-sm-12 col-md-4"><a href="https://www.bea.gov/about/working-at-bea/career-paths" class="block-02"><span>Career Paths</span></a></div>
+                                          <div class="col-sm-12 col-md-4"><a href="https://www.bea.gov/about/working-at-bea/how-to-apply" class="block-03"><span>How to Apply</span></a></div>
+                                    </div>
+                                    <div class="jump-link-down center-block clearfix"><a href="#jump-03"></a> <div style="clear: both;"></div></div>
+                              </div>
+                        </div>
+                       
+                  </div>
+            </div>
+            <!-- ====================================================================================== --> 
+            <!-- Distribution of Income Between Labor and Capital ===================================== --> 
+            <!-- ====================================================================================== -->
+            <div id="jump-03" class="jump-target"></div>
+            <div style="clear: both;"></div>
+            <div class="parallax-window break-out" data-parallax="scroll" data-position="middle center" data-image-src="_images/backgrounds/slide-05.jpg">
+                  <div class="parallax-container slide-03">
+                        <h1>
+                              <div class="h1-line-top"><strong class="text-bea-blue">One</strong> of the</div>
+                              <div class="h1-line-middle"><span class="text-massive text-bea-orange">Best Places</span> to&nbsp;<strong>Work</strong></div>
+                              <div class="h1-line-bottom"></div>
+                        </h1>
+                        <div class="row">
+                              <div class="col-sm-12">
+                                    <div class="jump-link-up center-block clearfix"><a href="#jump-02"></a></div>
+                                    <p><a href="https://bestplacestowork.org/rankings/detail/?c=CM53" class="link-external" rel="external">BEA ranks 32nd out of 432  federal organizations</a>!  We provide outstanding benefits, training, advancement opportunities, telework,  flexible schedules, and a modern hybrid work environment.</p>
+                                    <div class="row text-center link-block">
+                                          <div class="col-sm-12 col-md-4"><a href="https://www.bea.gov/about/working-at-bea/pay-and-benefits" class="block-04"><span>Pay &amp; Benefits</span></a></div>
+                                          <div class="col-sm-12 col-md-4"><a href="https://www.bea.gov/about/working-at-bea/work-life-balance" class="block-05"><span>Work-Life Balance</span></a></div>
+                                          <div class="col-sm-12 col-md-4"><a href="https://www.bea.gov/about/working-at-bea/development-and-training" class="block-06"><span>Development &amp; Training</span></a></div>
+                                    </div>
+                                    <div class="jump-link-down center-block clearfix"><a href="#jump-04"></a></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            
+            <!-- ====================================================================================== --> 
+            <!-- American's Financial Well-being ====================================================== --> 
+            <!-- ====================================================================================== -->
+            <div id="jump-04" class="jump-target"></div>
+            <div style="clear: both;"></div>
+            <div class="parallax-window break-out" data-parallax="scroll" data-position="middle center" data-image-src="_images/backgrounds/slide-06.jpg">
+                  <div class="parallax-container slide-04">
+                        <h1>
+                              <div class="h1-line-top">A <strong class="text-bea-orange text-massive">State-of-the-art</strong> workplace</div>
+                              <div class="h1-line-middle text-bea-blue">just <strong>outside D.C.</strong></div>
+                              <div class="h1-line-bottom"></div>
+                        </h1>
+                        <!--<h2>xxxx</h2>-->
+                        <div class="row">
+                              <div class="col-sm-12">
+                                    <div class="jump-link-up center-block clearfix"><a href="#jump-03"></a></div>
+                                    <p>BEA's offices sit amid the grassy, wooded campus of the&nbsp;<a href="https://www.bea.gov/help/contact-us">Suitland Federal Center in Maryland</a>,  just outside Washington, D.C. Our award-winning, environmentally responsive  building features ample natural light, a walking trail, and an entrance adjacent  to the Suitland Metro Station. We offer transit benefits for commuters, as well  as free parking, carpools, and vanpools.</p>
+                                    <div class="jump-link-down center-block clearfix"><a href="#jump-17"></a></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!-- ====================================================================================== --> 
+            <!-- End Credits ========================================================================== --> 
+            <!-- ====================================================================================== -->
+            <div id="jump-17" class="jump-target"></div>
+            <div style="clear: both;"></div>
+            <div class="parallax-window break-out" data-parallax="scroll" data-position="middle left" data-image-src="_images/backgrounds/slide-07.jpg">
+                  <div class="parallax-container slide-06">
+                        <h1>
+                              <div class="h1-line-top"><strong class="text-bea-orange text-massive">Ready</strong> for <strong>your</strong></div>
+                              <div class="h1-line-middle"><span class="text-massive text-bea-blue">First Day?</span></div>
+                              <div class="h1-line-bottom"></div>
+                        </h1>
+                        <div class="row">
+                              <div class="col-sm-12">
+                                    <p><strong>Welcome, new employees!</strong>&nbsp;We can't wait for you to  join us. Make sure you've&nbsp;<a href="https://www.bea.gov/about/working-at-bea/new-employees">completed the proper forms and know what to bring</a>&nbsp;for your first day.</p>
+                                    <!--<h4>Background Materials <a class="pull-right" href="docs/background-materials-prototype-measures-of-economic-well-being-and-growth.pdf"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download Background Materials</a></h4>--> 
+                              </div>
+                        </div>
+                        <div class="jump-link-up center-block clearfix"><a href="#jump-04"></a></div>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<div class="full-width">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="last-modified">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer container" role="contentinfo">
+	<div class="region region-footer">
+		<section id="block-beagovfooter" data-block-plugin-id="block_content:aa0d67fd-5738-4477-83ce-e17e948518e8" class="block block-block-content block-block-contentaa0d67fd-5738-4477-83ce-e17e948518e8 clearfix">
+			<div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h4>Bureau of Economic Analysis <span> 4600 Silver Hill Road • Suitland, MD 20746 </span></h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<ul class="footer-links">
+								<li class="text-large"><a href="//www.bea.gov/contact-us">Contact Us</a></li>
+								<li class="text-large"><a href="//www.bea.gov/help/faq">Frequently Asked Questions</a></li>
+								<li class="text-large"><a href="//www.bea.gov/about/policies-and-information">Our Policies</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="footer-links">
+								<li><a href="//www.bea.gov/statement-commitment-scientific-integrity-principal-statistical-agencies">Commitment to Scientific Integrity</a></li>
+								<li><a href="//www.bea.gov/about/policies-and-information/data-dissemination">Data Dissemination Practices</a></li>
+								<li><a href="//www.bea.gov/open-data">Open Data</a></li>
+								<li><a href="https://www.usa.gov/">USA.gov</a></li>
+								<li><a href="https://business.usa.gov">Business USA</a></li>
+								<li><a href="http://www.osec.doc.gov/ocr/nofear/nofear.htm/">No FEAR Act</a></li>
+								<li><a href="http://osec.doc.gov/opog/FOIA/default.html">FOIA</a></li>
+								<li><a href="https://www.commerce.gov/">COMMERCE.gov</a></li>
+								<li><a href="https://apps.bea.gov/status/default.aspx">ESR System</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="footer-links">
+								<li><a href="//www.bea.gov/news/blog">The BEA Wire | BEA's Official Blog</a></li>
+								<li> <a href="https://twitter.com/bea_news" class="ext link-external link-new-window" target="_blank" rel="external">BEA on Twitter<span class="ext" aria-label="(link is external)"></span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCCP9QD1x_z__duUivA6Yb5w" class="ext link-external link-new-window" target="_blank" rel="external">BEA's YouTube Channel<span class="ext" aria-label="(link is external)"></span></a></li>
+								<li><a href="/rss/index.htm" title="BEA's RSS Feeds">News Release Feed (RSS)</a></li>
+								<li><a href="/_subscribe/" title="Email Subscription Service">Sign up for Email Notifications (ESS)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</footer>
+
+<!--<footer class="footer container" role="contentinfo">
+	<div class="region region-footer">
+		<section id="block-beagovfooter" class="block block-block-content block-block-contentaa0d67fd-5738-4477-83ce-e17e948518e8 clearfix">
+			<div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h4>Bureau of Economic Analysis <span> 4600 Silver Hill Road • Suitland, MD 20746 </span></h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<ul class="list-group">
+								<li><a class="list-group-item" href="//www.bea.gov/contact-us">Contact Us</a> <a class="list-group-item" href="//www.bea.gov/help/faq">Frequently Asked Questions</a> <a class="list-group-item" href="//www.bea.gov/about/policies-and-information">Our Policies</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="list-group">
+								<li><a class="list-group-item" href="//www.bea.gov/statement-commitment-scientific-integrity-principal-statistical-agencies">Commitment to Scientific Integrity</a> <a class="list-group-item" href="//www.bea.gov/about/policies-and-information/data-dissemination">Data Dissemination Practices</a> <a class="list-group-item" href="//www.bea.gov/open-data">Open Data</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="list-group">
+								<li> <a class="list-group-item" href="//www.bea.gov/news/blog">The BEA Wire | BEA's Official Blog</a> <a class="list-group-item ext" href="https://twitter.com/bea_news" target="_blank" rel="noopener noreferrer">BEA on Twitter<span class="ext" aria-label="(link is external)"></span></a> <a class="list-group-item ext" href="https://www.youtube.com/channel/UCCP9QD1x_z__duUivA6Yb5w" target="_blank" rel="noopener noreferrer">BEA's YouTube Channel<span class="ext" aria-label="(link is external)"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row row-with-buttons">
+						<div class="col-md-4"><a class="btn btn-default btn-block" role="button" href="/rss/index.htm" title="BEA's RSS Feeds">News Release Feed (RSS)</a></div>
+						<div class="col-md-4"><a class="btn btn-default btn-block" role="button" href="/_subscribe/" title="Email Subscription Service">Sign up for Email Notifications (ESS)</a></div>
+						<div class="col-md-4"><a href="http://get.adobe.com/reader/" role="button" class="btn btn-default btn-block ext" target="_blank" rel="noopener noreferrer">Download Acrobat Reader<span class="ext" aria-label="(link is external)"></span></a></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="btn-group btn-group-justified" role="group" aria-label="..."> <a class="btn btn-invisible" role="button" href="https://www.usa.gov/">USA.gov</a> <a class="btn btn-invisible" role="button" href="https://business.usa.gov">Business USA</a> <a class="btn btn-invisible" role="button" href="http://www.osec.doc.gov/ocr/nofear/nofear.htm/">No FEAR Act</a> <a class="btn btn-invisible" role="button" href="http://osec.doc.gov/opog/FOIA/default.html">FOIA</a> <a class="btn btn-invisible" role="button" href="https://www.commerce.gov/">COMMERCE.gov</a> <a class="btn btn-invisible" role="button" href="https://apps.bea.gov/status/default.aspx">ESR System</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</footer>
+-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J4698JNNFT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J4698JNNFT');
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37717925-1', 'auto');
+  ga('send', 'pageview');
+
+</script> 
+<script type="text/javascript" src="/_scripts/uaevents.js"></script>
+
+
+</div></body></html>
