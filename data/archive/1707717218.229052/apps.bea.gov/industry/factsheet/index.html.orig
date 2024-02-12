@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og: https://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct: https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# ">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="false" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="DC.Audience" content="Public" />
+    <meta name="DC.Author" content="Industry" />
+    <meta name="DC.Creator" content="Industry" />
+    <meta name="DC.Created" content="2019-10-29" />
+    <meta name="DC.Published" content="2019-10-29" />
+    <meta name="DC.LastModified" content="2019-10-29" />
+    <meta name="DC.Description" content="BEA Industry Facts" />
+    <meta name="DC.Format" content="text/html" />
+    <meta name="DC.Keywords" content="Industry fact sheet trade imports exports" />
+    <meta name="DC.Language" content="en-US" />
+    <meta name="DC.Publisher" content="US Department of Commerce, BEA, Bureau of Economic Analysis" />
+    <meta name="DC.SourceType" content="Dynamic" />
+    <meta name="DC.Title" content="BEA Industry Facts" />
+    <meta name="DC.Priority" content="1" />
+
+    <meta name="robots" content="noindex" />
+    <meta name="robots" content="nofollow" />
+    <meta name="robots" content="noarchive" />
+
+    <meta name="description" content="Data on annual industry accounts (including GDP by Industry) and input-output accounts (I-O), benchmark I-O accounts (including capital flow), satellite industry accounts (including travel, tourism and transportation). Plus, supplemental estimates.">
+    <meta name="keywords" content="annual industry accounts, gross domestic product, GDP, industry, input-output accounts, I-O, benchmark, capital flow, satellite industry accounts, travel, tourism, transportation, interactive tables">
+    <meta name="DC.LastModified" content="2020-10-05" />
+
+    <title>BEA : BEA Industry Facts</title>
+
+    <link rel="canonical" href="https://apps.bea.gov/" />
+    <link rel="shortlink" href="https://apps.bea.gov/" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="_css/intradev/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="_css/intradev/cf_beapage.css">
+
+    <!-- load modals, so we can display a waiting modal  -->
+    <script src="js/utils/modals.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="_css/font-awesome-4.7.0/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,400i,700" media="all">
+
+    <script>
+        $(document).ready(function () {
+            jQuery.extend(jQuery.expr[":"], { BEAExternal: function (e) { return "" != e.href.replace(/[ #]/g, "") && (!/^mailto\:/.test(e.href) && (/exit_site\.asp\?link=.+?\.gov/i.test(e.href) ? (e.href = /\?link=(.*)/i.exec(e.href)[1], !1) : /exit_site\.asp\?link=/i.test(e.href) ? (e.href = /\?link=(.*)/i.exec(e.href)[1], !0) : e.hostname != location.hostname && !/\.gov/i.test(e.hostname))) } }); $("a:BEAExternal").addClass("link-external").attr("rel", "external").on("click", function (e) { confirm("You are leaving the BEA web-site and going to a non-governmental web-site.") && (window.location = $(e.target).attr("href")), e.preventDefault(), e.stopPropagation() }), $('a[target*="_blank"]').addClass("link-new-window");
+    
+            $('.panel-heading a').click(function() {
+                $('.panel-heading').removeClass('active');
+                // If the panel was open and would be closed by this click, do not active it
+                if(!$(this).closest('.panel').find('.panel-collapse').hasClass('in'))
+                    $(this).parents('.panel-heading').addClass('active');
+            });
+        });
+    </script>
+    <script>
+        // DO NOT MODIFY BELOW THIS LINE *****************************************
+           ;(function (g) {
+                  var d = document, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0], fsr = 'fsReady',
+                         aex = {
+                               "src": "https://gateway.foresee.com/sites/bea-gov/production/gateway.min.js",
+                               "type": "text/javascript",
+                               "async": "true",
+                               "data-vendor": "fs",
+                               "data-role": "gateway"
+                         };
+                  for (var attr in aex){am.setAttribute(attr, aex[attr]);}h.appendChild(am);g[fsr] = function () {var aT = '__' + fsr + '_stk__';g[aT] = g[aT] || [];g[aT].push(arguments);};
+           })(window);
+        // DO NOT MODIFY ABOVE THIS LINE **************************************
+    </script>
+    <script type="text/javascript" src="/_scripts/federated-analytics.js?agency=DOC&subagency=BEA" id="_fed_an_ua_tag"></script>
+
+</head>
+
+<body class="apps-bea-gov path-dummynotfoundhtm navbar-is-fixed-top has-glyphicons">
+    <a href="#main-content" class="sr-only focusable skip-link"> Skip to main content </a>
+
+    <header class="navbar navbar-default navbar-fixed-top" id="navbar" role="banner">
+        <div class="usa-banner">
+            <div class="usa-banner-header container">
+                <div class="usa-grid usa-banner-inner"> <img src="_images/favicon-57.png" alt="U.S. flag">
+                    <p>An official website of the United States government</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-header"> <a class="navbar-brand" href="https://www.bea.gov/"> </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <div class="region region-navigation-collapsible">
+                    <nav role="navigation" aria-labelledby="block-beagov-theme-main-menu-menu" id="block-beagov-theme-main-menu" data-block-plugin-id="system_menu_block:main">
+                        <h2 class="sr-only" id="block-beagov-theme-main-menu-menu">Main navigation</h2>
+                        <!-- ================================================= -->
+                        
+                        <ul region="navigation_collapsible" class="menu nav navbar-nav">
+                            <li class="expanded dropdown"> <a href="https://www.bea.gov/data" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Data <span class="caret"></span> </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/data/gdp" data-drupal-link-system-path="node/13541">by Topic</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/data/by-place-us" data-drupal-link-system-path="node/13656">by Place</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/data/economic-accounts" data-drupal-link-system-path="node/13646">by Economic Account</a> </li>
+                                </ul>
+                            </li>
+                            <li class="expanded dropdown active"> <a href="https://www.bea.gov/tools" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Tools <span class="caret"></span> </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="/itable/itable.cfm">Interactive Data</a> </li>
+                                    <li class="expanded dropdown"> <a href="/API/signup/index.cfm">Application Programming Interface (API)</a> </li>
+                                    <li class="expanded dropdown"> <a href="/international/factsheet/">Country Facts</a> </li>
+                                    <li class="expanded dropdown"> <a href="/regional/bearfacts/">BEARFACTS</a> </li>
+                                    <li class="expanded dropdown"> <a href="/industry/factsheet/">Industry Facts</a> </li>
+                                    <li class="expanded dropdown"> <a href="/iTable/iTable.cfm?reqid=99&amp;step=1#reqid=99&amp;step=1&amp;isuri=1">GDP &amp; Personal Income Mapping</a> </li>
+                                    <li class="expanded dropdown"> <a href="/regional/rims/rimsii/">RIMS II</a> </li>
+                                    <li class="expanded dropdown"> <a href="/efile">eFile</a> </li>
+                                </ul>
+                            </li>
+                            <li class="expanded dropdown"> <a href="https://www.bea.gov/news" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> News <span class="caret"></span> </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/news/glance" data-drupal-link-system-path="node/20292">Economy at a Glance</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/news/current-releases" data-drupal-link-system-path="news/current-releases">Current Releases</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/news/schedule" data-drupal-link-system-path="news/schedule">Release Schedule</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/news/blog" data-drupal-link-system-path="news/blog">The BEA Wire | BEA's Official Blog</a> </li>
+                                    <li class="expanded dropdown"> <a href="/scb/">Survey of Current Business</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/news/archive?field_related_product_target_id=All&amp;created_1=All&amp;title=" data-drupal-link-query="{&quot;created_1&quot;:&quot;All&quot;,&quot;field_related_product_target_id&quot;:&quot;All&quot;,&quot;title&quot;:&quot;&quot;}" data-drupal-link-system-path="news/archive">News Release Archive</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/news/for-journalists" data-drupal-link-system-path="node/23916">For Journalists</a> </li>
+                                </ul>
+                            </li>
+                            <li class="expanded dropdown"> <a href="https://www.bea.gov/research" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Research <span class="caret"></span> </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/research/office-chief-economist">Office of the Chief Economist</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/research/meet-the-researchers" data-drupal-link-system-path="research/meet-the-researchers">Meet the Researchers</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/research/papers" data-drupal-link-system-path="research/papers">Papers</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/research/seminars" data-drupal-link-system-path="node/11196">Seminars</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/research/special-sworn-employee-program/papers" data-drupal-link-system-path="node/8211">Research Using BEA's Firm-Level Data</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/research/special-sworn-employee-program" data-drupal-link-system-path="node/8131">Special Sworn Employee Program</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/research/fellowship-program" data-drupal-link-system-path="node/8136">Fellowship Program</a> </li>
+                                </ul>
+                            </li>
+                            <li class="expanded dropdown"> <a href="https://www.bea.gov/resources" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Resources <span class="caret"></span> </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/resources/learning-center" data-drupal-link-system-path="node/14796">Learning Center</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/resources/methodologies" data-drupal-link-system-path="resources/methodologies">Methodologies</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/resources/multimedia" data-drupal-link-system-path="resources/multimedia">Multimedia</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/resources/article-collection" data-drupal-link-system-path="node/9391">Article Collections</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/congressional-users" title="congressional users">For Congressional Users</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/resources/for-developers" data-drupal-link-system-path="node/9396">For Developers</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/classroom" data-drupal-link-system-path="node/22426">For Students</a> </li>
+                                </ul>
+                            </li>
+                            <li class="expanded dropdown"> <a href="https://www.bea.gov/about" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> About <span class="caret"></span> </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/about/directors-page" data-drupal-link-system-path="node/8076">Director's Page</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/about/leadership" data-drupal-link-system-path="node/51">Leadership</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/about/advisory-committees" data-drupal-link-system-path="node/6426">Advisory Committees</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/about/budget-and-performance" data-drupal-link-system-path="node/6431">Budget and Performance</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/about/policies-and-information" data-drupal-link-system-path="node/6436">Policies and Information</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/about/working-at-bea" data-drupal-link-system-path="node/8156">Working at BEA</a> </li>
+                                </ul>
+                            </li>
+                            <li class="expanded dropdown"> <a href="https://www.bea.gov/help" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/help/contact-us" data-drupal-link-system-path="node/9106">Contact Us</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/form/ask-an-expert" data-drupal-link-system-path="webform/ask_an_expert">Ask an Expert</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/help/information-for-survey-respondents" data-drupal-link-system-path="node/9356">For Survey Respondents</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/help/faq" data-drupal-link-system-path="help/faq">Frequently Asked Questions (FAQ)</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/help/glossary" data-drupal-link-system-path="help/glossary">Glossary</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://www.bea.gov/help/guidelines-for-citing-bea" data-drupal-link-system-path="node/10936">Guidelines for Citing BEA</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- ================================================= --> 
+                    </nav>
+                    <section id="block-beagovsearchblock" data-block-plugin-id="beagov_search_block" class="block block-beagov-search block-beagov-search-block clearfix">
+                        <form id="search-block-form" class="navbar-form navbar-right" role="search" action="https://search.bea.gov/search" method="get" accept-charset="UTF-8" data-drupal-form-fields="edit-keys">
+                            <input id="affiliate" name="affiliate" type="hidden" value="u.s.bureauofeconomicanalysis"/>
+                            <div class="form-group form-group-sm js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+                                <input id="edit-keys" class="form-search form-control usagov-search-autocomplete" title="" data-drupal-selector="edit-keys" placeholder="Search" name="query" value="" type="search">
+                            </div>
+                            <button class="btn btn-default js-form-submit button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <div id="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions"> </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div id="main-content" role="main" class="bea-application main-container container-fluid">
+
+    <ol class="breadcrumb ml-2em">
+        <li><a href="/">Home</a></li>
+        <li><a href="https://www.bea.gov/industry/">Industry Economic Accounts</a></li>
+        <li class="active">BEA Industry Facts</li>    
+    </ol>
+
+    <script type="text/javascript" src="js/app.js"></script>
+            
+    <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td bgcolor="#FFFFFF" valign="top"><!-- hello -->
+                
+                <a name="contentjump" id="skip"></a>
+                
+                <div id="content"><!-- Do not modify ID -->
+                    <h1>BEA Industry Facts</h1>
+                    
+                    <link type="text/css" href="_css/style.css" rel="stylesheet" />
+                    <link href="_css/intradev/jquery-override.css" rel="stylesheet" type="text/css">
+
+                    <body class="industry">
+                        <div id="content">   
+                            <p> 
+                                Looking for the lowdown on  your favorite industry? BEA's Industry Facts provide industry specific information on value added, intermediate inputs, and gross output in real and current dollars. Now with Industry Facts, you can access consolidated data tables or print a one page overview of your industry's latest statistics. Select an industry below and start learning! <a href="https://youtu.be/gMa6AzOeYis" target="_blank">Video: Finding Your Data</a>
+                            </p>
+                            <form name="factsheetForm" id="factsheetForm" action="javascript:void(0);" class="form-inline">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="form-group">
+                                        <label class="sr-only" for="IndustryId">Industry:</label>
+                                        <select name="IndustryId" size="1" id="IndustryId" class="form-control">
+                                            <option value="" disabled selected>Select Industry</option>
+                                        </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="btnSubmit" name="btnSubmit" value="Display">Display</button>
+                                        <div class="form-group"> 
+                                            <span style="padding-left:10px">...or click on a leading contributor below.</span> 
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row icon-set" ></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+                <!-- end of content div -->
+            </td>
+        </tr> 
+    </table>
+
+    <div class="full-width">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="last-modified">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer container" role="contentinfo">
+	<div class="region region-footer">
+		<section id="block-beagovfooter" data-block-plugin-id="block_content:aa0d67fd-5738-4477-83ce-e17e948518e8" class="block block-block-content block-block-contentaa0d67fd-5738-4477-83ce-e17e948518e8 clearfix">
+			<div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h4>Bureau of Economic Analysis <span> 4600 Silver Hill Road &bull; Suitland, MD 20746 </span></h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<ul class="footer-links">
+								<li class="text-large"><a href="//www.bea.gov/contact-us">Contact Us</a></li>
+								<li class="text-large"><a href="//www.bea.gov/help/faq">Frequently Asked Questions</a></li>
+								<li class="text-large"><a href="//www.bea.gov/about/policies-and-information">Our Policies</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="footer-links">
+								<li><a href="//www.bea.gov/statement-commitment-scientific-integrity-principal-statistical-agencies">Commitment to Scientific Integrity</a></li>
+								<li><a href="//www.bea.gov/about/policies-and-information/data-dissemination">Data Dissemination Practices</a></li>
+								<li><a href="//www.bea.gov/open-data">Open Data</a></li>
+								<li><a href="https://www.usa.gov/">USA.gov</a></li>
+								<li><a href="https://business.usa.gov">Business USA</a></li>
+								<li><a href="http://www.osec.doc.gov/ocr/nofear/nofear.htm/">No FEAR Act</a></li>
+								<li><a href="http://osec.doc.gov/opog/FOIA/default.html">FOIA</a></li>
+								<li><a href="https://www.commerce.gov/">COMMERCE.gov</a></li>
+								<li><a href="https://apps.bea.gov/status/index.cfm">ESR System</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="footer-links">
+								<li><a href="//www.bea.gov/news/blog">The BEA Wire | BEA's Official Blog</a></li>
+								<li> <a href="https://twitter.com/bea_news" class="ext" target="_blank" rel="noopener noreferrer">BEA on Twitter<span class="ext" aria-label="(link is external)"></span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCCP9QD1x_z__duUivA6Yb5w" class="ext" target="_blank" rel="noopener noreferrer">BEA's YouTube Channel<span class="ext" aria-label="(link is external)"></span></a></li>
+								<li><a href="//apps.bea.gov/rss/rss.xml" title="BEA's RSS Feeds">News Release Feed (RSS)</a></li>
+								<li><a href="/_subscribe/" title="Email Subscription Service">Sign up for Email Notifications (ESS)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics --> 
+<script async src=https://www.googletagmanager.com/gtag/js?id=G-J4698JNNFT></script> 
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J4698JNNFT');
+</script>
+
+</body>
+</html> 
