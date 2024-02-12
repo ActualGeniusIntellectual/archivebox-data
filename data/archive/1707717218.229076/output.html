@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:16px !important"><head>
+    <meta charset="utf-8">
+    <title>BEA Interactive Data Application</title>
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <link href="/_framework/font-awesome-pro-5.15.1-web/css/all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://apps.bea.gov/_css/style.css">
+
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/example_ie.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/datatables.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/chart.css">
+    <link rel="stylesheet" type="text/css" href="/itmod/css/fontawesome-pro-5.15.1-web/css/all.css">
+
+  <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+    
+<!--      
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.18/fc-3.2.5/datatables.min.js" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/datatables.min.js"></script>
+    <!--<script src="https://kit.fontawesome.com/4d1eeb5afb.js" crossorigin="anonymous"></script>
+    <script src="/itmod/css/fontawesome-pro-5.15.1-web/js/all.js" crossorigin="anonymous"></script>-->
+    <!--
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    -->
+
+    <script src="js/amcharts/amcharts.js"></script>
+    <script src="js/amcharts/serial.js"></script>
+    <script src="js/amcharts/plugins/export/export.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/amcharts/plugins/export/export.css">
+    <script src="js/ammap_amcharts_extension.js"></script>
+
+    <script src="js/filterlist.js?1"></script>
+    <script src="js/utils.js?1"></script>
+    <script src="js/modals.js?1"></script>
+    <script src="js/Table.js?1"></script>
+    <script src="js/Chart.js?1"></script>
+    <script src="js/Map.js?1"></script>
+    <script src="js/promptKeyData.js?1"></script>
+    <script src="js/scripts.js?2"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="modal-open">
+    <header class="fixed-top">
+        <div class="usa-banner">
+            <div class="usa-banner-header container">
+                <div class="usa-grid usa-banner-inner">
+                    <img src="https://apps.bea.gov/_images/favicon-57.png" alt="U.S. flag">
+                    <p>An official website of the United States government</p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-default" style="max-height: 53px;">
+            <nav class="navbar navbar navbar-expand-md m-0 p-0">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="https://www.bea.gov" aria-label="homepage link"></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                    </div>
+                    <div class="collapse navbar-collapse p-0" id="navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="DatanavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Data
+                                </a>
+                                <ul class="dropdown-menu menu" aria-labelledby="DatanavbarDropdown">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/data/gdp" data-drupal-link-system-path="node/13541">by Topic</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/data/by-place-us" data-drupal-link-system-path="node/13656">by Place</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/data/economic-accounts" data-drupal-link-system-path="node/13646">by Economic Account</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown active">
+                                <a href="https://www.bea.gov/tools" class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    Tools
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="">Interactive Data</a> </li>
+                                    <li class="expanded dropdown">
+                                        <a href="/API/signup/index.html">
+                                            Application Programming
+                                            Interface (API)
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="/international/factsheet/">Country Facts</a>
+                                    </li>
+                                    <li class="expanded dropdown"> <a href="/regional/bearfacts/">BEARFACTS</a> </li>
+                                    <li class="expanded dropdown"> <a href="/industry/factsheet/">Industry Facts</a> </li>
+                                    <li class="expanded dropdown">
+                                        <a href="/itable/?appid=99&amp;step=1">
+                                            GDP
+                                            &amp; Personal Income Mapping
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown"> <a href="/regional/rims/rimsii/">RIMS II</a> </li>
+                                    <li class="expanded dropdown"> <a href="/efile">eFile</a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/news" class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    News
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/glance" data-drupal-link-system-path="node/20292">Economy at a Glance</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/current-releases" data-drupal-link-system-path="news/current-releases">Current Releases</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/schedule" data-drupal-link-system-path="news/schedule">Release Schedule</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/blog" data-drupal-link-system-path="news/blog">The BEA Wire | BEA's Official Blog</a>
+                                    </li>
+                                    <li class="expanded dropdown"> <a href="/scb/">Survey of Current Business</a> </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/archive?field_related_product_target_id=All&amp;created_1=All&amp;title=" data-drupal-link-query="{&quot;created_1&quot;:&quot;All&quot;,&quot;field_related_product_target_id&quot;:&quot;All&quot;,&quot;title&quot;:&quot;&quot;}" data-drupal-link-system-path="news/archive">News Release Archive</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/for-journalists" data-drupal-link-system-path="node/23916">For Journalists</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/research" class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    Research
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/office-chief-economist">
+                                            Office of the Chief
+                                            Economist
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/meet-the-researchers" data-drupal-link-system-path="research/meet-the-researchers">
+                                            Meet the
+                                            Researchers
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/papers" data-drupal-link-system-path="research/papers">Papers</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/seminars" data-drupal-link-system-path="node/11196">Seminars</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/special-sworn-employee-program/papers" data-drupal-link-system-path="node/8211">
+                                            Research Using BEA's Firm-Level
+                                            Data
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/special-sworn-employee-program" data-drupal-link-system-path="node/8131">Special Sworn Employee Program</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/fellowship-program" data-drupal-link-system-path="node/8136">Fellowship Program</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/resources" class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    Resources
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/learning-center" data-drupal-link-system-path="node/14796">Learning Center</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/methodologies" data-drupal-link-system-path="resources/methodologies">Methodologies</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/multimedia" data-drupal-link-system-path="resources/multimedia">Multimedia</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/article-collection" data-drupal-link-system-path="node/9391">Article Collections</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/congressional-users" title="congressional users">For Congressional Users</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/for-developers" data-drupal-link-system-path="node/9396">For Developers</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/classroom" data-drupal-link-system-path="node/22426">For Students</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/about" class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/directors-page" data-drupal-link-system-path="node/8076">Director's Page</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/leadership" data-drupal-link-system-path="node/51">Leadership</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/advisory-committees" data-drupal-link-system-path="node/6426">Advisory Committees</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/budget-and-performance" data-drupal-link-system-path="node/6431">Budget and Performance</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/policies-and-information" data-drupal-link-system-path="node/6436">Policies and Information</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/working-at-bea" data-drupal-link-system-path="node/8156">Working at BEA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/help" class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    Help
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/contact-us" data-drupal-link-system-path="node/9106">Contact Us</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/form/ask-an-expert" data-drupal-link-system-path="webform/ask_an_expert">Ask an Expert</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/information-for-survey-respondents" data-drupal-link-system-path="node/9356">For Survey Respondents</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/faq" data-drupal-link-system-path="help/faq">Frequently Asked Questions (FAQ)</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/glossary" data-drupal-link-system-path="help/glossary">Glossary</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/guidelines-for-citing-bea" data-drupal-link-system-path="node/10936">Guidelines for Citing BEA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <section id="block-beagovsearchblock" data-block-plugin-id="beagov_search_block" class="block block-beagov-search block-beagov-search-block clearfix w-100">
+                            <form id="search-block-form" class="navbar-form navbar-right m-0 p-0" role="search" action="https://search.bea.gov/search" method="get" accept-charset="UTF-8" data-drupal-form-fields="edit-keys">
+                                <input id="affiliate" name="affiliate" type="hidden" value="u.s.bureauofeconomicanalysis">
+                                <div class="form-group form-group-sm js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+                                    <input id="edit-keys" class="form-search form-control usagov-search-autocomplete" title="" data-drupal-selector="edit-keys" placeholder="Search" name="query" value="" type="search">
+                                </div>
+                                <button class="btn btn-default js-form-submit button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <div id="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions"> </div>
+                            </form>
+                        </section>
+                    </div>                    
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+    <div class="bea-application main-container container-fluid" id="MainContainer" style="margin-top:75px;">
+        <nav id="bottomTabs" class="btn-toolbar btn-toolbar-centered sub-nav" role="toolbar">
+            <div class="container-fluid panel-shadow dropdown-toolbar">
+                <a id="nipa_tab" type="button" href="https://www.bea.gov/itable/national-gdp-and-personal-income" class="bottomTabs btn btn-default"><span>National Data</span>GDP &amp; Personal Income</a>
+                <a id="nipafa_tab" type="button" href="https://www.bea.gov/itable/fixed-assets" class="bottomTabs btn btn-default"><span>National Data</span>Fixed Assets</a>
+                <a id="indgdp_tab" type="button" href="https://www.bea.gov/itable/gdp-by-industry" class="bottomTabs btn btn-default"><span>Industry Data</span>GDP-by-industry</a>
+                <a id="indio_tab" type="button" href="https://www.bea.gov/itable/input-output" class="bottomTabs btn btn-default"><span>Industry Data</span>Input-Output</a>
+                <a id="iip_tab" type="button" href="https://www.bea.gov/itable/international-transactions-services-and-investment-position" class="bottomTabs btn btn-default"><span>International Data</span>Int'l Transactions, Services, &amp; IIP</a>
+                <a id="mne_tab" type="button" href="https://www.bea.gov/itable/direct-investment-multinational-enterprises" class="bottomTabs btn btn-default"><span>International Data</span>Direct Investment &amp; MNEs</a>
+                <a id="regional_tab" type="button" href="https://www.bea.gov/itable/regional-gdp-and-personal-income" class="bottomTabs btn btn-warning"><span>Regional Data</span>GDP &amp; Personal Income</a>
+            </div>
+        </nav>
+        <ol class="breadcrumb py-0 my-0 mt-1 pt-1">
+            <li> <a href="https://www.bea.gov">Home</a> </li>
+            <li> <a href="https://www.bea.gov/tools">Tools</a> </li>
+            <li class="active">Interactive Data Tables</li>
+        </ol>
+    <div id="iTable" class="px-1 mx-2"><div class="page-header"> <h1 id="divisionname" class="font-weight-normal">Regional Data</h1> <h3 id="appname" class="font-weight-light">GDP and Personal Income Mapping</h3></div><ul class="nav nav-tabs" id="navTabs" role="tablist"><li class="nav-item"><a class="nav-link active" id="tabs-1" data-toggle="tab" href="#panel-1" role="tab" aria-selected="true">Table</a></li></ul> <div class="tab-content" id="navTabsContent"><div class="tab-pane p-2 border active" id="panel-1" role="tabpanel"><div class="row mb-2 pl-2 d-inline-block"></div><div id="iTableForm9901" class="container-fluid"><div class="form-group row"><label class="col-sm-3 col-md-2 col-form-label text-capitalize font-weight-bold" "=""></label><div class="col-sm-9 elemcontainer">Revised Regional Economic Account statistics on GDP are now available annually, 
+				for 2017 through 2022, and quarterly, for first quarter 2018 through third quarter 2023, reflecting the 
+				2023 Comprehensive Update of the Regional Economic Accounts. Regional GDP statistics for earlier years and 
+				quarters will be  <a target="_blank" href="https://www.bea.gov/information-updates-national-economic-accounts">forthcoming</a>. 
+				Archived regional data are available through BEA's data <a target="_blank" href="https://apps.bea.gov/regional/histdata/">archives</a>.</div></div><div class="form-group prompt-container"><div id="vertical_container_9901" class="accordion"><div class="card my-1 border round"><div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#tabpanel_1_TableId_0">Quarterly gross domestic product by state</div><div id="tabpanel_1_TableId_0" class="collapse" data-parent="#vertical_container_9901"><div class="card-body p-0"><div class="list-group px-0"><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQGDP1 State quarterly gross domestic product (GDP) summary</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQGDP2 GDP in current dollars</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQGDP9 Real GDP in chained dollars</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQGDP8 Chain-type quantity indexes for real GDP</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQGDP11 Contributions to percent change in real GDP</span></div></div></div></div><div class="card my-1 border round"><div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#tabpanel_1_TableId_1">Annual gross domestic product by state</div><div id="tabpanel_1_TableId_1" class="collapse" data-parent="#vertical_container_9901"><div class="card-body p-0"><div class="list-group px-0"><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SASUMMARY State annual summary statistics: personal income, GDP, consumer spending, price indexes, and employment</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP1 State annual gross domestic product (GDP) summary</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP2 GDP in current dollars</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP4 Compensation of employees</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP3 Taxes on production and imports less subsidies</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP7 Gross operating surplus</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP9 Real GDP in chained dollars</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP8 Chain-type quantity indexes for real GDP</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP5 Subsidies</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP6 Taxes on production and imports</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAGDP11 Contributions to percent change in real GDP</span></div></div></div></div><div class="card my-1 border round"><div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#tabpanel_1_TableId_2">Quarterly personal Income by state</div><div id="tabpanel_1_TableId_2" class="collapse" data-parent="#vertical_container_9901"><div class="card-body p-0"><div class="list-group px-0"><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQINC1 State quarterly personal income summary: personal income, population, per capita personal income</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQINC4 Personal income by major component</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQINC5 Personal income by major component and earnings by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQINC6 Compensation of employees by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQINC7 Wages and salaries by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SQINC35 Personal current transfer receipts</span></div></div></div></div><div class="card my-1 border round"><div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#tabpanel_1_TableId_3">Annual personal income and employment by state</div><div id="tabpanel_1_TableId_3" class="collapse" data-parent="#vertical_container_9901"><div class="card-body p-0"><div class="list-group px-0"><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SASUMMARY State annual summary statistics: personal income, GDP, consumer spending, price indexes, and employment</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC1-51 Personal income, population, per capita personal income, disposable personal income, and per capita disposable personal income</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC4 Personal income and employment by major component</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC5 Personal income by major component and earnings by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC6 Compensation of employees by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC7 Wages and salaries by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAEMP25 Total full-time and part-time employment by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAEMP27 Full-time and part-time wage and salary employment by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC30 Economic profile</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC35 Personal current transfer receipts</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC40 Property income</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC45 Farm income and expenses</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC50 Personal current taxes</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC70 Transactions of state and local government defined benefit pension plans</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAINC91 Gross flow of earnings</span></div></div></div></div><div class="card my-1 border round"><div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#tabpanel_1_TableId_4">Personal consumption expenditures by state, and real personal income and RPPs by state</div><div id="tabpanel_1_TableId_4" class="collapse" data-parent="#vertical_container_9901"><div class="card-body p-0"><div class="list-group px-0"><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SASUMMARY State annual summary statistics: personal income, GDP, consumer spending, price indexes, and employment</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAPCE1 Personal consumption expenditures by major type of product</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAPCE2 Per capita personal consumption expenditures by major type of product</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAPCE3 Personal consumption expenditures by type of product</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">SAPCE4 Personal consumption expenditures by function</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Real personal income (RPI) and real personal consumption expenditures (RPCE)</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Regional price parities (RPP)</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Implicit regional price deflators (IRPD)</span></div></div></div></div><div class="card my-1 border round"><div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#tabpanel_1_TableId_5">Gross domestic product (GDP) by county and metropolitan area</div><div id="tabpanel_1_TableId_5" class="collapse" data-parent="#vertical_container_9901"><div class="card-body p-0"><div class="list-group px-0"><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAGDP1 County and MSA gross domestic product (GDP) summary</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAGDP2 GDP in current dollars</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAGDP8 Chain-type quantity indexes for real GDP</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAGDP9 Real GDP in chained dollars</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAGDP11 Contributions to percent change in real GDP</span></div></div></div></div><div class="card my-1 border round"><div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#tabpanel_1_TableId_6">Personal income and employment by county and metropolitan area</div><div id="tabpanel_1_TableId_6" class="collapse" data-parent="#vertical_container_9901"><div class="card-body p-0"><div class="list-group px-0"><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAINC1 County and MSA personal income summary: personal income, population, per capita personal income</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAINC4 Personal income and employment by major component</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAINC5 Personal income by major component and earnings by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAINC6 Compensation of employees by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAEMP25 Total full-time and part-time employment by industry</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAINC30 Economic profile</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAINC35 Personal current transfer receipts</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAINC45 Farm income and expenses</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">CAINC91 Gross flow of earnings</span></div></div></div></div><div class="card my-1 border round"><div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#tabpanel_1_TableId_7">Satellite accounts - arts and culture production (ACPSA) and outdoor recreation (ORSA) by state</div><div id="tabpanel_1_TableId_7" class="collapse" data-parent="#vertical_container_9901"><div class="card-body p-0"><div class="list-group px-0"><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Arts and culture production compensation</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Arts and culture production employment</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Arts and culture production value added</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Outdoor recreation compensation</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Outdoor recreation employment</span><span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">Outdoor recreation value added</span></div></div></div></div></div></div></div></div></div></div></div>
+    <div class="full-width">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="last-modified">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100" style="background-color: #005189;">
+        <footer class="footer container" role="contentinfo">
+            <div class="region region-footer">
+                <section id="block-beagovfooter" data-block-plugin-id="block_content:aa0d67fd-5738-4477-83ce-e17e948518e8" class="block block-block-content block-block-contentaa0d67fd-5738-4477-83ce-e17e948518e8 clearfix">
+                    <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Bureau of Economic Analysis <span> 4600 Silver Hill Road • Suitland, MD 20746 </span></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul class="footer-links">
+                                        <li class="text-large"><a href="//www.bea.gov/contact-us">Contact Us</a></li>
+                                        <li class="text-large"><a href="//www.bea.gov/about/working-at-bea">Working at BEA</a></li>
+                                        <li class="text-large"><a href="//www.bea.gov/help/faq">Frequently Asked Questions</a></li>
+                                        <li class="text-large"><a href="//www.bea.gov/about/policies-and-information">Our Policies</a></li>
+                                        <li class="text-large"><a href="//www.bea.gov/privacy">Privacy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="footer-links">
+                                        <li><a href="//www.bea.gov/statement-commitment-scientific-integrity-principal-statistical-agencies">Commitment to Scientific Integrity</a></li>
+                                        <li><a href="//www.bea.gov/about/policies-and-information/data-dissemination">Data Dissemination Practices</a></li>
+                                        <li><a href="//www.bea.gov/open-data">Open Data</a></li>
+                                        <li><a href="//www.usa.gov/">USA.gov</a></li>
+                                        <li><a href="//business.usa.gov">Business USA</a></li>
+                                        <li><a href="//www.osec.doc.gov/ocr/nofear/nofear.htm">No FEAR Act</a></li>
+                                        <li><a href="//osec.doc.gov/opog/FOIA/default.html">FOIA</a></li>
+                                        <li><a href="//www.commerce.gov/">COMMERCE.gov</a></li>
+                                        <li><a href="//apps.bea.gov/status/index.html">ESR System</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="footer-links">
+                                        <li><a href="//www.bea.gov/news/blog">The BEA Wire | BEA's Official Blog</a></li>
+                                        <li> <a href="//twitter.com/bea_news" class="ext">BEA on Twitter<span class="ext" aria-label="(link is external)"></span></a></li>
+                                        <li><a href="//www.youtube.com/channel/UCCP9QD1x_z__duUivA6Yb5w" class="ext">BEA's YouTube Channel<span class="ext" aria-label="(link is external)"></span></a></li>
+                                        <li><a href="//apps.bea.gov/rss/rss.xml" title="BEA's RSS Feeds">News Release Feed (RSS)</a></li>
+                                        <li><a href="//www.bea.gov/_subscribe/" title="Email Subscription Service">Sign up for Email Notifications (ESS)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-37717925-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="/_scripts/uaevents.js"></script>
+
+
+
+<div class="modal show" role="dialog" id="pleasewait-modal" style="z-index: 3001; display: block;" aria-modal="true"><div class="modal-dialog modal-md"><div class="modal-content"><div class="modal-header"><h4 class="modal-title text-primary"> <span class="" aria-hidden="true"></span> <span class="modal-title"> Please Wait </span> </h4><span class="btn btn-sm close text-danger" data-dismiss="modal">×</span></div><div class="modal-body" id="pleasewait-modal-Body"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:100%"> Processing... </div></div><div class="modal-footer"></div></div></div></div><div class="modal" role="dialog" id="options-modal"><div class="modal-dialog modal-xl"><div class="modal-content"><div class="modal-header"><h4 class="modal-title text-info"> <span class="fal fa-cogs text-danger mr-2" aria-hidden="true"></span> <span class="modal-title"> Data Table Options </span> </h4><span class="btn btn-sm close text-danger" data-dismiss="modal">×</span></div><div class="modal-body" id="options-modal-Body"></div><div class="modal-footer"><button type="button" class="btn btn-info" data-dismiss="modal">Refresh Table</button><button type="button" class="btn btn-info" data-dismiss="modal">Close</button></div></div></div></div><div class="modal" role="dialog" id="definition-modal"><div class="modal-dialog modal-xl"><div class="modal-content"><div class="modal-header"><h4 class="modal-title text-info"> <span class="fal fa-info-circle text-danger mr-2" aria-hidden="true"></span> <span class="modal-title" style="font-size: 0.8em;">Definitions</span> </h4><span class="btn btn-sm close text-danger" data-dismiss="modal">×</span></div><div class="modal-body" id="definition-modal-Body"></div><div class="modal-footer"><button type="button" class="btn btn-info" data-dismiss="modal">Close</button></div></div></div></div><div class="modal" role="dialog" id="download-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h4 class="modal-title text-info"> <span class="fal fa-download text-danger mr-2" aria-hidden="true"></span> <span class="modal-title" style="font-size: 0.8em;">Download Table</span> </h4><span class="btn btn-sm close text-danger" data-dismiss="modal">×</span></div><div class="modal-body" id="download-modal-Body"><div class="list-group">
+			                    <a class="list-group-item pointable" onclick="iTable.DoDownload('xlsx'); return none;">
+			                    <img class="pull-left" src="/itable/img/images/icons/FileType-Xls-icon.png">
+			                    <h4 class="list-group-item-heading">XLSX</h4>
+			                    <p class="list-group-item-text">Download your table in Excel format.</p>
+			                    </a>
+			                    <a class="list-group-item pointable" onclick="iTable.DoDownload('csv'); return none;" target="_blank">
+			                    <img class="pull-left" src="/itable/img/images/icons/FileType-Csv-icon.png">
+			                    <h4 class="list-group-item-heading">CSV</h4>
+			                    <p class="list-group-item-text">Download your table in CSV format.</p>
+			                    </a>
+			                    <a class="list-group-item pointable" onclick="iTable.DoDownload('pdf')" target="_blank">
+			                    <img class="pull-left" src="/itable/img/images/icons/FileType-Pdf-icon.png">
+			                    <h4 class="list-group-item-heading">PDF</h4>
+			                    <p class="list-group-item-text">Download your table in PDF format.</p>
+			                    </a>
+		</div></div><div class="modal-footer"><button type="button" class="btn btn-info" data-dismiss="modal">Close</button></div></div></div></div><div class="modal-backdrop show modal-stack" style="z-index: 3000;"></div></body></html>
