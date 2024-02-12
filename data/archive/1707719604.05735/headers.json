@@ -1,0 +1,21 @@
+{
+    "Status-Code": 200,
+    "Connection": "keep-alive",
+    "Content-Length": "13160",
+    "etag": "\"9B3nYcSWUowyhlO4zEPeHw==\"",
+    "perf": "7626143928",
+    "expires": "Sat, 31 Aug 2024 00:28:10 GMT",
+    "content-type": "image/png",
+    "last-modified": "Thu, 31 Aug 2023 21:23:47 GMT",
+    "x-transaction-id": "05f684f765ec35b2",
+    "timing-allow-origin": "https://twitter.com, https://mobile.twitter.com",
+    "strict-transport-security": "max-age=631138519",
+    "access-control-allow-origin": "*",
+    "X-Content-Type-Options": "nosniff",
+    "Accept-Ranges": "bytes",
+    "Date": "Mon, 12 Feb 2024 07:02:41 GMT",
+    "X-Served-By": "cache-fty21363-FTY, cache-pdk-kpdk1780111-PDK, cache-bur-kbur8200160-BUR",
+    "X-Cache": "HIT, HIT, HIT",
+    "x-tw-cdn": "FT",
+    "Server-Timing": "x-cache;desc=HIT, x-tw-cdn;desc=FT"
+}
