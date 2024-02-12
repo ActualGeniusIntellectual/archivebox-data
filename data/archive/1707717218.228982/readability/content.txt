@@ -1,0 +1,73 @@
+Home
+                Tools
+                BEA Data Application Programming Interface (API)
+            
+        
+        
+                
+                
+                    Note to users: Our API is now hosted on a new subdomain: https://apps.bea.gov. API users must use this new subdomain to retrieve data.
+                    What is it?
+                    The data API provides programmatic access to BEA published economic statistics using  industry-standard methods and procedures. BEA's data API includes methods for retrieving a subset of our  statistical data and the meta-data that describes it.
+                    The data API and its documentation are  for programmers who are familiar  with the concepts and techniques of retrieving data from Web Services.
+                    What is available? API User Guides 
+                    
+                        
+                            
+                                 UnderlyingGDPbyIndustry New
+                                 Underlying Detail estimates of value added, gross output, and intermediate inputs by industry. 
+                            
+                            
+                                 InputOutput 
+                                 Make and use tables, direct requirements, and total requirements statistics. 
+                            
+                            
+                                Regional 
+                                Detailed income and employment statistics by state, county, and metropolitan area. Detailed GDP statistics by state and metropolitan statistical area. Price parities statistics by state and MSA. 
+                            
+                            
+                                 NIPA 
+                                 NIPA tables with options. 
+                            
+                            
+                                 NIUnderlyingDetail 
+                                 NI  Underlying Detail tables with options. 
+                            
+                            
+                                 FixedAssets 
+                                 Fixed Assets  tables with options 
+                            
+                            
+                                 ITA 
+                                 International  Transactions dataset by indicator, area or country, frequency, and year 
+                            
+                            
+                                 IntlServTrade
+                                 International Services Trade dataset by type of service, trade  direction, affiliation, area or country, and year 
+                            
+                            
+                                 IntlServSTA  New
+                                 International Services Supplied Through Affiliates dataset by channel, destination, industry, area or country, and year 
+                            
+                            
+                                 IIP 
+                                 International Investment  Position dataset by type of investment, component, frequency, and year 
+                            
+                            
+                                 GDPByIndustry 
+                                 Estimates of value added,  gross output, intermediate inputs, KLEMS, and employment statistics by industry 
+                            
+                            
+                                 MNE 
+                                 Direct Investment by  direction of investment, series, classification, year, country, and industry;  and activities of Multinational Enterprises (MNE) by direction of investment,  ownership, bank/non-bank, series, classification, year, country, industry, and  state. 
+                            
+                        
+                        
+                    
+                
+                
+                        
+                            Register
+                        
+                        
+                                Please provide your name (or organization name), a valid email address, and agree to the published terms of service.
