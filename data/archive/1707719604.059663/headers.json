@@ -1,0 +1,21 @@
+{
+    "Status-Code": 200,
+    "age": "368835",
+    "date": "Mon, 12 Feb 2024 07:00:05 GMT",
+    "perf": "7469935968",
+    "vary": "Cookie,X-Twitter-Internal,X-Twitter-IP-Tags",
+    "server": "tsa_p",
+    "expires": "Mon, 12 Feb 2024 07:00:05 GMT",
+    "set-cookie": "ct0=f2de2884e5fb4212661520c4095e087a; Max-Age=21600; Expires=Mon, 12 Feb 2024 13:00:05 GMT; Path=/; Domain=.twitter.com; Secure",
+    "content-type": "text/html",
+    "accept-ranges": "bytes",
+    "cache-control": "max-age=0",
+    "x-frame-options": "SAMEORIGIN",
+    "x-transaction-id": "fe3d9481ab8749d4",
+    "x-xss-protection": "0",
+    "content-security-policy": "default-src 'self' ; connect-src 'self' https://api.twitter.com https://syndication.twitter.com https://s1259914507.t.eloqua.com https://*.twimg.com; font-src 'self' https://*.twimg.com https://*.twitter.com https://*.x.com https://cdn.cms-twdigitalassets.com data:; frame-src 'self' https://twitter.com https://x.com https://*.twitter.com https://*.x.com https://iframe.arkoselabs.com; img-src 'self' https://*.twimg.com https://*.twitter.com https://*.x.com https://*.google-analytics.com https://*.analytics.google.com https://cdn.cms-twdigitalassets.com https://cdn.goglobalwithtwitter.com https://twitter.com/i/jot https://x.com/i/jot https://udc-neb.kampyle.com/ https://*.g.doubleclick.net https://www.google.com/ads/ga-audiences data:; media-src 'self' https://*.twimg.com https://*.twitter.com https://*.x.com https://cdn.cms-twdigitalassets.com https://cdn.goglobalwithtwitter.com; object-src 'self' ; script-src 'self' 'sha256-9G5TwxImuKFNB+uY9x5+mjMfXDSza+S1DEsjxK1xeWw=' https://*.twitter.com https://*.x.com https://static.ads-twitter.com https://cdn.cms-twdigitalassets.com; style-src 'self' 'unsafe-inline' https://*.twimg.com https://*.twitter.com https://*.x.com https://cdn.cms-twdigitalassets.com https://cdn.goglobalwithtwitter.com; report-uri https://twitter.com/i/csp_report https://x.com/i/csp_report; frame-ancestors 'self'",
+    "strict-transport-security": "max-age=631138519",
+    "x-response-time": "7",
+    "x-connection-hash": "ae97c7c4d24ce43752505d3fff40c93cdc08a1e34fd1c0013e9b122a56a99364",
+    "transfer-encoding": "chunked"
+}
