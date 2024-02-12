@@ -1,0 +1,250 @@
+﻿html {
+    font-family: sans-serif !important;
+}
+
+
+body {
+    margin: 0;
+}
+#toolBox {
+    clear: both;
+    padding: 0px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+.pointable {
+    cursor: pointer !important;
+}
+
+.itable-tooltip {
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+    color: #000;
+    cursor: help;
+    font-weight: normal;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility !important;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.35s !important;
+    transition-duration: 0.35s !important;
+    -webkit-transition-timing-function: ease-in-out !important;
+    transition-timing-function: ease-in-out !important;
+}
+.btn-primary {
+    color: white;
+    background-color: #C55420 !important;
+    border-color: #af4b1c !important;
+}
+
+@media (min-width: 768px) {
+    .modal-xl {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+.list-group-item.active {
+    background-color: #337ab7 !important;
+    color: #fff;
+}
+
+.list-group-item.bg-info {
+    background-color: #337ab7 !important;
+}
+
+.Table_Title {
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+.Sub_Title {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.Table_Description {
+    margin: auto auto 20px auto;
+    font-size: 70%;
+}
+
+.table_container {
+    margin-top: -90px;
+}
+
+table.dataTable {
+    margin: 0 !important;
+}
+
+table.data_table th, table.data_table td {
+    border-right: 1px solid #aaa;
+}
+
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border: none !important;
+}
+
+table.dataTable tr.even {
+    background: #E7E5E5;
+}
+
+.data_table td {
+    text-align: right;
+    white-space: nowrap !important;
+}
+
+.data_table .StubStyle {
+    white-space: normal;
+}
+
+.dataTable .BoldStubStyle, .dataTable .StubStyle, .data_table .BoldStubStyle, .data_table .StubStyle {
+    text-align: left;
+    white-space: normal;
+}
+
+.dataTable .nsb, .dataTable .BoldStubStyle, .dataTable .NormalStyle_bold, .dataTable .NormalStyle_bold_left, .dataTable .NormalStyle_bold_centered, .dataTable .StubBannerStyle, .dataTable .CellBannerStyle, .data_table .nsb, .data_table .BoldStubStyle, .data_table .NormalStyle_bold, .data_table .NormalStyle_bold_left, .data_table .NormalStyle_bold_centered, .data_table .StubBannerStyle, .data_table .CellBannerStyle {
+    font-weight: bold;
+}
+/**/
+.dataTable .NormalStyle_centered, .dataTable .NormalStyle_bold_centered, .data_table .NormalStyle_centered, .data_table .NormalStyle_bold_centered {
+    text-align: center;
+}
+
+.dataTable .NormalStyle_left, .dataTable .NormalStyle_bold_left, .data_table .NormalStyle_left, .data_table .NormalStyle_bold_left {
+    text-align: left;
+}
+
+.dataTable .StubBannerStyle, .dataTable .CellBannerStyle, .data_table .StubBannerStyle, .data_table .CellBannerStyle {
+    text-align: center;
+    background-color: #CCC !important;
+}
+
+.dataTable .StubBannerStyle-clean, .dataTable .CellBannerStyle-clean, .data_table .StubBannerStyle-clean, .data_table .CellBannerStyle-clean {
+    text-align: center;
+    background-color: #FFF !important;
+}
+
+.Table_footer {
+    line-height: normal;
+}
+
+    .Table_footer .footNoteTitle {
+        font-size: 1.5em;
+        color: #999;
+        font-weight: bold;
+    }
+
+    .Table_footer .FootNoteStyle, .Table_footer .NormalStyle {
+        text-align: left;
+        white-space: normal;
+    }
+
+.pr-1 {
+    padding-right: .25rem !important;
+}
+
+.pr-2 {
+    padding-right: 1rem !important;
+}
+
+.p0 {
+    padding-left: 10px !important;
+}
+
+.p1 {
+    padding-left: 20px !important;
+}
+
+.p2 {
+    padding-left: 30px !important;
+}
+
+.p3 {
+    padding-left: 40px !important;
+}
+
+.p4 {
+    padding-left: 50px !important;
+}
+
+.p5 {
+    padding-left: 60px !important;
+}
+
+.p6 {
+    padding-left: 70px !important;
+}
+
+.p7 {
+    padding-left: 80px !important;
+}
+
+.p8 {
+    padding-left: 90px !important;
+}
+
+.p9 {
+    padding-left: 100px !important;
+}
+
+.p10 {
+    padding-left: 110px !important;
+}
+
+.p11 {
+    padding-left: 120px !important;
+}
+
+.p12 {
+    padding-left: 130px !important;
+}
+
+.p13 {
+    padding-left: 140px !important;
+}
+
+.p14 {
+    padding-left: 150px !important;
+}
+
+.p15 {
+    padding-left: 160px !important;
+}
+
+.p16 {
+    padding-left: 170px !important;
+}
+
+.p17 {
+    padding-left: 180px !important;
+}
+
+.p18 {
+    padding-left: 190px !important;
+}
+.filterTextBox {
+    color: #CCC;
+}
+
+.filter-control {
+    background-image: url(/itable/img/images/icons/Basic-Filter-icon.png) !important;
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    padding-left: 36px !important;
+    margin-bottom: 5px;
+}
+
+.TableListMemo {
+    margin-top: 15px;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}

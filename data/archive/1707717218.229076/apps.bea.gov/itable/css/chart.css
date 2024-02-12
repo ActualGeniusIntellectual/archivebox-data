@@ -1,0 +1,304 @@
+﻿
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------
+MAP STYLES
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.amcharts-export-menu-top-right {
+    top: 0;
+    right: 30px !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------
+CHART STYLES
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+ul#serieslist {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+}
+
+ul#serieslist li {
+    margin: 1px;
+    padding: 1px;
+    cursor: pointer;
+    color: #666;
+    background-color: #FFF;
+    border: solid 1px #FFF;
+    border-radius: 10px;
+    height: 20px;
+    list-style: none;
+    list-style-image: none;
+    background-image: none;
+}
+
+    ul#serieslist li:hover {
+        background-color: white;
+        border: solid 1px #CCCCCC;
+    }
+
+ul#serieslist {
+    margin: 5px 0;
+    padding: 0;
+    display: block;
+    overflow: auto;
+    height: 92%;
+    list-style: none;
+}
+
+#seriestext {
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    line-height: 1em;
+}
+
+.selected {
+    cursor: default;
+}
+
+.chartContainer {
+    float: left;
+    margin: 5px;
+    border: solid 1px #B4E1F0 !important;
+    border-radius: 10px;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+ul.list {
+    margin: 0;
+    padding: 2px 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100px;
+    width: 650px;
+}
+
+    ul.list li {
+        list-style: none;
+        cursor: pointer;
+        margin: 0;
+    }
+
+        ul.list li:hover {
+            background-color: #3229A4;
+            color: #fff;
+        }
+
+li.disabled {
+    color: #CBCBCB;
+}
+
+    li.disabled:hover {
+        color: #CBCBCB !important;
+        background-color: #fff !important;
+        cursor: default !important;
+    }
+
+
+/* Layout ==================================================== */
+@media (min-width: 768px) {
+    .modal-xl {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+.pr-1 {
+    padding-right: .25rem
+}
+
+.pr-2 {
+    padding-right: 1rem
+}
+
+.p0 {
+    padding-left: 10px;
+}
+
+.p1 {
+    padding-left: 20px;
+}
+
+.p2 {
+    padding-left: 30px;
+}
+
+.p3 {
+    padding-left: 40px;
+}
+
+.p4 {
+    padding-left: 50px;
+}
+
+.p5 {
+    padding-left: 60px;
+}
+
+.p6 {
+    padding-left: 70px;
+}
+
+.p7 {
+    padding-left: 80px;
+}
+
+.p8 {
+    padding-left: 90px;
+}
+
+.p9 {
+    padding-left: 100px;
+}
+
+.p10 {
+    padding-left: 110px;
+}
+
+.p11 {
+    padding-left: 120px;
+}
+
+.p12 {
+    padding-left: 130px;
+}
+
+.p13 {
+    padding-left: 140px;
+}
+
+.p14 {
+    padding-left: 150px;
+}
+
+.p15 {
+    padding-left: 160px;
+}
+
+.p16 {
+    padding-left: 170px;
+}
+
+.p17 {
+    padding-left: 180px;
+}
+
+.p18 {
+    padding-left: 190px;
+}
+/*===========================================================================================================
+
+=============================================================================================================	*/
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------
+									CHART STYLES
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.amcharts-export-menu li {
+    list-style: none !important;
+    list-style-image: none !important;
+    background-image: none !important;
+}
+
+ul#serieslist li {
+    list-style: none;
+    margin: 1px;
+    padding: 1px;
+    cursor: pointer;
+    color: #666;
+    background-color: #FFF;
+    border: solid 1px #FFF;
+    border-radius: 8px;
+    height: 1.5em;
+    list-style-image: none;
+    background-image: none;
+}
+
+    ul#serieslist li:hover {
+        background-color: white;
+        border: solid 1px #CCCCCC;
+    }
+
+ul#serieslist {
+    margin: 5px 0;
+    padding: 0;
+    display: block;
+    overflow: auto;
+    height: 92%;
+}
+
+#clearseriesbtn {
+    width: 342px;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px 3px;
+}
+
+.bulletNormal {
+    float: left;
+    margin: 5px 10px auto 7px;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #CCC;
+    border-radius: 10px;
+}
+
+.bulletSelected {
+    margin: 5px 10px auto 7px;
+    width: 5px;
+    height: 5px;
+    border: solid 5px #FFF;
+    border-radius: 10px;
+}
+
+.chartSelectBtn {
+    width: 51px;
+    height: 63px;
+    display: block;
+    margin: 5px -8px 5px auto;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+#BarChartBtn {
+    background-image: url(../img/chartTab_bar_default.png);
+}
+
+    #BarChartBtn:hover {
+        background-image: url(../img/chartTab_bar_hover.png);
+    }
+
+    #BarChartBtn.selected {
+        background-image: url(../img/chartTab_bar_selected.png);
+    }
+
+#LineChartBtn {
+    background-image: url(../img/chartTab_line_default.png);
+}
+
+    #LineChartBtn:hover {
+        background-image: url(../../img/chartTab_line_hover.png.html);
+    }
+
+    #LineChartBtn.selected {
+        background-image: url(../img/chartTab_line_selected.png);
+    }
+
+.selected {
+    cursor: default;
+}
+
+.bold {
+    font-weight: bold;
+}
