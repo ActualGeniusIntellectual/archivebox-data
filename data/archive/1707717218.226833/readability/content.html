@@ -1,0 +1,112 @@
+<meta charset="UTF-8">
+<div id="readability-page-1" class="page"><pre>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+
+&lt;http://www.w3.org/2000/01/rdf-schema#&gt; a owl:Ontology ;
+	dc:title "The RDF Schema vocabulary (RDFS)" .
+
+rdfs:Resource a rdfs:Class ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "Resource" ;
+	rdfs:comment "The class resource, everything." .
+
+rdfs:Class a rdfs:Class ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "Class" ;
+	rdfs:comment "The class of classes." ;
+	rdfs:subClassOf rdfs:Resource .
+
+rdfs:subClassOf a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "subClassOf" ;
+	rdfs:comment "The subject is a subclass of a class." ;
+	rdfs:range rdfs:Class ;
+	rdfs:domain rdfs:Class .
+
+rdfs:subPropertyOf a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "subPropertyOf" ;
+	rdfs:comment "The subject is a subproperty of a property." ;
+	rdfs:range rdf:Property ;
+	rdfs:domain rdf:Property .
+
+rdfs:comment a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "comment" ;
+	rdfs:comment "A description of the subject resource." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal .
+
+rdfs:label a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "label" ;
+	rdfs:comment "A human-readable name for the subject." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal .
+
+rdfs:domain a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "domain" ;
+	rdfs:comment "A domain of the subject property." ;
+	rdfs:range rdfs:Class ;
+	rdfs:domain rdf:Property .
+
+rdfs:range a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "range" ;
+	rdfs:comment "A range of the subject property." ;
+	rdfs:range rdfs:Class ;
+	rdfs:domain rdf:Property .
+
+rdfs:seeAlso a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "seeAlso" ;
+	rdfs:comment "Further information about the subject resource." ;
+	rdfs:range rdfs:Resource ;
+	rdfs:domain rdfs:Resource .
+
+rdfs:isDefinedBy a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:subPropertyOf rdfs:seeAlso ;
+	rdfs:label "isDefinedBy" ;
+	rdfs:comment "The defininition of the subject resource." ;
+	rdfs:range rdfs:Resource ;
+	rdfs:domain rdfs:Resource .
+
+rdfs:Literal a rdfs:Class ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "Literal" ;
+	rdfs:comment "The class of literal values, eg. textual strings and integers." ;
+	rdfs:subClassOf rdfs:Resource .
+
+rdfs:Container a rdfs:Class ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "Container" ;
+	rdfs:subClassOf rdfs:Resource ;
+	rdfs:comment "The class of RDF containers." .
+
+rdfs:ContainerMembershipProperty a rdfs:Class ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "ContainerMembershipProperty" ;
+	rdfs:comment """The class of container membership properties, rdf:_1, rdf:_2, ...,
+                    all of which are sub-properties of 'member'.""" ;
+	rdfs:subClassOf rdf:Property .
+
+rdfs:member a rdf:Property ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "member" ;
+	rdfs:comment "A member of the subject resource." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Resource .
+
+rdfs:Datatype a rdfs:Class ;
+	rdfs:isDefinedBy &lt;http://www.w3.org/2000/01/rdf-schema#&gt; ;
+	rdfs:label "Datatype" ;
+	rdfs:comment "The class of RDF datatypes." ;
+	rdfs:subClassOf rdfs:Class .
+
+&lt;http://www.w3.org/2000/01/rdf-schema#&gt; rdfs:seeAlso &lt;http://www.w3.org/2000/01/rdf-schema-more&gt; .
+</pre>
+</div>
