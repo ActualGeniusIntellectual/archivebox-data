@@ -1,0 +1,377 @@
+{
+    "archive_path": "archive/1707717218.229228",
+    "base_url": "apps.bea.gov/scb",
+    "basename": "",
+    "bookmarked_date": "2024-02-12 05:53",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/apps.bea.gov/scb",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=apps.bea.gov",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "apps.bea.gov/scb/index.html"
+    },
+    "domain": "apps.bea.gov",
+    "extension": "",
+    "hash": "348HT9BQAAHJBMXB1JRD",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:22:47.224696+00:00",
+                "index_texts": null,
+                "output": "https://web.archive.org/web/20240212062219/https://apps.bea.gov/scb/",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:22:15.920685+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:22:03.365470+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:22:00.886738+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=apps.bea.gov"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:21:43.969215+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:21:43.807874+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:21:44.565500+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:21:43.975627+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:22:15.900582+00:00",
+                "index_texts": [],
+                "output": "media",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:22:14.692033+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:22:14.674663+00:00",
+                "index_texts": null,
+                "output": "mercury",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:22:13.005099+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:21:57.881196+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:21:52.862443+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmpw6lx6wdf",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:22:12.998829+00:00",
+                "index_texts": [
+                    "Comprehensive Update of the Regional Economic Accounts\n\t\t\t\t\tNew and updated estimates of GDP by state, state personal income, and personal consumption expenditures by state, including methodology and classification improvements.\n\t\t\t\t\tDecember 14, 2023\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\tVisual Essay\n\t\t\t\t\tU.S. Digital Economy\n\t\t\t\t\tNew and revised statistics for 2017\u20132022 covering four major categories of goods and services\u2014infrastructure, e-commerce, priced digital services, and federal nondefense digital services.\n\t\t\t\t\tDecember 6, 2023\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\tVisual Essay\n\t\t\t\t\tActivities of U.S. Multinational Enterprises in 2021\n\t\t\t\t\tA look at the results of the 2021 Annual Survey of U.S. Direct Investment Abroad. Worldwide employment by U.S. multinational enterprises increased 1.1 percent in 2021 to 43.3 million workers.\n\t\t\t\t\tDecember 5, 2023\n\t\t\t\t\t\n\t\t\t\t\tUpdated Summary of NIPA Methodologies\n\t\t\t\t\tThe data and methods used to prepare current-dollar and real gross domestic product and current-dollar gross domestic income, reflecting the 2023 comprehensive update of the National Economic Accounts.\n\t\t\t\t\tDecember 1, 2023\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tImproved Estimates of the National Economic Accounts\n\t\t\t\t\tA detailed look at the 16th comprehensive update, which was released in September, and the major changes in statistics, definitions, and presentations. This marks the first concurrent release of the benchmark supply and use tables and the comprehensive updates of BEA\u2019s national, industry, and regional accounts.\n\t\t\t\t\tNovember 9, 2023\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tGovernment Receipts and Expenditures\n\t\t\t\t\tNet government saving decreased $108.3 billion to \u2212$1,845.4 billion in the second quarter of 2023. Net federal government saving increased $13.0 billion to \u2212$1,660.7 billion. Net state and local government saving decreased $121.3 billion to \u2212$184.7 billion.\n\t\t\t\t\tOctober 17, 2023\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\tMore articles\u2026\n\t\t\t\t\tBrowse by date or browse by subject."
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:22:12.686907+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:22:00.877934+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:21:57.886576+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "https://apps.bea.gov/scb/",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:21:52.856335+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:21:44.571914+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:22:12.682216+00:00",
+                "index_texts": null,
+                "output": "Survey of Current Business (SCB)",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:22:12.677109+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707717218.229228/warc/1707718923",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "https://apps.bea.gov/scb/"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:22:12.670701+00:00",
+                "index_texts": null,
+                "output": "apps.bea.gov/scb/index.html",
+                "pwd": "/data/archive/1707717218.229228",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:22:03.371660+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "https://web.archive.org/web/20240212062219/https://apps.bea.gov/scb/",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "Survey of Current Business (SCB)",
+        "warc": null,
+        "wget": "apps.bea.gov/scb/index.html"
+    },
+    "link_dir": "/data/archive/1707717218.229228",
+    "newest_archive_date": "2024-02-12T06:22:15.920685+00:00",
+    "num_failures": 0,
+    "num_outputs": 12,
+    "oldest_archive_date": "2024-02-12T06:21:43.807874+00:00",
+    "path": "/scb/",
+    "schema": "Link",
+    "scheme": "https",
+    "snapshot_id": "10aa3953-4a09-4c85-bfac-bc99269ae7ce",
+    "sources": [
+        "/data/sources/1707717217.88551-crawl-www.bea.gov.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707717218.229228",
+    "title": "Survey of Current Business (SCB)",
+    "updated": "2024-02-12T06:21:43.806416+00:00",
+    "updated_date": "2024-02-12 06:21",
+    "url": "https://apps.bea.gov/scb/"
+}
