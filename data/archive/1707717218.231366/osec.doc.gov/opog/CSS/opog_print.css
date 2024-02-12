@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header { display:none }
+#footer { display:none }
+#right #links { display:none; list-style-type:none }
+#right #offices ul li { list-style-type:none }
+#navbar { display:none }
+#pagetitle h1 .smallerheader { font-size:18px; line-height:normal }
+.imagecaption p { display:none }
+.imagecaption { float:left; margin-right:10px; margin-bottom:5px }
+#connect { display:none }
+#offices { display:none }
+#skip { display:none }
+#breadcrumbs { display:none }
+.no-wrap { white-space:nowrap }

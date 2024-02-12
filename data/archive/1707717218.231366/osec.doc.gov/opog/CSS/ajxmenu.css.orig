@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*
+ Ajatix Advanced CSS Drop Down Menu
+ Copyright (C) 2009-2016 Ajatix. All rights reserved.
+ http://www.ajatix.com
+*/
+.AJXCSSMenuIYFGCdB,.AJXCSSMenuIYFGCdB_n,.AJXCSSMenuIYFGCdB *,.AJXCSSMenuIYFGCdB_n * {box-sizing:border-box;}
+.AJXCSSMenuIYFGCdB {position:relative;z-index:100;width:100%;line-height:0;background:#4b6e98 url(ajxmenu_files/menu-bg.gif) top left;box-shadow:3px 3px 10px rgba(0,0,0,.5);text-align:center;}
+.AJXCSSMenuIYFGCdB ul {position:relative;display:inline-block;margin:0;padding:1px 1px 1px 1px;list-style-type:none;}
+*+html .AJXCSSMenuIYFGCdB ul {display:inline;}
+.AJXCSSMenuIYFGCdB li {float:left;margin:0;margin-left:2px;}
+.AJXCSSMenuIYFGCdB li:first-child {margin-left:0;}
+.AJXCSSMenuIYFGCdB li:hover,.AJXCSSMenuIYFGCdB li.ajxover {position:relative;}
+.AJXCSSMenuIYFGCdB a,.AJXCSSMenuIYFGCdB_n a {display:block;overflow:hidden;}
+.AJXCSSMenuIYFGCdB>ul>li>a {height:31px;white-space:nowrap;padding:0 0 0 12px;font:bold 11px Verdana,Arial,Helvetica,sans-serif;line-height:31px;text-decoration:none;text-transform:uppercase;text-align:center;border:0;color:#ffffff;background:url(ajxmenu_files/top.gif) no-repeat top left;}
+.AJXCSSMenuIYFGCdB>ul>li>a span {display:block;padding:0 12px 0 0;background:url(ajxmenu_files/top.gif) no-repeat top right;}
+.AJXCSSMenuIYFGCdB>ul>li:hover>a,.AJXCSSMenuIYFGCdB>ul>li.ajxover>a {color:#223e6e;background:#cccccc url(ajxmenu_files/top.gif) no-repeat bottom left;}
+.AJXCSSMenuIYFGCdB>ul>li:hover>a span,.AJXCSSMenuIYFGCdB>ul>li.ajxover>a span {background:url(ajxmenu_files/top.gif) no-repeat bottom right;}
+.AJXCSSMenuIYFGCdB>ul>li>a.ajxsub {padding:0 0 0 12px;background:url(ajxmenu_files/top-sub.gif) no-repeat top left;}
+.AJXCSSMenuIYFGCdB>ul>li>a.ajxsub span {padding:0 24px 0 0;background:url(ajxmenu_files/top-sub.gif) no-repeat top right;}
+.AJXCSSMenuIYFGCdB>ul>li:hover>a.ajxsub,.AJXCSSMenuIYFGCdB>ul>li.ajxover>a.ajxsub {position: relative;z-index:101;background:#cccccc url(ajxmenu_files/top-sub.gif) no-repeat bottom left;}
+.AJXCSSMenuIYFGCdB>ul>li:hover>a.ajxsub span,.AJXCSSMenuIYFGCdB>ul>li.ajxover>a.ajxsub span {background:url(ajxmenu_files/top-sub.gif) no-repeat bottom right;}
+.AJXCSSMenuIYFGCdB li ul {position:absolute;left:-9999px;top:-9999px;width:204px;height:auto;display:inline-block;vertical-align:top;font-size:0;float:none;padding:1px 1px 1px 1px;border:1px solid #999999;background:#ffffff;box-shadow:3px 3px 10px rgba(0,0,0,.5);}
+.AJXCSSMenuIYFGCdB li:hover > ul,.AJXCSSMenuIYFGCdB li.ajxover > ul {left:-1px;top:31px;}
+.AJXCSSMenuIYFGCdB li li {width:200px;margin:0;margin-top:1px;}
+.AJXCSSMenuIYFGCdB li li:first-child {margin-top:0;}
+.AJXCSSMenuIYFGCdB li li a {height:auto;white-space:normal;padding:6px 12px 7px 12px;font:10px Verdana,Arial,Helvetica,sans-serif;line-height:10px;text-decoration:none;text-transform:uppercase;text-align:left;border:0;color:#223e6e;background:#e0e0e0;}
+.AJXCSSMenuIYFGCdB li li:hover>a,.AJXCSSMenuIYFGCdB li li.ajxover>a {color:#ffffff;background:#5386ae;}
+.AJXCSSMenuIYFGCdB li li a.ajxsub {width:200px;padding:6px 16px 7px 12px;background:#e0e0e0 url(ajxmenu_files/sub-sub.gif) no-repeat center right;}
+.AJXCSSMenuIYFGCdB li li:hover>a.ajxsub,.AJXCSSMenuIYFGCdB li li.ajxover>a.ajxsub {position: static;background:#5386ae url(ajxmenu_files/sub-sub-mo.gif) no-repeat center right;}
+.AJXCSSMenuIYFGCdB li li:hover > ul,.AJXCSSMenuIYFGCdB li li.ajxover > ul {left:201px;top:-2px;}
+@media screen and (max-width:480px) {
+.AJXCSSMenuIYFGCdB:after,.AJXCSSMenuIYFGCdB_n:after {content:'narrow';display:none;}
+.AJXCSSMenuIYFGCdB_n {position:relative;width:100%;z-index:100;padding-top:33px;background:#4b6e98 url(ajxmenu_files/menu-bg.gif) repeat-x top left;cursor:pointer;}
+.AJXCSSMenuIYFGCdB_n:before {position:absolute;top:0;right:10px;content:"\2261";font:bold 33px Arial,Helvetica,sans-serif;line-height:33px;color:#ffffff;z-index:1;}
+.AJXCSSMenuIYFGCdB_n ul {margin:0;list-style-type:none;background:#ffffff;}
+.AJXCSSMenuIYFGCdB_n>ul {height:0;overflow:hidden;}
+.AJXCSSMenuIYFGCdB_n>ul.ajxover,.AJXCSSMenuIYFGCdB_n li ul{height:auto;padding:1px 1px 1px 1px;border:1px solid #5386ae;cursor:default;}
+.AJXCSSMenuIYFGCdB_n li {float:none;margin:1px 0 0 0;display:none;}
+.AJXCSSMenuIYFGCdB_n li:first-child {margin-top:0px;}
+.AJXCSSMenuIYFGCdB_n .ajxover li {display:block;}
+.AJXCSSMenuIYFGCdB_n li a {height:auto;white-space:normal;padding:7px 12px 7px 12px;font:11px Verdana,Arial,Helvetica,sans-serif;line-height:11px;text-decoration:none;text-transform:uppercase;text-align:left;border:0;color:#223e6e;background:#e0e0e0;}
+.AJXCSSMenuIYFGCdB_n li a span {display:block;padding:0;background:none;}
+.AJXCSSMenuIYFGCdB_n li:hover>a,.AJXCSSMenuIYFGCdB_n li.ajxover>a {color:#ffffff;background:#5386ae;}
+.AJXCSSMenuIYFGCdB_n li:hover>a span,.AJXCSSMenuIYFGCdB_n li.ajxover>a span {background:none;}
+.AJXCSSMenuIYFGCdB_n li a.ajxsub {padding:7px 16px 7px 12px;background:#e0e0e0 url(ajxmenu_files/mob-sub.gif) no-repeat center right;}
+.AJXCSSMenuIYFGCdB_n li a.ajxsub span {padding:0;background:none;}
+.AJXCSSMenuIYFGCdB_n li:hover>a.ajxsub,.AJXCSSMenuIYFGCdB_n li.ajxover>a.ajxsub {position: static;background:#5386ae url(ajxmenu_files/mob-sub-mo.gif) no-repeat center right;}
+.AJXCSSMenuIYFGCdB_n li:hover>a.ajxsub span,.AJXCSSMenuIYFGCdB_n li.ajxover>a.ajxsub span {background:none;}
+}
