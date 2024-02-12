@@ -1,0 +1,16 @@
+{
+    "Status-Code": 200,
+    "Content-Type": "text/html",
+    "Content-Length": "11415",
+    "Connection": "keep-alive",
+    "x-amz-meta-s3cmd-attrs": "atime:1588781900/ctime:1588781900/gid:20/gname:staff/md5:d2f43da854d0beeae24e01a15fb1768e/mode:33188/mtime:1034546404/uid:501/uname:carl",
+    "Last-Modified": "Wed, 06 May 2020 16:29:57 GMT",
+    "Server": "AmazonS3",
+    "Date": "Sun, 11 Feb 2024 09:20:08 GMT",
+    "ETag": "\"d2f43da854d0beeae24e01a15fb1768e\"",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 389c1a33068cb9de45215880c481189e.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "LAX50-C3",
+    "X-Amz-Cf-Id": "JScugMxMLArulc0KCUT51z7lFp5Acw9SsmG6f-IQL4n-LEF8WbXYLA==",
+    "Age": "77552"
+}

@@ -1,0 +1,377 @@
+{
+    "archive_path": "archive/1707717218.226799",
+    "base_url": "purl.org/rss/1.0/modules/content",
+    "basename": "",
+    "bookmarked_date": "2024-02-12 05:53",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/purl.org/rss/1.0/modules/content",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=purl.org",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "purl.org/rss/1.0/modules/content/index.html"
+    },
+    "domain": "purl.org",
+    "extension": "",
+    "hash": "1YYXJ611HFQ49175KJW7",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:48:20.204198+00:00",
+                "index_texts": null,
+                "output": "https://web.archive.org/web/20240212064805/https://web.resource.org/rss/1.0/modules/content/",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:59.257443+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:47:55.434577+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:54.625924+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=purl.org"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:47:43.672112+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:43.488400+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:47:45.869870+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:43.678378+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:47:59.249336+00:00",
+                "index_texts": [],
+                "output": "media",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:58.078761+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:47:58.051632+00:00",
+                "index_texts": null,
+                "output": "mercury",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:56.389403+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:47:53.637483+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:52.823745+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmp5g35ous5",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:47:56.381029+00:00",
+                "index_texts": [
+                    "Authors\n\n     Gabe Beged-Dov, \n      JFinity Systems LLC\n     Aaron Swartz, \n      AaronSw.com\n      Eric van der Vlist, \n      Dyomedea\n\n\n\n\n   Version\n\n\tLatest Version: http://purl.org/rss/1.0/modules/content/\n\nDRAFT 2.01 2002-10-04 (Renamed headings - thanks, Bijan!) - ASw\nDRAFT 2.0 2002-08-06 (Added content:encoded -- not yet approved; changed affiliation) - AS\n 1.02 2001-04-05 (Tweaked the copyright) as\n 1.01 2001-3-8 (Made content:encoding more clear) as\n 1.0 2001-3-8 (Approved by the WG and moved to standard)\n\tDRAFT 0.4 2001-2-6 (Cleaned up syntax and added encoding)  as\n\tDRAFT 0.31 2000-12-26 (Updated stylesheet)  as\n    DRAFT 0.3 2000-12-13 (Removed content:stylesheet attribute; changed content:format to an rdf:resource) as\n    DRAFT 0.2 2000-08-17 (Added content:stylesheet attribute) as\n\tDRAFT 0.1 2000-08-16\n\n\n\n   Status\n\n    \n\t Section one is official, approved 2001-3-1.\n\t Section two is a draft, please send feedback to Aaron or the list.\n    \n\n\n\n   Rights\n\n    \n     Copyright \u00a9 2000-2002 by the Authors.\n    \n    \n     Permission to use, copy, modify and distribute the RDF Site Summary\n     1.0 Content Module Specification and its accompanying documentation for any purpose\n     and without fee is hereby granted in perpetuity, provided that the\n     above copyright notice and this paragraph appear in all copies.\n     The copyright holders make no representation about the suitability\n     of the specification for any purpose.  It is provided \"as is\"\n     without expressed or implied warranty.\n    \n    \n     This copyright applies to the RDF Site Summary 1.0 Content Module Specification\n     and accompanying documentation and does not extend to the RSS Module's\n     format itself.\n    \n\n   Description\n\n    \n\t A module for the actual content of websites, in multiple formats.\n    \n\n   Namespace Declarations\n\n\t\t\t \n\t\t\t  xmlns:content=\"http://purl.org/rss/1.0/modules/content/\"\n\t\t\t \n\nUpdated Syntax\nThis section is a draft and has not yet been approved by the WG.\n\ncontent:encoded\nAn element whose contents are the entity-encoded or CDATA-escaped version of the content of the item. Example:\n\n<content:encoded><![CDATA[<p>What a <em>beautiful</em> day!</p>]]></content:encoded>\n\nExample\n\n<?xml version=\"1.0\" encoding=\"utf-8\"?> \n\n<rdf:RDF \n  xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" \n  xmlns:content=\"http://purl.org/rss/1.0/modules/content/\"\n  xmlns=\"http://purl.org/rss/1.0/\"\n> \n\n  <channel rdf:about=\"http://example.org/rss.rdf\">\n    <title>Example Feed</title>\n    <link>http://www.example.org</link>\n    <description>Simply for the purpose of demonstration.</description>\n\n    <items>\n      <rdf:Seq>\n        <rdf:li resource=\"http://example.org/item/\" />\n      </rdf:Seq>\n    </items>\n    \n  </channel>\n\n  <item rdf:about=\"http://example.org/item/\">\n    <title>The Example Item</title> \n    <link>http://example.org/item/</link>\n    <content:encoded><![CDATA[<p>What a <em>beautiful</em> day!</p>]]></content:encoded>\n  </item> \n</rdf:RDF>\n\n   Original Syntax\n\n\tcontent:items\n\tcontent:items is a sub-element of an RSS item or channel. It is used as follows:\n<content:items>\n  <rdf:Bag>\n    <rdf:li>\n      <content:item>\n        <!-- Use content:item as described below -->\n      </content:item>\n    </rdf:li>\n    <!-- Optionally, include as many more content:item elements as needed. -->\n  </rdf:Bag>\n</content:items>\n\n\tcontent:item\n\tA content:item describes a single version of the content for its parent item. If the content is available on the Web at a specific address, content:item has an rdf:about attribute containg the URI of the content.\n\n<!-- Without a URI: -->\n<content:item>\n  <!-- information about the item goes here -->\n</content:item>\n\n<!-- With a URI: -->\n<content:item rdf:about=\"http://example.org/item/content.png\">\n  <!-- information about the item goes here -->\n</content:item>\n\n\nA content:item can include the following sub-elements:\n\n\tcontent:format\n\t\n\tRequired. An empty element with an rdf:resource attribute that points to a URI representing the format of the content:item. Suggested best practice is to use the list of RDDL natures.\n\n\t<content:format rdf:resource=\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict\" />\n\t\n\trdf:value\n\tRequired if no URI is defined for the content:item. Includes the content of the content:item. This is encoded as specified by content:encoding. If the content is included as unencoded XML, then the attribute rdf:parseType=\"Literal\" should be used as to not confuse RDF parsers.\n\n\tcontent:encoding\n\tOptional. An empty element with an rdf:resource attribute that points to a URI representing the encoding of the content:item. An encoding is a reversable method of including content within the RSS file.\n\nIf no encoding is specified, it should be assumed that the content is included as character data, like so:\n\n<rdf:value>This is &lt;em&gt;very&lt;/em&gt; cool.</rdf:value>\n\nor\n\n<rdf:value><![CDATA[This is <em>very</em> cool.]]!></rdf:value>\n\nIf the document is encoded as well-formed XML, the URI http://www.w3.org/TR/REC-xml#dt-wellformed should be used. An example of well-formed XML is:\n\n<rdf:value>This is <em>very</em> cool.</rdf:value>\n\nAn example of a content:encoding exlement is:\n\n\t<content:encoding rdf:resource=\"http://www.w3.org/TR/REC-xml#dt-wellformed\" />\n\n   Example\n\n<?xml version=\"1.0\" encoding=\"utf-8\"?> \n\n<rdf:RDF \n  xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" \n  xmlns:content=\"http://purl.org/rss/1.0/modules/content/\"\n  xmlns=\"http://purl.org/rss/1.0/\"\n> \n\n  <channel rdf:about=\"http://example.org/rss.rdf\">\n    <title>Example Feed</title>\n    <link>http://www.example.org</link>\n    <description>Simply for the purpose of demonstration.</description>\n\n    <items>\n      <rdf:Seq>\n        <rdf:li resource=\"http://example.org/item/\" />\n      </rdf:Seq>\n    </items>\n    \n  </channel>\n\n  <item rdf:about=\"http://example.org/item/\">\n    <title>The Example Item</title> \n    <link>http://example.org/item/</link>\n    <content:items><rdf:Bag>\n      <rdf:li><content:item>\n        <content:format rdf:resource=\"http://www.w3.org/1999/xhtml\" />\n        <content:encoding rdf:resource=\"http://www.w3.org/TR/REC-xml#dt-wellformed\" />\n        <rdf:value rdf:parseType=\"Literal\" xmlns=\"http://www.w3.org/1999/xhtml\">\n          <em>This is <strong>very</strong></em> <strong>cool</strong>.\n        </rdf:value>\n      </content:item></rdf:li><rdf:li><content:item>\n        <content:format rdf:resource=\"http://www.w3.org/TR/html4/\" />\n        <rdf:value><![CDATA[<em>This is<strong>very</em> cool</strong>.]]></rdf:value>\n      </content:item></rdf:li><rdf:li><content:item rdf:about=\"http://example.org/item/content-here.txt\">\n        <content:format rdf:resource=\"http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain\" />\n        <rdf:value>This is &gt;very cool&lt;.</rdf:value>\n      </content:item></rdf:li><rdf:li><content:item rdf:about=\"http://example.org/item/content.svg\">\n        <content:format rdf:resource=\"http://www.w3.org/2000/svg\" />\n      </content:item></rdf:li>\n    </rdf:Bag></content:items>\n\n  </item> \n\n</rdf:RDF>"
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:56.112887+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:47:54.620701+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:53.642779+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "http://purl.org/rss/1.0/modules/content/",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:47:52.815059+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:45.878845+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:47:56.100673+00:00",
+                "index_texts": null,
+                "output": "RDF Site Summary 1.0 Modules: Content",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:56.095565+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707717218.226799/warc/1707720475",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "http://purl.org/rss/1.0/modules/content/"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:47:56.086608+00:00",
+                "index_texts": null,
+                "output": "purl.org/rss/1.0/modules/content/index.html",
+                "pwd": "/data/archive/1707717218.226799",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:47:55.440130+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "https://web.archive.org/web/20240212064805/https://web.resource.org/rss/1.0/modules/content/",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "RDF Site Summary 1.0 Modules: Content",
+        "warc": null,
+        "wget": "purl.org/rss/1.0/modules/content/index.html"
+    },
+    "link_dir": "/data/archive/1707717218.226799",
+    "newest_archive_date": "2024-02-12T06:47:59.257443+00:00",
+    "num_failures": 0,
+    "num_outputs": 12,
+    "oldest_archive_date": "2024-02-12T06:47:43.488400+00:00",
+    "path": "/rss/1.0/modules/content/",
+    "schema": "Link",
+    "scheme": "http",
+    "snapshot_id": "0a940eb5-fb0e-4af0-92f3-7c963d2f7b49",
+    "sources": [
+        "/data/sources/1707717217.88551-crawl-www.bea.gov.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707717218.226799",
+    "title": "RDF Site Summary 1.0 Modules: Content",
+    "updated": "2024-02-12T06:47:43.487122+00:00",
+    "updated_date": "2024-02-12 06:47",
+    "url": "http://purl.org/rss/1.0/modules/content/"
+}
