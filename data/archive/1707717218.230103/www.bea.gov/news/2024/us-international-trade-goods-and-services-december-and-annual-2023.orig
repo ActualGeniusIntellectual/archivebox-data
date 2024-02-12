@@ -1,0 +1,1236 @@
+
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam-cell.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1834816814",accountID:"1661585",trustKey:"26315",licenseKey:"c9a2283334",applicationID:"1614106374"};;/*! For license information please see nr-loader-rum-1.251.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>S,lF:()=>T,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>_,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function _(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const x=(0,n.mF)().o;var E=r(385),D=r(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},j={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!j[e])throw new Error("Runtime for ".concat(e," was never set"));return j[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");j[e]=(0,i.D)(t,k);const r=(0,n.ek)(e);r&&(r.runtime=j[e])}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.251.1",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([g,e,r,a]);return a},get:m,listeners:v,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function h(e,t){n[e]=v(e).concat(t)}function v(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),g=r(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var h=r(2825);const v=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:A,info:w,loader_config:_,runtime:x={loaderType:b},exposed:E=!0}=t;const D=(0,g.gG)();w||(A=D.init,w=D.info,_=D.loader_config),(0,i.Dg)(e.agentIdentifier,A||{}),(0,i.GE)(e.agentIdentifier,_||{}),w.jsAttributes??={},d.v6&&(w.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,w);const k=(0,i.P_)(e.agentIdentifier),j=[w.beacon,w.errorBeacon];m||(k.proxy.assets&&(v(k.proxy.assets),j.push(k.proxy.assets)),k.proxy.beacon&&j.push(k.proxy.beacon),p(),(0,g.EZ)("activatedFeatures",h.T)),x.denyList=[...k.ajax.deny_list||[],...k.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,x),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),w(v,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=w(v,e,!0,"api")})),g.addPageAction=w(v,"addPageAction",!0,n.D.pageAction),g.setCurrentRouteName=w(v,"routeName",!0,n.D.spa),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,w(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},g.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},g.interaction=function(){return(new y).get()};var A=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(m+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],r),e}finally{h.emit("fn-end",[(0,s.z)()],r)}}}};function w(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function _(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{A[e]=w(m,e,void 0,n.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>_()),!0):_(),g}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=E),m=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.251.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.251.1.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-se+MgwtmnbdP/MASClg+GOgpTkSpcEndd09loplWI8jtivCRtbuBQGqwgSDauFr6FUmrBsb2ccq/Hk5NZDAKMQ=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.251.1.PROD"]=self["webpackChunk:NRBA-1.251.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,957));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,r),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,v.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,v.D)(e,w)}function w(e,t){return t}var _=i(8632),x=i(4402),E=i(4351);var D=i(5546),k=i(7956),j=i(3239),S=i(7894),R=i(9251);class T extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,k.N)((()=>(0,D.p)("docHidden",[(0,S.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,D.p)("winPagehide",[(0,S.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class P extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[p,T,P],loaderType:"lite"})})()})();</script>
+<link rel="canonical" href="https://www.bea.gov/news/2024/us-international-trade-goods-and-services-december-and-annual-2023" />
+<meta name="description" content="The U.S. Census Bureau and the U.S. Bureau of Economic Analysis announced today that the goods and services deficit was $62.2 billion in December, up $0.3 billion from $61.9 billion in November, revised.  " />
+<meta name="google-site-verification" content="YTUCDlBs59yC1yvqKFhclR-b_kx9bU_BTCQJzo8lwjk" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/beagov_theme/logo.ico" type="image/vnd.microsoft.icon" />
+
+    <title>U.S. International Trade in Goods and Services, December and Annual 2023 | U.S. Bureau of Economic Analysis (BEA)</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Zj3XNjm_ztln0pTIwP677w5jwNYU0Zq470SnP8Mwj_U.css" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Lato:300,400,400i,700" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_ts7CYqfd-vsrbtS6Dk5c92g7vwgjOGPC40JLMNw2ApY.css" />
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4698JNNFT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J4698JNNFT');
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-37717925-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      (function() {
+        var a = document.createElement('script');
+        a.type = 'text/javascript';
+        a.async = true;
+        a.src = 'https://cdn.gov.cfigroup.com/webmon/s/source/webmon/7cb2eb55971115/webmon.js';
+        var b = document.getElementsByTagName('script')[0];
+        b.parentNode.insertBefore(a, b);
+      })(); 
+    </script>
+  
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MUJWR-VMPSA-LL6ER-K7AKP-P9Q5P",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"MUJWR-VMPSA-LL6ER-K7AKP-P9Q5P",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="v2dfgtqx3rf5szojw2da-f-48b907b1c-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"36","ak.cp":"1068672","ak.ai":parseInt("635743",10),"ak.ol":"0","ak.cr":14,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"8f9d305e","ak.r":46548,"ak.a2":e,"ak.m":"dscb","ak.n":"ff","ak.bpcip":"174.134.83.0","ak.cport":33034,"ak.gh":"23.217.119.217","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1707718278","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==BM1JRVlxSVFS2q8BMauqiN0RqAChrCihbM4BYpSyedHuh9uPOEpM/KuzgqacHfrGVwfS0xJo5qm08f57SUDptXQetcIBMQPkAYiMPo+XxjjKhrN7fgSflMxWrHMusqds6sz/pJ1Jv2XuTHfD9kYjioCX0jRSiHKyaDm9l2Dcau2e6lm3V0PpLWKFubh6o1KOFyB5i7XPY41581qDOPcpqRzMbVG5Yw1SJ7u7FcCchdjzRXs/mvpSrvoes/xm4bj6gQ87fC8fVnk41SiGNNrTK2LspYrcjCrlRFysyN0gMXHUUB4Ih5F0KFbiqyMglZcFxNk2rfWau2ztyxsg2mnrgt0FK2alcpXf3IRQoHuO45AST1AkqjgRyrd4JX6B5H64SVI+mYhkuEjb+dVtKSoyknI7sWcFt0Uobxu4YbDbSyk=","ak.pv":"54","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+  <body class="path-node page-node-type-release navbar-is-fixed-top has-glyphicons page-node-39771">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+                        <header class="navbar shadow navbar-default navbar-fixed-top" id="navbar" role="banner">
+                        <div class="usa-banner">
+        <div class="usa-banner-header container">
+                <div class="usa-grid usa-banner-inner">
+                        <img src="/sites/default/files/favicon-57.png" alt="U.S. flag">
+                        <p>An official website of the United States government</p>
+                </div>
+        </div>
+</div>            
+                            <div class="container">
+                        <div class="navbar-header">
+                <a class="navbar-brand" href="/" aria-label="homepage link">
+                                     </a>
+                
+
+                                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                            </div>
+
+                                        <div id="navbar-collapse" class="navbar-collapse collapse">
+                    
+    <div class="region region-navigation-collapsible">
+        <nav role="navigation" aria-labelledby="block-beagov-theme-main-menu-menu" id="block-beagov-theme-main-menu" data-block-plugin-id="system_menu_block:main">
+            <h2 class="sr-only" id="block-beagov-theme-main-menu-menu">Main navigation</h2>
+
+      
+                            <ul region="navigation_collapsible" class="menu nav navbar-nav">
+                                                        <li class="expanded dropdown">
+                    <a href="/data" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Data
+                        <span class="caret"></span>
+                    </a>
+                                                                    <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                                        <li class="expanded dropdown">
+                    <a href="/data/gdp" data-drupal-link-system-path="node/13541">by Topic</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/data/by-place-us" data-drupal-link-system-path="node/13656">by Place</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/data/economic-accounts" data-drupal-link-system-path="node/13646">by Economic Account</a>
+                                    </li>
+                    </ul>
+    
+                        </li>
+                                                <li class="expanded dropdown">
+                    <a href="/tools" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                        <span class="caret"></span>
+                    </a>
+                                                                    <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                                        <li class="expanded dropdown">
+                    <a href="http://www.bea.gov/itable/">Interactive Data</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/API/signup/">Application Programming Interface (API)</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/international/factsheet/">Country Facts</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/regional/bearfacts/">BEARFACTS</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/industry/factsheet/">Industry Facts</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/itable/?ReqID=99&amp;step=1">GDP &amp; Personal Income Mapping</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/regional/rims/rimsii/">RIMS II</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/efile">eFile</a>
+                                    </li>
+                    </ul>
+    
+                        </li>
+                                                <li class="expanded dropdown">
+                    <a href="/news" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                        News
+                        <span class="caret"></span>
+                    </a>
+                                                                    <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                                        <li class="expanded dropdown">
+                    <a href="/news/glance" data-drupal-link-system-path="node/20292">Economy at a Glance</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/news/current-releases" data-drupal-link-system-path="news/current-releases">News Releases</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/news/schedule" data-drupal-link-system-path="news/schedule">Release Schedule</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/news/blog" data-drupal-link-system-path="news/blog">The BEA Wire | BEA&#039;s Official Blog</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/scb/">Survey of Current Business</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/news/archive?field_related_product_target_id=All&amp;created_1=All&amp;title=" data-drupal-link-query="{&quot;created_1&quot;:&quot;All&quot;,&quot;field_related_product_target_id&quot;:&quot;All&quot;,&quot;title&quot;:&quot;&quot;}" data-drupal-link-system-path="news/archive">Archive</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/news/for-journalists" data-drupal-link-system-path="node/23916">For Journalists</a>
+                                    </li>
+                    </ul>
+    
+                        </li>
+                                                <li class="expanded dropdown">
+                    <a href="/research" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Research
+                        <span class="caret"></span>
+                    </a>
+                                                                    <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                                        <li class="expanded dropdown">
+                    <a href="/research/offices-of-research" data-drupal-link-system-path="node/8126">Offices of Research</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/research/meet-the-researchers" data-drupal-link-system-path="research/meet-the-researchers">Meet the Researchers</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/research/papers" data-drupal-link-system-path="research/papers">Papers</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/research/special-sworn-researcher-program" data-drupal-link-system-path="node/8131">Special Sworn Researcher Program</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/research/special-sworn-researcher-program/papers" data-drupal-link-system-path="node/8211">Research Using Company-Level Data</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/research/fellowship-program" data-drupal-link-system-path="node/8136">Fellowship Program</a>
+                                    </li>
+                    </ul>
+    
+                        </li>
+                                                <li class="expanded dropdown">
+                    <a href="/resources" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                        <span class="caret"></span>
+                    </a>
+                                                                    <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                                        <li class="expanded dropdown">
+                    <a href="/resources/learning-center" data-drupal-link-system-path="node/14796">Learning Center</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/resources/methodologies" data-drupal-link-system-path="resources/methodologies">Methodologies</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/resources/multimedia" data-drupal-link-system-path="resources/multimedia">Multimedia</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://apps.bea.gov/scb/subjects.htm">Article Collections</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/congressional-users" title="congressional users">For Congressional Users</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/resources/for-developers" data-drupal-link-system-path="node/9396">For Developers</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/classroom" data-drupal-link-system-path="node/22426">For Students</a>
+                                    </li>
+                    </ul>
+    
+                        </li>
+                                                <li class="expanded dropdown">
+                    <a href="/about" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                        <span class="caret"></span>
+                    </a>
+                                                                    <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                                        <li class="expanded dropdown">
+                    <a href="/about/who-we-are" data-drupal-link-system-path="node/24146">Who We Are</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/about/leadership" data-drupal-link-system-path="node/24691">BEA Leadership</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/about/advisory-committees" data-drupal-link-system-path="node/6426">Advisory Committees</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/about/budget-and-performance" data-drupal-link-system-path="node/6431">Budget and Performance</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/digitalstrategy/policyarchive" data-drupal-link-system-path="node/6436">Policies and Information</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="https://www.bea.gov/about/working-at-bea">Working at BEA</a>
+                                    </li>
+                    </ul>
+    
+                        </li>
+                                                <li class="expanded dropdown">
+                    <a href="/help" class="dropdown-toggle" data-target="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Help
+                        <span class="caret"></span>
+                    </a>
+                                                                    <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                                        <li class="expanded dropdown">
+                    <a href="/help/contact-us" data-drupal-link-system-path="node/9106">Contact Us</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/form/ask-an-expert" data-drupal-link-system-path="webform/ask_an_expert">Ask an Expert</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/help/information-for-survey-respondents" data-drupal-link-system-path="node/9356">For Survey Respondents</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/help/faq" data-drupal-link-system-path="help/faq">Frequently Asked Questions (FAQ)</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/help/glossary" data-drupal-link-system-path="help/glossary">Glossary</a>
+                                    </li>
+                                                <li class="expanded dropdown">
+                    <a href="/help/guidelines-for-citing-bea" data-drupal-link-system-path="node/10936">Guidelines for Citing BEA</a>
+                                    </li>
+                    </ul>
+    
+                        </li>
+                    </ul>
+    
+
+
+  </nav>
+<section id="block-beagovsearchblock" class="block block-beagov-search block-beagov-search-block clearfix" data-block-plugin-id="beagov_search_block">
+  
+    
+
+      <form id="search-block-form" class="navbar-form navbar-right" role="search" action="https://search.bea.gov/search" method="get" accept-charset="UTF-8" data-drupal-form-fields="edit-keys">
+  <input id="affiliate" name="affiliate" type="hidden" value="u.s.bureauofeconomicanalysis"/>
+  <div class="form-group form-group-sm js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+    <input id="edit-keys" class="form-search form-control usagov-search-autocomplete" title="" data-drupal-selector="edit-keys" placeholder="Search" name="query" value="" type="search" aria-labelledby="btnSearch">
+  </div>
+  <button id="btnSearch" class="btn btn-default js-form-submit button" type="submit" aria-label="Search">
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+  </button>
+  <div id="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions">
+  </div>
+</form>
+<script type="text/javascript">
+  //<![CDATA[
+    var usasearch_config = {siteHandle: "BEA"};
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "//search.bea.gov/javascripts/remote.loader.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  //]]>
+</script>
+  </section>
+
+
+    </div>
+
+                </div>
+                                        </div>
+                    </header>
+    
+    <div role="main" class="main-container container js-quickedit-main-content">
+        <div class="row">
+
+                                                            <div class="col-md-12" role="heading">
+                        
+    <div class="region region-header">
+            <ol class="breadcrumb">
+          <li >
+                  <a href="/">Home</a>
+              </li>
+          <li >
+                  <a href="/news">News</a>
+              </li>
+          <li  class="active">
+                  U.S. International Trade in Goods and Services, December and Annual 2023
+              </li>
+      </ol>
+
+  
+
+    </div>
+
+                    </div>
+                            
+                        
+            <div id="test" class="col-sm-12">
+
+                                                                            <div class="highlighted">
+                            
+    <div class="region region-highlighted">
+        <div data-drupal-messages-fallback class="hidden"></div>
+
+    </div>
+
+                        </div>
+                                    
+                                
+                                
+                                
+                                                    <a id="main-content"></a>
+                    
+    <div class="region region-content">
+          
+<article role="article" about="/news/2024/us-international-trade-goods-and-services-december-and-annual-2023">
+                 <div class="clearfix row">
+            <div class="col-md-12 release-page-title">
+                <h1>News Release</h1>
+            </div>
+        </div>
+                                  <div class="row">
+        <div class="container">
+            <div class="col-md-3 col-sm-12 col-xs-12 pull-right">
+                <a class="btn btn-primary btn-block btn-product-view" href="/data/intl-trade-investment/international-trade-goods-and-services">Explore Product View</a>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#home">News Release</a>
+                </li>
+                                    <li>
+                        <a data-toggle="tab" href="#menu1">Related Materials</a>
+                    </li>
+                                                    <li>
+                        <a data-toggle="tab" href="#menu2">Contacts</a>
+                    </li>
+                                                    <li>
+                        <a data-toggle="tab" href="#menu3">Additional Information</a>
+                    </li>
+                            </ul>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                   
+                        <div class="row release-embargo">
+                                                            <div class="col-md-10">
+                                    
+            <div class="field field--name-field-release-date field--type-string field--label-hidden field--item">EMBARGOED UNTIL RELEASE AT 8:30 a.m. EST, Wednesday, February 7, 2024</div>
+      
+                                </div>
+                                                                                        <div class="col-md-2">
+                                                            BEA 24-04
+            <br>
+                                CB 24–18
+            
+                                </div>
+                                                    </div>
+                                                <h1>U.S. International Trade in Goods and Services, December and Annual 2023
+                                                        
+                        </h1>
+                    
+                                            <div class="row">
+                            <div class="col-md-12 release-body">
+                                
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>The U.S. Census Bureau and the U.S. Bureau of Economic Analysis announced today that the goods and services deficit was $62.2 billion in December, up $0.3 billion from $61.9 billion in November, revised.</p>
+
+<p>&nbsp;</p>
+
+<div class="panel panel-default" style="margin: 35px 25px;">
+<div class="panel-body">
+<div class="row deliniate-column-left">
+<div class="col-sm-12 col-md-6">
+<table class="table table-release-trade" style="margin: 0px !important;">
+	<caption class="text-center" style="color: rgba(79, 79, 79, 1); font-weight: bold;">U.S. International Trade in Goods and Services Deficit</caption>
+	<tbody>
+		<tr>
+			<td>Deficit:</td>
+			<td width="130">
+			<p>$62.2 Billion</p>
+			</td>
+			<td valign="top" width="77">
+			<p>+0.5%°</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Exports:</td>
+			<td width="130">
+			<p>$258.2 Billion</p>
+			</td>
+			<td valign="top" width="67">
+			<p>+1.5%°</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Imports:</td>
+			<td width="130">
+			<p>$320.4 Billion</p>
+			</td>
+			<td valign="top" width="67">
+			<p>+1.3%°</p>
+			</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="3">
+			<p>Next release: Thursday, March 7, 2024</p>
+
+			<p>(°)Statistical significance is not applicable or not measurable. Data adjusted for seasonality but not price changes</p>
+
+			<p>Source: U.S. Census Bureau, U.S. Bureau of Economic Analysis; U.S. International Trade in Goods and Services, February 7, 2024</p>
+			</td>
+		</tr>
+	</tfoot>
+</table>
+</div>
+
+<div class="col-sm-12 col-md-6"><a href="/system/files/trad1223.png"><img alt="Goods and Services Trade Deficit: Seasonally adjusted" data-entity-type="file" data-entity-uuid="17ca95f7-7bf4-4465-a750-a19969d3e434" src="/system/files/trad1223.png" style="width: 100%; margin: 0px;" /></a></div>
+</div>
+</div>
+</div>
+
+<p align="center"><strong>Exports, Imports, and Balance (exhibit 1)</strong></p>
+
+<p>December exports were $258.2 billion, $3.9 billion more than November exports. December imports were $320.4 billion, $4.2 billion more than November imports.</p>
+
+<p>The December increase in the goods and services deficit reflected an increase in the goods deficit of $0.7 billion to $89.1 billion and an increase in the services surplus of $0.4 billion to $26.9 billion.</p>
+
+<p>For 2023, the goods and services deficit decreased $177.8 billion, or 18.7 percent, from 2022. Exports increased $35.0 billion or 1.2 percent. Imports decreased $142.7 billion or 3.6 percent.</p>
+
+<p align="center"><strong>Three-Month Moving Averages (exhibit 2)</strong></p>
+
+<p>The average goods and services deficit increased $0.5 billion to $62.7 billion for the three months ending in December.</p>
+
+<ul>
+	<li>Average exports decreased $1.0 billion to $257.0 billion in December.</li>
+	<li>Average imports decreased $0.4 billion to $319.6 billion in December.</li>
+</ul>
+
+<p>Year-over-year, the average goods and services deficit decreased $8.5 billion from the three months ending in December 2022.</p>
+
+<ul>
+	<li>Average exports increased $4.1 billion from December 2022.</li>
+	<li>Average imports decreased $4.4 billion from December 2022.</li>
+</ul>
+
+<p align="center"><strong>Exports (exhibits 3, 6, and 7)</strong></p>
+
+<p>Exports of goods increased $3.1 billion to $171.2 billion in December.</p>
+
+<p>&nbsp;&nbsp;Exports of goods on a Census basis increased $4.2 billion.</p>
+
+<ul>
+	<li>Industrial supplies and materials increased $3.3 billion.
+	<ul>
+		<li>Nonmonetary gold increased $0.9 billion.</li>
+		<li>Other petroleum products increased $0.8 billion.</li>
+		<li>Crude oil increased $0.6 billion.</li>
+	</ul>
+	</li>
+	<li>Consumer goods increased $0.7 billion.</li>
+	<li>Foods, feeds, and beverages increased $0.7 billion.</li>
+</ul>
+
+<p>&nbsp;&nbsp;Net balance of payments adjustments decreased $1.1 billion.</p>
+
+<p>Exports of services increased $0.8 billion to $87.0 billion in December.</p>
+
+<ul>
+	<li>Travel increased $0.4 billion.</li>
+	<li>Transport increased $0.2 billion.</li>
+	<li>Financial services increased $0.2 billion.</li>
+</ul>
+
+<p align="center"><strong>Imports (exhibits 4, 6, and 8)</strong></p>
+
+<p>Imports of goods increased $3.8 billion to $260.3 billion in December.</p>
+
+<p>&nbsp;&nbsp;Imports of goods on a Census basis increased $3.7 billion.</p>
+
+<ul>
+	<li>Consumer goods increased $3.3 billion.
+	<ul>
+		<li>Pharmaceutical preparations increased $1.5 billion.</li>
+		<li>Cell phones and other household goods increased $1.0 billion.</li>
+	</ul>
+	</li>
+	<li>Industrial supplies and materials increased $1.2 billion.
+	<ul>
+		<li>Fuel oil increased $0.4 billion.</li>
+		<li>Nuclear fuel materials increased $0.4 billion.</li>
+		<li>Crude oil decreased $0.4 billion</li>
+		<li>Finished metal shapes decreased $0.4 billion</li>
+	</ul>
+	</li>
+	<li>Capital goods decreased $0.4 billion.</li>
+	<li>Automotive vehicles, parts, and engines decreased $0.4 billion.</li>
+</ul>
+
+<p>&nbsp;&nbsp;Net balance of payments adjustments increased less than $0.1 billion.</p>
+
+<p>Imports of services increased $0.5 billion to $60.1 billion in December.</p>
+
+<ul>
+	<li>Transport increased $0.6 billion.</li>
+	<li>Travel decreased $0.1 billion.</li>
+</ul>
+
+<p align="center"><strong>Real Goods in 2017 Dollars – Census Basis (exhibit 11)</strong></p>
+
+<p>The real goods deficit decreased $1.2 billion, or 1.4 percent, to $82.8 billion in December, compared to a 0.5 percent decrease in the nominal deficit.</p>
+
+<ul>
+	<li>Real exports of goods increased $5.1 billion, or 3.7 percent, to $145.9 billion, compared to a 2.5 percent increase in nominal exports.</li>
+	<li>Real imports of goods increased $4.0 billion, or 1.8 percent, to $228.7 billion, compared to a 1.5 percent increase in nominal imports.</li>
+</ul>
+
+<p align="center"><strong>Revisions</strong></p>
+
+<p>In addition to revisions to source data for the November statistics, the seasonally adjusted goods data were revised for January through November so that the totals of the seasonally adjusted months equal the annual totals.</p>
+
+<p><strong>Revisions to November exports</strong></p>
+
+<ul>
+	<li>Exports of goods were revised up $0.2 billion.</li>
+	<li>Exports of services were revised up $0.4 billion.</li>
+</ul>
+
+<p><strong>Revisions to November imports</strong></p>
+
+<ul>
+	<li>Imports of goods were revised down $0.9 billion.</li>
+	<li>Imports of services were revised up $0.1 billion.</li>
+</ul>
+
+<p align="center"><strong>Goods by Selected Countries and Areas: Monthly – Census Basis (exhibit 19)</strong></p>
+
+<p>The December figures show surpluses, in billions of dollars, with South and Central America ($4.7), Netherlands ($4.4), United Kingdom ($1.9), Australia ($1.8), Hong Kong ($1.6), Singapore ($1.2), and Belgium ($0.5). Deficits were recorded, in billions of dollars, with China ($22.8), European Union ($17.6), Mexico ($13.7), Vietnam ($10.0), Germany ($7.2), Ireland ($5.7), Canada ($5.5), Japan ($5.2), South Korea ($5.0), India ($4.3), Taiwan ($3.3), Italy ($3.2), Switzerland ($2.5), Malaysia ($2.2), France ($1.0), Israel ($0.2), Brazil ($0.1), and Saudi Arabia ($0.1).</p>
+
+<ul>
+	<li>The deficit with Canada decreased $2.0 billion to $5.5 billion in December. Exports increased $0.8 billion to $30.5 billion and imports decreased $1.2 billion to $36.1 billion.</li>
+	<li>The deficit with Japan decreased $1.8 billion to $5.2 billion in December. Exports decreased $0.1 billion to $6.1 billion and imports decreased $1.9 billion to $11.3 billion.</li>
+	<li>The deficit with the European Union increased $2.1 billion to $17.6 billion in December. Exports increased $1.9 billion to $32.6 billion and imports increased $4.0 billion to $50.2 billion.</li>
+</ul>
+
+<p align="center"><strong>Annual Summary for 2023</strong></p>
+
+<p align="center"><strong>Exports, Imports, and Balance (exhibit 1)</strong></p>
+
+<p>For 2023, the goods and services deficit was $773.4 billion, down $177.8 billion from $951.2 billion in 2022. Exports were $3,053.5 billion, up $35.0 billion from 2022. Imports were $3,826.9 billion, down $142.7 billion from 2022.</p>
+
+<div class="center_div"><a href="/system/files/trad1223-2.png"><img alt="U.S. International Trade in Goods and Services Bar Chart" data-entity-type="file" data-entity-uuid="1eb7ce6b-5bb9-45fb-a52c-600d6b5fe660" src="/system/files/trad1223-2.png" /></a></div>
+
+<p>The 2023 decrease in the goods and services deficit reflected a decrease in the goods deficit of $121.3 billion, or 10.3 percent, to $1,061.7 billion and an increase in the services surplus of $56.4 billion, or 24.3 percent, to $288.2 billion.</p>
+
+<p>The goods and services deficit was 2.8 percent of current-dollar gross domestic product in 2023, down from 3.7 percent in 2022.</p>
+
+<p align="center"><strong>Exports (exhibits 3, 6, and 7)</strong></p>
+
+<p>Exports of goods decreased $39.2 billion to $2,050.7 billion in 2023.</p>
+
+<p>&nbsp;&nbsp;Exports of goods on a Census basis decreased $45.6 billion.</p>
+
+<ul>
+	<li>Industrial supplies and materials decreased $102.8 billion.
+	<ul>
+		<li>Natural gas decreased $21.1 billion.</li>
+		<li>Other petroleum products decreased $13.9 billion.</li>
+		<li>Fuel oil decreased $10.6 billion.</li>
+		<li>Nonmonetary gold decreased $10.5 billion.</li>
+	</ul>
+	</li>
+	<li>Foods, feeds, and beverages decreased $17.4 billion.</li>
+	<li>Capital goods increased $28.5 billion.</li>
+	<li>Automotive vehicles, parts, and engines increased $19.3 billion.</li>
+	<li>Consumer goods increased $14.7 billion.</li>
+</ul>
+
+<p>&nbsp;&nbsp;Net balance of payments adjustments increased $6.4 billion.</p>
+
+<p>Exports of services increased $74.2 billion to $1,002.8 billion in 2023.</p>
+
+<ul>
+	<li>Travel increased $38.3 billion.</li>
+	<li>Financial services increased $7.4 billion.</li>
+	<li>Transport increased $7.3 billion.</li>
+	<li>Telecommunications, computer, and information services increased $7.1 billion.</li>
+</ul>
+
+<p align="center"><strong>Imports (exhibits 4, 6, and 8)</strong></p>
+
+<p>Imports of goods decreased $160.5 billion to $3,112.4 billion in 2023.</p>
+
+<p>&nbsp;&nbsp;Imports of goods on a Census basis decreased $158.4 billion.</p>
+
+<ul>
+	<li>Industrial supplies and materials decreased $130.8 billion.
+	<ul>
+		<li>Crude oil decreased $32.8 billion.</li>
+		<li>Fuel oil decreased $9.6 billion.</li>
+		<li>Organic chemicals decreased $8.6 billion.</li>
+	</ul>
+	</li>
+	<li>Consumer goods decreased $80.7 billion.
+	<ul>
+		<li>Cotton apparel and household goods decreased $12.8 billion.</li>
+		<li>Cell phones and other household goods decreased $12.6 billion.</li>
+		<li>Toys, games, and sporting goods decreased $12.0 billion.</li>
+		<li>Other textile apparel and household goods decreased $11.8 billion.</li>
+		<li>Pharmaceutical preparations increased $13.6 billion.</li>
+	</ul>
+	</li>
+	<li>Automotive vehicles, parts, and engines increased $59.5 billion.
+	<ul>
+		<li>Passenger cars increased $41.1 billion.</li>
+	</ul>
+	</li>
+</ul>
+
+<p>&nbsp;&nbsp;Net balance of payments adjustments decreased $2.1 billion.</p>
+
+<p>Imports of services increased $17.8 billion to $714.5 billion in 2023.</p>
+
+<ul>
+	<li>Travel increased $34.5 billion.</li>
+	<li>Transport decreased $14.7 billion.</li>
+</ul>
+
+<p align="center"><strong>Real Goods in 2017 Dollars – Census Basis (exhibit 11)</strong></p>
+
+<p>The real goods deficit decreased $90.1 billion, or 8.0 percent, to $1,035.1 billion in 2023, compared to a 9.6 percent decrease in the nominal deficit.</p>
+
+<ul>
+	<li>Real exports of goods increased $32.5 billion, or 1.9 percent, to $1,701.9 billion, compared to a 2.2 percent decrease in nominal exports.</li>
+	<li>Real imports of goods decreased $57.6 billion, or 2.1 percent, to $2,737.0 billion, compared to a 4.9 percent decrease in nominal imports.</li>
+</ul>
+
+<p align="center"><strong>Goods by Selected Countries and Areas – Census Basis (exhibits 14 and 14a)</strong></p>
+
+<p>The 2023 figures show surpluses, in billions of dollars, with South and Central America ($54.9), Netherlands ($43.7), Hong Kong ($23.6), Australia ($17.7), Belgium ($15.8), and United Kingdom ($9.8). Deficits were recorded, in billions of dollars, with China ($279.4), European Union ($208.2), Mexico ($152.4), Vietnam ($104.6), Germany ($83.0), Japan ($71.2), Canada ($67.9), Ireland ($65.3), South Korea ($51.4), Taiwan ($48.0), Italy ($44.0), India ($43.7), Thailand ($40.7), Malaysia ($26.7), Switzerland ($24.3), Indonesia ($16.9), Austria ($13.6), France ($13.4), and Sweden ($9.8).</p>
+
+<ul>
+	<li>The deficit with China decreased $102.9 billion to $279.4 billion in 2023. Exports decreased $6.2 billion to $147.8 billion and imports decreased $109.1 billion to $427.2 billion.</li>
+	<li>The deficit with Canada decreased $12.2 billion to $67.9 billion in 2023. Exports decreased $3.2 billion to $353.2 billion and imports decreased $15.5 billion to $421.1 billion.</li>
+	<li>The deficit with Mexico increased $21.9 billion to $152.4 billion in 2023. Exports decreased $1.1 billion to $323.2 billion and imports increased $20.8 billion to $475.6 billion.</li>
+</ul>
+
+<p>All statistics referenced are seasonally adjusted; statistics are on a balance of payments basis unless otherwise specified. Additional statistics, including not seasonally adjusted statistics and details for goods on a Census basis, are available in exhibits 1-20b of this release. For information on data sources, definitions, and revision procedures, see the explanatory notes in this release. The full release can be found at <a href="//www.census.gov/foreign-trade/Press-Release/current_press_release/index.html">www.census.gov/foreign-trade/Press-Release/current_press_release/index.html</a> or <a href="//www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services">www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services.</a> The full schedule is available in the Census Bureau’s Economic Briefing Room at <a href="//www.census.gov/economic-indicators/">www.census.gov/economic-indicators/</a> or on BEA’s website at <a href="//www.bea.gov/news/schedule">www.bea.gov/news/schedule</a>.</p>
+
+<p>&nbsp;</p>
+
+<p align="center" class="text-center">Next release: March 7, 2024, at 8:30 a.m. EST<br />
+U.S. International Trade in Goods and Services, January 2024</p>
+</div>
+      
+                            </div>
+                        </div>
+                                    </div>
+                                    <div id="menu1" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12">
+                                    
+    <h3>
+    <a href="/sites/default/files/2024-02/trad1223.pdf">Full Release &amp; Tables<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"> (PDF)</small>
+    <small></small>
+    
+</h3>
+
+    
+    <h3>
+    <a href="/sites/default/files/2024-02/trad1223.xlsx">Tables Only<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"> (Excel)</small>
+    <small></small>
+    
+</h3>
+
+    
+    <h3>
+    <a href="/sites/default/files/2024-02/trad1223-fax.pdf">Release Highlights<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"> (PDF)</small>
+    <small></small>
+    
+</h3>
+
+    
+    <h3>
+    <a href="/sites/default/files/2024-02/trad1223annual-fax.pdf">Release Highlights (Annual)<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"> (PDF)</small>
+    <small></small>
+    
+</h3>
+
+    
+    <h3>
+    <a href="/sites/default/files/2024-02/trad1223-hist.pdf">Historical Comparisons<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"> (PDF)</small>
+    <small></small>
+    
+</h3>
+
+    
+    <h3>
+    <a href="/sites/default/files/2024-02/trad1223annual-hist.pdf">Historical Comparisons (Annual)<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"> (PDF)</small>
+    <small></small>
+    
+</h3>
+
+    
+    <h3>
+    <a href="/sites/default/files/2024-02/trad-time-series-1223.xlsx">U.S. Trade in Goods and Services, 1960-present<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"> (Excel)</small>
+    <small></small>
+    
+</h3>
+
+    
+    <h3>
+    <a href="http://www.bea.gov/sites/default/files/2023-12/trad-geo-time-series-1023.xlsx">U.S. Trade in Goods and Services by Selected Countries and Areas, 1999-present<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"></small>
+    <small></small>
+    
+</h3>
+
+    
+    <h3>
+    <a href="http://www.bea.gov/help/faq?tid=1266">Seasonal Adjustment by Selected Countries and Areas, Frequently Asked Questions<!--<small class="mime-type"></small>--></a>
+    <small class="mime-type"></small>
+    <small></small>
+    
+</h3>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                                                    <div id="menu2" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12">
+                                    <ul class="list-contact">
+        <li>
+                <div class="list-contact-area">
+                            Goods Data Inquiries
+
+                </div>
+                <div class="list-contact-name">
+                                    U.S. Census Bureau, Economic Indicators Division
+
+                        </div>                                        <div class="list-contact-phone">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:301-763-2311">301-763-2311</a>
+
+                        </div>
+                                                        <div class="list-contact-email">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:eid.international.trade.data@census.gov">
+                                            eid.international.trade.data@census.gov
+
+                                </a>
+                        </div>
+                        </li>
+</ul>
+
+    <ul class="list-contact">
+        <li>
+                <div class="list-contact-area">
+                            Goods - Media
+
+                </div>
+                <div class="list-contact-name">
+                                    U.S. Census Bureau, Public Information Office
+
+                        </div>                                        <div class="list-contact-phone">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:301-763-3030">301-763-3030</a>
+
+                        </div>
+                                                        <div class="list-contact-email">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:pio@census.gov">
+                                            pio@census.gov
+
+                                </a>
+                        </div>
+                        </li>
+</ul>
+
+    <ul class="list-contact">
+        <li>
+                <div class="list-contact-area">
+                            Services Data
+
+                </div>
+                <div class="list-contact-name">
+                                    Balance of Payments Division
+
+                        </div>                                        <div class="list-contact-phone">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:301-278-9559">301-278-9559</a>
+
+                        </div>
+                                                        <div class="list-contact-email">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:InternationalAccounts@bea.gov">
+                                            InternationalAccounts@bea.gov
+
+                                </a>
+                        </div>
+                        </li>
+</ul>
+
+    <ul class="list-contact">
+        <li>
+                <div class="list-contact-area">
+                            Media
+
+                </div>
+                <div class="list-contact-name">
+                                    Connie O’Connell
+
+                        </div>                                        <div class="list-contact-phone">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:301-278-9003">301-278-9003</a>
+
+                        </div>
+                                                        <div class="list-contact-email">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:Connie.OConnell@bea.gov">
+                                            Connie.OConnell@bea.gov
+
+                                </a>
+                        </div>
+                        </li>
+</ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                                                    <div id="menu3" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+            <div class="field field--name-field-additional-information field--type-text-long field--label-hidden field--item"><p align="center"><strong>Explanatory Notes</strong></p>
+
+<p><strong>Goods (Census basis)</strong></p>
+
+<p>Data for goods on a Census basis are compiled from the documents collected by U.S. Customs and Border Protection (CBP) and reflect the movement of goods between foreign countries and the 50 states, the District of Columbia, Puerto Rico, the U.S. Virgin Islands, and U.S. Foreign Trade Zones. They include government and non-government shipments of goods and exclude shipments between the United States and its territories and possessions; transactions with U.S. military, diplomatic, and consular installations abroad; U.S. goods returned to the United States by its Armed Forces; personal and household effects of travelers; and in-transit shipments. The General Imports value reflects the total arrival of merchandise from foreign countries that immediately enters consumption channels, warehouses, or Foreign Trade Zones.</p>
+
+<p>For imports, the value reported is the CBP-appraised value of merchandise—generally, the price paid for merchandise for export to the United States. Import duties, freight, insurance, and other charges incurred in bringing merchandise to the United States are excluded. The exception is exhibit 17a, which shows CIF import value. The CIF (cost, insurance, and freight) value represents the landed value of the merchandise at the first port of arrival in the United States. It is computed by adding import charges to the customs value and therefore excludes U.S. import duties.</p>
+
+<p>Exports are valued at the f.a.s. (free alongside ship) value of merchandise at the U.S. port of export, based on the transaction price including inland freight, insurance, and other charges incurred in placing the merchandise alongside the carrier at the U.S. port of exportation.</p>
+
+<p><strong>Revision procedure (Census basis)</strong></p>
+
+<p><strong>Monthly revisions:</strong> Monthly data include actual month's transactions as well as a small number of transactions for previous months. Each month, the U.S. Census Bureau revises the aggregate seasonally adjusted (nominal and real, or chained-dollar) and unadjusted export, import, and trade balance figures, as well as the end-use totals for the prior month. Country detail data and commodity detail data, based on the Standard International Trade Classification (SITC) Revision 4 and the North American Industry Classification System (NAICS), are not revised monthly. The timing adjustment shown in exhibit 14 is the difference between monthly data as originally reported and as recompiled.</p>
+
+<p>For November 2023, unadjusted exports of goods were revised up $0.4 billion and unadjusted imports of goods were revised down $0.1 billion. Goods carry-over in December 2023 was $0.3 billion (0.2 percent) for exports and $0.1 billion (less than 0.1 percent) for imports. For November 2023, revised export carry-over was $0.1 billion (less than 0.1 percent) and revised import carry-over was $0.1 billion (less than 0.1 percent).</p>
+
+<p><strong>Quarterly revisions to chain-weighted dollar series:</strong> For March, June, September, and December statistical month releases, revisions are made to the real, or chained-dollar, series presented in exhibits 10 and 11: the previous five months are revised to incorporate the U.S. Bureau of Labor Statistics’ (BLS) revisions to price indexes, which are used to produce the real series and to align Census data with data published by the U.S. Bureau of Economic Analysis (BEA) in the national income and product accounts (NIPAs).</p>
+
+<p><strong>Annual revisions:</strong> Each June, not seasonally adjusted goods data are revised to redistribute monthly data that arrived too late for inclusion in the month of transaction. In addition, revisions are made to reflect corrections received subsequent to the monthly revisions. Seasonally adjusted data are also revised to reflect recalculated seasonal and trading-day adjustments. These revisions are reflected in totals, end-use, commodity, and country summary data.</p>
+
+<p><strong>Other revisions:</strong> For December and January statistical month releases, each prior month of the most recent full year is revised so that the totals of the seasonally adjusted months equal the annual totals.</p>
+
+<p><strong>U.S./Canada data exchange and substitution</strong></p>
+
+<p>Data for U.S. exports to Canada are derived from import data compiled by Canada. The use of Canada's import data to produce U.S. export data requires several alignments in order to compare the two series.</p>
+
+<ol>
+	<li><em>Coverage</em> - Canadian imports are based on country of origin. U.S. goods shipped from a third country are included. U.S. exports exclude these foreign shipments. For December 2023, these shipments totaled $231.4 million. U.S. export coverage also excludes U.S. postal shipments to Canada. For December 2023, these shipments totaled $48.9 million.<br />
+	<br />
+	U.S. import coverage includes shipments of railcars and locomotives from Canada. Effective with January 2004 statistics, Canada excludes these shipments from its goods exports to the United States, therefore creating coverage differences between the two countries for these goods.</li>
+	<li><em>Valuation</em> - Canadian imports are valued at the point of origin in the United States. However, U.S. exports are valued at the port of exit in the United States and include inland freight charges, making the U.S. export value slightly larger than the Canadian import value. Canada requires inland freight to be reported separately from the value of the goods. Combining the inland freight and the Canadian reported import value provides a consistent valuation for all U.S. exports. Inland freight charges for December 2023 accounted for 1.6 percent of the value of U.S. exports to Canada.</li>
+	<li><em>Re-exports</em> - Unlike Canadian imports, which are based on country of origin, U.S. exports include re-exports of foreign goods. Therefore, the aggregate U.S. export figure is slightly larger than the Canadian import figure. For December 2023, re-exports to Canada were $5,016.6 million.</li>
+	<li><em>Exchange Rate</em> - Average monthly exchange rates are applied to convert the published data to U.S. currency. For December 2023, the average exchange rate was 1.3416 Canadian dollars per U.S. dollar.</li>
+	<li><em>Other</em> - There are other minor differences, such as rounding error, that are statistically insignificant.</li>
+</ol>
+
+<p><strong>Canadian estimates:</strong> Effective with January 2001 statistics, the current month data for exports to Canada contain an estimate for late arrivals and corrections. In the following month, this estimate is replaced, in the news release exhibits only, with the actual value of late receipts and corrections. This estimate improves the current month data for exports to Canada and treats late receipts for exports to Canada in a manner that is more consistent with the treatment of late receipts for exports to other countries.</p>
+
+<p><strong>Nonsampling errors</strong></p>
+
+<p>The goods data are a complete enumeration of documents collected by CBP and are not subject to sampling errors. Quality assurance procedures are performed at every stage of collection, processing, and tabulation. However, the data are still subject to several types of nonsampling errors. The most significant of these include reporting errors, undocumented shipments, timeliness, data capture errors, and errors in the estimation of low-valued transactions.</p>
+
+<p><strong>Reporting errors:</strong> Reporting errors are mistakes or omissions made by importers, exporters, or their agents in their import or export declarations. Most errors involve missing or invalid commodity classification codes and missing or incorrect quantities or shipping weights. They have a negligible effect on aggregate import, export, and balance of trade statistics. However, they can affect the detailed commodity statistics.</p>
+
+<p><strong>Undocumented shipments:</strong> Federal regulations require importers, exporters, or their agents to report all merchandise shipments above established exemption levels. The Census Bureau has determined that not all required documents are filed, particularly for exports.</p>
+
+<p><strong>Timeliness and data capture errors:</strong> The Census Bureau captures import and export information from administrative documents and through various automated collection programs. Documents may be lost, and data may be incorrectly keyed, coded, or recorded. Transactions may be included in a subsequent month’s statistics if received late.</p>
+
+<p><strong>Low-valued transactions:</strong> The total values of transactions valued as much as or below $2,500 for exports and $2,000 ($250 for certain quota items) for imports are estimated for each country, using factors based on the ratios of low-valued shipments to individual country totals for past periods.</p>
+
+<p>The Census Bureau recommends that data users incorporate this information into their analyses, as nonsampling errors could impact the conclusion drawn from the results. See “<a href="https://www.census.gov/foreign-trade/aip/quality_profile10032014.pdf">U.S. Merchandise Trade Statistics: A Quality Profile</a>” (October 2014) for a detailed discussion of errors affecting the goods data.</p>
+
+<p><strong>Area groupings</strong></p>
+
+<p><strong>North America:</strong> Canada, Mexico.</p>
+
+<p><strong>Dominican Republic-Central America-United States Free Trade Agreement (CAFTA-DR):</strong> Costa Rica, Dominican Republic, El Salvador, Guatemala, Honduras, Nicaragua.</p>
+
+<p><strong>Europe:</strong> Albania, Andorra, Armenia, Austria, Azerbaijan, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Georgia, Germany, Gibraltar, Greece, Hungary, Iceland, Ireland, Italy, Kazakhstan, Kosovo, Kyrgyzstan, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard-Jan Mayen Island, Sweden, Switzerland, Tajikistan, Turkey, Turkmenistan, Ukraine, United Kingdom, Uzbekistan, Vatican City.</p>
+
+<p><strong>European Union:</strong> Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden.</p>
+
+<p><strong>Euro Area:</strong> Austria, Belgium, Croatia, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Portugal, Slovakia, Slovenia, Spain.</p>
+
+<p><strong>Pacific Rim:</strong> Australia, Brunei, China, Hong Kong, Indonesia, Japan, Korea (South), Macau, Malaysia, New Zealand, Papua New Guinea, Philippines, Singapore, Taiwan.</p>
+
+<p><strong>South/Central America:</strong> Anguilla, Antigua and Barbuda, Argentina, Aruba, Bahamas, Barbados, Belize, Bermuda, Bolivia, Brazil, British Virgin Islands, Cayman Islands, Chile, Colombia, Costa Rica, Cuba, Curacao, Dominica, Dominican Republic, Ecuador, El Salvador, Falkland Islands (Islas Malvinas), French Guiana, Grenada, Guadeloupe, Guatemala, Guyana, Haiti, Honduras, Jamaica, Martinique, Montserrat, Netherlands Antilles, Nicaragua, Panama, Paraguay, Peru, Sint Maarten, St. Kitts and Nevis, St. Lucia, St. Vincent and the Grenadines, Suriname, Trinidad and Tobago, Turks and Caicos Islands, Uruguay, Venezuela.</p>
+
+<p><strong>Africa:</strong> Algeria, Angola, Benin, Botswana, British Indian Ocean Territories, Burkina Faso, Burundi, Cabo Verde, Cameroon, Central African Republic, Chad, Comoros, Congo (Brazzaville), Congo (Kinshasa), Djibouti, Egypt, Equatorial Guinea, Eritrea, Eswatini, Ethiopia, French Southern and Antarctic Lands, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Ivory Coast, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Mayotte, Morocco, Mozambique, Namibia, Niger, Nigeria, Reunion, Rwanda, St. Helena, Sao Tome and Principe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, South Sudan, Sudan, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe.</p>
+
+<p><strong>Adjustments for seasonal and trading-day variations</strong></p>
+
+<p>Goods are initially classified under the Harmonized Commodity Description and Coding System (Harmonized System), which is an internationally accepted standard for the commodity classification of traded goods. The Harmonized System describes and measures the characteristics of the goods and is the basis for the systems used in the United States: Schedule B for exports and Harmonized Tariff Schedule for imports. Combining trade into approximately 140 export and 140 import end-use categories makes it possible to examine goods according to their principal uses (see exhibits 7 and 8). These categories are used as the basis for computing the seasonal and trading-day adjusted data. These adjusted data are then summed to the six end-use aggregates for publication (see exhibit 6). The Census Bureau provides these data to BEA for use in the NIPAs and in the U.S international transactions accounts (balance of payments accounts).</p>
+
+<p>Exhibit 19 shows goods (Census basis) that are seasonally adjusted for selected countries and world areas. Unlike the commodity-based adjustments discussed above, these adjustments are developed and applied directly at the country and world area levels. For total exports and imports, data users should refer to the commodity-based totals shown in the other exhibits. The seasonally adjusted country and world area data will not sum to the seasonally adjusted commodity-based totals because the seasonally adjusted country and world area data and the commodity-based totals are derived from different aggregations of the export and import data and from different seasonal adjustment models. Data users should use caution drawing comparisons between the two sets of seasonally adjusted series.</p>
+
+<p>The seasonal adjustment procedure (X-13ARIMA-SEATS) is based on a model that estimates the monthly movements as percentages above or below the general level of series (unlike other methods that redistribute the actual series values over the calendar year). Because the data series for aircraft is highly variable, users studying data trends may wish to analyze trade in aircraft separately from other trade.</p>
+
+<p><strong>Adjustments for price change</strong></p>
+
+<p>Data adjusted for seasonal variation on a real, or chained-dollar, basis (2017 reference year) are presented in exhibits 10 and 11. This adjustment for price change is done using the Fisher chain-weighted methodology. The deflators are primarily based on the monthly price indexes published by the BLS using techniques developed for the NIPAs by BEA.</p>
+
+<p><strong>Principal commodities</strong></p>
+
+<p>Goods data appearing in exhibit 15 are classified in terms of the SITC Revision 4, with the exception of agricultural and manufactured goods. Agricultural goods are defined by the U.S. Department of Agriculture (USDA) based on World Trade Organization guidance; they consist of non-fishery food products, raw fibers, feeds, and derivatives. Manufactured goods conform to the NAICS; they consist of goods that have been mechanically, physically, or chemically transformed. USDA agricultural goods and NAICS manufactured goods are not mutually exclusive categories.</p>
+
+<p>Re-exports are foreign merchandise entering the country as imports and then exported in substantially the same condition as when imported. Re-exports, which are included in overall export totals, appear as separate line items in exhibit 15.</p>
+
+<p><strong>Advanced technology products</strong></p>
+
+<p>About 500 of some 22,000 Schedule B and Harmonized Tariff Schedule classification codes used in reporting U.S. merchandise trade are identified as "advanced technology" codes, and they meet the following criteria:</p>
+
+<ol>
+	<li>The code contains products whose technology is from a recognized high technology field (e.g., biotechnology).</li>
+	<li>These products represent leading edge technology in that field.</li>
+	<li>Such products constitute a significant part of all items covered in the selected classification code.</li>
+</ol>
+
+<p>The aggregation of the goods results in a measure of advanced technology trade that appears in exhibits 16 and 16a. This product- and commodity-based measure of advanced technology differs from broader NAICS-based measures, which include all goods produced by a particular industry group, regardless of the level of technology embodied in the goods.</p>
+
+<p><strong>Goods trade in the Advance Economic Indicators Report</strong></p>
+
+<p>In addition to the U.S. International Trade in Goods and Services report (FT-900), which is released jointly with BEA, the Census Bureau also releases advance statistics on international trade in goods, along with advance estimates on retail and wholesale inventories, in the Advance Economic Indicators Report (<a href="https://www.census.gov/econ/indicators/index.html">Advance Report</a>). Trade statistics in the Advance Report, released on average 24 to 26 calendar days after the end of the reference month, reflect nearly complete coverage of goods trade, while statistics in the FT-900, released on average 34 to 36 calendar days after the end of the reference month, reflect complete coverage.</p>
+
+<p>The Advance Report contains advance statistics for goods trade on a Census basis by principal end-use category, thus providing users an earlier high-level snapshot of U.S. international trade for the featured month. Commodity and country details and statistics for goods trade on a balance of payments (BOP) basis and for services trade are released several days later in the FT-900. See the <a href="https://www.census.gov/econ/indicators/faqs.html">Advance Report Frequently Asked Questions</a> for more information.</p>
+
+<p>The FT-900 is the primary source for the goods trade data used in BEA’s quarterly gross domestic product (GDP) statistics. However, for the advance GDP estimate, FT-900 data for the third month are not yet available, so BEA uses data from the Advance Report. Because only goods trade on a Census basis by principal end-use category is available in the Advance Report, BEA applies adjustments, such as BOP and coverage adjustments, to the Advance Report statistics to produce detailed estimates for incorporation into the advance GDP estimate. See the “Key Source Data and Assumptions” table that accompanies each <a href="https://www.bea.gov/data/gdp/gross-domestic-product">GDP release</a> for more information.</p>
+
+<p><strong>Goods (BOP basis) and services</strong></p>
+
+<p>Quarterly and annual statistics for goods on a BOP basis and for services are included in the U.S. international transactions accounts (ITAs), which are published by BEA in news releases in March, June, September, and December and in the <a href="https://apps.bea.gov/scb/"><em>Survey of Current Business</em></a> in January, April, July, and October. The next release of the ITAs is scheduled for March 21, 2024.</p>
+
+<p>In addition, BEA releases detailed monthly and quarterly <a href="https://www.bea.gov/international/detailed-trade-data">goods statistics</a>, which consist of statistics on trade in goods by end-use category and commodity on both a Census basis and a BOP basis, and detailed annual <a href="https://www.bea.gov/data/intl-trade-investment/international-services-expanded">services statistics</a>, which consist of statistics on trade in services and on services supplied through affiliates of multinational enterprises. The services statistics provide detail on U.S. trade in services by type and by country and area and detail on services supplied through affiliates by industry and by country and area.</p>
+
+<p><strong>Goods (BOP basis)</strong></p>
+
+<p>Goods on a Census basis are adjusted by BEA to a BOP basis to align the data with the concepts and definitions used to prepare the international and national economic accounts. These adjustments, which are applied separately to exports and imports, are necessary to supplement coverage of the Census data, to eliminate duplication of transactions recorded elsewhere in the international accounts, and to value transactions at market prices. They include both <em>additions</em> to and <em>deductions</em> from goods on a Census basis and are presented in this release as <em>net adjustments</em>. Adjustments that exhibit significant seasonal patterns are seasonally adjusted. BEA also publishes more detailed quarterly and annual statistics for <em>net adjustments</em> in ITA <a href="https://apps.bea.gov/iTable/?reqid=62&amp;step=6&amp;isuri=1&amp;tablelist=48&amp;product=1">Table 2.4. U.S. International Trade in Goods, Balance of Payments Adjustments</a>.</p>
+
+<p>The export adjustments include:</p>
+
+<p><strong>Gold exports, nonmonetary</strong> - This <em>addition</em> is made for gold that is purchased by foreign official agencies from private dealers in the United States and held at the Federal Reserve Bank of New York. The Census data only include gold that leaves the U.S. customs territory.</p>
+
+<p><strong>Goods procured in U.S. ports by foreign carriers</strong> - This <em>addition</em> is made for foreign air and ocean carriers’ fuel purchases in U.S. ports.</p>
+
+<p><strong>Net exports of goods under merchanting</strong> - This <em>addition</em> is made to include the net value of the purchase and subsequent resale of goods abroad without the goods entering the United States. Because these goods do not cross the U.S. customs frontier, their value is not recorded in the Census data.</p>
+
+<p>Other adjustments to exports include:</p>
+
+<p><em>Deductions</em> for equipment repairs (parts and labor), developed motion picture film, military grant-aid, and, for periods prior to 2010, goods identified in the Census data as exports under the Foreign Military Sales (FMS) program. <em>Additions</em> for sales of fish caught in U.S. territorial waters, exports of electric energy to Mexico, private gift parcels, military goods transferred through grants, vessels and oil rigs for which ownership changes, valuation of software exports at market value, low-value (below reporting threshold) transactions for 1999–2009 to phase in a revised Census Bureau low-value methodology that was implemented for goods on a Census basis beginning with statistics for 2010, and, for periods prior to 2010, FMS goods exports reported to BEA by the U.S. Department of Defense.</p>
+
+<ul>
+</ul>
+
+<p>The import adjustments include:</p>
+
+<p><strong>Gold imports, nonmonetary</strong> - This <em>addition</em> is made for gold sold by foreign official agencies to private purchasers out of stock held at the Federal Reserve Bank of New York. The Census data only include gold that enters the U.S. customs territory.</p>
+
+<p><strong>Goods procured in foreign ports by U.S. carriers</strong> - This <em>addition</em> is made for U.S. air and ocean carriers’ fuel purchases in foreign ports.</p>
+
+<p><strong>Imports by U.S. military agencies</strong> - This <em>addition</em> is made for purchases of goods abroad by U.S. military agencies, which are reported to BEA by the Department of Defense. The Census data only include imports of goods by U.S. military agencies that enter the U.S. customs territory.</p>
+
+<p><strong>Inland freight in Canada and Mexico</strong> - This <em>addition</em> is made for inland freight in Canada and Mexico. Imports of goods from all countries should be valued at the customs value—the value at the foreign port of export including inland freight charges. For imports from Canada and Mexico, this should be the cost of the goods at the U.S. border. However, the customs value for imports for certain Canadian and Mexican goods is the point of origin in Canada or Mexico. BEA makes an addition for the inland freight charges of transporting these goods to the U.S. border to make the value comparable to the customs value reported for imports from other countries.</p>
+
+<p>Other adjustments to imports include:</p>
+
+<p><em>Deductions</em> for equipment repairs (parts and labor), repairs to U.S. vessels abroad, and developed motion picture film. <em>Additions</em> for non-reported imports of locomotives and railcars from Canada and Mexico, non-reported imports of aircraft, imports of electric energy from Mexico, conversion of vessels for commercial use, valuation of software imports at market value, and low-value (below reporting threshold) transactions for 1999–2009 to phase in a revised Census Bureau low-value methodology that was implemented for goods on a Census basis beginning with statistics for 2010.</p>
+
+<ul>
+</ul>
+
+<p><strong>Services</strong></p>
+
+<p>The services statistics cover transactions between foreign countries and the 50 states, the District of Columbia, Puerto Rico, the U.S. Virgin Islands, and other U.S. territories and possessions. Transactions with U.S. military, diplomatic, and consular installations abroad are excluded because these installations are considered to be part of the U.S. economy.</p>
+
+<p>Services statistics are based on quarterly, annual, and benchmark surveys and information obtained from monthly government and private sector reports. For categories for which monthly data are not available, monthly statistics are derived from quarterly statistics through temporal distribution, or interpolation. The interpolation methodology used by BEA is the modified Denton proportional first difference method. This method preserves the pattern of the monthly indicator series, if available, while satisfying the annual aggregation constraints. See “<a href="https://apps.bea.gov/scb/pdf/2008/05 May/0508_methods.pdf">An Empirical Review of Methods for Temporal Distribution and Interpolation in the National Accounts</a>” (May 2008) for more information. Services are seasonally adjusted when statistically significant seasonal patterns are present.</p>
+
+<p>Services are shown in eleven broad categories. The following is a brief description of the types of services included in each category:</p>
+
+<p><strong>Maintenance and repair services n.i.e. (not included elsewhere)</strong> - Consists of maintenance and repair services performed by residents of one country on goods that are owned by residents of another country. The repairs may be performed at the site of the repair facility or elsewhere. Excludes such services in which the cost is included in the price of the goods and is not billed separately or is declared as a part of the price of the goods on the import or export declaration filed with U.S. Customs and Border Protection. Maintenance and repair of computers are included under computer services, and some maintenance and repair of ships, aircraft, and other transport equipment are included under transport. Construction maintenance and repair are included under construction.</p>
+
+<p><strong>Transport</strong> - Consists of transactions associated with moving people and freight from one location to another and includes related supporting and auxiliary services. Transport covers all modes of transportation, including air, sea, rail, road, space, and pipeline. Postal and courier services and port services, which cover cargo handling, storage and warehousing, and other related transport services, are also included.</p>
+
+<p><strong>Travel (for all purposes including education)</strong> - Includes goods and services acquired by nonresidents while abroad. A traveler is defined as a person who stays, or intends to stay, for less than one year in a country of which he or she is not a resident or as a nonresident whose purpose is to obtain education or medical treatment, no matter how long the stay. Purchases can be either for own use or for gifts to others. Travel is a transactor-based component that covers a variety of goods and services, primarily lodging, meals, transportation in the country of travel, amusement, entertainment, and gifts. Travel excludes air passenger services for travel between countries, which are included in transport, and goods for resale, which are included in goods.</p>
+
+<p>Travel includes business and personal travel. Business travel covers goods and services acquired for use by persons whose primary purpose for travel is for business (including goods and services for which business travelers are reimbursed by employers). Business travel also includes expenditures by border, seasonal, and other short-term workers in their economy of employment. Personal travel covers travel for all non-business purposes, including for medical or educational purposes.</p>
+
+<p><strong>Construction</strong> - Consists of the services provided to create, renovate, repair, or extend buildings, land improvements, and civil engineering constructions, such as roads and bridges. Additionally, in concept, inputs purchased by foreign construction contractors for projects in the United States are included in construction exports, and inputs purchased abroad by U.S. construction contractors are included in construction imports. However, in practice, data are not available to estimate inputs purchased by foreign contractors for projects in the United States, so BEA statistics on construction exports do not include this component.</p>
+
+<p><strong>Insurance services</strong> - Includes the direct insurance services of providing life insurance and annuities, non-life (property and casualty) insurance, reinsurance, freight insurance, and auxiliary insurance services. Insurance is measured as gross premiums earned plus premium supplements less claims payable, with an adjustment for claims volatility. Premium supplements represent investment income from insurance reserves, which are attributed to policyholders who are treated as paying the income back to the insurer. Auxiliary insurance services include agents’ commissions, brokerage services, insurance consulting services, actuarial services, and other insurance services.</p>
+
+<p><strong>Financial services</strong> - Includes financial intermediary and auxiliary services, except insurance services. These services include those normally provided by banks and other financial institutions, such as securities brokerage and underwriting, financial management, financial advisory, and custody services; credit card and other credit-related services; and securities lending, electronic funds transfer, and other services. Financial services include services for which an explicit commission or fee is charged as well as implicit charges, such as (1) implicit fees for bond transactions, measured as the difference between bid and ask prices; (2) margins on buying and selling transactions (called market-making services); and (3) margins between interest payable and the reference rate on loans and deposits (called financial intermediation service charges indirectly measured, abbreviated as FISIM).</p>
+
+<p><strong>Charges for the use of intellectual property n.i.e.</strong> - Includes (1) charges for the use of proprietary rights, such as patents, trademarks, copyrights, and franchises, and (2) charges for licenses to reproduce and/or distribute intellectual property embodied in produced originals (such as copyrights on books and manuscripts, computer software, cinematographic works, and sound recordings) and related rights (such as for live performances and television, cable, or satellite broadcast). Charges for end-user rights to use general-use computer software and outright sales of customized computer software are included under computer services. Charges for end-user rights to use audiovisual content, such as film, television programming, and sound recordings, as well as outright sales of audiovisual originals, are included under audiovisual services, a component of personal, cultural, and recreational services.</p>
+
+<p><strong>Telecommunications, computer, and information services</strong> - Telecommunications services include the broadcast or transmission of sound, images, data, or other information by electronic means. These services do not include the value of the information transmitted. Computer services consist of hardware- and software-related services and data processing services. Sales of customized software and related use licenses, as well as licenses to use non-customized software with a periodic license fee, are also included, as is software downloaded or otherwise electronically delivered. Cross-border transactions in non-customized packaged software with a license for perpetual use are included in goods. Information services include news agency services, database services, and web search portals.</p>
+
+<p><strong>Other business services</strong> - Consists of research and development services, professional and management consulting services, and technical, trade-related, and other business services. Research and development services include services associated with basic and applied research and experimental development of new products and processes as well as outright sales of the outcomes of research and development (such as patents, copyrights, and information about industrial processes). Professional and management consulting services include legal services, accounting, management consulting, managerial services, public relations services, advertising, and market research. Amounts received by a parent company from its affiliates for general overhead expenses related to these services are included. Technical, trade-related, and other business services include architectural and engineering, waste treatment, operational leasing, trade-related, and other business services.</p>
+
+<p><strong>Personal, cultural, and recreational services</strong> - Consists of the following three subcategories: (1) audiovisual services, which covers production of audiovisual content, end-user rights to use audiovisual content, and outright sales and purchases of audiovisual originals; (2) artistic-related services, which includes the services provided by performing artists, authors, composers, and other visual artists; set, costume, and lighting design; presentation and promotion of performing arts and other live entertainment events; and fees to artists and athletes for performances, sporting events, and similar events; and (3) other personal, cultural, and recreational services, which includes services such as education services delivered online, remotely provided telemedicine services, and services associated with museum and other cultural, sporting gambling, and recreational activities, except those acquired by customers traveling outside their country of residence.</p>
+
+<p><strong>Government goods and services n.i.e.</strong> - Includes goods and services supplied by and to enclaves, such as embassies, military bases, and international organizations; goods and services acquired from the host economy by diplomats, consular staff, and military personnel located abroad and their dependents; and goods and services supplied by and to governments that are not included in other goods and services categories. Goods and services supplied by and to governments are classified to specific goods and services categories when source data permit.</p>
+
+<ul>
+</ul>
+
+<p><strong>Goods (BOP basis) and services by country and area</strong></p>
+
+<p>Monthly country and area detail is not available for goods on a BOP basis or for services. However, quarterly statistics on goods on a BOP basis and on services that are seasonally adjusted by geography are shown in exhibit 20. Unlike the seasonal adjustments by commodity and by service type that are applied to the global totals, these adjustments are developed and applied directly at the country and world area levels. For total exports and imports, data users should refer to the by-commodity and by-service type totals shown in the other exhibits. The seasonally adjusted country and world area data will not sum to the seasonally adjusted by-commodity and by-service type totals because the two sets of statistics are derived from different aggregations of the export and import data and from different seasonal adjustment models. Data users should use caution drawing comparisons between the two sets of seasonally adjusted series.</p>
+
+<p>The definitions of the world areas shown in exhibit 20 are consistent with the definitions for goods on a Census basis (see <strong>Area groupings</strong> above) with a few exceptions. For services, CAFTA-DR is not available because trade with this area currently is not reviewed for seasonality. For goods on a BOP basis and for services, European Union reflects the composition of the areas at the time of reporting.</p>
+
+<p><strong>Revision procedure (goods on a BOP basis and services)</strong></p>
+
+<p><strong>Monthly revisions</strong>: Each month, a preliminary estimate for the current month and a revised estimate for the immediately preceding month are released. After the initial revision, no further revisions are made to a month until more complete source data become available in March, June, September, and December.</p>
+
+<p><strong>Quarterly revisions</strong>: The releases in March, June, September, and December contain revised estimates for the previous six months to incorporate more comprehensive and updated source data.</p>
+
+<p><strong>Annual revisions</strong>: Each June, historical data are revised to incorporate newly available and revised source data, changes in definitions and classifications, and changes in estimation methods. Seasonally adjusted data are also revised to reflect recalculated seasonal and trading-day adjustments.</p>
+
+<p><strong>Other revisions</strong>: The release for December statistical month contains revisions to goods for January through November of the most recent year; the release for January statistical month contains revisions to both goods and services for all months of the most recent year. These revisions result from forcing the seasonally adjusted months to equal the annual totals.</p>
+
+<p><strong>Data availability</strong></p>
+
+<p>The FT-900 and the FT-900 Supplement are available at <a href="https://www.census.gov/ft900">www.census.gov/ft900</a> or <a href="https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services">www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services</a>.</p>
+
+<p><strong>Resources</strong></p>
+
+<p><strong>Census Bureau’s application programming interface (API):</strong> The Census Bureau’s API, available at <a href="https://www.census.gov/developers">www.census.gov/developers</a>, lets developers create custom apps to reach new users and makes key demographic, socio-economic, and housing statistics more accessible than ever before.</p>
+
+<p><strong>BEA’s data API:</strong> BEA’s data API, available at <a href="https://apps.bea.gov/API/signup/">apps.bea.gov/API/signup/</a>, provides programmatic access to BEA’s published economic statistics using industry-standard methods and procedures.</p>
+</div>
+      
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</article>
+
+
+    </div>
+
+                            </div>
+
+                                </div>
+    </div>
+    <div class="full-width">
+    <div class="container">
+        <div class="row last-modified">
+            <div class="col-xs-12 col-sm-6">
+                <div class="download-link"><a href="http://get.adobe.com/reader/">Download Acrobat Reader</a></div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="date-info">Page last modified on 2/7/24</div>
+            </div>
+        </div>
+    </div>
+    </div>
+ 
+
+            <footer class="footer container" role="contentinfo">
+            
+    <div class="region region-footer">
+        <section id="block-beagovfooter" data-block-plugin-id="block_content:aa0d67fd-5738-4477-83ce-e17e948518e8" class="block block-block-content block-block-contentaa0d67fd-5738-4477-83ce-e17e948518e8 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Bureau of Economic Analysis <span> 4600 Silver Hill Road &bull; Suitland, MD 20746 </span></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <ul class="footer-links">
+                <li class="text-large"><a href="//www.bea.gov/contact-us">Contact Us</a></li>
+                <li class="text-large"><a href="//www.bea.gov/about/working-at-bea">Working at BEA</a></li>
+                <li class="text-large"><a href="//www.bea.gov/help/faq">Frequently Asked Questions</a></li>
+                <li class="text-large"><a href="//www.bea.gov/about/policies-and-information">Our Policies</a></li>
+                <li class="text-large"><a href="/privacy">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4">
+            <ul class="footer-links">
+                <li><a href="//www.bea.gov/statement-commitment-scientific-integrity-principal-statistical-agencies">Commitment to Scientific Integrity</a></li>
+                <li><a href="//www.bea.gov/about/policies-and-information/data-dissemination">Data Dissemination Practices</a></li>
+                <li><a href="//www.bea.gov/open-data">Open Data</a></li>
+                <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                <li><a href="https://business.usa.gov">Business USA</a></li>
+                <li><a href="http://www.osec.doc.gov/ocr/nofear/nofear.htm">No FEAR Act</a></li>
+                <li><a href="http://osec.doc.gov/opog/FOIA/default.html">FOIA</a></li>
+                <li><a href="https://www.commerce.gov/">U.S. Department of Commerce</a></li>
+                <li><a href="https://apps.bea.gov/status/">Emergency Status </a></li>
+            </ul>
+        </div>
+        <div class="col-sm-4">
+            <ul class="footer-links">
+                <li><a href="//www.bea.gov/news/blog">The BEA Wire | BEA's Official Blog</a></li>
+                <li class="footer-icon-social-instagram"><a href="https://www.instagram.com/usbeagov/">BEA on Instagram</a></li>
+                <li class="footer-icon-social-twitter"><a href="https://twitter.com/bea_news">BEA on Twitter</a></li>
+                <li class="footer-icon-social-facebook"><a href="https://www.facebook.com/usbeagov">BEA on Facebook</a></li>
+                <li class="footer-icon-social-linkedin"><a href="https://www.linkedin.com/company/bureau-of-economic-analysis">BEA on LinkedIn</a></li>
+                <li class="footer-icon-social-youtube"><a href="https://www.youtube.com/channel/UCCP9QD1x_z__duUivA6Yb5w">BEA on YouTube</a></li>
+                <li><a href="https://apps.bea.gov/rss/rss.xml" title="BEA's RSS Feeds">News Release Feed (RSS)</a></li>
+                <li><a href="/_subscribe/" title="Email Subscription Service">Sign up for Email Notifications</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    footer ul li[class*="footer-icon-social"] a {
+        color: rgba(255,255,255,1) !important;
+        opacity: 0.75;
+        background-repeat: no-repeat;
+        background-position: left;
+        padding: 2px 0px 3px 30px;  
+    } 
+    footer ul.contextual-links li a {
+        color: rgba(0,0,0,1) !important;
+    } 
+    footer ul li[class*="footer-icon-social"] a:hover {
+        opacity: 1.00;
+    }     
+    .footer-links  .footer-icon-social{
+        vertical-align: middle;
+    }
+    .footer-icon-social-twitter a{
+        background-image: url("/system/files/logo-twitter.png");
+    }    
+    .footer-icon-social-facebook a{
+        background-image: url("/system/files/logo-fb.png");
+    }    
+    .footer-icon-social-instagram a{
+        background-image: url("/system/files/logo-instagram.png");
+    }    
+    .footer-icon-social-linkedin a{
+        background-image: url("/system/files/logo-linkedin.png");
+    }    
+    .footer-icon-social-youtube a{
+        background-image: url("/sites/default/files/logo-youtube.png");
+    }    
+</style></div>
+      
+  </section>
+
+
+    </div>
+
+        </footer>
+    
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/39771","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"data":{"extlink":{"extTarget":false,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"\\.gov","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":true,"extAlertText":"This page provides links to non-BEA web sites that provide additional information about this topic. You will leave the BEA.gov domain, and BEA cannot attest to the accuracy of information on that non-BEA page. Providing links to a non-BEA Web site is not an endorsement of the other site or the information it contains by BEA or any of its employees. Also, be aware that the privacy protection provided on the BEA.gov domain may not be available at the external link. ","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":null}},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":1,"popover_placement":"top","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"ajax":[],"user":{"uid":0,"permissionsHash":"e1e22a423d82e3d0fcffdd4b754cece914012a6e6f24fa05e9cbf0b8f11724ad"}}</script>
+<script src="/sites/default/files/js/js_VbDOEAOMWEySq7YZSTiqSYuCEWqtuhNGo_xyEHNUR8U.js"></script>
+<script src="/themes/custom/beagov_theme/js/federated-analytics.js?agency=DOC&amp;subagency=BEA&amp;v=9.5.11" id="_fed_an_ua_tag"></script>
+<script src="/sites/default/files/js/js_KNyAXi2gKH6tfmNWX2QK6YV0ejeguykRiknXU_T566U.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c9a2283334","applicationID":"1614106374","transactionName":"YVAAZkJWWBdYVBEIWVgaI1FEXlkKFkcEBlNpVgNRWFI=","queueTime":2,"applicationTime":48,"atts":"TRcDEApMSxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
