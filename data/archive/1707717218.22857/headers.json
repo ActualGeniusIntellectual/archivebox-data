@@ -1,0 +1,11 @@
+{
+    "Status-Code": 404,
+    "Timing-Allow-Origin": "*",
+    "Content-Security-Policy": "default-src 'none'",
+    "X-Content-Type-Options": "nosniff",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "149",
+    "CustomAppHeader": "mpulse-ab-boomr__git__2226cf4__git__2226cf4__p19.alsi10-lite",
+    "Date": "Mon, 12 Feb 2024 06:16:15 GMT",
+    "Connection": "keep-alive"
+}
