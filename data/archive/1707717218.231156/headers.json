@@ -1,0 +1,19 @@
+{
+    "Status-Code": 200,
+    "Last-Modified": "Thu, 01 Feb 2024 13:15:52 GMT",
+    "ETag": "\"1afc82c303e89769264b9fe1ca0f7ade\"",
+    "x-amz-server-side-encryption": "AES256",
+    "Cache-Control": "max-age=60, must-revalidate",
+    "Accept-Ranges": "bytes",
+    "Content-Type": "text/html",
+    "Vary": "Accept-Encoding",
+    "Content-Encoding": "gzip",
+    "Date": "Mon, 12 Feb 2024 06:50:57 GMT",
+    "Content-Length": "1862",
+    "Connection": "keep-alive",
+    "Access-Control-Max-Age": "86400",
+    "Access-Control-Allow-Credentials": "false",
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS",
+    "Access-Control-Allow-Origin": "*"
+}
