@@ -1,0 +1,797 @@
+@charset "UTF-8";
+/* CSS Document */
+@media print {
+
+	
+	* {
+		-webkit-print-color-adjust: exact !important;
+		print-color-adjust: exact !important;
+		color: inherit !important;
+	}
+	.container {
+		width: 100%;
+	}
+	html, body {
+		height: 98%;
+	}	
+	body.navbar-is-fixed-top {
+		margin-top: 0;
+	}
+	
+	[class*="col-"] { float: left; }
+	.col-sm-12, .col-md-12, .col-lg-12 { width: 100% }
+	.col-sm-7 { width: 58%; }
+	.col-sm-6,  .col-md-6,  .col-lg-6 { width: 50%; }
+	.col-sm-5 { width: 42%; }
+	.col-md-5 { width: 50%; }
+	.col-md-8 { width: 65%; padding-top: 0.5em; }
+	.col-md-4 { width: 35%; }
+	
+		
+		
+	/* Main Container Div */
+	
+	#scb {
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size: 0.9em;
+		line-height: 1.4em;
+		color: #000000;
+		text-align: left;
+		padding-top: 0px !important;
+		margin-top: 0px !important;
+	}
+	
+	#scb-subnav {
+		display: none;
+	}
+	
+	.offcanvas-menu {
+		display: none;
+	}
+	
+	/* ======================== */
+
+
+
+
+	/* Basic body items */
+	
+	section {
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	
+	#scb .banner {
+		width: 100%;
+		margin: 2em auto 1em auto;
+		padding: 0.25em;
+		border-radius: 6px;
+		background-color: #c55420 !important;
+	}
+	#scb .pdf-link {
+		display: none;
+	}
+	#scb .scb-tag {
+		display: inline-block;
+		text-align: left;
+		font-size: 0.85em;
+		font-style: italic;
+		line-height: normal;
+		padding: 0.15em 1em 0.25em 1em;
+		margin: 1em 0 0.25em 0;
+		color: #4f4f4f !important;
+		border: solid 1px #9ea2a2;
+		border-radius: 1em;
+	}
+	#scb .scb-tag a {
+		color: #4f4f4f !important;
+	}
+	#scb .scb-tag-centennial {
+		display: inline-block;
+		width: 200px;
+		margin: 2.5em 0 0.25em 0;
+	}
+
+	#scb .scb-sectn-label {
+		display: inline-block;
+		color: #004c97;
+		text-align: left;
+		font-size: 1.25em;
+		font-weight: bold;
+		font-style: italic;
+		line-height: normal;
+		max-width: auto;
+		text-decoration: none;
+	}
+	
+	#scb h1 {
+		color: #4f4f4f !important;
+		text-align: left;
+		font-size: 2em;
+		line-height: normal;
+		font-weight: 600;
+		margin-bottom: 0.25em !important;
+	}
+	#scb h1.subtitle {
+		color: #4f4f4f !important;
+		text-align: left;
+		font-size: 1.5em;
+		line-height: normal;
+		font-weight: 400;
+		margin-top: 0 !important;
+		margin-bottom: 0.5em !important;
+	}
+	#scb h2 {
+		text-align: center !important;
+		color: #ffffff !important;
+		font-size: 1.5em;
+		line-height: normal;
+		font-weight: 600;
+		margin: 0;
+	}
+	#scb h2.sitepage {
+		color: #4f4f4f !important;
+		text-align: left !important;
+		font-size: 1.5em;
+		line-height: normal;
+		font-weight: bold;
+		margin: 1.5em auto 0.25em auto;
+	}
+	#scb h2.issuepage {
+		color: #4f4f4f !important;
+		text-align: left !important;
+		font-size: 1.5em;
+		line-height: normal;
+		font-weight: bold;
+		margin: 2em auto 0.25em auto;
+	}
+	#scb h3 {
+		color: #4f4f4f !important;
+		text-align: left;
+		font-size: 1.25em;
+		font-weight: bold;
+		margin-top: 30px;
+	}
+	#scb h4 {
+		color: #4f4f4f !important;
+		text-align: left;
+		font-size: 1em;
+		font-weight: bold;
+	}
+	#scb h4.box-title {
+		color: #ffffff !important;
+		text-align: center;
+	    font-size: 1em;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#scb h5 {
+		color: #4f4f4f !important;
+		text-align: left;
+		font-size: 1em;
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	#scb .byline {
+		color: #000000;
+		text-align: left;
+		font-style: italic;
+	}
+	#scb caption {
+		color: #000000;
+		display: table-caption;
+		text-align: center;
+		font-weight: bold;
+		line-height: normal;
+		margin: 1em 0 0.5em 0;
+		padding: 0;
+	}
+	#scb p.caption {
+		text-align: center;
+		color: #000000;
+		font-weight: bold;
+		line-height: normal;
+		margin: 1em 0 0.5em 0;
+		padding: 0;
+	}
+	#scb .subcaption {
+		color: #000000;
+		text-align: center;
+		font-size: 0.75em;
+		margin: 0 auto;
+	}
+	#scb .textcaption {
+		color: #000000;
+		text-align: left;
+		font-weight: normal;
+		font-style: italic;
+		font-size: small;
+		line-height: normal;
+		margin: -0.25em 0 0.5em 0;
+		padding: 0;
+	}
+	#scb .figcaption {
+		text-align: center;
+		color: #000000;
+		font-weight: normal !important;
+		font-style: italic !important;
+		font-size: small !important;
+		line-height: normal !important;
+		margin: 1em 0 0.5em 0;
+		padding: 0;
+	}
+	#scb .figsubcaption {
+		display: none;
+	}
+	#scb .figdisplaycaption {
+		color: #000000;
+		text-align: center;
+		font-size: 0.65em;
+		margin: 0 auto;
+		line-height: normal;
+	}
+
+	#scb a {
+		color: #006bb3 !important;
+		border-bottom: none !important;
+		text-decoration: none;
+	}
+
+	#scb div.footnotes {
+		text-align: left;
+		font-size: small;
+		line-height: normal;
+		padding: 0px;
+		margin: 6px 0px;
+		page-break-inside: avoid;
+	}
+
+	#scb .screen-text-small {
+		font-size: small !important;
+		line-height: normal !important;
+	}
+	#scb-body .print-text-small {
+		font-size: small !important;
+		line-height: normal !important;
+	}
+	#scb .linknote {
+		vertical-align: super;
+		line-height: normal;
+		font-size: x-small;
+		color: #757575;
+	}
+
+	#scb hr {
+	    border: none;
+	    height: 1px;
+	    margin: 12px 0px;
+	    background-color: #4f4f4f !important;
+		width: 33%;
+	}
+	#scb hr.divider {
+		margin: 0;
+		width: 100%;
+	}
+
+	#scb p.pre-list {
+		margin: auto auto 0 auto;
+	}
+
+	#scb blockquote {
+		font-size: 1em !important;
+		line-height: 1.5em;
+		color: #000000;
+		text-align: justify;
+		border-left: none;
+		margin: auto 2em;
+	}
+	
+	#scb dl {overflow: hidden; margin: 3px 0px;}
+	#scb dt {float: left; clear: left; width: 10%; font-weight: bold;}
+	#scb dd {margin: 0; width: 90%;}
+	#scb dt.col {float: left; clear: left; width: 15%; font-weight: bold;}
+	#scb dd.col {float: right; margin: 0; width: 85%;}
+	
+	#scb ol {
+		text-align: left;
+		margin: 0 0 1em 15px;
+		padding: 0;
+	}
+	#scb ol li {
+		padding-left: 0.75em;
+		margin-top: 0.5em;
+	}
+	#scb ul {
+		text-align: left;
+		margin: 0 auto 1em;
+		padding-left: 2.5em;
+	}
+	#scb ul li {
+		background-image: none !important;
+		list-style-type: disc !important;
+		color: #000000 !important;
+		padding-left: 0.25em;
+		/* margin-top: 0.5em; */
+	}
+	#scb ul.second-level {
+		text-align: left;
+		margin: 0 auto;
+		padding-left: 2.5em;
+	}
+	#scb ul.second-level li {
+		background-image: none !important;
+		list-style-type: circle !important;
+		color: #000000 !important;
+		padding-left: 0.25em;
+	}
+	#scb li {
+		page-break-inside: avoid;
+	}
+
+	#scb img {max-width: 100%;}
+	#scb .break {display: inherit;}
+	
+	#scb abbr {
+	font-weight: normal !important;
+	color: #000000 !important;
+    border-bottom: none !important;
+    text-decoration: none;
+}
+	#scb abbr.ref {
+	font-weight: normal;
+	color: #000000 !important;
+    border-bottom: none !important;
+    text-decoration: none;
+}
+	#scb sup.theadlink {
+    color: #ffffff !important;
+	text-decoration: underline !important;
+}
+	#scb abbr.theadlink {
+	font-weight: bold !important;
+    color: #ffffff !important;
+	text-decoration: none !important;
+}
+	
+	/* ======================== */
+	
+	
+	
+	
+	/* The three main structure parts of an SCB page:  Masthead, Body, Footer */
+
+	/* Masthead */
+	#scb-masthead {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	#scb-logo {
+		height: auto;
+		text-align: center;
+		padding: 10px 40px 0px 40px;
+		background-color: #004c97 !important;
+		border-radius: 8px !important;
+	}
+	#scb-slogan {
+		font-size: normal;
+		text-align: center;
+		font-style: italic;
+		font-weight: 800;
+		border-radius: 0px;
+		padding: 10px 0 10px;
+		height: auto;
+	}
+	#scb .scb-nav {
+		display: none;
+	}
+
+	/* Footer */
+	#scb-footer {
+		margin: 4em 0 2em 0;
+		padding: 1em 0.5em;
+		background-color: #004c97 !important;
+		border-radius: 8px;
+	}
+	#scb-footer-logo {
+		padding: 0 2em 0 1em;
+	}
+	#scb p.footer-title {
+		font-size: 1em;
+		font-weight: bold;
+		text-align: left;
+		color: #ffffff !important;
+		line-height: normal;
+		margin-bottom: 0.5em;
+	}
+	#scb p.footer-text {
+		color: #ffffff !important;
+		font-size: 0.75em;
+		line-height: normal;
+		text-align: left;
+	}
+	#scb .footer-link a {
+		color: #ffffff !important;
+		line-height: normal;
+		text-decoration: none;
+	}
+	#scb-footer-ccol {
+		padding: 0 12px 0 6px !important;
+	}
+	#scb-footer-rcol {
+		padding: 0 6px 0 6px !important;
+	}
+	
+	/* BEA Footer */
+	footer.footer.container {
+		display: none;
+	}
+	
+	/* Hide the Back to Top button */
+	#scb-to-top {
+		display: none;
+	}
+
+	/* ======================== */
+	
+	
+	
+	/* Styling SCB cols and sections */
+
+	#scb .no-padding {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#scb .scb-col {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#scb .scb-colspace {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 0.5em;
+	}
+	#scb .gallery {
+		margin-top: 2em;
+		margin-bottom: 1.5em;
+		text-align: center !important;
+	}
+	#scb .float-right {
+	float: right;
+	display: inline-block;
+    margin: 0 0 1em 1.5em;
+	max-width: 50%;
+	}
+	#scb .float-left {
+		float: right;
+		display: inline-block;
+	    margin: 0 1.5em 1em 0;
+		max-width: 50%;
+	}
+	
+	#month-title {
+		margin: 0 auto 1.5em;
+	}
+	#more-articles {
+		margin-top: 0 !important;
+		padding: 0 !important;
+	}
+	#articles-list {
+		padding-left: 15px;
+		padding-right: 32px;
+		padding-bottom: 2em;
+	}
+	#articles-list-p2 {
+		padding-left: 15px;
+		padding-right: 32px;
+	}
+	#asides-col {
+		padding: 0 15px 0 8px !important;
+	}
+	#dm-bio-col {
+		width: 24%;
+		margin-top: 2em;
+		padding-top: 0.67em;
+		font-size: 0.85em;
+		font-style: italic;
+		line-height: normal;
+	}
+	
+	/* ======================== */
+	
+	
+	
+	
+	/* Styling Panels */
+	
+	#scb .scb-panel {
+		border: #c55420 solid medium;
+		border-radius: 8px;
+		background-color: #fdf5e0 !important;
+		text-align: left;
+		line-height: normal;
+		page-break-inside: avoid;
+	}
+	#scb .scb-panel-title {
+		background-color: #c55420 !important;
+		color: #ffffff !important;
+		text-align: center;
+		font-weight: bold;
+	    padding-top: 4px;
+		padding-bottom: 4px;
+	}
+	
+	#scb .scb-panel-float {
+		float: right;
+		display: inline-block;
+	    margin: 0 0 1em 1.5em;
+		border: #c55420 solid medium;
+		border-radius: 8px;
+		background-color: #fdf5e0 !important;
+		text-align: left;
+		page-break-inside: avoid;
+	}
+
+	#scb .scb-issue-panel {
+		border: #004c97 solid medium;
+		border-radius: 8px;
+		background-color: #e1ecf8 !important;
+		line-height: normal;
+		page-break-inside: avoid;
+		margin-top: 48px;
+	}
+	#scb .scb-issue-panel-title {
+		background-color: #004c97 !important;
+		color: #ffffff !important;
+		text-align: center;
+		font-weight: bold;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	#scb .scb-panel-headline {
+		text-align: center;
+		font-weight: bold;
+	}
+	#scb .scb-issue-panel-headline {
+		text-align: center;
+		font-weight: bold;
+	}
+	#scb .panel-body {
+		text-align: left;
+		padding-bottom: 0;
+	}
+	#scb a.panel-body { color: #0074c2; }
+	
+	#scb .scb-notice {
+		float: left;
+		border: #c55420 solid thin;
+		border-radius: 8px;
+		background-color: #fdf5e0 !important;
+		padding: 0.33em;
+		text-align: left;
+		line-height: normal;
+		page-break-inside: avoid;
+		margin-bottom: 1em;
+	}
+	#scb .scb-notice p {
+		margin-bottom: 0;
+		font-style: italic;
+		font-size: 0.75em;
+	}
+	
+	/* ======================== */
+
+	
+	
+	
+	/* Styling Modals */
+
+	#scb-body .scb-modal {
+		display: inline !important;
+		position: inherit !important;
+		opacity: inherit !important;
+	}
+	#scb-body .scb-modal-print {
+		-webkit-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		margin-top: 2em;
+		margin-bottom: 1.5em;
+		margin-left: 0;
+		margin-right: 0;
+		width: auto;
+	}	
+	#scb-body .modal-content {
+		border: #c55420 solid medium;
+		background-color: #fdf5e0 !important;
+		border-radius: 8px;
+	}
+	#scb-body .modal-header {
+    	background-color: #c55420 !important;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+	#scb-body .modal-title {
+		text-align: center;
+		color: #ffffff !important;
+	}
+	#scb-body .modal-footer {
+    	display: none;
+	}
+	#scb-body .scbclosebtn {
+	    display: none;
+	}
+
+/* ======================== */
+
+	
+	
+	
+	/* Styling SCB bands and non-feature tiles */
+	
+	#scb .scb-band {
+		background-color: #fdf5e0 !important;
+		border-top: #c55420 solid 2px !important;
+		border-bottom: #c55420 solid 2px !important;
+		margin: 2em 0 2em !important;
+	}
+	#scb .scb-band h2 {
+		color: #4f4f4f !important;
+		text-align: left !important;
+		font-size: 1.25em;
+		line-height: normal;
+		font-weight: bold;
+		margin: 1.5em auto 0.25em auto;
+	}
+	#scb .scb-band p {
+		font-size: .85em;
+	}
+	
+	#scb .scb-tile {
+		/* border: #c55420 solid 2px; */
+		border-radius: 8px;
+		background-color: #fdf5e0;
+		text-align: left;
+		line-height: normal;
+		page-break-inside: avoid;
+		padding: 0 1em 1em 1em;
+		box-shadow: 6px 6px 6px 0px #9ea2a2;
+	}
+	#scb .scb-tile-rev {
+		/* border: #c55420 solid 2px; */
+		border-radius: 8px;
+		color: #FFFFFF;
+		background-color: #c55420;
+		text-align: left;
+		line-height: normal;
+		page-break-inside: avoid;
+		margin-top: 1em;
+		padding: 0.25em 1em 1em 1em;
+		box-shadow: 6px 6px 6px 0px #9ea2a2;
+	}
+
+/* ======================== */
+	
+	
+	
+/* Styling Tables */
+
+#scb-body div.table-responsive {
+	margin: 0px 0px 16px 0px;
+	page-break-inside: avoid;
+}
+#scb-body div.table-xl {
+    height: auto;
+    overflow: visible;
+    border: none;
+}
+#scb-body div.table-long {
+    height: auto;
+    overflow-y: visible;
+    border: none;
+}
+#scb-body div.table-wide {
+    height: auto;
+    overflow-x: visible;
+    border: none;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid #000000 !important;
+}
+
+thead {background-color: #004c97 !important; border: 2px solid #000000;}
+tbody tr:nth-child(even) {background-color: #e1ecf8 !important;}
+tbody tr:nth-child(odd) {background-color: #ffffff !important;}
+
+td, th {
+	border-left: thin solid #000000;
+	border-right: thin solid #000000; 
+	padding: 0.1em 0.5em;
+	font-size: 0.75em;
+    vertical-align: middle;
+	line-height: normal;
+	font-weight: inherit;
+}
+td.plain {
+	border: none !important;
+	padding: 0.5em 0.5em !important;
+	font-size: 1em !important;
+    vertical-align: middle;
+	line-height: normal;
+	font-weight: inherit;
+	text-align: left !important;
+}
+th[scope=col] {
+	border-bottom: thin solid #000000;
+	text-align: center;
+	color: #FFFFFF !important;
+	font-weight: bold !important;
+}
+th[scope=row] {
+	text-align: left;
+	color: #000000 !important;
+}
+
+tr.bolded {font-weight: bold !important;}
+
+td.cell-border-all {border: solid #000000 !important;}
+td.cell-border-top {border-top: solid thin #000000 !important;}
+td.cell-border-bottom {border-bottom: solid thin #000000 !important;}
+td.cell-border-none {border: none !important;}
+td.cell-border-no-left {border-left: none !important;}
+td.cell-border-no-right {border-right: none !important;}
+
+th.cell-border-all {border: solid #000000 !important;}
+th.cell-border-top {border-top: solid thin #000000 !important;}
+th.cell-border-bottom {border-bottom: solid thin #000000 !important;}
+th.cell-border-none {border: none !important;}
+th.cell-border-no-left {border-left: none !important;}
+th.cell-border-no-right {border-right: none !important;}
+
+.table-stubs { text-align: left; }
+.table-stubs-2 { text-align: left; padding-left: 1.5em; }
+.table-stubs-4 { text-align: left; padding-left: 3em; }
+.table-stubs-6 { text-align: left; padding-left: 4.5em; }
+.table-stubs-8 { text-align: left; padding-left: 6em; }
+.table-stubs-10 { text-align: left; padding-left: 7em; }
+.table-stubs-12 { text-align: left; padding-left: 8em; }
+.table-stubs-14 { text-align: left; padding-left: 9em; }
+.table-stubs-16 { text-align: left; padding-left: 10em; }
+.table-stubs-18 { text-align: left; padding-left: 11em; }
+.table-stubs-20 { text-align: left; padding-left: 12em; }
+.table-stubs-22 { text-align: left; padding-left: 13em; }
+.table-stubs-24 { text-align: left; padding-left: 14em; }
+.table-stubs-26 { text-align: left; padding-left: 15em; }
+th.table-data { text-align: right; }
+td.table-data { text-align: right; }
+th.table-text { text-align: center; }
+td.table-text { text-align: center; }
+
+p.msd-description {
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+	/* ======================== */
+	
+
+	
+	
+	/* Misc. */
+	
+	#scb-body img {width: 100%;}
+	#scb-body .break {display: block; page-break-after: always !important;}
+	.print-only {display: inherit;}
+	.screen-only {display: none;}
+	a::after {display: none;}
+	abbr::after {display: none;}
+	
+/* End of Style Sheet */
+	
+}
