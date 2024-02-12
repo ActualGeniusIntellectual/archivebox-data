@@ -1,0 +1,21 @@
+{
+    "Status-Code": 403,
+    "Connection": "keep-alive",
+    "x-amz-bucket-region": "us-east-1",
+    "x-amz-request-id": "SRK95TV6AYQD3Q98",
+    "x-amz-id-2": "mjPnaaMhNJ5QrwgM3HhQ3FR4df2qEJfOiAtcckt9/+0xS8zKGEAYCMBINDL5EeXLkpAhtQdbgSQ=",
+    "Content-Type": "application/xml",
+    "Server": "AmazonS3",
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "no-cache",
+    "Accept-Ranges": "bytes",
+    "Date": "Mon, 12 Feb 2024 06:16:42 GMT",
+    "Via": "1.1 varnish",
+    "X-Served-By": "cache-lax-kwhp1940070-LAX",
+    "X-Cache": "MISS",
+    "X-Cache-Hits": "0",
+    "X-Timer": "S1707718603.695790,VS0,VE136",
+    "Cross-Origin-Resource-Policy": "cross-origin",
+    "Strict-Transport-Security": "max-age=300",
+    "transfer-encoding": "chunked"
+}
