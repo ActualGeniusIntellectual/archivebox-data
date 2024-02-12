@@ -1,0 +1,377 @@
+{
+    "archive_path": "archive/1707717218.226824",
+    "base_url": "purl.org/dc/terms",
+    "basename": "",
+    "bookmarked_date": "2024-02-12 05:53",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/purl.org/dc/terms",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=purl.org",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "purl.org/dc/terms/index.html"
+    },
+    "domain": "purl.org",
+    "extension": "",
+    "hash": "MQJ1SSE01R3S56YPH0D1",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:49:24.283590+00:00",
+                "index_texts": null,
+                "output": "https://web.archive.org/web/20240212064909/https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:04.566984+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:48:45.009597+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:43.563038+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=purl.org"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:48:20.423039+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:20.249665+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:48:21.368649+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:20.429244+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:49:04.560859+00:00",
+                "index_texts": [],
+                "output": "media",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:49:02.512927+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:49:02.469108+00:00",
+                "index_texts": null,
+                "output": "mercury",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:54.367908+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:48:40.821115+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:31.778710+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmp3hnxf4uk",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:48:54.361525+00:00",
+                "index_texts": [
+                    "This document is an up-to-date, authoritative specification of all metadata terms maintained by the Dublin Core\u2122 Metadata Initiative. Included are the fifteen terms of the Dublin Core\u2122 Metadata Element Set (also known as \"the Dublin Core\") plus several dozen properties, classes, datatypes, and vocabulary encoding schemes. The \"Dublin Core\" plus these extension vocabularies are collectively referred to as \"DCMI metadata terms\" (\"Dublin Core terms\" for short). These terms are intended to be used in combination with metadata terms from other, compatible vocabularies in the context of application profiles.DCMI metadata terms are expressed in RDF vocabularies for use in Linked Data. Creators of non-RDF metadata can use the terms in contexts such as XML, JSON, UML, or relational databases by disregarding both the global identifier and the formal implications of the RDF-specific aspects of term definitions. Such users can take domain, range, subproperty, and subclass relations as usage suggestions and focus on the natural-language text of definitions, usage notes, and examples.Each term is identified with a Uniform Resource Identifier (URI), a global identifier usable in Linked Data. Term URIs resolve to the (DCMI Metadata Terms) document when selected in a browser or, when referenced programmatically by RDF applications, to one of four RDF schemas. The scope of each RDF schema corresponds to a \"DCMI namespace\", or set of DCMI metadata terms that are identified using a common base URI, as enumerated in the DCMI Namespace Policy. In Linked Data, the URIs for DCMI namespaces are often declared as prefixes in order to make data, queries, and schemas more concise and readable.Where applicable, the following attributes provide additional information about a term:\n\n\nTerm Name:\nabstract\n\n\n\n\nURI\nhttp://purl.org/dc/terms/abstract\n\n\nLabel\nAbstract\n\n\nDefinition\nA summary of the resource.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nDescription (http://purl.org/dc/elements/1.1/description)\nDescription (http://purl.org/dc/terms/description)\n\n\n\n\n\nTerm Name:\naccessRights\n\n\n\n\nURI\nhttp://purl.org/dc/terms/accessRights\n\n\nLabel\nAccess Rights\n\n\nDefinition\nInformation about who access the resource or an indication of its security status.\n\n\nComment\nAccess Rights may include information regarding access or restrictions based on privacy, security, or other policies.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/RightsStatement\n\n\n\n\nSubproperty of\n\n\nRights (http://purl.org/dc/elements/1.1/rights)\nRights (http://purl.org/dc/terms/rights)\n\n\n\n\n\nTerm Name:\naccrualMethod\n\n\n\n\nURI\nhttp://purl.org/dc/terms/accrualMethod\n\n\nLabel\nAccrual Method\n\n\nDefinition\nThe method by which items are added to a collection.\n\n\nComment\nRecommended practice is to use a value from the Collection Description Accrual Method Vocabulary [DCMI-ACCRUALMETHOD].\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/MethodOfAccrual\n\n\n\n\nHas Domain\nhttp://purl.org/dc/dcmitype/Collection\n\n\n\nTerm Name:\naccrualPeriodicity\n\n\n\n\nURI\nhttp://purl.org/dc/terms/accrualPeriodicity\n\n\nLabel\nAccrual Periodicity\n\n\nDefinition\nThe frequency with which items are added to a collection.\n\n\nComment\nRecommended practice is to use a value from the Collection Description Frequency Vocabulary [DCMI-COLLFREQ].\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Frequency\n\n\n\n\nHas Domain\nhttp://purl.org/dc/dcmitype/Collection\n\n\n\nTerm Name:\naccrualPolicy\n\n\n\n\nURI\nhttp://purl.org/dc/terms/accrualPolicy\n\n\nLabel\nAccrual Policy\n\n\nDefinition\nThe policy governing the addition of items to a collection.\n\n\nComment\nRecommended practice is to use a value from the Collection Description Accrual Policy Vocabulary [DCMI-ACCRUALPOLICY].\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Policy\n\n\n\n\nHas Domain\nhttp://purl.org/dc/dcmitype/Collection\n\n\n\nTerm Name:\nalternative\n\n\n\n\nURI\nhttp://purl.org/dc/terms/alternative\n\n\nLabel\nAlternative Title\n\n\nDefinition\nAn alternative name for the resource.\n\n\nComment\nThe distinction between titles and alternative titles is application-specific.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nTitle (http://purl.org/dc/elements/1.1/title)\nTitle (http://purl.org/dc/terms/title)\n\n\n\n\n\nTerm Name:\naudience\n\n\n\n\nURI\nhttp://purl.org/dc/terms/audience\n\n\nLabel\nAudience\n\n\nDefinition\nA class of agents for whom the resource is intended or useful.\n\n\nComment\nRecommended practice is to use this property with non-literal values from a vocabulary of audience types.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/AgentClass\n\n\n\n\n\nTerm Name:\navailable\n\n\n\n\nURI\nhttp://purl.org/dc/terms/available\n\n\nLabel\nDate Available\n\n\nDefinition\nDate that the resource became or will become available.\n\n\nComment\nRecommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\nDate (http://purl.org/dc/terms/date)\n\n\n\n\n\nTerm Name:\nbibliographicCitation\n\n\n\n\nURI\nhttp://purl.org/dc/terms/bibliographicCitation\n\n\nLabel\nBibliographic Citation\n\n\nDefinition\nA bibliographic reference for the resource.\n\n\nComment\nRecommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nIdentifier (http://purl.org/dc/elements/1.1/identifier)\nIdentifier (http://purl.org/dc/terms/identifier)\n\n\n\n\n\nTerm Name:\nconformsTo\n\n\n\n\nURI\nhttp://purl.org/dc/terms/conformsTo\n\n\nLabel\nConforms To\n\n\nDefinition\nAn established standard to which the described resource conforms.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Standard\n\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\ncontributor\n\n\n\n\nURI\nhttp://purl.org/dc/terms/contributor\n\n\nLabel\nContributor\n\n\nDefinition\nAn entity responsible for making contributions to the resource.\n\n\nComment\nThe guidelines for using names of persons or organizations as creators apply to contributors.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Agent\n\n\n\n\nSubproperty of\n\n\nContributor (http://purl.org/dc/elements/1.1/contributor)\n\n\n\n\n\nTerm Name:\ncoverage\n\n\n\n\nURI\nhttp://purl.org/dc/terms/coverage\n\n\nLabel\nCoverage\n\n\nDefinition\nThe spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.\n\n\nComment\nSpatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Location\nhttp://purl.org/dc/terms/Period\nhttp://purl.org/dc/terms/Jurisdiction\n\n\n\n\nSubproperty of\n\n\nCoverage (http://purl.org/dc/elements/1.1/coverage)\n\n\n\n\n\nTerm Name:\ncreated\n\n\n\n\nURI\nhttp://purl.org/dc/terms/created\n\n\nLabel\nDate Created\n\n\nDefinition\nDate of creation of the resource.\n\n\nComment\nRecommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\nDate (http://purl.org/dc/terms/date)\n\n\n\n\n\nTerm Name:\ncreator\n\n\n\n\nURI\nhttp://purl.org/dc/terms/creator\n\n\nLabel\nCreator\n\n\nDefinition\nAn entity responsible for making the resource.\n\n\nComment\nRecommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Agent\n\n\n\n\nEquivalent Property\n\n\nhttp://xmlns.com/foaf/0.1/maker\n\n\n\n\nSubproperty of\n\n\nCreator (http://purl.org/dc/elements/1.1/creator)\nContributor (http://purl.org/dc/terms/contributor)\n\n\n\n\n\nTerm Name:\ndate\n\n\n\n\nURI\nhttp://purl.org/dc/terms/date\n\n\nLabel\nDate\n\n\nDefinition\nA point or period of time associated with an event in the lifecycle of the resource.\n\n\nComment\nDate may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\n\n\n\n\n\nTerm Name:\ndateAccepted\n\n\n\n\nURI\nhttp://purl.org/dc/terms/dateAccepted\n\n\nLabel\nDate Accepted\n\n\nDefinition\nDate of acceptance of the resource.\n\n\nComment\nRecommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty. Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\nDate (http://purl.org/dc/terms/date)\n\n\n\n\n\nTerm Name:\ndateCopyrighted\n\n\n\n\nURI\nhttp://purl.org/dc/terms/dateCopyrighted\n\n\nLabel\nDate Copyrighted\n\n\nDefinition\nDate of copyright of the resource.\n\n\nComment\nTypically a year. Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\nDate (http://purl.org/dc/terms/date)\n\n\n\n\n\nTerm Name:\ndateSubmitted\n\n\n\n\nURI\nhttp://purl.org/dc/terms/dateSubmitted\n\n\nLabel\nDate Submitted\n\n\nDefinition\nDate of submission of the resource.\n\n\nComment\nRecommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty. Examples of resources to which a 'Date Submitted' may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal).\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\nDate (http://purl.org/dc/terms/date)\n\n\n\n\n\nTerm Name:\ndescription\n\n\n\n\nURI\nhttp://purl.org/dc/terms/description\n\n\nLabel\nDescription\n\n\nDefinition\nAn account of the resource.\n\n\nComment\nDescription may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nDescription (http://purl.org/dc/elements/1.1/description)\n\n\n\n\n\nTerm Name:\neducationLevel\n\n\n\n\nURI\nhttp://purl.org/dc/terms/educationLevel\n\n\nLabel\nAudience Education Level\n\n\nDefinition\nA class of agents, defined in terms of progression through an educational or training context, for which the described resource is intended.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/AgentClass\n\n\n\n\nSubproperty of\n\n\nAudience (http://purl.org/dc/terms/audience)\n\n\n\n\n\nTerm Name:\nextent\n\n\n\n\nURI\nhttp://purl.org/dc/terms/extent\n\n\nLabel\nExtent\n\n\nDefinition\nThe size or duration of the resource.\n\n\nComment\nRecommended practice is to specify the file size in megabytes and duration in ISO 8601 format.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/SizeOrDuration\n\n\n\n\nSubproperty of\n\n\nFormat (http://purl.org/dc/elements/1.1/format)\nFormat (http://purl.org/dc/terms/format)\n\n\n\n\n\nTerm Name:\nformat\n\n\n\n\nURI\nhttp://purl.org/dc/terms/format\n\n\nLabel\nFormat\n\n\nDefinition\nThe file format, physical medium, or dimensions of the resource.\n\n\nComment\nRecommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [MIME]. Examples of dimensions include size and duration.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/MediaType\nhttp://purl.org/dc/terms/Extent\n\n\n\n\nSubproperty of\n\n\nFormat (http://purl.org/dc/elements/1.1/format)\n\n\n\n\n\nTerm Name:\nhasFormat\n\n\n\n\nURI\nhttp://purl.org/dc/terms/hasFormat\n\n\nLabel\nHas Format\n\n\nDefinition\nA related resource that is substantially the same as the pre-existing described resource, but in another format.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Is Format Of.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nhasPart\n\n\n\n\nURI\nhttp://purl.org/dc/terms/hasPart\n\n\nLabel\nHas Part\n\n\nDefinition\nA related resource that is included either physically or logically in the described resource.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Is Part Of.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nhasVersion\n\n\n\n\nURI\nhttp://purl.org/dc/terms/hasVersion\n\n\nLabel\nHas Version\n\n\nDefinition\nA related resource that is a version, edition, or adaptation of the described resource.\n\n\nComment\nChanges in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nidentifier\n\n\n\n\nURI\nhttp://purl.org/dc/terms/identifier\n\n\nLabel\nIdentifier\n\n\nDefinition\nAn unambiguous reference to the resource within a given context.\n\n\nComment\nRecommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nIdentifier (http://purl.org/dc/elements/1.1/identifier)\n\n\n\n\n\nTerm Name:\ninstructionalMethod\n\n\n\n\nURI\nhttp://purl.org/dc/terms/instructionalMethod\n\n\nLabel\nInstructional Method\n\n\nDefinition\nA process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.\n\n\nComment\nInstructional Method typically includes ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/MethodOfInstruction\n\n\n\n\n\nTerm Name:\nisFormatOf\n\n\n\n\nURI\nhttp://purl.org/dc/terms/isFormatOf\n\n\nLabel\nIs Format Of\n\n\nDefinition\nA pre-existing related resource that is substantially the same as the described resource, but in another format.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Has Format.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nisPartOf\n\n\n\n\nURI\nhttp://purl.org/dc/terms/isPartOf\n\n\nLabel\nIs Part Of\n\n\nDefinition\nA related resource in which the described resource is physically or logically included.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Has Part.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nisReferencedBy\n\n\n\n\nURI\nhttp://purl.org/dc/terms/isReferencedBy\n\n\nLabel\nIs Referenced By\n\n\nDefinition\nA related resource that references, cites, or otherwise points to the described resource.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of References.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nisReplacedBy\n\n\n\n\nURI\nhttp://purl.org/dc/terms/isReplacedBy\n\n\nLabel\nIs Replaced By\n\n\nDefinition\nA related resource that supplants, displaces, or supersedes the described resource.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Replaces.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nisRequiredBy\n\n\n\n\nURI\nhttp://purl.org/dc/terms/isRequiredBy\n\n\nLabel\nIs Required By\n\n\nDefinition\nA related resource that requires the described resource to support its function, delivery, or coherence.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Requires.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nissued\n\n\n\n\nURI\nhttp://purl.org/dc/terms/issued\n\n\nLabel\nDate Issued\n\n\nDefinition\nDate of formal issuance of the resource.\n\n\nComment\nRecommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\nDate (http://purl.org/dc/terms/date)\n\n\n\n\n\nTerm Name:\nisVersionOf\n\n\n\n\nURI\nhttp://purl.org/dc/terms/isVersionOf\n\n\nLabel\nIs Version Of\n\n\nDefinition\nA related resource of which the described resource is a version, edition, or adaptation.\n\n\nComment\nChanges in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nlanguage\n\n\n\n\nURI\nhttp://purl.org/dc/terms/language\n\n\nLabel\nLanguage\n\n\nDefinition\nA language of the resource.\n\n\nComment\nRecommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/LinguisticSystem\n\n\n\n\nSubproperty of\n\n\nLanguage (http://purl.org/dc/elements/1.1/language)\n\n\n\n\n\nTerm Name:\nlicense\n\n\n\n\nURI\nhttp://purl.org/dc/terms/license\n\n\nLabel\nLicense\n\n\nDefinition\nA legal document giving official permission to do something with the resource.\n\n\nComment\nRecommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/LicenseDocument\n\n\n\n\nSubproperty of\n\n\nRights (http://purl.org/dc/elements/1.1/rights)\nRights (http://purl.org/dc/terms/rights)\n\n\n\n\n\nTerm Name:\nmediator\n\n\n\n\nURI\nhttp://purl.org/dc/terms/mediator\n\n\nLabel\nMediator\n\n\nDefinition\nAn entity that mediates access to the resource.\n\n\nComment\nIn an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/AgentClass\n\n\n\n\nSubproperty of\n\n\nAudience (http://purl.org/dc/terms/audience)\n\n\n\n\n\nTerm Name:\nmedium\n\n\n\n\nURI\nhttp://purl.org/dc/terms/medium\n\n\nLabel\nMedium\n\n\nDefinition\nThe material or physical carrier of the resource.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/PhysicalMedium\n\n\n\n\nDomain Includes\n\n\nhttp://purl.org/dc/terms/PhysicalResource\n\n\n\n\nSubproperty of\n\n\nFormat (http://purl.org/dc/elements/1.1/format)\nFormat (http://purl.org/dc/terms/format)\n\n\n\n\n\nTerm Name:\nmodified\n\n\n\n\nURI\nhttp://purl.org/dc/terms/modified\n\n\nLabel\nDate Modified\n\n\nDefinition\nDate on which the resource was changed.\n\n\nComment\nRecommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\nDate (http://purl.org/dc/terms/date)\n\n\n\n\n\nTerm Name:\nprovenance\n\n\n\n\nURI\nhttp://purl.org/dc/terms/provenance\n\n\nLabel\nProvenance\n\n\nDefinition\nA statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.\n\n\nComment\nThe statement may include a description of any changes successive custodians made to the resource.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/ProvenanceStatement\n\n\n\n\n\nTerm Name:\npublisher\n\n\n\n\nURI\nhttp://purl.org/dc/terms/publisher\n\n\nLabel\nPublisher\n\n\nDefinition\nAn entity responsible for making the resource available.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Agent\n\n\n\n\nSubproperty of\n\n\nPublisher (http://purl.org/dc/elements/1.1/publisher)\n\n\n\n\n\nTerm Name:\nreferences\n\n\n\n\nURI\nhttp://purl.org/dc/terms/references\n\n\nLabel\nReferences\n\n\nDefinition\nA related resource that is referenced, cited, or otherwise pointed to by the described resource.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nrelation\n\n\n\n\nURI\nhttp://purl.org/dc/terms/relation\n\n\nLabel\nRelation\n\n\nDefinition\nA related resource.\n\n\nComment\nRecommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\n\n\n\n\n\nTerm Name:\nreplaces\n\n\n\n\nURI\nhttp://purl.org/dc/terms/replaces\n\n\nLabel\nReplaces\n\n\nDefinition\nA related resource that is supplanted, displaced, or superseded by the described resource.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Is Replaced By.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nrequires\n\n\n\n\nURI\nhttp://purl.org/dc/terms/requires\n\n\nLabel\nRequires\n\n\nDefinition\nA related resource that is required by the described resource to support its function, delivery, or coherence.\n\n\nComment\nThis property is intended to be used with non-literal values. This property is an inverse property of Is Required By.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nRelation (http://purl.org/dc/elements/1.1/relation)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nrights\n\n\n\n\nURI\nhttp://purl.org/dc/terms/rights\n\n\nLabel\nRights\n\n\nDefinition\nInformation about rights held in and over the resource.\n\n\nComment\nTypically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/RightsStatement\n\n\n\n\nSubproperty of\n\n\nRights (http://purl.org/dc/elements/1.1/rights)\n\n\n\n\n\nTerm Name:\nrightsHolder\n\n\n\n\nURI\nhttp://purl.org/dc/terms/rightsHolder\n\n\nLabel\nRights Holder\n\n\nDefinition\nA person or organization owning or managing rights over the resource.\n\n\nComment\nRecommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Agent\n\n\n\n\n\nTerm Name:\nsource\n\n\n\n\nURI\nhttp://purl.org/dc/terms/source\n\n\nLabel\nSource\n\n\nDefinition\nA related resource from which the described resource is derived.\n\n\nComment\nThis property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nSource (http://purl.org/dc/elements/1.1/source)\nRelation (http://purl.org/dc/terms/relation)\n\n\n\n\n\nTerm Name:\nspatial\n\n\n\n\nURI\nhttp://purl.org/dc/terms/spatial\n\n\nLabel\nSpatial Coverage\n\n\nDefinition\nSpatial characteristics of the resource.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/Location\n\n\n\n\nSubproperty of\n\n\nCoverage (http://purl.org/dc/elements/1.1/coverage)\nCoverage (http://purl.org/dc/terms/coverage)\n\n\n\n\n\nTerm Name:\nsubject\n\n\n\n\nURI\nhttp://purl.org/dc/terms/subject\n\n\nLabel\nSubject\n\n\nDefinition\nA topic of the resource.\n\n\nComment\nRecommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nSubject (http://purl.org/dc/elements/1.1/subject)\n\n\n\n\n\nTerm Name:\ntableOfContents\n\n\n\n\nURI\nhttp://purl.org/dc/terms/tableOfContents\n\n\nLabel\nTable Of Contents\n\n\nDefinition\nA list of subunits of the resource.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nDescription (http://purl.org/dc/elements/1.1/description)\nDescription (http://purl.org/dc/terms/description)\n\n\n\n\n\nTerm Name:\ntemporal\n\n\n\n\nURI\nhttp://purl.org/dc/terms/temporal\n\n\nLabel\nTemporal Coverage\n\n\nDefinition\nTemporal characteristics of the resource.\n\n\nType of Term\n\nProperty\n\n\n\nRange Includes\n\n\nhttp://purl.org/dc/terms/PeriodOfTime\n\n\n\n\nSubproperty of\n\n\nCoverage (http://purl.org/dc/elements/1.1/coverage)\nCoverage (http://purl.org/dc/terms/coverage)\n\n\n\n\n\nTerm Name:\ntitle\n\n\n\n\nURI\nhttp://purl.org/dc/terms/title\n\n\nLabel\nTitle\n\n\nDefinition\nA name given to the resource.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nTitle (http://purl.org/dc/elements/1.1/title)\n\n\n\n\n\nTerm Name:\ntype\n\n\n\n\nURI\nhttp://purl.org/dc/terms/type\n\n\nLabel\nType\n\n\nDefinition\nThe nature or genre of the resource.\n\n\nComment\nRecommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.\n\n\nType of Term\n\nProperty\n\n\n\nSubproperty of\n\n\nType (http://purl.org/dc/elements/1.1/type)\n\n\n\n\n\nTerm Name:\nvalid\n\n\n\n\nURI\nhttp://purl.org/dc/terms/valid\n\n\nLabel\nDate Valid\n\n\nDefinition\nDate (often a range) of validity of a resource.\n\n\nComment\nRecommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.\n\n\nType of Term\n\nProperty\n\n\n\nHas Range\nhttp://www.w3.org/2000/01/rdf-schema#Literal\n\n\nSubproperty of\n\n\nDate (http://purl.org/dc/elements/1.1/date)\nDate (http://purl.org/dc/terms/date)\n\n\n\n\n\n\nTerm Name:\ncontributor\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/contributor\n\n\nLabel\nContributor\n\n\nDefinition\nAn entity responsible for making contributions to the resource.\n\n\nComment\nThe guidelines for using names of persons or organizations as creators also apply to contributors. Typically, the name of a Contributor should be used to indicate the entity.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\ncoverage\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/coverage\n\n\nLabel\nCoverage\n\n\nDefinition\nThe spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.\n\n\nComment\nSpatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\ncreator\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/creator\n\n\nLabel\nCreator\n\n\nDefinition\nAn entity primarily responsible for making the resource.\n\n\nComment\nExamples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\ndate\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/date\n\n\nLabel\nDate\n\n\nDefinition\nA point or period of time associated with an event in the lifecycle of the resource.\n\n\nComment\nDate may be used to express temporal information at any level of granularity. Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [ISO 8601-1] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [W3CDTF] or the Extended Date/Time Format Specification [EDTF]. If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character. Either the start or end date may be missing.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\ndescription\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/description\n\n\nLabel\nDescription\n\n\nDefinition\nAn account of the resource.\n\n\nComment\nDescription may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\nformat\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/format\n\n\nLabel\nFormat\n\n\nDefinition\nThe file format, physical medium, or dimensions of the resource.\n\n\nComment\nRecommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [MIME].\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\nidentifier\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/identifier\n\n\nLabel\nIdentifier\n\n\nDefinition\nAn unambiguous reference to the resource within a given context.\n\n\nComment\nRecommended practice is to identify the resource by means of a string conforming to an identification system.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\nlanguage\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/language\n\n\nLabel\nLanguage\n\n\nDefinition\nA language of the resource.\n\n\nComment\nRecommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\npublisher\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/publisher\n\n\nLabel\nPublisher\n\n\nDefinition\nAn entity responsible for making the resource available.\n\n\nComment\nExamples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\nrelation\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/relation\n\n\nLabel\nRelation\n\n\nDefinition\nA related resource.\n\n\nComment\nRecommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\nrights\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/rights\n\n\nLabel\nRights\n\n\nDefinition\nInformation about rights held in and over the resource.\n\n\nComment\nTypically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\nsource\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/source\n\n\nLabel\nSource\n\n\nDefinition\nA related resource from which the described resource is derived.\n\n\nComment\nThe described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\nsubject\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/subject\n\n\nLabel\nSubject\n\n\nDefinition\nThe topic of the resource.\n\n\nComment\nTypically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\ntitle\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/title\n\n\nLabel\nTitle\n\n\nDefinition\nA name given to the resource.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\nTerm Name:\ntype\n\n\n\n\nURI\nhttp://purl.org/dc/elements/1.1/type\n\n\nLabel\nType\n\n\nDefinition\nThe nature or genre of the resource.\n\n\nComment\nRecommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMI-TYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.\n\n\nType of Term\n\nProperty\n\n\n\nNote\nA second property with the same name as this property has been declared in the dcterms: namespace. See the Introduction to the document DCMI Metadata Terms for an explanation.\n\n\n\n\nTerm Name:\nAgent\n\n\n\n\nURI\nhttp://purl.org/dc/terms/Agent\n\n\nLabel\nAgent\n\n\nDefinition\nA resource that acts or has the power to act.\n\n\nType of Term\n\nClass\n\n\n\nInstance Of\nhttp://purl.org/dc/terms/AgentClass\n\n\n\nTerm Name:\nAgentClass\n\n\n\n\nURI\nhttp://purl.org/dc/terms/AgentClass\n\n\nLabel\nAgent Class\n\n\nDefinition\nA group of agents.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://www.w3.org/2000/01/rdf-schema#Class\n\n\n\nTerm Name:\nBibliographicResource\n\n\n\n\nURI\nhttp://purl.org/dc/terms/BibliographicResource\n\n\nLabel\nBibliographic Resource\n\n\nDefinition\nA book, article, or other documentary resource.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nFileFormat\n\n\n\n\nURI\nhttp://purl.org/dc/terms/FileFormat\n\n\nLabel\nFile Format\n\n\nDefinition\nA digital resource format.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://purl.org/dc/terms/MediaType\n\n\n\nTerm Name:\nFrequency\n\n\n\n\nURI\nhttp://purl.org/dc/terms/Frequency\n\n\nLabel\nFrequency\n\n\nDefinition\nA rate at which something recurs.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nJurisdiction\n\n\n\n\nURI\nhttp://purl.org/dc/terms/Jurisdiction\n\n\nLabel\nJurisdiction\n\n\nDefinition\nThe extent or range of judicial, law enforcement, or other authority.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://purl.org/dc/terms/LocationPeriodOrJurisdiction\n\n\n\nTerm Name:\nLicenseDocument\n\n\n\n\nURI\nhttp://purl.org/dc/terms/LicenseDocument\n\n\nLabel\nLicense Document\n\n\nDefinition\nA legal document giving official permission to do something with a resource.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://purl.org/dc/terms/RightsStatement\n\n\n\nTerm Name:\nLinguisticSystem\n\n\n\n\nURI\nhttp://purl.org/dc/terms/LinguisticSystem\n\n\nLabel\nLinguistic System\n\n\nDefinition\nA system of signs, symbols, sounds, gestures, or rules used in communication.\n\n\nComment\nWritten, spoken, sign, and computer languages are linguistic systems.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nLocation\n\n\n\n\nURI\nhttp://purl.org/dc/terms/Location\n\n\nLabel\nLocation\n\n\nDefinition\nA spatial region or named place.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://purl.org/dc/terms/LocationPeriodOrJurisdiction\n\n\n\nTerm Name:\nLocationPeriodOrJurisdiction\n\n\n\n\nURI\nhttp://purl.org/dc/terms/LocationPeriodOrJurisdiction\n\n\nLabel\nLocation, Period, or Jurisdiction\n\n\nDefinition\nA location, period of time, or jurisdiction.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nMediaType\n\n\n\n\nURI\nhttp://purl.org/dc/terms/MediaType\n\n\nLabel\nMedia Type\n\n\nDefinition\nA file format or physical medium.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://purl.org/dc/terms/MediaTypeOrExtent\n\n\n\nTerm Name:\nMediaTypeOrExtent\n\n\n\n\nURI\nhttp://purl.org/dc/terms/MediaTypeOrExtent\n\n\nLabel\nMedia Type or Extent\n\n\nDefinition\nA media type or extent.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nMethodOfAccrual\n\n\n\n\nURI\nhttp://purl.org/dc/terms/MethodOfAccrual\n\n\nLabel\nMethod of Accrual\n\n\nDefinition\nA method by which resources are added to a collection.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nMethodOfInstruction\n\n\n\n\nURI\nhttp://purl.org/dc/terms/MethodOfInstruction\n\n\nLabel\nMethod of Instruction\n\n\nDefinition\nA process that is used to engender knowledge, attitudes, and skills.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nPeriodOfTime\n\n\n\n\nURI\nhttp://purl.org/dc/terms/PeriodOfTime\n\n\nLabel\nPeriod of Time\n\n\nDefinition\nAn interval of time that is named or defined by its start and end dates.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://purl.org/dc/terms/LocationPeriodOrJurisdiction\n\n\n\nTerm Name:\nPhysicalMedium\n\n\n\n\nURI\nhttp://purl.org/dc/terms/PhysicalMedium\n\n\nLabel\nPhysical Medium\n\n\nDefinition\nA physical material or carrier.\n\n\nComment\nExamples include paper, canvas, or DVD.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://purl.org/dc/terms/MediaType\n\n\n\nTerm Name:\nPhysicalResource\n\n\n\n\nURI\nhttp://purl.org/dc/terms/PhysicalResource\n\n\nLabel\nPhysical Resource\n\n\nDefinition\nA material thing.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nPolicy\n\n\n\n\nURI\nhttp://purl.org/dc/terms/Policy\n\n\nLabel\nPolicy\n\n\nDefinition\nA plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nProvenanceStatement\n\n\n\n\nURI\nhttp://purl.org/dc/terms/ProvenanceStatement\n\n\nLabel\nProvenance Statement\n\n\nDefinition\nAny changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nRightsStatement\n\n\n\n\nURI\nhttp://purl.org/dc/terms/RightsStatement\n\n\nLabel\nRights Statement\n\n\nDefinition\nA statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.\n\n\nType of Term\n\nClass\n\n\n\n\nTerm Name:\nSizeOrDuration\n\n\n\n\nURI\nhttp://purl.org/dc/terms/SizeOrDuration\n\n\nLabel\nSize or Duration\n\n\nDefinition\nA dimension or extent, or a time taken to play or execute.\n\n\nComment\nExamples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds.\n\n\nType of Term\n\nClass\n\n\n\nSubclass of\nhttp://purl.org/dc/terms/MediaTypeOrExtent\n\n\n\nTerm Name:\nStandard\n\n\n\n\nURI\nhttp://purl.org/dc/terms/Standard\n\n\nLabel\nStandard\n\n\nDefinition\nA reference point against which other things can be evaluated or compared.\n\n\nType of Term\n\nClass\n\n\n\n\n\nTerm Name:\nCollection\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/Collection\n\n\nLabel\nCollection\n\n\nDefinition\nAn aggregation of resources.\n\n\nComment\nA collection is described as a group; its parts may also be separately described.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nDataset\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/Dataset\n\n\nLabel\nDataset\n\n\nDefinition\nData encoded in a defined structure.\n\n\nComment\nExamples include lists, tables, and databases. A dataset may be useful for direct machine processing.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nEvent\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/Event\n\n\nLabel\nEvent\n\n\nDefinition\nA non-persistent, time-based occurrence.\n\n\nComment\nMetadata for an event provides descriptive information that is the basis for discovery of the purpose, location, duration, and responsible agents associated with an event. Examples include an exhibition, webcast, conference, workshop, open day, performance, battle, trial, wedding, tea party, conflagration.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nImage\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/Image\n\n\nLabel\nImage\n\n\nDefinition\nA visual representation other than text.\n\n\nComment\nExamples include images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, musical notation. Note that Image may include both electronic and physical representations.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nInteractiveResource\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/InteractiveResource\n\n\nLabel\nInteractive Resource\n\n\nDefinition\nA resource requiring interaction from the user to be understood, executed, or experienced.\n\n\nComment\nExamples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nMovingImage\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/MovingImage\n\n\nLabel\nMoving Image\n\n\nDefinition\nA series of visual representations imparting an impression of motion when shown in succession.\n\n\nComment\nExamples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation. Instances of the type Moving Image must also be describable as instances of the broader type Image.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\nSubclass of\nhttp://purl.org/dc/dcmitype/Image\n\n\n\nTerm Name:\nPhysicalObject\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/PhysicalObject\n\n\nLabel\nPhysical Object\n\n\nDefinition\nAn inanimate, three-dimensional object or substance.\n\n\nComment\nNote that digital representations of, or surrogates for, these objects should use Image, Text or one of the other types.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nService\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/Service\n\n\nLabel\nService\n\n\nDefinition\nA system that provides one or more functions.\n\n\nComment\nExamples include a photocopying service, a banking service, an authentication service, interlibrary loans, a Z39.50 or Web server.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nSoftware\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/Software\n\n\nLabel\nSoftware\n\n\nDefinition\nA computer program in source or compiled form.\n\n\nComment\nExamples include a C source file, MS-Windows .exe executable, or Perl script.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nSound\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/Sound\n\n\nLabel\nSound\n\n\nDefinition\nA resource primarily intended to be heard.\n\n\nComment\nExamples include a music playback file format, an audio compact disc, and recorded speech or sounds.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\n\nTerm Name:\nStillImage\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/StillImage\n\n\nLabel\nStill Image\n\n\nDefinition\nA static visual representation.\n\n\nComment\nExamples include paintings, drawings, graphic designs, plans and maps. Recommended best practice is to assign the type Text to images of textual materials. Instances of the type Still Image must also be describable as instances of the broader type Image.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType\n\n\nSubclass of\nhttp://purl.org/dc/dcmitype/Image\n\n\n\nTerm Name:\nText\n\n\n\n\nURI\nhttp://purl.org/dc/dcmitype/Text\n\n\nLabel\nText\n\n\nDefinition\nA resource consisting primarily of words for reading.\n\n\nComment\nExamples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text.\n\n\nType of Term\n\nClass\n\n\n\nMember Of:\nhttp://purl.org/dc/terms/DCMIType"
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:53.687278+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:48:43.556083+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:40.827514+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "http://purl.org/dc/terms/",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:48:31.772078+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:21.378415+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:48:53.681265+00:00",
+                "index_texts": null,
+                "output": "DCMI: DCMI Metadata Terms",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:53.663137+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707717218.226824/warc/1707720525",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "http://purl.org/dc/terms/"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:48:53.648914+00:00",
+                "index_texts": null,
+                "output": "purl.org/dc/terms/index.html",
+                "pwd": "/data/archive/1707717218.226824",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:48:45.015902+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "https://web.archive.org/web/20240212064909/https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "DCMI: DCMI Metadata Terms",
+        "warc": null,
+        "wget": "purl.org/dc/terms/index.html"
+    },
+    "link_dir": "/data/archive/1707717218.226824",
+    "newest_archive_date": "2024-02-12T06:49:04.566984+00:00",
+    "num_failures": 0,
+    "num_outputs": 12,
+    "oldest_archive_date": "2024-02-12T06:48:20.249665+00:00",
+    "path": "/dc/terms/",
+    "schema": "Link",
+    "scheme": "http",
+    "snapshot_id": "dc928f97-d03b-4b8e-a6a3-39bfaef0895a",
+    "sources": [
+        "/data/sources/1707717217.88551-crawl-www.bea.gov.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707717218.226824",
+    "title": "DCMI: DCMI Metadata Terms",
+    "updated": "2024-02-12T06:48:20.248217+00:00",
+    "updated_date": "2024-02-12 06:48",
+    "url": "http://purl.org/dc/terms/"
+}

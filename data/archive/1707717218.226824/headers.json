@@ -1,0 +1,13 @@
+{
+    "Status-Code": 200,
+    "Date": "Mon, 12 Feb 2024 06:48:21 GMT",
+    "Content-Type": "text/html",
+    "Connection": "keep-alive",
+    "last-modified": "Sat, 03 Feb 2024 01:23:44 GMT",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "CF-Cache-Status": "DYNAMIC",
+    "Server": "cloudflare",
+    "CF-RAY": "8542e2ac3f7d0ff5-LAX",
+    "Content-Encoding": "br",
+    "alt-svc": "h3=\":443\"; ma=86400"
+}
