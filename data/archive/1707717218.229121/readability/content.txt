@@ -1,0 +1,4 @@
+When communicating by  email with BEA, please do not include sensitive Personally Identifiable  Information (PII) in the text or in an unencrypted attachment.
+															 Sensitive PII is information that can be used to distinguish  or trace an individual's identity, such as a Social Security Number (full or  partial).
+															 Any document containing sensitive PII that is attached to an  email must be encrypted. Any email received by BEA that contains sensitive PII  in the text or in an unencrypted attachment will be blocked and deleted.
+															 If you have any questions, please contact us using the  contact information on the survey you are completing.
