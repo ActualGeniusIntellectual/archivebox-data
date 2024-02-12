@@ -1,0 +1,1320 @@
+$(function () {
+  //PromptKeyData.init();
+});
+
+var PromptKeyData = new function (window, $) {
+  "use strict";
+  var obj = this;
+
+  this.KeyToName = function(appid, key){
+    let name  = null;
+    obj.data.forEach(item =>{
+      if(item.Table_Selection_Application_Key == appid && item.iTable_UIPrompt_Key == key)
+        return name = item.Prompt_Name;
+    });
+    return name;
+  }
+  this.data = [
+    {
+      "iTable_UIPrompt_Key": 1,
+      "Prompt_Name": "Widget_(no_UI)",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 2,
+      "Prompt_Name": "Sub-Widget_(no_UI)",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 3,
+      "Prompt_Name": "Table_Selection",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 4,
+      "Prompt_Name": "First_Year_(no_UI)",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 5,
+      "Prompt_Name": "Last_Year_(no_UI)",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 6,
+      "Prompt_Name": "Sub-Widget_(no_UI)",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 7,
+      "Prompt_Name": "Sub-Widget",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 10,
+      "Prompt_Name": "Selected_Table_(o_UI)",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 11,
+      "Prompt_Name": "Sort_Order",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 15,
+      "Prompt_Name": "DrillDown_Table",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 16,
+      "Prompt_Name": "Other_Year",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 20,
+      "Prompt_Name": "CPS_Table_List",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 21,
+      "Prompt_Name": "CPS_Table",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 60,
+      "Prompt_Name": "Table1",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 61,
+      "Prompt_Name": "Table2",
+      "Table_Selection_Application_Key": 1
+    },
+    {
+      "iTable_UIPrompt_Key": 200,
+      "Prompt_Name": "Step1Prompt1",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 201,
+      "Prompt_Name": "Step1Prompt2",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 202,
+      "Prompt_Name": "Step2Prompt3",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 203,
+      "Prompt_Name": "Step3Prompt4",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 204,
+      "Prompt_Name": "Step4Prompt5",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 205,
+      "Prompt_Name": "Step5Prompt6",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 206,
+      "Prompt_Name": "Step6Prompt7",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 207,
+      "Prompt_Name": "Step7Prompt8",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 208,
+      "Prompt_Name": "Step8Prompt9A",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 209,
+      "Prompt_Name": "Step8Prompt10A",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 210,
+      "Prompt_Name": "Step9Prompt11",
+      "Table_Selection_Application_Key": 2
+    },
+    {
+      "iTable_UIPrompt_Key": 401,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 402,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 403,
+      "Prompt_Name": "Table_Type",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 404,
+      "Prompt_Name": "Supplemental_Tables",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 405,
+      "Prompt_Name": "Aggregation",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 406,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 407,
+      "Prompt_Name": "Temp_Supp_Prompt1",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 409,
+      "Prompt_Name": "ioYear",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 410,
+      "Prompt_Name": "IO_Table",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 411,
+      "Prompt_Name": "startYear",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 412,
+      "Prompt_Name": "endYear",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 413,
+      "Prompt_Name": "codeList",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 414,
+      "Prompt_Name": "ioYear",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 415,
+      "Prompt_Name": "IOstubCodes",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 416,
+      "Prompt_Name": "IOheaderCodes",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 417,
+      "Prompt_Name": "IOstubCodes",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 418,
+      "Prompt_Name": "IOheaderCodes",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 419,
+      "Prompt_Name": "Supplemental_Table",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 420,
+      "Prompt_Name": "SUPP_Aggregation",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 421,
+      "Prompt_Name": "Valuation",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 422,
+      "Prompt_Name": "Margin",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 423,
+      "Prompt_Name": "Margin_Restriction",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 424,
+      "Prompt_Name": "Margin_Table",
+      "Table_Selection_Application_Key": 5
+    },
+    {
+      "iTable_UIPrompt_Key": 600,
+      "Prompt_Name": "TableList",
+      "Table_Selection_Application_Key": 6
+    },
+    {
+      "iTable_UIPrompt_Key": 601,
+      "Prompt_Name": "DateRange",
+      "Table_Selection_Application_Key": 6
+    },
+    {
+      "iTable_UIPrompt_Key": 602,
+      "Prompt_Name": "Frequency",
+      "Table_Selection_Application_Key": 6
+    },
+    {
+      "iTable_UIPrompt_Key": 603,
+      "Prompt_Name": "Areas",
+      "Table_Selection_Application_Key": 6
+    },
+    {
+      "iTable_UIPrompt_Key": 604,
+      "Prompt_Name": "Stubs",
+      "Table_Selection_Application_Key": 6
+    },
+    {
+      "iTable_UIPrompt_Key": 605,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 6
+    },
+    {
+      "iTable_UIPrompt_Key": 902,
+      "Prompt_Name": "NIPA_Table_Type",
+      "Table_Selection_Application_Key": 9
+    },
+    {
+      "iTable_UIPrompt_Key": 903,
+      "Prompt_Name": "NIPA_Table_List",
+      "Table_Selection_Application_Key": 9
+    },
+    {
+      "iTable_UIPrompt_Key": 904,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 9
+    },
+    {
+      "iTable_UIPrompt_Key": 905,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 9
+    },
+    {
+      "iTable_UIPrompt_Key": 906,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 9
+    },
+    {
+      "iTable_UIPrompt_Key": 910,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 9
+    },
+    {
+      "iTable_UIPrompt_Key": 911,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 9
+    },
+    {
+      "iTable_UIPrompt_Key": 1003,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 10
+    },
+    {
+      "iTable_UIPrompt_Key": 1004,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 10
+    },
+    {
+      "iTable_UIPrompt_Key": 1005,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 10
+    },
+    {
+      "iTable_UIPrompt_Key": 1006,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 10
+    },
+    {
+      "iTable_UIPrompt_Key": 1010,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 10
+    },
+    {
+      "iTable_UIPrompt_Key": 1011,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 10
+    },
+    {
+      "iTable_UIPrompt_Key": 1020,
+      "Prompt_Name": "Dummy",
+      "Table_Selection_Application_Key": 10
+    },
+    {
+      "iTable_UIPrompt_Key": 1203,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 12
+    },
+    {
+      "iTable_UIPrompt_Key": 1204,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 12
+    },
+    {
+      "iTable_UIPrompt_Key": 1205,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 12
+    },
+    {
+      "iTable_UIPrompt_Key": 1206,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 12
+    },
+    {
+      "iTable_UIPrompt_Key": 1210,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 12
+    },
+    {
+      "iTable_UIPrompt_Key": 1211,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 12
+    },
+    {
+      "iTable_UIPrompt_Key": 1220,
+      "Prompt_Name": "Dummy",
+      "Table_Selection_Application_Key": 12
+    },
+    {
+      "iTable_UIPrompt_Key": 1301,
+      "Prompt_Name": "Keyword_Index",
+      "Table_Selection_Application_Key": 13
+    },
+    {
+      "iTable_UIPrompt_Key": 1303,
+      "Prompt_Name": "NIPA_Table_List",
+      "Table_Selection_Application_Key": 13
+    },
+    {
+      "iTable_UIPrompt_Key": 1304,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 13
+    },
+    {
+      "iTable_UIPrompt_Key": 1305,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 13
+    },
+    {
+      "iTable_UIPrompt_Key": 1306,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 13
+    },
+    {
+      "iTable_UIPrompt_Key": 1310,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 13
+    },
+    {
+      "iTable_UIPrompt_Key": 1311,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 13
+    },
+    {
+      "iTable_UIPrompt_Key": 1312,
+      "Prompt_Name": "Scale",
+      "Table_Selection_Application_Key": 13
+    },
+    {
+      "iTable_UIPrompt_Key": 1403,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 14
+    },
+    {
+      "iTable_UIPrompt_Key": 1404,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 14
+    },
+    {
+      "iTable_UIPrompt_Key": 1405,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 14
+    },
+    {
+      "iTable_UIPrompt_Key": 1406,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 14
+    },
+    {
+      "iTable_UIPrompt_Key": 1410,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 14
+    },
+    {
+      "iTable_UIPrompt_Key": 1411,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 14
+    },
+    {
+      "iTable_UIPrompt_Key": 1416,
+      "Prompt_Name": "Scale",
+      "Table_Selection_Application_Key": 14
+    },
+    {
+      "iTable_UIPrompt_Key": 1503,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 15
+    },
+    {
+      "iTable_UIPrompt_Key": 1504,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 15
+    },
+    {
+      "iTable_UIPrompt_Key": 1505,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 15
+    },
+    {
+      "iTable_UIPrompt_Key": 1506,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 15
+    },
+    {
+      "iTable_UIPrompt_Key": 1510,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 15
+    },
+    {
+      "iTable_UIPrompt_Key": 1511,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 15
+    },
+    {
+      "iTable_UIPrompt_Key": 1520,
+      "Prompt_Name": "Dummy",
+      "Table_Selection_Application_Key": 15
+    },
+    {
+      "iTable_UIPrompt_Key": 1604,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 16
+    },
+    {
+      "iTable_UIPrompt_Key": 1605,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 16
+    },
+    {
+      "iTable_UIPrompt_Key": 1606,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 16
+    },
+    {
+      "iTable_UIPrompt_Key": 1610,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 16
+    },
+    {
+      "iTable_UIPrompt_Key": 1611,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 16
+    },
+    {
+      "iTable_UIPrompt_Key": 1615,
+      "Prompt_Name": "Scale",
+      "Table_Selection_Application_Key": 16
+    },
+    {
+      "iTable_UIPrompt_Key": 1702,
+      "Prompt_Name": "NIPA_Table_Type",
+      "Table_Selection_Application_Key": 17
+    },
+    {
+      "iTable_UIPrompt_Key": 1703,
+      "Prompt_Name": "NIPA_Table_List",
+      "Table_Selection_Application_Key": 17
+    },
+    {
+      "iTable_UIPrompt_Key": 1706,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 17
+    },
+    {
+      "iTable_UIPrompt_Key": 1710,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 17
+    },
+    {
+      "iTable_UIPrompt_Key": 1803,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 18
+    },
+    {
+      "iTable_UIPrompt_Key": 1806,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 18
+    },
+    {
+      "iTable_UIPrompt_Key": 1810,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 18
+    },
+    {
+      "iTable_UIPrompt_Key": 1820,
+      "Prompt_Name": "Dummy",
+      "Table_Selection_Application_Key": 18
+    },
+    {
+      "iTable_UIPrompt_Key": 0,
+      "Prompt_Name": "Scale",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1902,
+      "Prompt_Name": "NIPA_Table_Type",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1903,
+      "Prompt_Name": "NIPA_Table_List",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1904,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1905,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1906,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1910,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1911,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1921,
+      "Prompt_Name": "Categories",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 1922,
+      "Prompt_Name": "DownloadTree",
+      "Table_Selection_Application_Key": 19
+    },
+    {
+      "iTable_UIPrompt_Key": 2001,
+      "Prompt_Name": "XML_Record",
+      "Table_Selection_Application_Key": 20
+    },
+    {
+      "iTable_UIPrompt_Key": 2002,
+      "Prompt_Name": "Selected_Table",
+      "Table_Selection_Application_Key": 20
+    },
+    {
+      "iTable_UIPrompt_Key": 2103,
+      "Prompt_Name": "NIPA_Table_List",
+      "Table_Selection_Application_Key": 21
+    },
+    {
+      "iTable_UIPrompt_Key": 2104,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 21
+    },
+    {
+      "iTable_UIPrompt_Key": 2105,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 21
+    },
+    {
+      "iTable_UIPrompt_Key": 2106,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 21
+    },
+    {
+      "iTable_UIPrompt_Key": 2110,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 21
+    },
+    {
+      "iTable_UIPrompt_Key": 2111,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 21
+    },
+    {
+      "iTable_UIPrompt_Key": 2120,
+      "Prompt_Name": "Dummy",
+      "Table_Selection_Application_Key": 21
+    },
+    {
+      "iTable_UIPrompt_Key": 3001,
+      "Prompt_Name": "Category",
+      "Table_Selection_Application_Key": 30
+    },
+    {
+      "iTable_UIPrompt_Key": 3002,
+      "Prompt_Name": "Table",
+      "Table_Selection_Application_Key": 30
+    },
+    {
+      "iTable_UIPrompt_Key": 3003,
+      "Prompt_Name": "Data",
+      "Table_Selection_Application_Key": 30
+    },
+    {
+      "iTable_UIPrompt_Key": 5101,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 51
+    },
+    {
+      "iTable_UIPrompt_Key": 5102,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 51
+    },
+    {
+      "iTable_UIPrompt_Key": 5111,
+      "Prompt_Name": "startYear",
+      "Table_Selection_Application_Key": 51
+    },
+    {
+      "iTable_UIPrompt_Key": 5112,
+      "Prompt_Name": "endYear",
+      "Table_Selection_Application_Key": 51
+    },
+    {
+      "iTable_UIPrompt_Key": 5113,
+      "Prompt_Name": "codeList",
+      "Table_Selection_Application_Key": 51
+    },
+    {
+      "iTable_UIPrompt_Key": 5114,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 51
+    },
+    {
+      "iTable_UIPrompt_Key": 5205,
+      "Prompt_Name": "Aggregation",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5206,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5207,
+      "Prompt_Name": "Temp_Supp_Prompt1",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5209,
+      "Prompt_Name": "ioYear",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5210,
+      "Prompt_Name": "IO_Table",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5214,
+      "Prompt_Name": "ioYear",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5215,
+      "Prompt_Name": "IOstubCodes",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5216,
+      "Prompt_Name": "IOheaderCodes",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5217,
+      "Prompt_Name": "IOsuppstubCodes",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5218,
+      "Prompt_Name": "IOsuppheaderCodes",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5219,
+      "Prompt_Name": "Supplemental_Table",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5220,
+      "Prompt_Name": "SUPP_Aggregation",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5221,
+      "Prompt_Name": "Valuation",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5222,
+      "Prompt_Name": "Margin",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5223,
+      "Prompt_Name": "Margin_Restriction",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5224,
+      "Prompt_Name": "Margin_Table",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5233,
+      "Prompt_Name": "blank",
+      "Table_Selection_Application_Key": 52
+    },
+    {
+      "iTable_UIPrompt_Key": 5601,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 56
+    },
+    {
+      "iTable_UIPrompt_Key": 5602,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 56
+    },
+    {
+      "iTable_UIPrompt_Key": 5611,
+      "Prompt_Name": "startYear",
+      "Table_Selection_Application_Key": 56
+    },
+    {
+      "iTable_UIPrompt_Key": 5612,
+      "Prompt_Name": "endYear",
+      "Table_Selection_Application_Key": 56
+    },
+    {
+      "iTable_UIPrompt_Key": 5613,
+      "Prompt_Name": "codeList",
+      "Table_Selection_Application_Key": 56
+    },
+    {
+      "iTable_UIPrompt_Key": 5614,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 56
+    },
+    {
+      "iTable_UIPrompt_Key": 5701,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 57
+    },
+    {
+      "iTable_UIPrompt_Key": 5702,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 57
+    },
+    {
+      "iTable_UIPrompt_Key": 5711,
+      "Prompt_Name": "startYear",
+      "Table_Selection_Application_Key": 57
+    },
+    {
+      "iTable_UIPrompt_Key": 5712,
+      "Prompt_Name": "endYear",
+      "Table_Selection_Application_Key": 57
+    },
+    {
+      "iTable_UIPrompt_Key": 5713,
+      "Prompt_Name": "codeList",
+      "Table_Selection_Application_Key": 57
+    },
+    {
+      "iTable_UIPrompt_Key": 5714,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 57
+    },
+    {
+      "iTable_UIPrompt_Key": 6200,
+      "Prompt_Name": "TableList",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6210,
+      "Prompt_Name": "Product",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6211,
+      "Prompt_Name": "TableListSecondary",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6220,
+      "Prompt_Name": "Filter_#1",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6221,
+      "Prompt_Name": "Filter_#2",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6222,
+      "Prompt_Name": "Filter_#3",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6223,
+      "Prompt_Name": "Filter_#4",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6224,
+      "Prompt_Name": "Filter_#5",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6230,
+      "Prompt_Name": "TheTableFlexibleIipIta",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6231,
+      "Prompt_Name": "TheTableFlexibleAreas",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6232,
+      "Prompt_Name": "TheTableFlexibleOptions",
+      "Table_Selection_Application_Key": 62
+    },
+    {
+      "iTable_UIPrompt_Key": 6400,
+      "Prompt_Name": "TableList",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6410,
+      "Prompt_Name": "Product",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6411,
+      "Prompt_Name": "TableListSecondary",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6420,
+      "Prompt_Name": "Filter_#1",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6421,
+      "Prompt_Name": "Filter_#2",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6422,
+      "Prompt_Name": "Filter_#3",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6423,
+      "Prompt_Name": "Filter_#4",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6424,
+      "Prompt_Name": "Filter_#5",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6430,
+      "Prompt_Name": "TheTableFlexibleIipIta",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6431,
+      "Prompt_Name": "TheTableFlexibleAreas",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 6432,
+      "Prompt_Name": "TheTableFlexibleOptions",
+      "Table_Selection_Application_Key": 64
+    },
+    {
+      "iTable_UIPrompt_Key": 7001,
+      "Prompt_Name": "Category",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7002,
+      "Prompt_Name": "GMP_or_GSP",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7003,
+      "Prompt_Name": "Component",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7004,
+      "Prompt_Name": "Classification",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7005,
+      "Prompt_Name": "Industry",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7006,
+      "Prompt_Name": "Area_Gdp",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7007,
+      "Prompt_Name": "Year_Gdp",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7010,
+      "Prompt_Name": "Selected_GDP_data",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7022,
+      "Prompt_Name": "Table_Id",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7023,
+      "Prompt_Name": "Area_type",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7024,
+      "Prompt_Name": "Classification",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7025,
+      "Prompt_Name": "Major_Area",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7026,
+      "Prompt_Name": "Area_Income",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7027,
+      "Prompt_Name": "Year_Income",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7028,
+      "Prompt_Name": "Statistic",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7029,
+      "Prompt_Name": "Table",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7030,
+      "Prompt_Name": "Selected_Income_data",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7031,
+      "Prompt_Name": "State",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7033,
+      "Prompt_Name": "Income_Begin_Year",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7035,
+      "Prompt_Name": "GDP_Year_Begin",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7036,
+      "Prompt_Name": "GDP_Year_End",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7040,
+      "Prompt_Name": "Income_End_Year",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7083,
+      "Prompt_Name": "UM_Income",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7090,
+      "Prompt_Name": "AppId",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 7093,
+      "Prompt_Name": "UM_Product",
+      "Table_Selection_Application_Key": 70
+    },
+    {
+      "iTable_UIPrompt_Key": 9901,
+      "Prompt_Name": "Category",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9902,
+      "Prompt_Name": "GMP_or_GSP",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9903,
+      "Prompt_Name": "Component",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9904,
+      "Prompt_Name": "Classification",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9905,
+      "Prompt_Name": "Industry",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9907,
+      "Prompt_Name": "YearGdp",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9911,
+      "Prompt_Name": "Selected_GDP_data",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9922,
+      "Prompt_Name": "Table_Id",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9923,
+      "Prompt_Name": "Area_Type",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9924,
+      "Prompt_Name": "Classification",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9925,
+      "Prompt_Name": "MajorAreaKey",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9927,
+      "Prompt_Name": "YearReis",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9928,
+      "Prompt_Name": "Line",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9929,
+      "Prompt_Name": "Real_Table_Id",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9930,
+      "Prompt_Name": "Selected_Income_Data",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9931,
+      "Prompt_Name": "State",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9933,
+      "Prompt_Name": "YearReisBegin",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9934,
+      "Prompt_Name": "nRange",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9935,
+      "Prompt_Name": "YearGdpBegin",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9936,
+      "Prompt_Name": "YearGdpEnd",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9940,
+      "Prompt_Name": "YearReisEnd",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9983,
+      "Prompt_Name": "Unit_of_Measure",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9990,
+      "Prompt_Name": "AppId",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9993,
+      "Prompt_Name": "Unit_of_Measure",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 9995,
+      "Prompt_Name": "MapColor",
+      "Table_Selection_Application_Key": 99
+    },
+    {
+      "iTable_UIPrompt_Key": 1300301,
+      "Prompt_Name": "NIPA_Table_Type",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300401,
+      "Prompt_Name": "NIPA_Table_List",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300501,
+      "Prompt_Name": "TheTable",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300502,
+      "Prompt_Name": "Scale",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300503,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300504,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300505,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300506,
+      "Prompt_Name": "Select_all_years",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300601,
+      "Prompt_Name": "Categories",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1300701,
+      "Prompt_Name": "DownloadTree",
+      "Table_Selection_Application_Key": 130
+    },
+    {
+      "iTable_UIPrompt_Key": 1420101,
+      "Prompt_Name": "Categories",
+      "Table_Selection_Application_Key": 142
+    },
+    {
+      "iTable_UIPrompt_Key": 1420201,
+      "Prompt_Name": "Scale",
+      "Table_Selection_Application_Key": 142
+    },
+    {
+      "iTable_UIPrompt_Key": 1420202,
+      "Prompt_Name": "First_Year",
+      "Table_Selection_Application_Key": 142
+    },
+    {
+      "iTable_UIPrompt_Key": 1420203,
+      "Prompt_Name": "Last_Year",
+      "Table_Selection_Application_Key": 142
+    },
+    {
+      "iTable_UIPrompt_Key": 1420204,
+      "Prompt_Name": "Series",
+      "Table_Selection_Application_Key": 142
+    },
+    {
+      "iTable_UIPrompt_Key": 1420205,
+      "Prompt_Name": "AllYears",
+      "Table_Selection_Application_Key": 142
+    },
+    {
+      "iTable_UIPrompt_Key": 1420206,
+      "Prompt_Name": "TableDisplay",
+      "Table_Selection_Application_Key": 142
+    },
+    {
+      "iTable_UIPrompt_Key": 1420301,
+      "Prompt_Name": "DownloadTree",
+      "Table_Selection_Application_Key": 142
+    },
+    {
+      "iTable_UIPrompt_Key": 1420401,
+      "Prompt_Name": "Table_List",
+      "Table_Selection_Application_Key": 142
+    }
+  ]
+
+};

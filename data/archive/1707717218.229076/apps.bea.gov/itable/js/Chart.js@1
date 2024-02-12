@@ -1,0 +1,229 @@
+﻿var ChartObj = function () {
+	"use strict";
+	const obj = this;
+	this.chartDataProvider = [];
+	this.chart = null;
+	this.charttype = 'line';
+	//var colors = ['#00267F','#C69200','#9FC195','#AE482C','#CCCCCC','#AFC8FF','#F5CA59','#3D5834','#D77633','#000000'];
+	this.colors = ['#004C97', '#D86018', '#2DCCD3', '#F2A900', '#9EA2A2', '#6CACE4', '#FFE9C3', '#007D8A', '#C1C4C5', '#000000'];
+	this.activeseries = [];
+	$(window).resize(function () { obj.resizeChart(); });
+
+	this.makeChart = function (chartdata) {
+		if (obj.chart !== null)
+			obj.chart.clear();
+
+		obj.chartDataProvider = [];
+		obj.chart = null;
+
+		obj.chart = AmCharts.makeChart("chartdiv", {
+			type: "serial",
+			dataProvider: obj.chartDataProvider,
+			autoMarginOffset: 20,
+			marginBottom: 100,
+			startDuration: 0,
+			pathToImages: "//cdn.amcharts.com/lib/3/images/",
+			mouseWheelZoomEnabled: true,
+			categoryField: "TIME_PERIOD",
+			categoryAxis: {
+				minorGridEnabled: false,
+				axisColor: "#3A8FAB",
+				dashLength: 1,
+				axisThickness: 10,
+				axisAlpha: .4,
+				gridAlpha: .1
+			},
+			valueAxes: [{
+				axisColor: "#3A8FAB",
+				dashLength: 1,
+				axisThickness: 10,
+				axisAlpha: .4,
+				gridAlpha: .2,
+				id: "v1",
+				title: chartdata.YAXISLABEL ? chartdata.YAXISLABEL : chartdata.YLABEL
+			}],
+			chartCursor: {
+				fullWidth: false,
+				cursorAlpha: 0.1,
+				zoomable: true,
+				valueBalloonsEnabled: false,
+				bulletsEnabled: true
+			},
+			chartScrollbar: new obj.ChartScrollbar(),
+			titles: [{
+				text: chartdata.CHARTNAME ? chartdata.CHARTNAME : chartdata.NAME
+			}],
+			export: {
+				enabled: true
+			},
+			allLabels: [{
+				text: "Click an item on the list to add it to the chart. \n\n Click the same item again to remove it from the chart.",
+				x: 200,
+				y: "40%",
+				bold: true,
+				id: "charthelptextlabel",
+				size: 20,
+				color: "#CCC",
+				alpha: .5
+			},
+			{
+				text: "Source: U.S. Bureau of Economic Analysis",
+				x: 20,
+				y: "98%"
+			}],
+			legend: {
+				useGraphSettings: false
+			}
+		});
+	}
+	this.addSeries = function(series) {
+		var seriesindex = $.inArray(series, obj.activeseries);
+		if (seriesindex === -1) {
+			if (obj.activeseries.length == 10) {
+				modals.Info('error', 'The maximum number of series on the Chart is 10. <br/> Remove one or more series from the chart to add new ones.');
+				return;
+			}
+			series.DATA = series.DATA ? series.DATA : utils.testForArray(series.DATAPOINT).map(function (e) { return utils.ObjToUpperCase(e); })
+			obj.addChartLabels(false);
+			series.DATA.sort(function (a, b) {
+				if (a.TIME_PERIOD < b.TIME_PERIOD)
+					return -1;
+				if (a.TIME_PERIOD > b.TIME_PERIOD)
+					return 1;
+				return 0;
+			})
+			if (obj.chartDataProvider.length == 0) {
+				$(series.DATA).each(function (i, e) {
+					obj.chart.dataProvider.push(obj.createDataPoint(series, e));
+				});
+			}
+			else {
+				$(series.DATA).each(function (i, e) {
+					var tmp = jQuery.grep(obj.chart.dataProvider, function (a) {
+						return a.TIME_PERIOD == e.TIME_PERIOD;
+					})
+					if (tmp.length == 0)
+						obj.chart.dataProvider.push(obj.createDataPoint(series, e));
+					else
+						$(obj.chart.dataProvider).each(function (j, d) {
+							if (d.TIME_PERIOD == e.TIME_PERIOD)
+								d[series.NAME] = parseFloat(e.VALUE);
+						});
+
+				});
+			}
+			obj.chart.addGraph(obj.createLineGraph(series, obj.activeseries.length));
+			obj.activeseries.push(series);
+		}
+		else {
+			obj.activeseries.splice(seriesindex, 1);
+			if (obj.activeseries.length == 0)
+				obj.ClearAllSeries();
+			$(obj.chart.dataProvider).each(function (j, d) {
+				if (typeof d[series.NAME] !== typeof undefined) {
+					delete d[series.NAME];
+				}
+			});
+			obj.chart.graphs = [];
+			$(obj.activeseries).each(function (i, series) {
+				obj.chart.addGraph(obj.createLineGraph(series, i));
+			});
+			$("ul#serieslist li[seriesid=" + series.ID + "]").removeAttr('style').children(".bulletNormal").removeAttr('style').removeClass("bulletSelected");
+		}
+
+		obj.chart.chartScrollbar = new obj.ChartScrollbar();
+
+		$("#clearseriesbtn").attr("disabled", "disabled");
+		if (obj.activeseries.length > 0)
+			$("#clearseriesbtn").attr("disabled", false);
+		obj.chart.validateData();
+		obj.chart.validateNow();
+	}
+	this.ChartScrollbar = function () {
+		return {
+			graph: "g0",
+			graphType: "line",
+			scrollbarHeight: 40,
+			offset: 35,
+			oppositeAxis: false,
+			autoGridCount: true,
+
+			dragIcon: "dragIconRoundBig",
+
+			//graphFillColor:"#00267F",
+			graphFillAlpha: 1,
+
+			//graphLineColor:"#00267F",
+			graphLineAlpha: 1,
+
+			selectedGraphFillColor: "#00267F",
+			selectedGraphFillAlpha: .2,
+			selectedGraphLineColor: "#00267F",
+			selectedGraphLineAlpha: 1
+		}
+	}
+	this.createLineGraph = function(series, i) {
+		var graph = new AmCharts.AmGraph();
+		graph.type = obj.charttype;
+		graph.fillAlphas = 0.9;
+		if (obj.charttype == 'line')
+			graph.fillAlphas = 0;
+		graph.id = "g" + i;
+		graph.title = series.NAME;
+		graph.lineColor = obj.colors[i];
+		graph.valueField = series.NAME;
+		graph.lineThickness = 1;
+		if (obj.charttype == 'line')
+			graph.bullet = "round";
+		graph.bulletBorderThickness = 2;
+		graph.bulletBorderColor = obj.colors[i];
+		graph.bulletBorderAlpha = 1;
+		graph.bulletColor = "#ffffff";
+		graph.dashLengthField = "dashLengthLine";
+		$("ul#serieslist li[seriesid=" + series.ID + "]").css({ 'background-color': obj.colors[i], 'color': "#FFF" }).children(".bulletNormal").addClass("bulletSelected");
+		return graph;
+	}
+	this.createDataPoint = function(series, e) {
+		var obj = {};
+		obj.TIME_PERIOD = e.TIME_PERIOD;
+		obj[series.NAME] = parseFloat(e.VALUE);
+		return obj;
+	}
+	this.ClearAllSeries = function() {
+		obj.chart.dataProvider = [];
+		obj.chart.graphs = [];
+		obj.activeseries = [];
+		$("#clearseriesbtn").attr("disabled", "disabled");
+		$("ul#serieslist li[seriesid]").removeAttr('style').children(".bulletNormal").removeAttr('style').removeClass("bulletSelected");
+		obj.chart.validateData();
+		obj.chart.validateNow();
+		obj.addChartLabels(true)
+	}
+	this.changeType = function(type, el) {
+		obj.charttype = type;
+		obj.chart.graphs = [];
+		$(obj.activeseries).each(function (i, series) {
+			obj.chart.addGraph(obj.createLineGraph(series, i));
+		});
+		obj.chart.chartScrollbar = new obj.ChartScrollbar();
+		obj.chart.validateData();
+		$(".chartSelectBtn").removeClass('selected');
+		$(el).addClass("selected");
+		obj.chart.validateNow();
+		return false;
+	}
+	this.addChartLabels = function(showhelp) {
+		obj.chart.clearLabels();
+		let x = 20;
+		obj.chart.addLabel(x = 20, "98%", "Source: U.S. Bureau of Economic Analysis");
+		if (showhelp === true)
+			obj.chart.addLabel(x = 200, "40%", "Click an item on the list to add it to the chart. \n\n Click the same item again to remove it from the chart.", "left", 25, "#CCC", 0, .5, true);
+	}
+	this.resizeChart = function() {
+		//alert($("#chartcontainer").width());	
+		$("#chartdiv").width($("#Chart_row").width() - $("#ChartTypeBtnContainer").outerWidth() - $("#chartseriescontainer").outerWidth() - 20);
+		$("#ChartTypeBtnContainer").css({ "margin-left": - $("#chartdiv").outerWidth() - 62 });
+		$("#chartdiv").css({ "margin-left": $("#ChartTypeBtnContainer").outerWidth() });
+		//alert($("#chartcontainer").width());
+	}
+}

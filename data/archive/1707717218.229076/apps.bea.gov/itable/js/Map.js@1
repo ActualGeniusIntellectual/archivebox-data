@@ -1,0 +1,272 @@
+﻿var MapObj = function () {
+    "use strict";
+    const obj = this;
+    this.mapJsonObj;
+    this.wresize = false;
+    let maptimeout;
+    $(window).resize(function () { obj.resizeMap(); });
+    this.resizeMap = function () {
+        maptimeout = clearTimeout(maptimeout);
+        maptimeout = setTimeout(function () { 
+           //('#mapContainer').css("opacity", 0);
+            var screenHeight = $(window).height() * .6 + 'px';
+            if ($('#Final_Table_wraper').width() < $(window).width())
+                var swidth = $('#Final_Table_wraper').width() - 10;
+            else
+                var swidth = $(window).width() - 10;
+            $('#mapContainers,#mapContainer').css('width', swidth);
+            $('#mapContainers,#mapContainer').css('height', screenHeight);
+            obj.loadAmMap();
+        }, 500);
+    }
+    this.loadAmMap = function(o, mapdiv) {
+        // create AmMap object
+        $('#mapContainer').empty();
+        let map = new AmCharts.AmMap("mapContainer");
+        
+        if (!mapdiv)
+            mapdiv = "mapContainer";
+        if (o)
+            obj.mapJsonObj = o;
+
+        var dataProvider = {
+            mapVar: obj.mapJsonObj.mapcoords,
+            areas: obj.mapJsonObj.mapdata.areas,
+            getAreasFromMap: true,
+            zoomLevel: 0.8
+        };
+
+        // pass data provider to the map object
+        map.dataProvider = dataProvider;
+
+        map.areasSettings = {
+            autoZoom: false,
+            selectedColor: "#CC0000",
+            outlineColor: "#666",
+            outlineThickness: 1
+        };
+        map.zoomControl = {
+            minZoomLevel: 0.8
+        }
+        //obj.mapJsonObj.mapdata.mapProps.subtitleText = "genoaoskdfj adslfj asd;flj adskjfh alskjhf asldkfh aslkdfh"
+        map.titles = [
+            {
+                "text": obj.mapJsonObj.mapdata.mapProps.titleText,
+                "size": 15
+            },
+            {
+                "text": obj.mapJsonObj.mapdata.mapProps.subtitleText,
+                "size": 11
+            }
+        ];
+        // disable zoomControl and panControl
+        map.zoomControl.zoomControlEnabled = false;
+        map.zoomControl.panControlEnabled = false;
+        // disable zoomOnDoubleClick
+        map.zoomOnDoubleClick = false;
+        //disable draging the map
+        map.dragMap = false;
+
+        map.pathToImages = "img/"
+        map.amExport = {
+            top: 10,
+            right: 20,
+            userCFG: {
+                menuItems: [{
+                    textAlign: 'center',
+                    icon: 'export.png',
+                    iconTitle: 'Save Map',
+                    label: " ",
+                    delay: 3,
+                    items: [{
+                        title: 'JPG',
+                        format: 'jpg'
+                    }, {
+                        title: 'PNG',
+                        format: 'png'
+                    }, {
+                        title: 'PDF',
+                        format: 'pdf',
+                        output: 'datastring',
+                        onclick: function (instance, config, event) {
+                            instance.output(config, function (datastring) {
+                                data = instance.canvas.toDataURL('image/jpeg'),
+                                    width = (instance.canvas.width * 25.4) / 150,
+                                    height = (instance.canvas.height * 25.4) / 150;
+
+                                var pdf = new jsPDF('landscape');
+                                pdf.addImage(data, 'JPEG', 10, 20, width, height);
+                                pdf.save("filename.pdf");
+                            });
+                        }
+                    }]
+                }],
+                menuItemStyle: {
+                    backgroundColor: '#FFF',
+                    opacity: 1,
+                    rollOverBackgroundColor: '#EFEFEF',
+                    color: '#000000',
+                    rollOverColor: '#CC0000',
+                    paddingTop: '6px',
+                    paddingRight: '6px',
+                    paddingBottom: '6px',
+                    paddingLeft: '6px',
+                    marginTop: '0px',
+                    marginRight: '0px',
+                    marginBottom: '0px',
+                    marginLeft: '0px',
+                    textAlign: 'left',
+                    textDecoration: 'none',
+                    fontFamily: 'Arial', // Default: charts default
+                    fontSize: '12px', // Default: charts default
+                },
+                legendPosition: "bottom", //top,left,right
+                removeImagery: true
+            }
+        }
+        map.balloon = {
+            fixedPosition: false,
+            drop: true,
+            fillAlpha: .7,
+            fadeOutDuration: 0
+        }
+        map.write(mapdiv);
+        obj.buildLegend(obj.mapJsonObj, mapdiv);
+        /*if (obj.wresize == false)
+            map.invalidateSize();*/
+        //map.addListener("dataUpdated",function(){alert();});
+       
+    }
+
+    this.buildTitle = function(masterObj, elem) {
+        let el = $("#" + elem);
+        let x = 0;
+        let y = 5;
+        let tit = masterObj.mapdata.mapProps.titleText;
+        let subtit = masterObj.mapdata.mapProps.subtitleText + "";
+        if (subtit == "") y = 20;
+        let titX = (el.width() / 2) - (tit.length * 4);
+        let subtitX = (el.width() / 2) - (subtit.length * 3.5);
+        if (subtitX < 0) subtitX = 10;
+
+        let g = $('<g id="mapTitle" transform="translate(' + x + ' ' + y + ')"></g>');
+
+        /*	<text xmlns="http://www.w3.org/2000/svg" x="10" y="25" style="width:150px; font-size:20px; font-family:Georgia, serif; fill:green;">
+        Wrapping text in SVG is easy!
+        <tspan x="10" dy="2em">And fun, too!</tspan>
+        </text>*/
+
+        let txt = $('<text font-family="Verdana" font-size="11" fill="#000000" transform="translate(0 0)" y="0"></text>');
+        let  row = 1;
+        if (titX < 0)
+            for (i = 0; i < tit.length; i = i + parseInt(el.width() / 9)) {
+                let txta = tit.substring(i, parseInt(el.width() / 9) + i);
+                titX = (el.width() / 2) - (txta.length * 4);
+                if (titX < 0) titX = 10;
+                txt.append($('<tspan x="' + titX + '" y="' + (row * 16) + '" style="font-weight:bold;font-size:14;color:#FF0000;">' + txta + '</tspan>'));
+                row++;
+            } else {
+            txt.append($('<tspan x="' + titX + '" y="15" style="font-weight:bold;font-size:14;color:#FF0000;">' + tit + '</tspan>'));
+        }
+        let subtitsp = $('<tspan x="' + subtitX + '" y="35" style="font-style:italic;">' + subtit + '</tspan>');
+        g.append(txt.append(subtitsp));
+        let  svg = $('<svg>' + g[0].outerHTML + '</svg>');
+        //svg.append(g);
+        let pi = $("#" + elem + " svg g g")[0];
+
+        let piX = (el.width() - pi.getBoundingClientRect().width) / 2;
+        piX = piX > 5 ? piX : el.width() * .1;
+        //$(pi).attr("transform","translate("+piX+" 50) scale(.80)");
+        $("#" + elem + " svg").append(svg.children());
+    }
+
+    this.buildLegend = function(masterObj, elem) {
+        let el = $("#" + elem);
+        let maplen = 0;
+        let legData = masterObj.mapdata.mapProps.legendInfo;
+        $(legData).each(function () {
+            let con = " ";
+            if (this.maxVal != "" && this.minVal != "") con = " to ";
+            let str = this.minVal + con + this.maxVal;
+            maplen += ((str.length * 7) + 25);
+        });
+
+        let x = (el.width() - maplen) / 2 > 0 ? (el.width() - maplen) / 2 : 5;
+        let pi = $("#" + elem + " svg g g g")[0];
+        let pib = pi.getBBox();
+        let y = Number($("#" + elem).height()) - 60;
+
+        let g = $('<g transform="translate(' + x + ' ' + y + ')"></g>');
+
+        let lt = $('<text font-family="Verdana" font-size="11" fill="#000000" transform="translate(0 5)"></text>');
+        let ltsp = $('<tspan x="5" y="0">' + masterObj.mapdata.mapProps.legendText + '</tspan>');
+        lt.append(ltsp);
+        g.append(lt);
+
+        let startx = 5;
+        let starty = 20;
+        $(legData).each(function (i) {
+            let recw = 20;
+            let recx = startx;
+            let txtx = recw + recx + 5;
+            let con = " ";
+            if (this.maxVal != "" && this.minVal != "") con = " to ";
+            let str = this.minVal + con + this.maxVal;
+            startx = txtx + (str.length * 7);
+            if (startx + 30 > el.width()) {
+                starty += 20;
+                recx = 5;
+                txtx = recw + recx + 5;
+                startx = txtx + (str.length * 7);
+            }
+            let rect = $('<rect id="r1" fill="' + this.color + '" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" transform="translate(' + (txtx - recw - 5) + ' ' + starty + ')" width="' + recw + '"  height="12" rx="0" ry="0" />');
+            let txt = $('<text font-family="Verdana" font-size="11" fill="#000000" transform="translate(' + txtx + ' ' + (starty + 10) + ')" >' + str + '</text>');
+
+            g.append(rect);
+            g.append(txt);
+        });
+
+        let svg = $('<svg class="geno">' + g[0].outerHTML + '</svg>');
+        //svg.append(g);
+        $("#" + elem + " svg").append(svg);
+    }
+
+    this.ExportMyMap = function() {
+        mapObject = getMapFromId(currentMapID);
+        if (mapObject.hasRendered())
+            mapObject.saveAsImage();
+    }
+
+    this.FC_ExportReady = function(DOMId) {
+
+        $("#dialog:ui-dialog").dialog("destroy");
+
+        $("#saveMapContainer").dialog({
+            height: 200,
+            width: 400,
+            position: 'center',
+            modal: true,
+            close: function () { closeSaveMapContainer() },
+            buttons: {
+                Close: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+        $('#mapContainers').css("display", 'none');
+        $('#mapPlaceHolder').css("display", 'block');
+        $("#exportMap_div").show();
+    }
+
+
+    this.closeSaveMapContainer = function() {
+        $("#saveMapContainer").dialog("close");
+        $('#mapPlaceHolder').css("display", 'none');
+        $('#mapContainers').css("display", 'block');
+        //window.setTimeout(function() {showMap(currentMapHash, 'loadMap')},0);
+    }
+
+    this.mapSavedHandler = function() {
+        obj.closeSaveMapContainer();
+    }
+}

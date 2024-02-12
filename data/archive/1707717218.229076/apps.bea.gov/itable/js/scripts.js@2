@@ -1,0 +1,1373 @@
+﻿$(function () {
+    iTable.init();
+    window.onhashchange = iTable.hashChangeHandler;
+});
+
+var iTable = new function (window, $) {
+    "use strict";
+    var obj = this;
+    this.init = function () {
+        obj.currentStep = null;
+        obj.prevStep = null;
+        obj.app = null;
+        obj.appid = window.location.hostname == "localhost" ? 19 : 0;
+        obj.drill = 0;
+        obj.url = {};
+        obj.path = window.location.hostname == "localhost" ? "https://localhost:44348" : "/iTablecore";
+        obj.isGetAppFromUrl = false;
+        obj.activeSteps = !obj.activeSteps ? new obj.ActiveSteps() : obj.activeSteps.init();
+        obj.activeSteps = new obj.ActiveSteps();
+        if ($("#iTable").length === 0) {
+            $("#MainContainer").append($('<div id="iTable" class="px-1 mx-2"></div>'));
+            $('#iTable').append($('<div class="page-header"> <h1 id="divisionname" class="font-weight-normal"></h1> <h3 id="appname" class="font-weight-light"></h3></div >'));
+            $('#iTable').append($('<ul class= "nav nav-tabs" id = "navTabs" role = "tablist" ></ul > <div class="tab-content" id="navTabsContent"></div>'));
+        } else {
+            $("#navTabs,#navTabsContent").html("");
+        }
+        obj.OptionsModal = new renderers.OptionsModal();
+        obj.DefinitionModal = new renderers.DefinitionModal();
+        obj.DownloadModal = new renderers.DownloadModal();
+        obj.url = utils.getUrlParams();
+        obj.appid = obj.url.appid && !isNaN(obj.url.appid) ? parseInt(obj.url.appid) : obj.url.reqid && !isNaN(obj.url.reqid) ? parseInt(obj.url.reqid) : obj.appid;
+        obj.drill = obj.url.drill && !isNaN(obj.url.drill) ? parseInt(obj.url.drill) : obj.drill;
+        let stepnum = obj.url.stepnum && !isNaN(obj.url.stepnum) ? parseInt(obj.url.stepnum) : obj.url.step && !isNaN(obj.url.step) ? parseInt(obj.url.step) : 1;
+
+        if(obj.appid == 0) return window.location = "https://bea.gov/itable/";
+
+        obj.SetBottomTab();
+
+        if (obj.drill === 1 || (obj.url.reqid && !isNaN(obj.url.reqid) && window.location.hash === "")) {
+            let urlobj = {
+                appid: obj.appid,
+                steps: [stepnum],
+                data: []
+            };
+            $.each(obj.url, function (i, e) {
+                if (i !== "appid" && i !== "stepnum") {
+                    let key = i;
+                    if($.isNumeric(i))
+                        key = PromptKeyData.KeyToName(obj.appid, parseInt(i));
+                    if(key != null)
+                        urlobj.data.push([key, e]);
+                }
+            });
+            obj.GetAppFromUrl(urlobj);
+        } else if (window.location.hash === "") {
+            obj.GetApp(obj.appid, 0);
+        } else {
+            var data = JSON.parse(atob(window.location.hash.substring(1)));
+            obj.GetAppFromUrl(data);
+        }
+        $(window).resize(
+			function () {
+				clearTimeout(obj.resizetimeout);
+				obj.resizetimeout = setTimeout(function () {
+					obj.resizeWindowHandler();
+				}, 100);
+			}
+		);
+    };
+    //  this function is called from menu.js and needs to be on every page where there is the menut
+    this.resizeWindowHandler = function () {
+        setTimeout(function () {
+			if ($.fn.dataTable){
+                $(".Table_Data").width(renderers.GetTableWidth());
+				$.fn.dataTable
+				.tables({
+					visible: true,
+					api: true
+				})
+				.columns.adjust();
+            }
+		}, 100)
+     };
+    this.SetBottomTab = function () {
+        $(".bottomTabs").removeClass("btn-warning").addClass("btn-default");
+        if ([9, 19, 12, 13, 21].indexOf(obj.appid) != -1)
+            $("#nipa_tab").removeClass("btn-default").addClass("btn-warning");
+        if ([10].indexOf(obj.appid) != -1)
+            $("#nipafa_tab").removeClass("btn-default").addClass("btn-warning");
+        if ([51, 56, 147, 150].indexOf(obj.appid) != -1)
+            $("#indgdp_tab").removeClass("btn-default").addClass("btn-warning");
+        if ([52, 58, 90, 5].indexOf(obj.appid) != -1)
+            $("#indio_tab").removeClass("btn-default").addClass("btn-warning");
+        if ([62].indexOf(obj.appid) != -1)
+            $("#iip_tab").removeClass("btn-default").addClass("btn-warning");
+        if ([2].indexOf(obj.appid) != -1)
+            $("#mne_tab").removeClass("btn-default").addClass("btn-warning");
+        if ([70, 99].indexOf(obj.appid) != -1)
+            $("#regional_tab").removeClass("btn-default").addClass("btn-warning");
+    }
+    this.GetDivision = function () {
+        if ([9, 19, 12, 13, 21, 10].indexOf(obj.appid) != -1)
+            return 'National Data';
+        if ([5, 51, 52, 56, 58, 90, 147].indexOf(obj.appid) != -1)
+            return 'Industry Data';
+        if ([6, 2, 62].indexOf(obj.appid) != -1)
+            return 'International Data';
+        if ([70, 99].indexOf(obj.appid) != -1)
+            return 'Regional Data';
+        return 'Interactive Data';
+    }
+    this.ActiveSteps = function () {
+        var o = this;
+        var steps = [];
+        var data = [];
+        this.init = function () {
+            steps = [];
+            data = [];
+            return o;
+        };
+        this.push = function (s) {
+            steps.push(s);
+            o.makeUrl();
+        };
+        this.splice = function (index) {
+            steps.splice(index);
+            var tmp = [];
+            $(data).each(function (i, d) {
+                var is = false;
+                $(steps).each(function (j, s) {
+                    $(s.Prompts).each(function () {
+                        if (this.Name.toUpperCase() === d[0].toUpperCase() ) {
+                            is = true;
+                            return;
+                        }
+                    });
+                });
+                if (is)
+                    return tmp.push(d);
+            });
+            data = tmp;
+        };
+        this.getSteps = function () {
+            return JSON.parse(JSON.stringify(steps));
+        };
+        this.indexOf = function (step) {
+            for (var i = 0; i < steps.length; i++) {
+                if (steps[i].Number === step.Number)
+                    return i;
+            }
+            return -1;
+        };
+        this.getData = function () {
+            var tmp = JSON.parse(JSON.stringify(data));
+            $(tmp).each(function (i, e) {
+                //if (e.value.constructor === Array)
+                tmp[i][0] = e[0].toString();
+                tmp[i][1] = e[1].toString();
+            });
+            return tmp;
+        };
+        this.setData = function (key, value) {
+            //var d = { "key": key, "value": value };
+            var d = [key, value];
+            for (var i = 0; i < data.length; i++) {
+                if (key.toUpperCase() === data[i][0].toUpperCase()) {
+                    return value === null ? data.splice(i, 1) : data[i][1] = value;
+                }
+            }
+            return value === null ? false : data.push(d);
+        };
+        this.findDP = function (key) {
+            for (var i = 0; i < data.length; i++) {
+                if (key.toUpperCase() === data[i][0].toUpperCase())
+                    return data[i];
+            }
+            return null;
+            //return data.filter(function (a) { return a.key === d.key })[0];
+        };
+        this.makeUrl = function () {
+            var urlobj = {
+                appid: iTable.appid,
+                steps: [],
+                data: data
+            };
+            $(steps).each(function (i, e) {
+                urlobj.steps.push(e.Number);
+            });
+            if (!iTable.isGetAppFromUrl)
+                history.pushState(null, null, window.location.pathname + window.location.search + '#' + btoa(JSON.stringify(urlobj)));
+            //alert(btoa(JSON.stringify(urlobj)));
+            // alert(JSON.parse(atob(window.location.hash.substring(1))).step);
+        };
+        this.setUrlData = function (ud) {
+            data = ud;
+        };
+    };
+    this.hashChangeHandler = function () {
+        //alert();
+        return iTable.init();
+    };
+    this.GetAppFromUrl = function (o) {
+        //alert(o.steps);
+        obj.isGetAppFromUrl = true;
+        $(o.data).each(function (i, e) {
+            //if (e.value.constructor === Array)
+            o.data[i][1] = e[1].toString();
+        });
+        obj.activeSteps.setUrlData(o.data);
+        $.ajax({
+            url: `${obj.path}/data/app/GetSteps`,
+            data: JSON.stringify(o),
+            type: 'POST',
+            processData: false,
+            contentType: "application/json",
+            success: function (data) {
+                try{
+                    var response = $.parseJSON(data);
+                    obj.InitApp(response);
+                    obj.isGetAppFromUrl = false;
+                }catch(err){
+                    modals.Info('error', '<strong>The interactive data</strong> is being updated with new or revised data at this time. Data should be available shortly. Please try back later.');
+                }
+            },
+            error: function (data) {
+                modals.Info('error', '<strong>The interactive data</strong> is being updated with new or revised data at this time. Data should be available shortly. Please try back later.');
+            },
+            complete: function (data) {
+                //alert('complete');
+            }
+        });
+    };
+    this.GetApp = function (appid, step) {
+        $.ajax({
+            url: `${obj.path}/data/app/${appid}`,
+            success: function (data) {
+                try{
+                    var response = $.parseJSON(data);
+                    obj.InitApp(response);
+                }catch(err){
+                    modals.Info('error', '<strong>The interactive data</strong> is being updated with new or revised data at this time. Data should be available shortly. Please try back later.');
+                }
+            },
+            error: function (data) {
+                modals.Info('error', '<strong>The interactive data</strong> is being updated with new or revised data at this time. Data should be available shortly. Please try back later.', "Error");
+            },
+            complete: function (data) {
+                //alert('complete');
+            }
+        });
+    };
+    this.GetStep = function (step, callback) {
+        var o = {
+            "appid": obj.app.Id,
+            "stepnum": step.Number,
+            "data": iTable.activeSteps.getData()
+        };
+        $.ajax({
+            url: `${obj.path}/data/app/GetStep`,
+            data: JSON.stringify(o),
+            type: 'POST',
+            processData: false,
+            contentType: "application/json",
+            success: function (data) {
+                try{
+                    iTable.currentStep = $.parseJSON(data);
+                    callback.apply();
+                }catch(err){
+                    modals.Info('error', '<strong>The interactive data</strong> is being updated with new or revised data at this time. Data should be available shortly. Please try back later.');
+                }
+            },
+            error: function (data) {
+                modals.Info('error', '<strong>The interactive data</strong> is being updated with new or revised data at this time. Data should be available shortly. Please try back later.');
+            },
+            complete: function (data) {
+                //alert('complete');
+            }
+        });
+    };
+    this.Download = function () {
+        var data = {};
+        $(iTable.currentStep.Prompts).each(function (i, p) {
+            if (this.UIControl === 'Table') {
+                /*var tabledata = JSON.parse(p.PromtData).Table;
+                try {
+                    data = JSON.parse(tabledata["0"].XMLTable_Data);
+                }
+                catch (e) {
+                    data = JSON.parse(tabledata["0"].JSONTable_Data);
+                }*/
+
+                const promptdata = JSON.parse(p.PromtData);
+                try {
+                    data = JSON.parse(promptdata.Table);
+                    let tbl = new TableObj();
+                    return data = tbl.init(data);
+                } catch (e) {
+                    modals.Info("error", "We were unable to process your request. <b/>Please try again later.", "Error", null, function () {
+                        window.location = window.location.href.split('#')[0];
+                    });
+                }
+            }
+        });
+        //$("#downloadform input[name=data]").val(btoa(JSON.stringify(data)));
+        $("#downloadform input[name=data]").val(btoa(encodeURIComponent(JSON.stringify(data))));
+        /*$("#downloadform input[name=format]").val('csv');
+        return $("#downloadform").submit();*/
+        return obj.DownloadModal.show();
+    };
+    this.DoDownload = function (type) {
+        obj.DownloadModal.hide();
+        $("#downloadform input[name=format]").val(type);
+        return $("#downloadform").submit();
+    }
+    this.Print = function () {
+        var data = {};
+        $(iTable.currentStep.Prompts).each(function (i, p) {
+            if (this.UIControl === 'Table') {
+                var tabledata = JSON.parse(p.PromtData).Table;
+                try {
+                    data = JSON.parse(tabledata);
+                    let tbl = new TableObj();
+                    data = tbl.init(data);
+                } catch (e) {
+                    data = JSON.parse(tabledata["0"].JSONTable_Data);
+                }
+            }
+        });
+        $("#downloadform input[name=data]").val(btoa(encodeURIComponent(JSON.stringify(data))));
+        $("#downloadform input[name=format]").val('print');
+        return $("#downloadform").submit();
+    };
+
+    this.getDefinition = function (title, defid) {
+
+        //var o = { "appid": obj.app.Id, definitionId: defid };
+        $.ajax({
+            url: `${obj.path}/data/app/GetDefinition/${obj.app.Id}/${defid}`,
+            success: function (data) {
+                //var response = $.parseJSON(data);
+                obj.DefinitionModal.render(title, data);
+                obj.DefinitionModal.show();
+            },
+            error: function (data) {
+                modals.Info('error', '<strong>The interactive data</strong> is being updated with new or revised data at this time. Data should be available shortly. Please try back later.', "Error");
+            },
+            complete: function (data) {
+                //alert('complete');
+            }
+        });
+    };
+    this.InitApp = function (app) {
+        obj.app = app;
+        $("#divisionname, #appname").html("");
+        // $("#divisionname").html(obj.app.Division); 
+        $("#divisionname").html(obj.GetDivision());
+        $("#appname").html(obj.app.Name);
+        tabs.init();
+        $(obj.app.Steps).each(function (i, e) {
+            obj.currentStep = this;
+            obj.prevStep = this;
+            tabs.makeTab(this, obj.app.Steps.length - 1 === i);
+        });
+        if (!$('#navTabs li a:last').hasClass("active"))
+            $('#navTabs li a:last').tab('show');
+        obj.currentStep = obj.app.Steps[obj.app.Steps.length - 1];
+    };
+    this.Next = function (step) {
+        obj.prevStep = step;
+        var i = obj.activeSteps.indexOf(step);
+        if (i !== -1 && i < obj.activeSteps.getSteps().length)
+            obj.activeSteps.splice(i + 1);
+        obj.GetStep(step, function () {
+            tabs.makeTab(obj.currentStep, true);
+        });
+    };
+
+}(window, jQuery);
+
+
+var tabs = new function (window, $) {
+    "use strict";
+    var obj = this;
+    this.activeTab = null;
+    this.init = function () {
+        $("#navTabs, #navTabsContent").html("");
+        return obj;
+    };
+    //  this function is called from menu.js and needs to be on every page where there is the menut
+    this.resizeWindowHandler = function () {
+
+    };
+    this.clearTabs = function (o) {
+        if ($('#navTabs a#tabs-' + o.Number).length > 0) {
+            var li = $('#navTabs a#tabs-' + o.Number).parent();
+            $('#navTabs li').each(function (i, e) {
+                if (i > li.index()) {
+                    var tabID = $(this).find('a').attr('href');
+                    $(this).remove();
+                    $(tabID).remove();
+                }
+            });
+            if (o.IsTable === 1) {
+                var tabID = li.find('a').attr('href');
+                li.remove();
+                $(tabID).remove();
+            }
+        }
+    };
+
+    this.makeTab = function (o, show) {
+        obj.clearTabs(iTable.prevStep);
+        var panel = $('<div class="tab-pane p-2 border" id="panel-' + o.Number + '" role="tabpanel">geno2 ' + o.Number + '</div>');
+        var tab = $('<li class="nav-item"><a class="nav-link" id="tabs-' + o.Number + '" data-toggle="tab" href="#panel-' + o.Number + '" role="tab">' + o.Name + '</a></li>');
+        $(panel).html("");
+        iTable.activeSteps.push(o);
+        obj.render(o, panel);
+        if (o.IsTableList !== 1 && panel.find(".prompt-container-single").length === panel.find(".prompt-container").length) {
+            return !iTable.isGetAppFromUrl ? iTable.Next(o) : false;
+        }
+        //iTable.activeSteps.push(o);
+        $("#navTabs").append(tab);
+        $("#navTabsContent").append(panel);
+        if (show)
+            tab.find('a').tab('show');
+    };
+    this.render = function (o, panel) {
+        var form = $(`<div id="iTableForm${o.Id}" class="container-fluid"></div>`);
+        if (o.IsTable === 0) {
+            let desc = $(`<div class="row mb-2 pl-2 d-inline-block">${o.Description || ""}</div>`);
+            $(panel).append(desc);
+            renderers.renderiTURL(desc);
+        }
+
+
+        $(panel).append(form);
+        form.append(o.IsTable === 0 && o.IsTableList !== 1 && o.IsTopButton !== 0 ? renderers.renderNextBtn(o) : null);
+
+        //var r = renderers.init(o, form);
+        $(o.Prompts).each(function (i, p) {
+            if (o.IsTable === 0 || p.UIControl === "Table")
+                renderers.renderUIFactory(o, p, form);
+        });
+
+
+        form.prepend(o.StepNote.TopNote && o.StepNote.TopNote != "" ? renderers.renderTopNote(o.StepNote.TopNote) : null);
+        form.append(o.StepNote.BottomNote && o.StepNote.BottomNote != "" ? renderers.renderBottomNote(o.StepNote.BottomNote) : null);
+        form.append(o.IsTable === 0 && o.IsTableList !== 1 ? renderers.renderNextBtn(o) : null);
+        if (o.IsTable === 1) {
+            if (renderers.DefaultDisplayObject == "Chart")
+                setTimeout(() => {
+                    renderers.ShowChart();
+                }, 600);
+            else if (renderers.DefaultDisplayObject == "Map")
+                setTimeout(() => {
+                    renderers.ShowMap();
+                }, 500);
+            else 
+                setTimeout(() => {
+                    renderers.ShowTable();
+                }, 500);
+        }
+
+    };
+
+}(window, jQuery);
+
+
+
+var renderers = new function (window, $) {
+    "use strict";
+    var obj = this;
+    this.ChartObj;
+    this.ChartData = null;
+    this.MapData = null;
+    this.DefaultDisplayObject = "Table";
+    this.init = function (step, form) {};
+    this.renderUIFactory = function (step, prompt, form) {
+        var el = null;
+        switch (prompt.UIControl) {
+            case "Tree":
+                el = obj.renderTree(step, prompt);
+                break;
+            case "RadioButtons":
+                el = obj.renderRadio(step, prompt);
+                break;
+            case "CustomCheckBox":
+                el = obj.renderCustomCheckBox(step, prompt);
+                break;
+            case "List":
+                el = obj.renderList(step, prompt);
+                break;
+            case "ListMultiple":
+                el = obj.renderListMultiple(step, prompt);
+                break;
+            case "iListFilter":
+                el = obj.renderiListFilter(step, prompt);
+                break;
+            case "iListFilterNoMultiple":
+                el = obj.renderiListFilterNoMultiple(step, prompt);
+                break;
+            case "ListMultipleWithTitle":
+                el = obj.renderListMultipleWithTitle(step, prompt);
+                break;
+            case "DropDownList":
+                el = obj.renderDropDownList(step, prompt);
+                break;
+            case "Table":
+                el = obj.renderTable(step, prompt);
+                break;
+            case "TableList":
+                el = obj.renderTableList(step, prompt);
+                break;
+            case "TableLinks":
+                el = obj.renderTree(step, prompt);
+                break;
+            case "DownloadTree":
+                el = obj.renderDownloadTree(step, prompt);
+                break;
+            default:
+                el = obj.renderRadio(step, prompt);
+                break;
+        }
+        obj.renderItt(el);
+        obj.renderiTURL(el);
+        form.append(el);
+        return;
+    };
+    this.renderItt = function (el) {
+        $(el).find("itt").each(function (i, e) {
+            var tooltip = $('<span class="itable-tooltip">' + $(this).html() + '<span>');
+            $(this).replaceWith(tooltip);
+            tooltip.click(function (event) {
+                event.stopPropagation();
+                iTable.getDefinition($(e).html(), e.id);
+            });
+        });
+    }
+    this.renderiTURL = function (el) {
+        $(el).find("iTURL").each(function (i, e) {
+            var link = $(`<a href="./?${$(this).attr("url")}" target="${$(this).attr("newwindow") != "no" ? "_blank" : "_self"}"">${$(this).html()}<a>`);
+            $(this).replaceWith(link);
+        });
+        $(el).find("a").each(function(i,e){
+            let h = $(this).attr("href");
+            if(h && h.indexOf('/iTable_CF/bp_download_modern.cfm?') != -1){
+                $(this).attr("href",h.replace("/iTable_CF/bp_download_modern.cfm?", "./tb_download.html?")); 
+            }
+            if(h && h.indexOf('/iTable/bp_download_modern.cfm?') != -1){
+                $(this).attr("href",h.replace("/iTable/bp_download_modern.cfm?", "./tb_download.html?"));
+            }
+        })
+    }
+    this.renderMenu = function (btn) {
+        var form = $("#downloadform").length !== 0 ? $("#downloadform") :
+            $(`<form id="downloadform" class="d-none" action="${iTable.path}/data/app/Downloads" method="POST" target="_blank"><input type="hidden" name="format" value=""/>
+                    <input value="" type="hidden" name="data"/>
+                </form>`).appendTo($("body"));
+
+        var b = $(`<button class="btn btn-light text-center p-2 mr-2"><i class="block text-primary fal fa-2x"></i></button>`)
+            .hover(
+                function () {
+                    $(this).toggleClass("btn-light btn-dark").find("i").toggleClass("text-primary text-white");
+                },
+                function () {
+                    $(this).toggleClass("btn-light btn-dark").find("i").toggleClass("text-primary text-white");
+                });
+        switch (btn) {
+            case "Modify":
+                b.append($('<div class="block m-t-4">Modify</div>')).find("i").addClass("fa-redo");
+                b.click(function () {
+                    iTable.OptionsModal.show();
+                    return false;
+                }).attr("id", "ModifyTableBtn");;
+                break;
+            case "Table":
+                b.append($('<div class="block m-t-4">Table</div>')).find("i").addClass("fa-table");
+                b.click(function () {
+                    obj.ShowTable();
+                    return false;
+                }).attr("id", "ShowTableBtn");
+                /* if (obj.MapData === null)
+                    b.prop("disabled", true).addClass("disabled btn-dark"); */
+                break;
+            case "Chart":
+                b.append($('<div class="block m-t-4">Chart</div>')).find("i").addClass("fa-chart-bar");
+                b.click(function () {
+                    obj.ShowChart();
+                    return false;
+                }).attr("id", "ShowChartBtn");
+                break;
+            case "Map":
+                b.append($('<div class="block m-t-4">Map</div>')).find("i").addClass("fa-map");
+                b.click(function () {
+                    obj.ShowMap();
+                    return false;
+                }).attr("id", "ShowMapBtn");
+                break;
+            case "Download":
+                b.append($('<div class="block m-t-4">Download</div>')).find("i").addClass("fa-download");
+                b.click(function () {
+                    iTable.Download();
+                    return false;
+                }).attr("id", "DownloadTableBtn");;
+                break;
+            case "Print":
+                b.append($('<div class="block m-t-4">Print</div>')).find("i").addClass("fa-print");
+                b.click(function () {
+                        $(b).blur();
+                        iTable.Print();   
+                    return false;
+                    // modals.Info('info', '<p class="lead text-capitalize"><strong class="text-danger text-uppercase">SORRY </strong> --  This feature is not ready yet... <i class="far fa-frown-open fa-2x"><i> <p>');
+                    // return false;
+                }).attr("id", "PrintTableBtn");;
+                break;
+            default:
+                1 + 1;
+        }
+        return b;
+    };
+    this.ShowChart = function () {
+        //$("#ShowTableBtn").attr("id", "ShowTableBtn").removeClass("disabled").unbind("mouseenter mouseleave");
+       //$("#ShowChartBtn").prop("disabled", true).mouseleave().addClass("disabled btn-dark");
+       
+       $("#PrintTableBtn,#DownloadTableBtn,#ModifyTableBtn").prop("disabled", true).mouseover().mouseleave().addClass("disabled btn-disabled").find("i").addClass("text-muted");
+        if ($('#ShowChartBtn:hover').length !== 0)
+            $("#ShowChartBtn").prop("disabled", true).mouseleave().addClass("disabled btn-dark");
+        else
+            $("#ShowChartBtn").prop("disabled", true).mouseover().mouseleave().addClass("disabled btn-dark");
+        $("#ShowChartBtn i").addClass("text-light");
+        $("#ShowTableBtn,#ShowMapBtn").removeClass("disabled btn-dark").prop("disabled", false).find("i").removeClass("text-light");
+        $("#Chart_row").removeClass("d-none");
+        $("#Table_row, #Map_row").addClass("d-none");
+        setTimeout(function () {
+            if (obj.ChartObj === null)
+                obj.renderChart();
+           // obj.ChartObj.resizeChart();
+        }, 10); 
+    };
+    this.ShowTable = function () {
+        
+       $("#PrintTableBtn,#DownloadTableBtn,#ModifyTableBtn").prop("disabled", false).mouseover().mouseleave().removeClass("disabled btn-disabled").find("i").removeClass("text-muted");
+        //$("#ShowTableBtn").prop("disabled", true).mouseleave().addClass("disabled btn-dark");
+        if ($('#ShowTableBtn:hover').length !== 0)
+            $("#ShowTableBtn").prop("disabled", true).mouseleave().addClass("disabled btn-dark");
+        else
+            $("#ShowTableBtn").prop("disabled", true).mouseover().mouseleave().addClass("disabled btn-dark");
+        $("#ShowTableBtn i").addClass("text-light");
+        $("#ShowChartBtn,#ShowMapBtn").removeClass("disabled btn-dark").prop("disabled", false).find("i").removeClass("text-light");
+        $("#Table_row").removeClass("d-none");
+        $("#Chart_row, #Map_row").addClass("d-none");
+        setTimeout(function () {
+            var w = $('table.data_table').width() + 25;
+            var ww = $(window).width() * .96;
+            var lockedcols = $('table.data_table').attr("lockedcols");
+            w = w < ww ? ww : ww < 500 ? 500 : ww;
+            $(".Table_Data").width(obj.GetTableWidth());
+            $('#DataTbl').DataTable({
+                scrollX: true,
+                scrollY: 500,
+                destroy: true,
+                scrollCollapse: true,
+                paging: false,
+                ordering: false,
+                info: false,
+                searching: false,
+                fixedColumns: {
+                    leftColumns: lockedcols
+                }
+            });
+            $("#DataTbl").DataTable().columns.adjust().draw();
+        }, 10);
+    };
+    
+    this.GetTableWidth = function () {      
+        var w = $('table.data_table').width() + 25;
+        var ww = $(window).width() - 100;
+        var lockedcols = $('table.data_table').attr("lockedcols");
+        w = w < ww ? ww : ww < 500 ? 500 : ww;
+        return w;
+    }
+    this.ShowMap = function () {        
+       $("#PrintTableBtn,#DownloadTableBtn").prop("disabled", true).mouseover().mouseleave().addClass("disabled btn-disabled").find("i").addClass("text-muted");
+        if ($('#ShowMapBtn:hover').length !== 0)
+            $("#ShowMapBtn").prop("disabled", true).mouseleave().addClass("disabled btn-dark");
+        else
+            $("#ShowMapBtn").prop("disabled", true).mouseover().mouseleave().addClass("disabled btn-dark");
+        $("#ShowMapBtn i").addClass("text-light");
+        $("#ShowChartBtn,#ShowTableBtn").removeClass("disabled btn-dark").prop("disabled", false).find("i").removeClass("text-light");
+        $("#Map_row").removeClass("d-none");
+        $("#Table_row, #Chart_row").addClass("d-none");
+        if (obj.MapObj === null)
+            obj.renderMap();
+        else
+            obj.MapObj.resizeMap();
+    };
+    this.makeToolBox = function (arr) {
+        var row = $('<div class="row justify-content-end pr-3"></div>');
+        var menubar = $('<div id="toolBox" class="toolBox mr-5"></div>');
+        $(arr).each(function () {
+            menubar.append(renderers.renderMenu(this))
+        });
+        /*menubar.append(renderers.renderMenu("Modify"))
+                .append(renderers.renderMenu("Chart"))
+                .append(renderers.renderMenu("Download"))
+                .append(renderers.renderMenu("Print"));*/
+        return menubar;
+        menubar.appendTo(row);
+        return row;
+    };
+    this.makeformrow = function () {
+        return $('<div class="form-group row prompt-container"></div>').append($('<label class="col-sm-3 col-md-2 col-form-label text-capitalize font-weight-bold""></label><div class="col-sm-9 elemcontainer"></div>'));
+    };
+    this.renderNextBtn = function (step) {
+        var btn = $('<span class="btn btn-primary pointable">Next Step <i class="fa fa-caret-right ml-2"></i></span>').click(function () {
+            iTable.Next(step);
+        }).hover(function () {
+            $(this).toggleClass("btn-primary btn-dark");
+        }, function () {
+            $(this).toggleClass("btn-primary btn-dark");
+        });
+        var row = obj.makeformrow();
+        row.removeClass("prompt-container").find('.elemcontainer').append(btn);
+        return row;
+    };
+    this.renderBottomNote = function (note) {
+        var row = obj.makeformrow();
+        row.removeClass("prompt-container").find('.elemcontainer').append(note);
+        obj.renderItt(row);
+        return row;
+    };
+    this.renderTopNote = function (note) {
+        var row = obj.makeformrow();
+        row.removeClass("prompt-container").find('.elemcontainer').append(note);
+        obj.renderItt(row);
+        return row;
+    };
+    this.renderTree = function (step, p) {
+        var row = $('<div class="form-group prompt-container"></div>');
+        var elem = $('<div id="vertical_container_' + step.Id + '" class="accordion"></div>');
+        row.append(elem);
+        var data = JSON.parse(p.PromtData).Table;
+        var ndata = [];
+        var sections = {};
+        $(data).each(function (i, e) {
+            var t = {};
+            if (sections[e.SectionKey] === undefined) {
+                sections[e.SectionKey] = true;
+                t.SectionKey = !t.SectionKey ? e.SectionKey : t.SectionKey;
+                t.SectionName = !t.SectionName ? e.SectionName : t.SectionName;
+                t.Items = !t.Items ? [] : t.Items;
+                ndata.push(t);
+            } else {
+                $(ndata).each(function (j, sec) {
+                    if (e.SectionKey === sec.SectionKey) {
+                        t = sec;
+                        return;
+                    }
+
+                });
+            }
+
+            var item = {};
+            item.Value = e[p.Val];
+            item.Text = e[p.Text];
+            t.Items.push(item);
+        });
+
+        $(ndata).each(function (i, e) {
+            const card = $('<div class="card my-1 border round"></div>').appendTo(elem);
+            const id = `tabpanel_${step.Number}_${p.Name}_${i}`;
+            /*const heading = */
+            $(`<div class="card-header pointable text-uppercase" data-toggle="collapse" data-target="#${id}" >${e.SectionName}</div>`)
+                .toggleClass("bg-secondary text-light", i === -1)
+                .hover(function () {
+                    $(this).addClass("bg-dark text-light");
+                }, function () {
+                    $(this).removeClass("bg-dark text-light");
+                })
+                .appendTo(card);
+            const collapse = $(`<div id="${id}" class="collapse" data-parent="#vertical_container_${step.Id}"></div>`).toggleClass("show", i === -1).appendTo(card);
+            const cardbody = $('<div class="card-body p-0"></div>').appendTo(collapse);
+            const list = $('<div class="list-group px-0"></div>').appendTo(cardbody);
+            $(e.Items).each(function (j, item) {
+                const table = $(`<span class="list-group-item btn-sm pointable px-5 py-2 mt-1 border border-right-0 border-top-0 border-left-0" href="#">${item.Text}</span >`).click(function () {
+                    elem.find("span.list-group-item.active").removeClass("active");
+                    $(this).addClass("active");
+                    iTable.activeSteps.setData(p.Name, item.Value.toString());
+                    iTable.Next(step);
+                    return false;
+                }).hover(function () {
+                    $(this).addClass("bg-info text-light");
+                }, function () {
+                    $(this).removeClass("bg-info text-light");
+                }).appendTo(list);
+                table.addClass(function () {
+                    let dp = iTable.activeSteps.findDP(p.Name);
+                    dp = !dp ? [] : Array.isArray(dp[1]) ? dp[1] : dp[1].split(",");
+                    if (data.length === 1 || ( dp.length > 0 && dp[0] == item.Value) || (!iTable.activeSteps.findDP(p.Name) && item.Value == p.DefaultValue)) {
+                        iTable.activeSteps.setData(p.Name, item.Value.toString());
+                        return "active";
+                    }
+                    return "";
+                });
+            });
+        });
+        $(elem).on('hide.bs.collapse', function () {
+            // $(".card-header").removeClass("bg-secondary text-light");
+        }).on('shown.bs.collapse', function () {
+            // $(".card-header[aria-expanded=true]").addClass("bg-secondary text-light");
+        });
+
+        return row;
+    };
+    this.renderRadio = function (step, p) {
+        const row = obj.makeformrow();
+        row.find('label').append(p.HTML);
+        const data = JSON.parse(p.PromtData);
+        const elem = row.find('.elemcontainer');
+        let dp = iTable.activeSteps.findDP(p.Name);
+        dp = !dp ? [] : Array.isArray(dp[1]) ? dp[1] : dp[1].split(",");
+        $(data.Table).each(function (i, e) {
+            const promptid = obj.getPromptId(step, p, i);
+            const value = this[p.Val];
+            const text = this[p.Text];
+            const option = $(`<div class="custom-control custom-radio"><label class="custom-control-label" for= "${promptid}" >${text}</label></div >`);
+            const input = $(`<input class= "custom-control-input" id = "${promptid}" name = "${p.Name}" promptid = "${promptid}" type = "radio" value = "${value}" />`);
+            $(input).prop("checked", function () {
+                if (data.Table.length === 1 || (dp.length > 0 && dp[0] == value) || (!iTable.activeSteps.findDP(p.Name) && value == p.DefaultValue)) {
+                    iTable.activeSteps.setData(p.Name, this.value.toString());
+                    return true;
+                }
+                return false;
+            }).prependTo(option);
+
+            elem.append(option);
+        });
+        elem.find("input[type='radio'][name='" + p.Name + "']").change(function () {
+            iTable.activeSteps.setData(p.Name, $(this).val());
+        });
+        if (elem.find("input[type='radio'][name='" + p.Name + "']:checked").length === 0) {
+            iTable.activeSteps.setData(p.Name, elem.find("input[type='radio'][name='" + p.Name + "']").first().prop("checked", true).val());
+        }
+        return row.toggleClass("prompt-container-single", data.Table.length === 1).toggleClass("d-none", data.Table.length === 1 && p.HideOneValue === 1);
+    };
+    this.renderCustomCheckBox = function (step, p) {
+        const row = obj.makeformrow();
+        row.find('label').append(p.HTML);
+        const data = JSON.parse(p.PromtData);
+        const elem = row.find('.elemcontainer');
+        let dp = iTable.activeSteps.findDP(p.Name);
+        dp = !dp ? [] : Array.isArray(dp[1]) ? dp[1] : dp[1].split(",");
+        $(data.Table).each(function (i, e) {
+            const promptid = obj.getPromptId(step, p, i);
+            const value = this[p.Val];
+            const text = this[p.Text];
+            const option = $(`<div class="custom-control custom-checkbox"><label class="custom-control-label" for= "${promptid}" >${text}</label></div >`);
+            const input = $(`<input class= "custom-control-input" id="${promptid}" name="${p.Name}" promptid="${promptid}" type="checkbox" value="${value}" />`);
+            $(input).prop("checked", function () {
+                if ((dp.length > 0 && dp[0] == value) || value == p.DefaultValue) {
+                    iTable.activeSteps.setData(p.Name, this.value.toString());
+                    return true;
+                }
+                return false;
+            }).prependTo(option);
+
+            elem.append(option);
+        });
+        elem.find("input[type='checkbox'][name='" + p.Name + "']").change(function () {
+            iTable.activeSteps.setData(p.Name, $(this).prop("checked") ? this.value : null);
+        });
+        return row;
+    };
+    this.renderSelect = function (step, p, ismultiple, isfilter, size) {
+        const row = obj.makeformrow();
+        const elem = row.find('.elemcontainer');
+        row.find('label').append($('<span>' + p.HTML + '</span>'));
+        const promptid = obj.getPromptId(step, p, 0);
+
+        const select = $(`<select class="form-control" style="max-width: 600px;" name="${p.Name}" promptid="${promptid}" size="6"> </select>`)
+            .change(function () {
+                iTable.activeSteps.setData(p.Name, $(this).val());
+            }).prop({
+                "multiple": ismultiple,
+                "size": !size && ismultiple ? 6 : size !== undefined ? size : 1
+            }).appendTo(elem);
+
+        if (isfilter) {
+            $(`<input class="form-control filter-control" name="filter_${promptid}" id="filter_${promptid}" placeholder="Filter" value="" />`).keyup(function () {
+                p.FilterList.Filter.set(this.value);
+            }).focus(function () {
+                if (!p.FilterList) {
+                    p.FilterList = new Object();
+                    p.FilterList.Filter = new filterlist(select[0]);
+                    p.FilterList.Txt = this.value;
+                    $(this).val("");
+                } else if ($(this).val() === '' || select.val() == p.FilterList.Txt) {
+                    p.FilterList.Filter = new filterlist(select[0]);
+                    $(this).val("");
+                }
+            }).prependTo(elem);
+        }
+        var data = JSON.parse(p.PromtData);
+        var isSelected = false;
+        var dp = iTable.activeSteps.findDP(p.Name);
+        dp = !dp ? [] : Array.isArray(dp[1]) ? dp[1] : dp[1].split(",");
+        $(data.Table).each(function (i, e) {
+            const value = this[p.Val];
+            const text = this[p.Text];
+            const option = $(`<option value="${value}">${text}</option>`);
+            $(option).prop("selected", function () {
+                var sel = false;
+                $(dp).each(function (i, e) {
+                    if (e == value) {
+                        isSelected = true;
+                        sel = true;
+                        return;
+                    }
+                });
+                return sel;
+            }).appendTo(select);
+        });
+        // check if no item is selected
+        if (!isSelected) {
+            //if there is an item with default value select it
+            var defs = p.DefaultValue.split(",");
+            $(defs).each(function (i, e) {
+                var opt = select.find('option[value="' + e + '"]');
+                if (opt.length !== 0) {
+                    isSelected = true;
+                    opt.prop('selected', true);
+                }
+            });
+            if (!isSelected)
+                select.find("option").first().prop("selected", true);
+        }
+
+        iTable.activeSteps.setData(p.Name, select.val());
+        //row.find('.elemcontainer').append(select);
+        return row.toggleClass("prompt-container-single", data.Table.length === 1).toggleClass("d-none", data.Table.length === 1 && p.HideOneValue === 1);
+    };
+    this.renderTable = function (step, p) {
+        obj.ChartObj = null;
+        obj.MapObj = null;
+        const promptdata = JSON.parse(p.PromtData);
+
+        const row = $('<div class="form-group prompt-container w-100"></div>');
+        var btns = ["Modify", "Table", "Download", "Print"];
+        obj.ChartData = null;
+        obj.MapData = null;
+        if (promptdata.Chart) {
+            obj.ChartData = JSON.parse(promptdata.Chart);
+        }
+        if (obj.ChartData !== null) {
+            btns.splice(1, 0, "Chart");
+        }
+        if (promptdata.Map) {
+            obj.MapData = JSON.parse(promptdata.Map);
+        }
+        if (obj.MapData !== null) {
+            btns.splice(1, 0, "Map");
+        }
+        if(step.Prompts.length < 2)
+            btns.splice(0, 1);
+        let data = {};
+        try {
+            obj.DefaultDisplayObject = "Table";
+            data = JSON.parse(promptdata.Table);
+            let tbl = new TableObj();
+            data = tbl.init(data);
+            obj.DefaultDisplayObject = data.DefaultDisplayObject;
+        } catch (e) {
+            modals.Info("error", "We were unable to process your request. <b/>Please try again later.", "Error", null, function () {
+                window.location = window.location.href.split('#')[0];
+            });
+        }
+
+        //row.append(new renderers.makeToolBox(btns));
+        const elem = $(`<div id="table_container_${step.Id}" class="container-fluid">
+                            <div class="Table_Title w-100">${data.Title || ""}</div>
+                            <div class="Sub_Title w-100">${data.Sub_Title || ""}</div>
+                            <div class="Table_Description w-100">${data.Description || ""}</div>
+                        </div>`).prepend(new renderers.makeToolBox(btns));
+        row.append(elem);
+        const chartrow = $(`<div id="Chart_row" class="row d-none">
+                                <div id="chartContainer">
+                                    <div id="chartwrapper" style=" height:800px; float:left; width:100%;">
+                                        <div id="chartseriescontainer" style="float: left; margin:5px; width:350px; height:100%; border:solid 1px ##B4E1F0; border-radius:10px;">
+                                            <span id="clearseriesbtn" class="btn btn-primary" disabled="disabled" onClick="renderers.ChartObj.ClearAllSeries()">Clear All Selections</span>
+                                            <ul id="serieslist"></ul>
+                                        </div>
+                                        <div id="chartdiv" style="float:left; margin:5px;  height:100%; border:solid 1px ##B4E1F0; border-radius:10px;"></div>
+                                        <div id="ChartTypeBtnContainer" style="width:50px; height:100%; float:left; border:none; padding: 15px 0;"></div>
+                                    </div>
+		                        </div > 
+                            <div>`).appendTo(elem);
+        const maprow = $(`<div id="Map_row" class="row d-none  justify-content-center" > 
+                            <div id="mapContainers" style="height:500px; background-color:##FFFFFF; border:solid 1px ##000000;">  
+                              <div id="mapContainer"></div>
+                            </div>
+                        </div>`).appendTo(elem);
+        const tblrow = $('<div id="Table_row" class="w-100 d-none"> <div>').appendTo(elem);
+        const tbldiv = $('<div class="Table_Data border border-dark"></div>').appendTo(tblrow);
+        const footnotediv = $('<div id="Final_Table_footer" class="overflow-auto w-100"></div>').appendTo(elem);
+        const tbl = $(`<table id="DataTbl" class="data_table float-left compact cell-border row-border stripe" lockedcols="${data.Number_Of_Locked_Columns.split(",").length}"></table>`).appendTo(tbldiv);
+        const thead = $('<thead></thead>').appendTo(tbl);
+        const tbody = $('<tbody></tbody>').appendTo(tbl);
+        let headers = [];
+        for (let r = 0; r < data.Number_Of_Header_Rows; r++) {
+            headers[r] = [];
+            for (let c = 0; c < data.Number_Of_Columns; c++) {
+                let cell = data.Data_Rows[r][c];
+                if (headers.length > 0 &&
+                    headers[r].length > 0 &&
+                    headers[r][headers[r].length - 1] !== undefined &&
+                    cell !== undefined &&
+                    headers[r][headers[r].length - 1].CV === cell.CV
+                )
+                    headers[r][headers[r].length - 1].COLSPAN += 1;
+                else {
+                    headers[r][c] = {
+                        "CV": cell.CV,
+                        "CS": cell.CS,
+                        "COLSPAN": 1,
+                        "ROWSPAN": 1
+                    };
+                }
+            }
+        }
+        for (let r = headers.length - 1; r >= 0; r--) {
+            for (let c = 0; c < headers[r].length; c++) {
+                if (r - 1 >= 0 &&
+                    c < headers[r - 1].length &&
+                    headers[r - 1][c] !== undefined &&
+                    headers[r][c] !== undefined &&
+                    headers[r - 1][c].CV === headers[r][c].CV &&
+                    headers[r - 1][c].COLSPAN === headers[r][c].COLSPAN
+                ) {
+                    headers[r - 1][c].ROWSPAN = headers[r][c].ROWSPAN + 1;
+                    headers[r][c].CV = '$$_GenoS_Token$_$';
+                }
+            }
+        }
+        for (let r = 0; r < headers.length; r++) {
+            const tr = $('<tr></tr>').appendTo(thead);
+            for (let c = 0; c < headers[r].length; c++) {
+                if (headers[r][c] !== undefined && headers[r][c].CV !== '$$_GenoS_Token$_$')
+                    $(`<th class="text-center align-middle" rowspan="${headers[r][c].ROWSPAN}" colspan="${headers[r][c].COLSPAN}">${obj.FixDrilldownLinks(headers[r][c].CV)}</th>`).appendTo(tr);
+            }
+        }
+        for (let r = data.Number_Of_Header_Rows; r < data.Number_Of_Rows; r++) {
+            const tr = $('<tr></tr>').appendTo(tbody);
+            for (let c = 0; c < data.Number_Of_Columns; c++) {
+                let cell = data.Data_Rows[r][c];
+                const td = $(`<td class="${cell.CS} p${cell.IL}"></td>`).appendTo(tr);
+                const cellstyles = cell.CS.split(" ");
+                if (c < data.Number_Of_Locked_Columns.split(",").length &&
+                    (cellstyles.indexOf("BoldStubStyle") !== -1 || cellstyles.indexOf("StubStyle") !== -1)
+                )
+                    $(`<span style="display:block; white-space: normal !important; width:${340 - parseInt(cell.IL) * 10}px;">${obj.FixDrilldownLinks(cell.CV)}</span>`).appendTo(td);
+                else
+                    td.html(obj.FixDrilldownLinks(cell.CV));
+            }
+        }
+
+        obj.renderFootNotes(data, footnotediv);
+        const citation = $(`<div class="Table_Citation w-100 mt-3 px-2 ">
+        <small>
+            <strong>Suggested citation:</strong> U.S. Bureau of Economic Analysis, "<a href="${window.location.href}" target="_blank">${data.Title || ""}</a>"  (accessed ${utils.getDate()}).
+        </small>
+        </div>`).appendTo(elem);
+        return row;
+    };
+    this.FixDrilldownLinks = function (val) {
+        if (val !== undefined)
+            return val.replace('./drilldown.cfm?reqid=', './index.html?appid=');
+        return "";
+    }
+    this.renderChart = function () {
+        let chartobj = new ChartObj();
+        obj.ChartObj = chartobj;
+        $('ul#serieslist').empty();
+        chartobj.activeseries = [];
+        let chartdata = obj.ChartData;
+
+        if (chartdata.VALIDCHARTTYPES) {
+            chartdata.VALIDCHARTTYPES = utils.testForArray(chartdata.VALIDCHARTTYPES).map(function (e) {
+                return utils.ObjToUpperCase(e).CHARTTYPE;
+            })
+        }
+        chartdata.VALIDCHARTTYPES = chartdata.VALIDCHARTTYPES ? chartdata.VALIDCHARTTYPES : chartdata.TYPES ? chartdata.TYPES : ["LineChart"];
+        $("#ChartTypeBtnContainer").empty();
+        if (chartdata.VALIDCHARTTYPES.indexOf(chartobj.charttype) === -1 && chartdata.VALIDCHARTTYPES.length > 0)
+            chartobj.charttype = chartdata.VALIDCHARTTYPES[0] === "LineChart" ? 'line' : 'column';
+        $(chartdata.VALIDCHARTTYPES).each(function () {
+            let ctype = this === "LineChart" ? "line" : "column";
+            let cls = ctype === chartobj.charttype ? 'selected' : '';
+            var tmp = $('<a id="' + this + 'Btn" class="chartSelectBtn ' + cls + '"></a>').click(function () {
+                renderers.ChartObj.changeType(ctype, this);
+            });
+            $("#ChartTypeBtnContainer").append(tmp);
+        });
+        chartdata.SERIES = chartdata.series ? chartdata.series : chartdata.SERIES;
+
+        $(chartdata.SERIES).each(function (index) {
+            let series = this;
+            series = utils.ObjToUpperCase(series);
+            series.ID = index;
+            let ind = series.IL ? parseInt(series.IL) : series.PADDING ? parseInt(series.PADDING) : series.padding ? parseInt(series.padding) : 0;
+            ind++;
+            series.BOLD = series.BOLD ? series.BOLD : series.bold;
+            let cls = series.BOLD === "1" || series.BOLD.toString().toUpperCase() == "BOLD" ? "bold" : "";
+            let len = cls === "bold" ? 40 : 45;
+
+            /*if ((name.length + ind * 3) > len) {
+                //name = name.substr(0, len - (ind + 1) * 3) + "...";
+            }*/
+            series.NAME = series.NAME ? series.NAME : series.name;
+            series.SELECTED = series.SELECTED ? series.SELECTED : series.selected;
+
+            let bull = $('<div class="bulletNormal"></div>');
+            let sp = $('<div class="' + cls + '" style="padding-left: ' + (ind > 1 ? 20 : 0) + 'px; margin-left:' + ind * 15 + 'px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;">' + series.NAME.trim() + '</div>');
+            let tmpli = $('<li seriesid="' + index + '" isselected="' + (series.SELECTED === "Y" ? "Y" : "") + '" style="line-height:normal;" title="' + series.NAME + '"></li>').click(function () {
+                chartobj.addSeries(series);
+                $(this).addClass("firstclick");
+            }).hover(function () {
+                let bg = $(this).css("backgroundColor");
+                $(this).attr("bgColor", bg);
+                if ($(this).children(".bulletSelected").length > 0) {
+                    $(this).css({
+                        "background-color": "#FFF",
+                        "border-color": bg,
+                        "color": bg
+                    }).children(".bulletSelected").css({
+                        "border-color": bg
+                    })
+                }
+            }, function () {
+                let bg = $(this).attr("bgColor");
+                if ($(this).children(".bulletSelected").length > 0 && !$(this).hasClass("firstclick")) {
+                    $(this).css({
+                        "background-color": bg,
+                        "border-color": "#FFF",
+                        "color": "#FFF"
+                    }).children(".bulletSelected").css({
+                        "border-color": "#FFF"
+                    });
+                }
+                $(this).removeClass("firstclick");
+            })
+            $('#serieslist').append(tmpli.append(bull).append(sp));
+            sp.width(function () {
+                return tmpli.width() - bull.width() - ind * 15 - 35;
+            })
+        });
+        chartobj.resizeChart();
+        chartobj.makeChart(chartdata);
+        $("li[isselected='Y']").each(function (index, element) {
+            
+            $(this).click();
+            $(this).mouseleave();
+
+        });
+    }
+    this.renderMap = function () {
+        obj.MapObj = new MapObj();
+        $('#mapContainer').empty();
+
+        let screenHeight = $(window).height() * .6 + 'px';
+        let swidth = $('#Map_row').width() < $(window).width() ? $(window).width() - 10 : $('#Map_row').width() - 10;
+
+        $('#mapContainers').css('width', swidth);
+        $('#mapContainers').css('height', screenHeight);
+
+        let renderWidth = swidth - 100 + 'px';
+
+        $("#mapContainer").css('width', renderWidth);
+        $("#mapContainer").css('height', screenHeight);
+
+        $("#mapContainer").css('width', swidth);
+
+        obj.MapObj.loadAmMap(obj.MapData, "mapContainer");
+    }
+    this.renderFootNotes = function (data, container) {
+        if (data.Foot_Notes.length == 0)
+            return;
+        container.append($('<h4 class="footNoteTitle col-sm-12 p-2 mt-3 rounded bg-secondary text-white"> Legend/Footnotes</h4>'));
+        $(data.Foot_Notes).each(function () {
+            container.append($('<div class="' + this.CS + '  col-sm-12">' + this.CV + '</div>'));
+        })
+    }
+    this.renderiListFilter = function (step, p) {
+        return obj.renderSelect(step, p, true, true);
+    };
+    this.renderiListFilterNoMultiple = function (step, p) {
+        return obj.renderSelect(step, p, false, true, 6);
+    };
+    this.renderList = function (step, p) {
+        return obj.renderSelect(step, p, false, false, 6);
+    };
+    this.renderListMultiple = function (step, p) {
+        return obj.renderSelect(step, p, true);
+    };
+    this.renderListMultipleWithTitle = function (step, p) {
+        return obj.renderSelect(step, p, true);
+    };
+    this.renderDropDownList = function (step, p) {
+        return obj.renderSelect(step, p, false);
+    };
+    this.getPromptId = function (step, p, i) {
+        return step.Id + '_' + p.Name + '_' + i;
+    };
+    this.renderTableList = function (step, p) {
+        const row = $('<div class="form-group prompt-container"></div>');
+        let data = utils.testForArray(JSON.parse(p.PromtData).row);
+        $(data).each(function () {
+            let item = this;
+            this.TableTitle = this.TableTitle ? this.TableTitle : this.tabletitle;
+            this.NoLink = this.NoLink ? this.NoLink : this.nolink;
+            let d = $('<div class="row TableListMemo">' + this.TableTitle + '</div>');
+            if ((typeof this.NoLink === "undefined" || this.NoLink === "") && this.TableTitle != "") {
+                d = $('<div class="row tableList_row_' + (parseInt(this.Levels) + 1) + '"></div>');
+                $('<span class="btn-link pointable">' + this.TableTitle + '</span>').click(function () {
+                    row.find("span.btn-link.text-danger").removeClass("text-danger");
+                    $(this).addClass("text-danger");
+                    iTable.activeSteps.setData(p.Name, item.RowID.toString());
+                    iTable.Next(step);
+                    return false;
+                }).appendTo(d);
+            } else if (this.NoLink === "" && this.TableTitle === "") {
+                d = $('<div class="row p-2"> </div>');
+            }
+            row.append(d);
+        });
+        return row;
+    };
+    this.renderDownloadTree = function (step, p) {
+        const row = $('<div class="form-group prompt-container"></div>');
+        let data = utils.testForArray(JSON.parse(p.PromtData).Section);
+        $(data.sort((a, b) => a.Order - b.Order)).each(function () {
+            $(`<div class="TableListMemo">${this.Name}</div>`).appendTo(row);
+            $(utils.testForArray(this.Content).sort((a, b) => a.Order - b.Order)).each(function () {
+                $(`<div class="tableList_row_0"> 
+                    <a class="tableLinks" href="${this.FileLocation}" target="_blank">${this.DetailDescription}</a><span class="file_size" style="padding-left:10px !important;"><xsl:value-of select="${this.FileFormat}"/></span>
+                </div>`).appendTo(row);
+            });
+        });
+        return row;
+    };
+    this.OptionsModal = function () {
+        const opt = this;
+        const o = new modals.ModalObj("options-modal");
+        o.icon = "fal fa-cogs text-danger mr-2";
+        o.size = "modal-xl";
+        o.title = "Data Table Options";
+        o.buttons = [{
+                class: "btn-info",
+                dismiss: true,
+                text: "Refresh Table",
+                action: function () {
+                    iTable.Next(iTable.currentStep);
+                }
+            },
+            {
+                class: "btn-info",
+                dismiss: true,
+                text: "Close",
+                action: function () {}
+            }
+        ];
+
+        const om = new modals.MakeModal(o).modal;
+        om.on('shown.bs.modal', function () {
+            // alert();
+        }).on('hidden.bs.modal', function () {
+            opt.reset();
+        });
+        this.show = function () {
+            opt.render();
+            om.modal('show');
+        };
+        this.render = function () {
+            opt.reset();
+            const o = iTable.currentStep;
+            const form = $('<div id="iTableOptionsForm" class="container-fluid"></div>');
+            opt.addContent(form);
+            //var r = renderers.init(o, form);
+            $(o.Prompts).each(function (i, p) {
+                if (p.UIControl !== "Table")
+                    renderers.renderUIFactory(o, p, form);
+            });
+        };
+        this.getBody = function () {
+            return $("#options-modal-Body");
+        };
+        this.reset = function () {
+            $("#options-modal-Body").html("");
+        };
+        this.addContent = function (el) {
+            $("#options-modal-Body").append(el);
+        };
+    };
+    this.DefinitionModal = function () {
+        const def = this;
+        const o = new modals.ModalObj("definition-modal");
+        o.icon = "fal fa-info-circle text-danger mr-2";
+        o.size = "modal-xl";
+        const DefinitionsModal = new modals.MakeModal(o).modal;
+        $(DefinitionsModal).find("h4.modal-title span.modal-title").html("Definitions").css("font-size", ".8em");
+        $(DefinitionsModal).on('shown.bs.modal', function () {}).on('hidden.bs.modal', function () {
+            def.reset();
+        });
+        this.show = function () {
+            DefinitionsModal.modal('show');
+        };
+        this.render = function (title, defstr) {
+            def.reset();
+            def.setTitle(title);
+            def.addContent($(`<div>${defstr}</div>`));
+        };
+        this.setTitle = function (title) {
+            $(DefinitionsModal).find("h4.modal-title span.modal-title").html("What is " + title + "?");
+        };
+        this.getBody = function () {
+            return $("#definition-modal-Body");
+        };
+        this.reset = function () {
+            $(DefinitionsModal).find("h4.modal-title span.modal-title").html("Definitions");
+            $("#definition-modal-Body").html("");
+        };
+        this.addContent = function (el) {
+            $("#definition-modal-Body").append(el);
+        };
+    };
+    this.DownloadModal = function () {
+        const def = this;
+        const o = new modals.ModalObj("download-modal");
+        o.icon = "fal fa-download text-danger mr-2";
+        o.size = "modal-lg";
+        const DownloadModal = new modals.MakeModal(o).modal;
+        $(DownloadModal).find("h4.modal-title span.modal-title").html("Download Table").css("font-size", ".8em");
+
+        const el = $(`<div class="list-group">
+			                    <a class="list-group-item pointable" onclick="iTable.DoDownload('xlsx'); return none;">
+			                    <img class="pull-left" src="/itable/img/images/icons/FileType-Xls-icon.png">
+			                    <h4 class="list-group-item-heading">XLSX</h4>
+			                    <p class="list-group-item-text">Download your table in Excel format.</p>
+			                    </a>
+			                    <a class="list-group-item pointable" onclick="iTable.DoDownload('csv'); return none;" target="_blank">
+			                    <img class="pull-left" src="/itable/img/images/icons/FileType-Csv-icon.png">
+			                    <h4 class="list-group-item-heading">CSV</h4>
+			                    <p class="list-group-item-text">Download your table in CSV format.</p>
+			                    </a>
+			                    <a class="list-group-item pointable" onclick="iTable.DoDownload('pdf')" target="_blank">
+			                    <img class="pull-left" src="/itable/img/images/icons/FileType-Pdf-icon.png">
+			                    <h4 class="list-group-item-heading">PDF</h4>
+			                    <p class="list-group-item-text">Download your table in PDF format.</p>
+			                    </a>
+		</div>`).appendTo("#download-modal-Body");
+
+
+
+        $(DownloadModal).on('shown.bs.modal', function () {}).on('hidden.bs.modal', function () {
+            //def.reset();
+        });
+        this.show = function () {
+            DownloadModal.modal('show');
+        };
+        this.hide = function () {
+            DownloadModal.modal('hide');
+        };
+    };
+}(window, jQuery);

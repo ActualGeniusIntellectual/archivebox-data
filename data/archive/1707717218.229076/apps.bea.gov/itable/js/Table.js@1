@@ -1,0 +1,54 @@
+// JavaScript source code
+var TableObj = function () {
+    "use strict";
+    const obj = this;
+    this.init = function (data) {
+        obj.Can_Chart = data.Can_Chart ? data.Can_Chart : "0";
+        obj.DefaultDisplayObject = data.DefaultDisplayObject ? data.DefaultDisplayObject : "Table";
+        obj.Description = data.Description;
+        obj.Number_Of_Columns = data.Number_Of_Columns ? parseInt(data.Number_Of_Columns) : parseInt(data.Number_of_Columns);
+        obj.Number_Of_Footnotes = data.Number_Of_Footnotes ? parseInt(data.Number_Of_Footnotes) : parseInt(data.Number_of_Footnotes);
+        obj.Number_Of_Header_Rows = data.Number_Of_Header_Rows ? parseInt(data.Number_Of_Header_Rows) : data.NUMBER_OF_HEADER_ROWS ? parseInt(data.NUMBER_OF_HEADER_ROWS) : parseInt(data.Number_of_Header_Rows);
+        obj.Number_Of_Locked_Columns = data.Number_Of_Locked_Columns ? data.Number_Of_Locked_Columns : data.NUMBER_OF_LOCKED_COLUMNS ? data.NUMBER_OF_LOCKED_COLUMNS : data.Number_of_Locked_Columns;
+        obj.Number_Of_Rows = data.Number_Of_Rows ? parseInt(data.Number_Of_Rows) : parseInt(data.Number_of_Rows);
+        obj.Sub_Title = data.Sub_Title ? data.Sub_Title : data.sub_title;
+        obj.Title = data.Title;
+        obj.iTable_DescriptorKey = data.iTable_DescriptorKey ? data.iTable_DescriptorKey : data.iTable_Descriptor_Key;
+        obj.Data_Rows = data.Data_Rows ? data.Data_Rows : obj.FormatDataRows(data);
+        obj.Foot_Notes = data.Foot_Notes ? data.Foot_Notes : obj.FormatFootNotes(data);
+        return obj;
+    }
+    
+
+    this.FormatFootNotes = function (data) {
+        const tn = utils.testForArray(data.TN);
+        const fn = [];
+        for (let i = 0; i < tn.length; i++) {
+            let obj = { CS: tn[i].cell_style, CV: tn[i].Note_Text, Seq: parseInt(tn[i].Sequence) };
+            fn.push(obj);
+        }
+        return fn;
+    }
+    this.FormatDataRows = function (data) {
+        let datarows = []
+        let td = utils.testForArray(data.TD);
+        for (let i = 0; i < obj.Number_Of_Rows; i++) {
+            let row = [];
+            for (let j = 0; j < obj.Number_Of_Columns; j++) {
+                let obj = { CS: "", CV: "", IL: "0" };
+                row.push(obj)
+            }
+            datarows.push(row);
+        }
+        td.forEach(function (e) {
+            e.Row_ID = e.Row_ID ? e.Row_ID : e.row_id;
+            e.Column_ID = e.Column_ID ? e.Column_ID : e.column_id;
+            let x = parseInt(e.Row_ID) - 1;
+            let y = parseInt(e.Column_ID) - 1;
+            datarows[x][y].CS = e.Cell_Style ? e.Cell_Style : e.cell_style;
+            datarows[x][y].CV = e.Cell_Value ? e.Cell_Value : e.cell_value;
+            datarows[x][y].IL = e.Indentation_Level ? e.Indentation_Level : e.indentation_level;
+        })
+        return datarows;
+    }
+}
