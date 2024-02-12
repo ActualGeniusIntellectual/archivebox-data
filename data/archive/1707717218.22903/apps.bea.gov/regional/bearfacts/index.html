@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html lang="en" style="font-size:16px !important">
+<head>
+    <script src="../../../code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <link href="../../_framework/font-awesome-pro-5.15.1-web/css/all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../_css/style.css">
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>-->
+
+    <link rel="stylesheet" href="../../../cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="../../../cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="../../../cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!--<script src="//inetdev/_includes/apps-header-01.js" crossorigin="anonymous"></script>
+#include virtual="/_includes/apps-header-01.htm" -->
+
+    <title>BEA: BEARFACTS</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- <script src="//inetdev/_includes/apps-header-03.js" crossorigin="anonymous"></script>-->
+    <!--#include virtual="/_includes/apps-header-02.htm" -->
+
+
+    <script src="js/amcharts4/core.js"></script>
+    <script src="js/amcharts4/charts.js"></script>
+
+
+
+    <script src="js/ammap/ammap.js"></script>
+    <script src="js/ammap/maps/js/UsState.js"></script>
+    <script src="js/ammap/maps/js/UsCounty.js"></script>
+    <script src="js/ammap/maps/js/MsaOnly.js"></script>
+
+    <script src="js/pdf/pdfmake/pdfmake.min.js"></script>
+    <script src="js/pdf/pdfmake/vfs_fonts.js"></script>
+    <script src="js/print.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="usa-banner">
+            <div class="usa-banner-header container">
+                <div class="usa-grid usa-banner-inner">
+                    <img src="../../_images/favicon-57.png"
+                         alt="U.S. flag">
+                    <p>An official website of the United States government</p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-default" style="max-height: 53px;">
+            <nav class="navbar navbar navbar-expand-md m-0 p-0">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="https://apps.bea.gov/" aria-label="homepage link"></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                    </div>
+                    <div class="collapse navbar-collapse p-0" id="navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="index.html#"
+                                    id="DatanavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Data
+                                </a>
+                                <ul class="dropdown-menu menu" aria-labelledby="DatanavbarDropdown">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/data/gdp"
+                                            data-drupal-link-system-path="node/13541">by Topic</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/data/by-place-us"
+                                            data-drupal-link-system-path="node/13656">by Place</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/data/economic-accounts"
+                                            data-drupal-link-system-path="node/13646">by Economic Account</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown active">
+                                <a href="https://www.bea.gov/tools"
+                                    class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    Tools
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown"> <a href="https://apps.bea.gov/itable/itable.cfm">Interactive Data</a> </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://apps.bea.gov/API/signup/index.cfm">
+                                            Application Programming
+                                            Interface (API)
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://apps.bea.gov/international/factsheet/">Country Facts</a>
+                                    </li>
+                                    <li class="expanded dropdown"> <a href="index.html">BEARFACTS</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://apps.bea.gov/industry/factsheet/">Industry Facts</a> </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://apps.bea.gov/iTable/iTable.cfm?reqid=99&amp;step=1#reqid=99&amp;step=1&amp;isuri=1">
+                                            GDP
+                                            &amp; Personal Income Mapping
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown"> <a href="https://apps.bea.gov/regional/rims/rimsii/">RIMS II</a> </li>
+                                    <li class="expanded dropdown"> <a href="https://apps.bea.gov/efile">eFile</a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/news"
+                                    class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    News
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/glance"
+                                            data-drupal-link-system-path="node/20292">Economy at a Glance</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/current-releases"
+                                            data-drupal-link-system-path="news/current-releases">Current Releases</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/schedule"
+                                            data-drupal-link-system-path="news/schedule">Release Schedule</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/blog"
+                                            data-drupal-link-system-path="news/blog">The BEA Wire | BEA's Official Blog</a>
+                                    </li>
+                                    <li class="expanded dropdown"> <a href="https://apps.bea.gov/scb/">Survey of Current Business</a> </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/archive?field_related_product_target_id=All&amp;created_1=All&amp;title="
+                                            data-drupal-link-query="{&quot;created_1&quot;:&quot;All&quot;,&quot;field_related_product_target_id&quot;:&quot;All&quot;,&quot;title&quot;:&quot;&quot;}"
+                                            data-drupal-link-system-path="news/archive">News Release Archive</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/news/for-journalists"
+                                            data-drupal-link-system-path="node/23916">For Journalists</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/research"
+                                    class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    Research
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/office-chief-economist">
+                                            Office of the Chief
+                                            Economist
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/meet-the-researchers"
+                                            data-drupal-link-system-path="research/meet-the-researchers">
+                                            Meet the
+                                            Researchers
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/papers"
+                                            data-drupal-link-system-path="research/papers">Papers</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/seminars"
+                                            data-drupal-link-system-path="node/11196">Seminars</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/special-sworn-employee-program/papers"
+                                            data-drupal-link-system-path="node/8211">
+                                            Research Using BEA's Firm-Level
+                                            Data
+                                        </a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/special-sworn-employee-program"
+                                            data-drupal-link-system-path="node/8131">Special Sworn Employee Program</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/research/fellowship-program"
+                                            data-drupal-link-system-path="node/8136">Fellowship Program</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/resources"
+                                    class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    Resources
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/learning-center"
+                                            data-drupal-link-system-path="node/14796">Learning Center</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/methodologies"
+                                            data-drupal-link-system-path="resources/methodologies">Methodologies</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/multimedia"
+                                            data-drupal-link-system-path="resources/multimedia">Multimedia</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/article-collection"
+                                            data-drupal-link-system-path="node/9391">Article Collections</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/congressional-users"
+                                            title="congressional users">For Congressional Users</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/resources/for-developers"
+                                            data-drupal-link-system-path="node/9396">For Developers</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/classroom"
+                                            data-drupal-link-system-path="node/22426">For Students</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/about"
+                                    class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/directors-page"
+                                            data-drupal-link-system-path="node/8076">Director's Page</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/leadership"
+                                            data-drupal-link-system-path="node/51">Leadership</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/advisory-committees"
+                                            data-drupal-link-system-path="node/6426">Advisory Committees</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/budget-and-performance"
+                                            data-drupal-link-system-path="node/6431">Budget and Performance</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/policies-and-information"
+                                            data-drupal-link-system-path="node/6436">Policies and Information</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/about/working-at-bea"
+                                            data-drupal-link-system-path="node/8156">Working at BEA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="https://www.bea.gov/help"
+                                    class="nav-link dropdown-toggle" data-hover="dropdown" aria-expanded="false">
+                                    Help
+                                </a>
+                                <ul region="navigation_collapsible" class="menu dropdown-menu">
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/contact-us"
+                                            data-drupal-link-system-path="node/9106">Contact Us</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/form/ask-an-expert"
+                                            data-drupal-link-system-path="webform/ask_an_expert">Ask an Expert</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/information-for-survey-respondents"
+                                            data-drupal-link-system-path="node/9356">For Survey Respondents</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/faq"
+                                            data-drupal-link-system-path="help/faq">Frequently Asked Questions (FAQ)</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/glossary"
+                                            data-drupal-link-system-path="help/glossary">Glossary</a>
+                                    </li>
+                                    <li class="expanded dropdown">
+                                        <a href="https://www.bea.gov/help/guidelines-for-citing-bea"
+                                            data-drupal-link-system-path="node/10936">Guidelines for Citing BEA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <section id="block-beagovsearchblock" data-block-plugin-id="beagov_search_block" 
+                        class="block block-beagov-search block-beagov-search-block clearfix w-100">
+                            <form id="search-block-form" class="navbar-form navbar-right m-0 p-0" role="search" action="https://search.bea.gov/search" method="get" accept-charset="UTF-8" data-drupal-form-fields="edit-keys">
+                                <input id="affiliate" name="affiliate" type="hidden" value="u.s.bureauofeconomicanalysis">
+                                <div class="form-group form-group-sm js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+                                    <input id="edit-keys" class="form-search form-control usagov-search-autocomplete" title="" data-drupal-selector="edit-keys" placeholder="Search" name="query" value="" type="search">
+                                </div>
+                                <button class="btn btn-default js-form-submit button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <div id="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions"> </div>
+                            </form>
+                        </section>
+                    </div>                    
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div class="bea-application main-container container-fluid" id="MainContainer" style="margin-top:75px;">
+        <div class="w-100">
+            <ol class="breadcrumb">
+                <li> <a href="https://apps.bea.gov/">Home</a></li>
+                <li><a href="https://www.bea.gov/data/economic-accounts/regional/">Regional</a></li>
+                <li class="active">BEARFACTS</li>
+            </ol>
+        </div>
+        <div class="row" id="AreaSelectionsContainer">
+            <div class="container-fluid">
+                <h1 class="m-2">BEARFACTS</h1>
+                <p class="lead mx-2">BEA Regional Fact Sheet about personal income and gross domestic product (GDP).</p>
+
+                <ul class="nav nav-tabs mx-2" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="AreaType-tab" data-toggle="tab" href="index.html#AreaType-panel" role="tab" aria-controls="AreaType-panel" aria-selected="true">Area Type</a>
+                    </li>
+                    <li class="nav-item d-none" role="presentation">
+                        <a class="nav-link" id="Area-tab" data-toggle="tab" href="index.html#Area-panel" role="tab" aria-controls="Area-panel" aria-selected="false">Area</a>
+                    </li>
+                    <li class="nav-item d-none" role="presentation">
+                        <a class="nav-link" id="Data-tab" data-toggle="tab" href="index.html#Data-panel" role="tab" aria-controls="Data-panel" aria-selected="false">Data</a>
+                    </li>
+                    <div class="nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="FindingYourDataLink" href="https://youtu.be/gMa6AzOeYis" target="_blank">Video: Finding Your Data</a>
+                        </li>
+                    </div>
+                </ul>
+                <div class="tab-content" id="TabContentA">
+                    <div class="tab-pane active" id="AreaType-panel" role="tabpanel" aria-labelledby="AreaType-tab">
+                        <p>To view your customized fact sheet, select an area type.</p>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-9 clearfix px-5">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="card card-icon icon-interactive-data" role="button" title="State BEARFACTS" onclick="bearfacts.ChangeAreaType(3)">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <img class="media-object" src="images/UsState.png" style="width: 200px;">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading">
+                                                    <span>Factsheet</span> State
+                                                </h3>
+                                                State BEARFACTS are based on the state estimates published on March 31, 2023 for personal income and March 31, 2023 for GDP by state.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="card card-icon icon-interactive-data" role="button" title="County BEARFACTS" onclick="bearfacts.ChangeAreaType(4)">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <img class="media-object" src="images/UsCounty.png" style="width: 200px;">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading">
+                                                    <span>Factsheet</span> County
+                                                </h3>
+                                                County BEARFACTS are based on the county estimates published on November 16, 2023 for personal income and December 7, 2023 for local area GDP.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="card card-icon icon-interactive-data" role="button" title="Metropolitan Statistical Area (MSA) BEARFACTS" onclick="bearfacts.ChangeAreaType(5)">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <img class="media-object" src="images/MSAonly.png" style="width: 200px;">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading">
+                                                    <span>Factsheet</span> Metropolitan Statistical Area (MSA)
+                                                </h3>
+                                                Metropolitan Statistical Areas BEARFACTS are based on the county estimates published on November 16, 2022 for personal income and December 7, 2023 for local area GDP.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 region-sidebar-second clearfix pl-3">
+                                <div role="article" class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Contacts</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul class="list-contact">
+                                            <li>
+                                                <!---<div class="list-contact-area">Test</div>--->
+                                                <div class="list-contact-name">GDP by County</div>
+                                                <div class="list-contact-phone">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                    <a href="tel:+13012789229">(301) 278-9229</a>
+                                                </div>
+                                                <div class="list-contact-email">
+                                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                    <a href="mailto:GDPbyCounty@bea.gov" class="0">GDPbyCounty@bea.gov<span class="0"><span class="element-invisible"> </span></span></a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <!---<div class="list-contact-area">Test</div>--->
+                                                <div class="list-contact-name">GDP by State</div>
+                                                <div class="list-contact-phone">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                    <a href="tel:+13012789309">(301) 278-9309</a>
+                                                </div>
+                                                <div class="list-contact-email">
+                                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                    <a href="mailto:GDPbyState@bea.gov" class="0">GDPbyState@bea.gov<span class="0"><span class="element-invisible"> </span></span></a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <!---<div class="list-contact-area">Test</div>--->
+                                                <div class="list-contact-name">Personal Income</div>
+                                                <div class="list-contact-phone">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                    <a href="tel:+13012789321">(301) 278-9321</a>
+                                                </div>
+                                                <div class="list-contact-email">
+                                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                    <a href="mailto:reis@bea.gov" class="0">reis@bea.gov<span class="0"><span class="element-invisible"> </span></span></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Area-panel" role="tabpanel" aria-labelledby="Area-tab">
+                        <div class="row">
+                            <h1 id="AreaTitle" class="mt-1 ml-0 mb-0 col-sm-12"></h1>
+                        </div>
+                        <div class="row" id="AreaText">
+                        </div>
+                        <div class="row" id="content">
+                            <div class="col-sm-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <form id="AreaFilterForm" class="form-inline" onsubmit="return false;">
+                                        </form>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="mapdiv"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Data-panel" role="tabpanel" aria-labelledby="Data-tab">
+                        <div class="row">
+                            <div class="col-md-2 hideonprint">
+                                <div class="card hideonprint">
+                                    <div class="card-header list-group-item  active">
+                                        Related Areas
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="list-group m-0" id="RelatedAreasListContainer">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10" id="dataTableDiv">
+                                <div class="row justify-content-end pr-3 hideonprint">
+                                    <div class="toolBox mr-5">
+                                        <button class="btn btn-light text-center p-2 mr-2" onclick="bearfacts.ModifySelections()">
+                                            <i class="block text-primary fal fa-2x fa-redo"></i>
+                                            <div class="block m-t-4">Modify</div>
+                                        </button>
+                                        <button class="btn text-center p-2 mr-2 btn-light" onclick="bearfacts.Share()">
+                                            <i class="block fal fa-2x fa-share-alt text-primary"></i>
+                                            <div class="block m-t-4">Share</div>
+                                        </button>
+                                        <button class="btn text-center p-2 mr-2 btn-light" onclick="bearfacts.Print()">
+                                            <i class="block fal fa-2x fa-print text-primary"></i>
+                                            <div class="block m-t-4">Print</div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row" id="DataContainer">
+                                    <div class="container-fluid">
+                                        <ul class="nav nav-tabs hideonprint" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="PersonalIncome-tab" data-toggle="tab" href="index.html#PersonalIncome-panel" role="tab" aria-controls="PersonalIncome-panel" aria-selected="true">Personal Income</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="GDP-tab" data-toggle="tab" href="index.html#GDP-panel" role="tab" aria-controls="GDP-panel" aria-selected="false">Gross Domestic Product</a>
+                                            </li>
+                                            <div class="nav ml-auto">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="MoreDetailProductLink" href="https://apps.bea.gov/iTable/iTable.cfm?reqid=70&amp;step=1&amp;isuri=1&amp;acrdn=3" target="_blank">More Detail (GDP)</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="MoreDetailIncomeLink" href="https://apps.bea.gov/iTable/iTable.cfm?reqid=70&amp;step=1&amp;isuri=1&amp;acrdn=4" target="_blank">More Detail (Income)</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="https://apps.bea.gov/regional/definitions/" target="_blank">Glossary</a>
+                                                </li>
+                                            </div>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="PersonalIncome-panel" role="tabpanel" aria-labelledby="PersonalIncome-tab">
+                                            <div class="row" id="incomegeninfocontainer">
+                                            </div>
+                                            <div class="row" id="pcpicontainer">
+                                            </div>
+                                            <div class="row" id="picontainer">
+                                            </div>
+                                            <div class="row" id="cpicontainer">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="GDP-panel" role="tabpanel" aria-labelledby="GDP-tab">
+                                            <div class="row" id="gdpgeninfocontainer">
+                                            </div>
+                                            <div class="row" id="gdpscontainer">
+                                            </div>
+                                            <div class="row" id="gdpsicontainer">
+                                            </div>
+                                            <div class="row" id="gdplacontainer">
+                                            </div>
+                                            <div class="row" id="gdpiccontainer">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="full-width">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="last-modified">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100" style="background-color: #005189;">
+        <footer class="footer container" role="contentinfo">
+            <div class="region region-footer">
+                <section id="block-beagovfooter" data-block-plugin-id="block_content:aa0d67fd-5738-4477-83ce-e17e948518e8" class="block block-block-content block-block-contentaa0d67fd-5738-4477-83ce-e17e948518e8 clearfix">
+                    <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Bureau of Economic Analysis <span> 4600 Silver Hill Road • Suitland, MD 20746 </span></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul class="footer-links">
+                                        <li class="text-large"><a href="https://www.bea.gov/contact-us">Contact Us</a></li>
+                                        <li class="text-large"><a href="https://www.bea.gov/about/working-at-bea">Working at BEA</a></li>
+                                        <li class="text-large"><a href="https://www.bea.gov/help/faq">Frequently Asked Questions</a></li>
+                                        <li class="text-large"><a href="https://www.bea.gov/about/policies-and-information">Our Policies</a></li>
+                                        <li class="text-large"><a href="https://www.bea.gov/privacy">Privacy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="footer-links">
+                                        <li><a href="https://www.bea.gov/statement-commitment-scientific-integrity-principal-statistical-agencies">Commitment to Scientific Integrity</a></li>
+                                        <li><a href="https://www.bea.gov/about/policies-and-information/data-dissemination">Data Dissemination Practices</a></li>
+                                        <li><a href="https://www.bea.gov/open-data">Open Data</a></li>
+                                        <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                                        <li><a href="https://business.usa.gov/">Business USA</a></li>
+                                        <li><a href="https://www.osec.doc.gov/ocr/nofear/nofear.htm">No FEAR Act</a></li>
+                                        <li><a href="https://osec.doc.gov/opog/FOIA/default.html">FOIA</a></li>
+                                        <li><a href="https://www.commerce.gov/">COMMERCE.gov</a></li>
+                                        <li><a href="https://apps.bea.gov/status/index.cfm">ESR System</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="footer-links">
+                                        <li><a href="https://www.bea.gov/news/blog">The BEA Wire | BEA's Official Blog</a></li>
+                                        <li> <a href="https://twitter.com/bea_news" class="ext">BEA on Twitter<span class="ext" aria-label="(link is external)"></span></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCCP9QD1x_z__duUivA6Yb5w" class="ext">BEA's YouTube Channel<span class="ext" aria-label="(link is external)"></span></a></li>
+                                        <li><a href="https://apps.bea.gov/rss/rss.xml" title="BEA's RSS Feeds">News Release Feed (RSS)</a></li>
+                                        <li><a href="https://www.bea.gov/_subscribe/" title="Email Subscription Service">Sign up for Email Notifications (ESS)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-37717925-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="../../_scripts/uaevents.js"></script>
+    <!-- <script src="https://inetdev/_includes/apps-footer.js" crossorigin="anonymous"></script>-->
+    <!--#include virtual="/_includes/apps-footer.htm" -->
+    <script src="js/utils/utils.js"></script>
+    <script src="js/utils/modals.js"></script>
+    <script src="js/bearfacts.js"></script>
+    <script src="js/charts.js"></script>
+
+</body>
+</html>
