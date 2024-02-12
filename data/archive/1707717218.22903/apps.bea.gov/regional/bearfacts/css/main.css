@@ -1,0 +1,86 @@
+
+.pointable {
+	cursor: pointer;
+}
+.dot {
+	height: 1.1em;
+	width: 1.1em;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+/*.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	 padding-left: 0px !important; 
+	 padding-right: 0px !important; 
+}*/
+.card{margin: 5px !important;}
+
+.panel-emergency {
+	border: solid 1px #f44336;
+	margin: 25px;
+	-webkit-box-shadow: 10px 10px 68px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 68px -9px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 68px -9px rgba(0,0,0,0.75);
+}
+
+	.panel-emergency .panel-body {
+		background-color: #f44336;
+		color: #ffffff !important;
+	}
+
+		.panel-emergency .panel-body h1 {
+			color: #ffffff !important;
+			margin-top: 0px;
+			font-size: 36px !important;
+			font-weight: bold !important;
+		}
+
+li.nav-item, li.dropdown {
+	background-image: none !important;
+	padding: 0px !important;
+}
+.dropdown-menu {
+	border: 1px solid #C55420 !important;
+	font-size: 14px !important;
+	margin-top: -1px !important;
+	border-top: solid 3px #C55420 !important;
+}
+
+#navbar-collapse > ul > li > a.nav-link{
+	padding-bottom: 14px !important;
+	padding-top: 14px !important;
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+	/* font-family: Lato, sans-serif !important;
+	font-size: 16px; */
+}
+
+.navbar-header{
+	margin-left: -15px !important;
+	margin-top: 0px !important;
+}
+
+#block-beagovsearchblock{
+	margin-right:-29px !important;
+	margin-top:-2px !important;
+}
+
+#block-beagovsearchblock #edit-keys{max-width: 175px !important}
+#block-beagovsearchblock .js-form-submit{width:42px !important;}
+.dropdown-toggle::after {
+margin-left: .0em; 
+vertical-align: .1em; 
+
+display: inline-block;
+/* margin-left: .255em;
+vertical-align: .255em; */
+content: "";
+border-top: .25em solid;
+border-right: .25em solid transparent;
+border-bottom: 0;
+border-left: .25em solid transparent;
+}
+.usa-grid.usa-banner-inner{margin-left:-16px;}
+
+.breadcrumb{background-color: transparent !important;}
