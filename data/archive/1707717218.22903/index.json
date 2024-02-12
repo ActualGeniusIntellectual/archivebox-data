@@ -1,0 +1,377 @@
+{
+    "archive_path": "archive/1707717218.22903",
+    "base_url": "apps.bea.gov/regional/bearfacts",
+    "basename": "",
+    "bookmarked_date": "2024-02-12 05:53",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/apps.bea.gov/regional/bearfacts",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=apps.bea.gov",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "apps.bea.gov/regional/bearfacts/index.html"
+    },
+    "domain": "apps.bea.gov",
+    "extension": "",
+    "hash": "1NCP21WY71N1MF4ZVPHK",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:27:35.675092+00:00",
+                "index_texts": null,
+                "output": "TimeoutExpired: Command '['curl', '--silent', '--location', '--compressed', '--head', '--max-time', '60', '--user-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)', 'https://web.archive.org/save/https://apps.bea.gov/regional/bearfacts/']' timed out after 60 seconds",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:26:35.666803+00:00",
+                "status": "failed"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:26:21.455953+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:26:14.304212+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=apps.bea.gov"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:25:41.614664+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:25:41.435600+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:25:42.236576+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:25:41.621937+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:26:35.646291+00:00",
+                "index_texts": [],
+                "output": "media",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:26:34.625107+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:26:34.603882+00:00",
+                "index_texts": null,
+                "output": "mercury",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:26:33.065308+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:26:06.233393+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:25:59.076629+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmp3lfpg1cc",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:26:33.058813+00:00",
+                "index_texts": [
+                    "Factsheet State\n                                                \n                                                State BEARFACTS are based on the state estimates published on March 31, 2023 for personal income and March 31, 2023 for GDP by state.\n                                            \n                                        \n                                \n                                            \n                                            \n                                            \n                                                \n                                                    Factsheet County\n                                                \n                                                County BEARFACTS are based on the county estimates published on November 16, 2023 for personal income and December 7, 2023 for local area GDP.\n                                            \n                                        \n                                \n                                            \n                                            \n                                            \n                                                \n                                                    Factsheet Metropolitan Statistical Area (MSA)\n                                                \n                                                Metropolitan Statistical Areas BEARFACTS are based on the county estimates published on November 16, 2022 for personal income and December 7, 2023 for local area GDP."
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:26:32.696246+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:26:14.289137+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:26:06.238862+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "https://apps.bea.gov/regional/bearfacts/",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:25:59.071248+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:25:42.242746+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:26:32.686197+00:00",
+                "index_texts": null,
+                "output": "BEA: BEARFACTS",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:26:32.680843+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707717218.22903/warc/1707719181",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "https://apps.bea.gov/regional/bearfacts/"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:26:32.674726+00:00",
+                "index_texts": null,
+                "output": "apps.bea.gov/regional/bearfacts/index.html",
+                "pwd": "/data/archive/1707717218.22903",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:26:21.461603+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "TimeoutExpired: Command '['curl', '--silent', '--location', '--compressed', '--head', '--max-time', '60', '--user-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)', 'https://web.archive.org/save/https://apps.bea.gov/regional/bearfacts/']' timed out after 60 seconds",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "BEA: BEARFACTS",
+        "warc": null,
+        "wget": "apps.bea.gov/regional/bearfacts/index.html"
+    },
+    "link_dir": "/data/archive/1707717218.22903",
+    "newest_archive_date": "2024-02-12T06:26:35.666803+00:00",
+    "num_failures": 1,
+    "num_outputs": 11,
+    "oldest_archive_date": "2024-02-12T06:25:41.435600+00:00",
+    "path": "/regional/bearfacts/",
+    "schema": "Link",
+    "scheme": "https",
+    "snapshot_id": "31600418-de7a-4703-9197-5cfadd480a8d",
+    "sources": [
+        "/data/sources/1707717217.88551-crawl-www.bea.gov.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707717218.22903",
+    "title": "BEA: BEARFACTS",
+    "updated": "2024-02-12T06:25:41.434100+00:00",
+    "updated_date": "2024-02-12 06:25",
+    "url": "https://apps.bea.gov/regional/bearfacts/"
+}
