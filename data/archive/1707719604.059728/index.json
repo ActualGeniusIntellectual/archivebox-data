@@ -1,0 +1,377 @@
+{
+    "archive_path": "archive/1707719604.059728",
+    "base_url": "legal.twitter.com/imprint.html",
+    "basename": "imprint.html",
+    "bookmarked_date": "2024-02-12 06:33",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/legal.twitter.com/imprint.html",
+        "dom_path": "output.html",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=legal.twitter.com",
+        "headers_path": "headers.json",
+        "htmltotext_path": "htmltotext.txt",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "mercury/content.html",
+        "pdf_path": "output.pdf",
+        "readability_path": "readability/content.html",
+        "screenshot_path": "screenshot.png",
+        "singlefile_path": "singlefile.html",
+        "warc_path": "warc/",
+        "wget_path": "legal.twitter.com/imprint.html"
+    },
+    "domain": "legal.twitter.com",
+    "extension": "html",
+    "hash": "W265WD74Y3B3JCBYASDF",
+    "history": {
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://web.archive.org/save/https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T07:00:05.194027+00:00",
+                "index_texts": null,
+                "output": "TimeoutExpired: Command '['curl', '--silent', '--location', '--compressed', '--head', '--max-time', '60', '--user-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)', 'https://web.archive.org/save/https://legal.twitter.com/imprint.html']' timed out after 60 seconds",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:59:05.185994+00:00",
+                "status": "failed"
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--dump-dom",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:58:58.383374+00:00",
+                "index_texts": null,
+                "output": "output.html",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:58:57.514036+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=legal.twitter.com"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:58:38.521970+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:58:37.991178+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:58:39.259029+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:58:38.525067+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [
+            {
+                "cmd": [
+                    "yt-dlp",
+                    "--restrict-filenames",
+                    "--trim-filenames",
+                    "128",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--write-sub",
+                    "--write-auto-subs",
+                    "--convert-subs=srt",
+                    "--yes-playlist",
+                    "--continue",
+                    "--no-abort-on-error",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--add-metadata",
+                    "--format=(bv*+ba/b)[filesize<=750m][filesize_approx<=?750m]/(bv*+ba/b)",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "2023.12.30",
+                "end_ts": "2024-02-12T06:59:05.168696+00:00",
+                "index_texts": [],
+                "output": "media",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:59:04.007180+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "mercury": [
+            {
+                "cmd": [
+                    "/app/node_modules/@postlight/parser/cli.js",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "1.0.0",
+                "end_ts": "2024-02-12T06:59:03.996797+00:00",
+                "index_texts": null,
+                "output": "mercury",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:59:02.842498+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--print-to-pdf",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:58:52.090867+00:00",
+                "index_texts": null,
+                "output": "output.pdf",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:58:51.179579+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "readability": [
+            {
+                "cmd": [
+                    "/app/node_modules/readability-extractor/readability-extractor",
+                    "/tmp/tmpri7gk2hi",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "0.0.11",
+                "end_ts": "2024-02-12T06:59:02.839454+00:00",
+                "index_texts": [
+                    "Die Webseiten unter www.twitter.com und die auf diesen Seiten vorgehaltenen Dienste werden dir angeboten von:\nTwitter International Unlimited Company\nOne Cumberland Place\nFenian Street\nDublin 2\nD02 AX07\nIreland\n\nregistriert beim Companies Registration Office der Republik Irland.\nVertretungsberechtigte Personen:\u00a0Fai Cheung, Diego De Lima Gualda, Mohit Bhargava\nUnternehmensnummer: 503351\nUmsatzsteuer-Identifikationsnummer: IE9803175Q\nKundenservice:\u00a0 Kontaktiere\u00a0Twitter International Unlimited Company\u00a0\nvia\u00a0https://support.twitter.com/forms\n\n\nTelefax:\u00a0 1-415-222-9958\u00a0\nE-Mail:\u00a0\u00a0de-support@twitter.com\n\n\nInl\u00e4ndischer Zustellungsbevollm\u00e4chtigter gem\u00e4\u00df \u00a7 5 Abs. 1 NetzDG, \u00a7 24d JuSchG, \u00a7 21 Abs. 2 JMStV und \u00a7 92 Medienstaatsvertrag:\n\nT. I. Kontakt GmbH\nc/o von BOETTICHER Rechtsanw\u00e4lte\nPartnerschaftsgesellschaft mbB\nWidenmayerstra\u00dfe 6, D 80538 M\u00fcnchen\nDiese Zustellungsbevollm\u00e4chtigung gilt ausschlie\u00dflich f\u00fcr Zustellungen in beh\u00f6rdlichen Verfahren nach \u00a7 4 NetzDG, \u00a7 24b JuSchG, \u00a7 24 JMStV und \u00a7 115 Medienstaatsvertrag sowie in Gerichtsverfahren vor deutschen Gerichten wegen Verbreitung rechtswidriger Inhalte im Sinne von \u00a7 1 Abs. 3 NetzDG und \u00a7 21 Abs. 2 JMStV.\n\n\nEmpfangsberechtigte Person gem\u00e4\u00df \u00a7 5 Abs. 2 NetzDG:\nT. I. Kontakt GmbH\nInl\u00e4ndische Strafverfolgungsbeh\u00f6rden k\u00f6nnen Auskunftsersuchen an die empfangsberechtigte Person hier https://legalrequests.twitter.com/ \u00fcbermitteln.\n\n\nOnline-Streitbeilegung gem\u00e4\u00df Art. 14 Abs. 1 ODR-Verordnung:\n\nWir sind weder bereit noch verpflichtet, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Dies betrifft auch die von der Europ\u00e4ischen Kommission bereitgestellte Plattform zur au\u00dfergerichtlichen Online-Streitbeilegung.\nTwitter Netzwerkdurchsetzungsgesetzbericht:\nTwitter ist verpflichtet einen halbj\u00e4hrlichen Bericht \u00fcber den Umgang mit Beschwerden, die gem\u00e4ss dem NetzDG eingereicht wurden, zu ver\u00f6ffentlichen. Lesen Sie den neuesten Bericht hier. F\u00fcr \u00e4ltere Berichte klicken Sie bitte\u00a0hier.\n\n\n\n\u00a7 93 Medienstaatsvertrag\nTransparenzangaben gem\u00e4\u00df Medienstaatsvertrag hier"
+                ],
+                "output": "readability",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:59:02.566541+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "/usr/bin/chromium-browser",
+                    "--headless=new",
+                    "--no-sandbox",
+                    "--no-zygote",
+                    "--disable-dev-shm-usage",
+                    "--disable-software-rasterizer",
+                    "--run-all-compositor-stages-before-draw",
+                    "--hide-scrollbars",
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--no-first-run",
+                    "--use-fake-ui-for-media-stream",
+                    "--use-fake-device-for-media-stream",
+                    "--disable-sync",
+                    "--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'",
+                    "--window-size=1440,2000",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)",
+                    "--screenshot",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "Chromium 121.0.6167.57",
+                "end_ts": "2024-02-12T06:58:57.511168+00:00",
+                "index_texts": null,
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:58:52.093600+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "singlefile": [
+            {
+                "cmd": [
+                    "/app/node_modules/single-file-cli/single-file",
+                    "--browser-executable-path=chromium-browser",
+                    "--browser-args=[\"--headless=new\", \"--no-sandbox\", \"--no-zygote\", \"--disable-dev-shm-usage\", \"--disable-software-rasterizer\", \"--run-all-compositor-stages-before-draw\", \"--hide-scrollbars\", \"--autoplay-policy=no-user-gesture-required\", \"--no-first-run\", \"--use-fake-ui-for-media-stream\", \"--use-fake-device-for-media-stream\", \"--disable-sync\", \"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'\", \"--window-size=1440,2000\", \"--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/)\"]",
+                    "https://legal.twitter.com/imprint.html",
+                    "singlefile.html"
+                ],
+                "cmd_version": "1.1.46",
+                "end_ts": "2024-02-12T06:58:51.176678+00:00",
+                "index_texts": null,
+                "output": "singlefile.html",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:58:39.261807+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T06:59:02.564122+00:00",
+                "index_texts": null,
+                "output": "Imprint",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:59:02.561977+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707719604.059728/warc/1707721138",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "https://legal.twitter.com/imprint.html"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T06:59:02.559225+00:00",
+                "index_texts": null,
+                "output": "legal.twitter.com/imprint.html",
+                "pwd": "/data/archive/1707719604.059728",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T06:58:58.386321+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": false,
+    "latest": {
+        "archive_org": "TimeoutExpired: Command '['curl', '--silent', '--location', '--compressed', '--head', '--max-time', '60', '--user-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)', 'https://web.archive.org/save/https://legal.twitter.com/imprint.html']' timed out after 60 seconds",
+        "dom": "output.html",
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": "media",
+        "pdf": "output.pdf",
+        "screenshot": "screenshot.png",
+        "singlefile": "singlefile.html",
+        "title": "Imprint",
+        "warc": null,
+        "wget": "legal.twitter.com/imprint.html"
+    },
+    "link_dir": "/data/archive/1707719604.059728",
+    "newest_archive_date": "2024-02-12T06:59:05.185994+00:00",
+    "num_failures": 1,
+    "num_outputs": 11,
+    "oldest_archive_date": "2024-02-12T06:58:37.991178+00:00",
+    "path": "/imprint.html",
+    "schema": "Link",
+    "scheme": "https",
+    "snapshot_id": "02cb17b8-9dfc-4d9b-9b35-96ed3047a1b6",
+    "sources": [
+        "/data/sources/1707719599.164932-crawl-twitter.com.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707719604.059728",
+    "title": "Imprint",
+    "updated": "2024-02-12T06:58:37.991123+00:00",
+    "updated_date": "2024-02-12 06:58",
+    "url": "https://legal.twitter.com/imprint.html"
+}

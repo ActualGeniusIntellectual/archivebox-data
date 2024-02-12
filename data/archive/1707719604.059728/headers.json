@@ -1,0 +1,21 @@
+{
+    "Status-Code": 200,
+    "age": "476960",
+    "date": "Mon, 12 Feb 2024 06:58:39 GMT",
+    "perf": "7469935968",
+    "vary": "Cookie,X-Twitter-Internal,X-Twitter-IP-Tags",
+    "server": "tsa_p",
+    "expires": "Mon, 12 Feb 2024 06:58:39 GMT",
+    "set-cookie": "guest_id_marketing=v1%3A170772111920880832; Max-Age=63072000; Expires=Wed, 11 Feb 2026 06:58:39 GMT; Path=/; Domain=.x.com; Secure; SameSite=None, guest_id_ads=v1%3A170772111920880832; Max-Age=63072000; Expires=Wed, 11 Feb 2026 06:58:39 GMT; Path=/; Domain=.x.com; Secure; SameSite=None, personalization_id=\"v1_QzFlg9EbaAu/wCt/wQOjnA==\"; Max-Age=63072000; Expires=Wed, 11 Feb 2026 06:58:39 GMT; Path=/; Domain=.x.com; Secure; SameSite=None, guest_id=v1%3A170772111920880832; Max-Age=63072000; Expires=Wed, 11 Feb 2026 06:58:39 GMT; Path=/; Domain=.x.com; Secure; SameSite=None, ct0=bf903d288acf6917ba711d68f6cbbad5; Max-Age=21600; Expires=Mon, 12 Feb 2024 12:58:39 GMT; Path=/; Domain=.x.com; Secure",
+    "content-type": "text/html",
+    "accept-ranges": "bytes",
+    "cache-control": "max-age=0",
+    "content-length": "12652",
+    "x-frame-options": "SAMEORIGIN",
+    "x-transaction-id": "401fc2568b4b09dc",
+    "x-xss-protection": "0",
+    "content-security-policy": "default-src 'self' ; connect-src 'self' ; font-src 'self' https://*.twimg.com https://*.twitter.com https://*.x.com https://cdn.cms-twdigitalassets.com data:; frame-src 'self' https://twitter.com https://x.com https://*.twitter.com https://*.x.com; img-src 'self' https://*.twimg.com https://*.twitter.com https://*.x.com https://cdn.cms-twdigitalassets.com https://*.google-analytics.com https://*.analytics.google.com data:; media-src 'self' https://cdn.cms-twdigitalassets.com; object-src 'self' ; script-src 'self' 'sha256-9G5TwxImuKFNB+uY9x5+mjMfXDSza+S1DEsjxK1xeWw=' https://*.twitter.com https://*.x.com https://platform.twitter.com https://cdn.cms-twdigitalassets.com https://*.twimg.com https://static.ads-twitter.com; style-src 'self' 'unsafe-inline' https://*.twitter.com https://*.x.com https://cdn.cms-twdigitalassets.com; report-uri ; frame-ancestors 'self'",
+    "strict-transport-security": "max-age=631138519",
+    "x-response-time": "7",
+    "x-connection-hash": "9f8bd5f5bbd905b2cd7d4714fa40da7d9d10dbc48a51f75ede7deddc3ff0bcc3"
+}
