@@ -1,0 +1,21 @@
+{
+    "Status-Code": 200,
+    "Content-Type": "text/html",
+    "Connection": "keep-alive",
+    "Date": "Mon, 12 Feb 2024 05:53:14 GMT",
+    "Cache-Control": "max-age=900",
+    "Last-Modified": "Fri, 09 Feb 2024 22:56:14 GMT",
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains",
+    "X-Content-Type-Options": "nosniff",
+    "X-Vcap-Request-Id": "503bd816-0bdd-415e-62cd-34352c00fd28",
+    "X-Xss-Protection": "1; mode=block",
+    "X-Frame-Options": "DENY",
+    "Content-Encoding": "br",
+    "ETag": "W/\"ad13d17fd1e1d4bf4a523608449f6a77\"",
+    "Vary": "Accept-Encoding,Accept-Encoding,Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 0675e3b1cc5e0c60957195491f316b72.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "LAX50-P4",
+    "X-Amz-Cf-Id": "Sf6gCHdOj8HMOaMOsy4iLYp9pPSD1ApOZdyBzhCkTy1f1oEqVMw1MQ==",
+    "Age": "718"
+}
