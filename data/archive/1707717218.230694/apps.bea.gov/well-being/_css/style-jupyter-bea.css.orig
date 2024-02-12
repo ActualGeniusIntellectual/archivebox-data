@@ -1,0 +1,848 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-color: #fff;
+    xbackground: transparent !important;
+    position: relative;
+    z-index: 100;
+}
+.page-archived {}
+.alert.page-archived {
+    margin-top: 30px;
+}
+.tooltip {
+    font-size: 16px !important;
+}
+.tooltip.bottom {
+    margin-top: 10px !important;
+}
+.tooltip-inner {
+    white-space: nowrap !important;
+    max-width: none !important;
+    padding: 8px 15px !important;
+    background-color: rgb(45, 51, 56) !important;
+    color: #fff !important;
+}
+#accordion .panel .panel-body {
+    padding: 25px !important;
+}
+h4 {
+    margin-bottom: 20px;
+}
+#accordion .panel .panel-body h4 {
+    margin: 20px 0px 10px 0px;
+}
+#accordion .panel .panel-body h4:first-of-type {
+    margin: 0px 0px 10px 0px;
+}
+#content.parallax {
+    padding: 0px !important;
+}
+#content.parallax .parallax-container {
+    padding: 45px 0px 25px 30px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+#content.parallax .parallax-window {
+    min-height: 50vh; /* 450px; */
+    background-size: cover; /*100% auto;*/
+    background-position: center;
+    -webkit-box-shadow: inset 26px 17px 26px -17px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 26px 17px 26px -17px rgba(0, 0, 0, 1);
+    box-shadow: inset 26px 17px 26px -17px rgba(0, 0, 0, 1);
+}
+#content.parallax .break-out {
+    width: 100vw;
+    position: relative;
+    left: calc(-1 * (100vw - 100%) / 2);
+    color: rgba(0, 0, 0, 0.6);
+    z-index: 500;
+}
+@media(max-width:767px) {
+    #content.parallax .break-out {
+        width: 100vw;
+    }
+}
+@media(min-width:768px) {
+    #content.parallax .break-out {
+        width: 100vw;
+    }
+}
+@media(min-width:992px) {
+    #content.parallax .break-out {
+        width: 100vw;
+    }
+}
+@media(min-width:1200px) {
+    #content.parallax .break-out {
+        width: 100vw;
+    }
+}
+#content.parallax .orange-slice {
+    background-image: url("/well-being/_images/orange-cloud-slice-reverse.jpg");
+    background-size: 500px auto;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+#content.parallax .main-container.orange-slice h1 {
+    font-size: 300%;
+}
+#content.parallax .orange-slice.orange-slice-buffer {
+    xpadding-top: 100px;
+}
+#content.parallax .glyphicon {
+    margin-right: 16px;
+}
+#content.parallax .down-arrow {
+    background-image: url("/well-being/_images/icon-scroll-down.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 250px;
+}
+#content.parallax .plus-marker {
+    margin-right: 15px;
+    padding: 25px 4px 8px 8px;
+    color: rgba(255, 255, 255, 1);
+    background-image: url("/well-being/_images/plus-slice.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-weight: bold;
+    line-height: 20px;
+}
+#content.parallax ul.footnote, #content.parallax ol.footnote {
+    border-top: 1px solid #d9d9d9;
+    font-size: 80%;
+    color: #757575;
+    margin: 16px 0px 0px 0px;
+    padding: 16px 0px 0px 0px;
+}
+.bk-Div.list-bordered.footnote {
+    clear: both;
+    font-size: 80%;
+    color: #757575;
+    margin: 16px 0px 0px 0px;
+    padding: 16px 0px 0px 0px;
+}
+#content.parallax ul.footnote.col-sm-04, #content.parallax ol.footnote.col-sm-04 {
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+}
+#content.parallax ul.footnote li, #content.parallax ol.footnote li {
+    background-image: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+#content.parallax ul.footnote a, #content.parallax ol.footnote a, #content.parallax table tfoot a {
+    border-bottom: dotted 1px #757575;
+    color: #757575;
+}
+#content.parallax ul.footnote a:hover, #content.parallax ol.footnote a:hover, #content.parallax table tfoot a:hover {
+    text-decoration: none;
+    border-bottom: solid 1px #333;
+    color: #333;
+}
+#content.parallax [class*="jump-link-"] {
+    text-align: center;
+}
+#content.parallax [class*="jump-link-"] a {
+    display: block;
+    margin: 10px 0px 20px 0px;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 45px 45px;
+}
+#content.parallax .jump-link-up a {
+    background-image: url("/well-being/_images/icon-scroll-up.png");
+}
+#content.parallax .jump-link-up a:hover {
+    background-image: url("/well-being/_images/icon-scroll-up-hover.png");
+}
+#content.parallax .jump-link-down a {
+    background-image: url("/well-being/_images/icon-scroll.png");
+}
+#content.parallax .jump-link-down a:hover {
+    background-image: url("/well-being/_images/icon-scroll-hover.png");
+}
+#content.parallax .jump-target {
+    display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
+}
+#content.parallax .jump-target a {
+    display: block;
+}
+#content.parallax .buffer-top-30 {
+    margin-top: 30px;
+}
+#content.parallax a[title="JavaScript charts"] {
+    display: none !important;
+}
+#content.parallax [class*="img-well-being-"] {
+    position: relative;
+}
+#content.parallax [class*="table-well-being-"] {
+    position: absolute;
+    z-index: 500;
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    border-spacing: 0;
+    background-color: #fff;
+    overflow: hidden;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+#content.parallax [class*="table-well-being-"] table {
+    margin: 0px !important;
+    width: 100% !important;
+}
+#content.parallax [class*="table-well-being-"] table .percent {
+    margin-left: 2px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+#content.parallax [class*="table-well-being-"] table caption {
+    padding: 8px;
+    font-size: 95%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.50);
+    color: rgb(255, 255, 255);
+}
+#content.parallax [class*="table-well-being-"] table caption small {
+    display: block;
+    font-size: 80%;
+}
+#content.parallax [class*="table-well-being-"] table tr td, #content.parallax [class*="table-well-being-"] table tr th {
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
+}
+#content.parallax [class*="table-well-being-"] table thead tr td, #content.parallax [class*="table-well-being-"] table thead tr th {
+    padding: 4px 5px 6px 5px;
+}
+#content.parallax [class*="table-well-being-"] table thead tr:nth-of-type(1) td, #content.parallax [class*="table-well-being-"] table thead tr:nth-of-type(1) th {
+    background-color: rgba(0, 0, 0, 0.16);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 80%;
+}
+#content.parallax [class*="table-well-being-"] table thead tr:nth-of-type(2) td, #content.parallax [class*="table-well-being-"] table thead tr:nth-of-type(2) th {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: 70%;
+}
+#content.parallax [class*="table-well-being-"] table tbody tr td {
+    background-color: rgba(0, 0, 0, 0.01);
+    font-size: 90%;
+    font-weight: normal;
+    padding: 3px 5px;
+}
+#content.parallax [class*="table-well-being-"] table tbody tr.table-header th {
+    background-color: rgba(0, 0, 0, 0.16);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 80%;
+}
+#content.parallax [class*="table-well-being-"] table tfoot {
+    font-size: 11px;
+    color: #757575;
+}
+#content.parallax [class*="table-well-being-"] table tfoot tr:first-of-type {
+    border-top: solid 6px rgba(0, 0, 0, 0.16);
+}
+#content.parallax [class*="table-well-being-"] table tfoot p {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+#content.parallax [class*="table-well-being-"] table tfoot ul {
+    padding: 5px 0px 0px 0px;
+    margin: 0px;
+    border-top: none;
+}
+#content.parallax [class*="table-well-being-"] table tfoot ul li {
+    padding-left: 0px;
+    background-image: none;
+}
+#content.parallax .img-well-being-01 {
+    top: 35px;
+}
+@media(max-width:767px) {
+    #content.parallax .table-well-being-01 {
+        font-size: 85%;
+        top: -10px;
+        left: 80px;
+        width: 40%;
+    }
+}
+@media(min-width:768px) {
+    #content.parallax .table-well-being-01 {
+        top: 25px;
+        left: 90px;
+        width: 40%;
+    }
+}
+@media(min-width:992px) {
+    #content.parallax .table-well-being-01 {
+        top: -30px;
+        left: 90px;
+        width: 50%;
+    }
+}
+@media(min-width:1200px) {
+    #content.parallax .table-well-being-01 {
+        top: 25px;
+        left: 90px;
+        width: 40%;
+    }
+}
+#content.parallax .table-well-being-01 tbody tr td:nth-of-type(2) {
+    color: #005188;
+}
+#content.parallax .table-well-being-01 tbody tr td:nth-of-type(3) {
+    color: #ec6a1f;
+}
+.text-blue {
+    color: #005188;
+}
+.text-orange {
+    color: #ec6a1f;
+}
+#content.parallax .img-well-being-02 {
+    top: 20px;
+    xmargin-bottom: 20px;
+}
+#content.parallax .table-well-being-02 {
+    top: 25px;
+    left: 135px;
+    width: 45%;
+}
+#content.parallax .img-well-being-03 {
+    top: 75px;
+}
+#content.parallax .table-well-being-03 {
+    width: 45%;
+}
+@media(max-width:767px) {
+    #content.parallax .table-well-being-03 {
+        font-size: 80%;
+        top: -3px;
+        left: 95px;
+        width: 45%;
+    }
+}
+@media(min-width:768px) {
+    #content.parallax .table-well-being-03 {
+        top: 20px;
+        left: 100px;
+        width: 45%;
+    }
+}
+@media(min-width:992px) {
+    #content.parallax .table-well-being-03 {
+        top: -10px;
+        left: 100px;
+        width: 45%;
+    }
+}
+@media(min-width:1200px) {
+    #content.parallax .table-well-being-03 {
+        top: 15px;
+        left: 100px;
+        width: 45%;
+    }
+}
+#content.parallax .table-well-being-04 {
+    top: 35px;
+    width: 90%;
+}
+#content.parallax .table-well-being-05 {
+    width: 90%;
+    top: 70px;
+}
+#content.parallax .table-well-being-05a {
+    width: 90%;
+}
+@media(max-width:767px) {
+    #content.parallax .table-well-being-05 {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        clear: both;
+        margin-bottom: 15px;
+    }
+    #content.parallax .table-well-being-05a {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        clear: both;
+        margin-bottom: 15px;
+    }
+}
+@media(min-width:768px) {
+    #content.parallax .table-well-being-05 {
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+    #content.parallax .table-well-being-05a {
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+}
+@media(min-width:992px) {
+    #content.parallax .table-well-being-05 {
+        top: 70px;
+    }
+    #content.parallax .table-well-being-05a {
+        top: 70px;
+    }
+}
+@media(min-width:1200px) {
+    #content.parallax .table-well-being-05 {
+        top: 50px;
+    }
+    #content.parallax .table-well-being-05a {
+        top: 50px;
+    }
+}
+@media(max-width:767px) {
+    #content.parallax .table-well-being-06 {
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+}
+@media(min-width:768px) {
+    #content.parallax .table-well-being-06 {
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+}
+@media(min-width:992px) {
+    #content.parallax .table-well-being-06 {
+        top: -100px;
+    }
+}
+@media(min-width:1200px) {
+    #content.parallax .table-well-being-06 {
+        top: 80px;
+    }
+}
+#content.parallax .table-well-being-07 {
+    margin-top: 10px;
+    left: 35%;
+}
+#content.parallax .img-well-being-04 {
+    top: 10px;
+}
+#content.parallax .img-well-being-06 {
+    top: 25px;
+}
+#content.parallax .img-well-being-07 {
+    top: 15px;
+}
+#content.parallax .img-well-being-10 {
+    top: 57px;
+}
+#content.parallax .img-well-being-11 {
+    top: 80px;
+}
+#content.parallax .img-well-being-12 {
+    top: 40px;
+}
+#content.parallax .img-well-being-13 {
+    top: 55px;
+}
+#content.parallax .img-well-being-14 {
+    top: 0px;
+}
+#content.parallax .img-well-being-15 {
+    top: 70px;
+}
+#content.parallax .img-well-being-16 {
+    top: 45px;
+}
+.tweak-01 {
+    position: relative;
+    top: -10px;
+}
+.tweak-02 {
+    position: relative;
+    top: 25px;
+    padding-bottom: 50px;
+}
+.tweak-03 {
+    position: relative;
+}
+@media(max-width:767px) {}
+@media(min-width:768px) {}
+@media(min-width:992px) {
+    .tweak-03 {
+        top: 40px;
+    }
+}
+@media(min-width:1200px) {
+    .tweak-03 {
+        top: 0px;
+    }
+}
+.tweak-04 {
+    position: relative;
+    top: 50px;
+}
+@media(max-width:767px) {
+    .tweak-04 {
+        position: relative;
+        top: 0px;
+    }
+}
+@media(min-width:768px) {
+    .tweak-04 {
+        position: relative;
+        top: 0px;
+    }
+}
+@media(min-width:992px) {
+    .tweak-04 {
+        position: relative;
+        top: 50px;
+    }
+}
+@media(min-width:1200px) {
+    .tweak-04 {
+        position: relative;
+        top: 50px;
+    }
+}
+.tweak-04 .amchart {
+    width: 100%;
+    height: 550px;
+}
+.center-pills {
+    display: inline-block;
+}
+.tweak-05 {
+    position: relative;
+    top: 30px;
+}
+.tweak-06 {
+    position: relative;
+}
+@media(max-width:767px) {}
+@media(min-width:768px) {
+    .tweak-06 {
+        top: 0px;
+    }
+}
+@media(min-width:992px) {
+    .tweak-06 {
+        top: 50px;
+    }
+}
+@media(min-width:1200px) {
+    .tweak-06 {
+        top: 50px;
+    }
+}
+.tweak-07 {
+    position: relative;
+    top: 50px;
+}
+@media(max-width:767px) {
+    .tweak-07 {
+        position: relative;
+        top: 0px;
+    }
+}
+@media(min-width:768px) {
+    .tweak-07 {
+        position: relative;
+        top: 50px;
+    }
+}
+@media(min-width:992px) {
+    .tweak-07 {
+        position: relative;
+        top: 0px;
+    }
+}
+@media(min-width:1200px) {
+    .tweak-07 {
+        position: relative;
+        top: 50px;
+    }
+}
+.tweak-08 {
+    position: relative;
+    top: 50px;
+}
+.tweak-09 {
+    position: relative;
+}
+@media(max-width:767px) {}
+@media(min-width:768px) {
+    .tweak-09 {
+        top: 0px;
+    }
+}
+@media(min-width:992px) {
+    .tweak-09 {
+        top: 50px;
+    }
+}
+@media(min-width:1200px) {
+    .tweak-09 {
+        top: 50px;
+    }
+}
+.tweak-10 {
+    position: relative;
+    top: 50px;
+}
+.tweak-11 {
+    position: relative;
+}
+@media(max-width:767px) {}
+@media(min-width:768px) {
+    .tweak-11 {
+        top: 10px;
+    }
+}
+@media(min-width:992px) {
+    .tweak-11 {
+        top: 50px;
+    }
+}
+@media(min-width:1200px) {
+    .tweak-11 {
+        top: 30px;
+    }
+}
+.tweak-12 {
+    position: relative;
+}
+@media(max-width:767px) {}
+@media(min-width:768px) {
+    .tweak-12 {
+        top: 0px;
+    }
+}
+@media(min-width:992px) {
+    .tweak-12 {
+        top: 50px;
+    }
+}
+@media(min-width:1200px) {
+    .tweak-12 {
+        top: 50px;
+    }
+}
+/*
+  
+nav#scrollspy-nav {
+	width: 98%;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	background-color: rgba(45,51,56,0.5);
+	-webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.25);
+	-moz-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.25);
+	box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.25);
+	z-index: 5000;
+	text-align: center;
+	padding: 5px 5px 0px 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+nav#scrollspy-nav:hover {
+	background-color: rgba(45,51,56,1);
+	-webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+}
+nav#scrollspy-nav a {
+	color: rgba(255,255,255,0.5);
+	border: solid 1px rgba(45,51,56,0);
+}
+nav#scrollspy-nav a:hover {
+	color: rgba(255,255,255,1);
+	border: solid 1px rgb(255, 255, 255);
+	background-color: rgba(45,51,56,1);
+}
+nav#scrollspy-nav .nav-item.active a {
+	background-color: rgba(255,255,255,.5);
+	border: solid 1px rgba(255,255,255,0);
+	color: rgba(45,51,56,.75);
+}
+nav#scrollspy-nav .nav-item.active a:hover {
+	background-color: rgba(255,255,255,1);
+	border: solid 1px rgba(255,255,255,0);
+	color: rgba(45,51,56,.75);
+}  
+  
+  */
+nav#scrollspy-nav {
+    position: fixed;
+    top: 82px;
+    width: 90%;
+    margin: auto;
+    left: 47%;
+    transform: translatex(-47%);
+    padding-top: 5px;
+    background-color: rgba(45, 51, 56, 1);
+    x-webkit-box-shadow: 4px 4px 21px -3px rgba(0, 0, 0, 0.75);
+    x-moz-box-shadow: 4px 4px 21px -3px rgba(0, 0, 0, 0.75);
+    xbox-shadow: 4px 4px 21px -3px rgba(0, 0, 0, 0.75);
+    z-index: 900;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+nav#scrollspy-nav ul.nav {
+    margin: 0px auto;
+}
+/*nav#scrollspy-nav:hover {
+	background-color: rgba(45,51,56,1);
+	-webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.75);
+}*/
+nav#scrollspy-nav a {
+    color: rgba(255, 255, 255, 0.5);
+    border: solid 1px rgba(45, 51, 56, 0);
+    width: 24px;
+    height: 24px;
+    margin: 3px !important;
+    padding: 0px !important;
+    background-image: url("/well-being/_images/nav-bullet-hover.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px;
+    text-align: center;
+}
+nav#scrollspy-nav a:hover {
+    color: rgba(255, 255, 255, 1);
+    border: solid 1px rgb(255, 255, 255);
+    background-color: rgba(45, 51, 56, 1);
+    background-image: url("/well-being/_images/nav-bullet.png");
+}
+nav#scrollspy-nav .nav-item.active a {
+    background-color: rgba(255, 255, 255, .5);
+    border: solid 1px rgba(255, 255, 255, 0);
+    color: rgba(45, 51, 56, .75);
+    background-image: url("/well-being/_images/nav-bullet-active.png");
+}
+nav#scrollspy-nav .nav-item.active a:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 1px rgba(255, 255, 255, 0);
+    color: rgba(45, 51, 56, .75);
+    background-image: url("/well-being/_images/nav-bullet-active-hover.png");
+}
+nav#scrollspy-nav .nav-item-start {
+    border-right: solid 1px rgba(255, 255, 255, .75);
+    xpadding-bottom: 5px;
+}
+nav#scrollspy-nav .nav-item-start a {
+    background-image: url("/well-being/_images/nav-bullet-start-active-hover.png");
+}
+nav#scrollspy-nav .nav-item-start.active a {
+    background-image: url("/well-being/_images/nav-bullet-active-hover.png");
+    background-color: rgb(100, 182, 96);
+}
+nav#scrollspy-nav .nav-item-start a:hover {
+    background-image: url("/well-being/_images/nav-bullet-start-active-hover.png");
+}
+nav#scrollspy-nav .nav-item-end {
+    border-left: solid 1px rgba(255, 255, 255, .75);
+    xpadding-top: 5px;
+}
+nav#scrollspy-nav .nav-item-end a {
+    background-image: url("/well-being/_images/nav-bullet-end-active.png");
+}
+nav#scrollspy-nav .nav-item-end.active a {
+    background-image: url("/well-being/_images/nav-bullet-active-hover.png");
+    background-color: rgb(213, 85, 82);
+}
+nav#scrollspy-nav .nav-item-end a:hover {
+    background-image: url("/well-being/_images/nav-bullet-end-active-hover.png");
+}
+.slide-deck a {
+    display: block;
+    border: solid 3px rgba(0, 0, 0, .15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 25px;
+}
+.slide-deck a:hover {
+    border: solid 3px rgba(219, 96, 37, 1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.slide-deck .img-responsive {
+    width: 100%;
+    height: auto;
+}
+#content.parallax h1 {
+    font-size: 180%;
+    font-weight: 100;
+    clear: both;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
+#content.parallax h1 .h1-line-top, #content.parallax h1 .h1-line-middle, #content.parallax h1 .h1-line-bottom {
+    padding: 0px;
+    margin: 0px;
+}
+#content.parallax h1 .h1-line-top {
+    position: relative;
+}
+#content.parallax h1 .h1-line-middle {
+    position: relative;
+    top: -10px;
+    left: 40px;
+}
+#content.parallax h1 .h1-line-bottom {
+    position: relative;
+}
+#content.parallax h1 .text-massive {
+    font-size: 170%;
+    font-weight: bold;
+}
+#content.parallax h1 .text-bea-blue {
+    color: rgba(0, 81, 137, 1);
+}
+#content.parallax h1 .text-bea-orange {
+    color: rgba(219, 96, 37, 1);
+}
+#content.parallax h1 .text-italics {
+    font-style: italic;
+}
+#content.parallax h2 {
+    position: relative;
+    top: -10px;
+    left: 20px;
+    color: rgba(0, 81, 137, 1);
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+}
+#content.parallax h3 {
+    font-weight: normal !important;
+    text-align: center;
+}
+#content.parallax .jp-Cell-inputWrapper {
+    xdisplay: none;
+}
