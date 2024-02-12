@@ -1,0 +1,178 @@
+{
+    "archive_path": "archive/1707719604.057353",
+    "base_url": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+    "basename": "icon-svg.ea5ff4aa.svg",
+    "bookmarked_date": "2024-02-12 06:33",
+    "canonical": {
+        "archive_org_path": "https://web.archive.org/web/abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "dom_path": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "favicon_path": "favicon.ico",
+        "git_path": "git/",
+        "google_favicon_path": "https://www.google.com/s2/favicons?domain=abs.twimg.com",
+        "headers_path": "headers.json",
+        "htmltotext_path": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "index_path": "index.html",
+        "media_path": "media/",
+        "mercury_path": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "pdf_path": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "readability_path": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "screenshot_path": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "singlefile_path": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "title": "icon-svg.ea5ff4aa.svg",
+        "warc_path": "warc/",
+        "wget_path": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg"
+    },
+    "domain": "abs.twimg.com",
+    "extension": "svg",
+    "hash": "1481620855XE7M88BQTT",
+    "history": {
+        "archive_org": [],
+        "dom": [],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--output",
+                    "favicon.ico",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://www.google.com/s2/favicons?domain=abs.twimg.com"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T07:02:40.577487+00:00",
+                "index_texts": null,
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1707719604.057353",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T07:02:40.241300+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "headers": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--head",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T07:02:40.699335+00:00",
+                "index_texts": null,
+                "output": "headers.json",
+                "pwd": "/data/archive/1707719604.057353",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T07:02:40.594415+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "htmltotext": [],
+        "media": [],
+        "mercury": [],
+        "pdf": [],
+        "readability": [],
+        "screenshot": [],
+        "singlefile": [],
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "--silent",
+                    "--location",
+                    "--compressed",
+                    "--max-time",
+                    "60",
+                    "--user-agent",
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) curl/curl 8.5.0 (x86_64-pc-linux-gnu)",
+                    "https://abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg"
+                ],
+                "cmd_version": "curl 8.5.0 (x86_64-pc-linux-gnu)",
+                "end_ts": "2024-02-12T07:02:40.814671+00:00",
+                "index_texts": null,
+                "output": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+                "pwd": "/data/archive/1707719604.057353",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T07:02:40.814112+00:00",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--timeout=60",
+                    "--restrict-file-names=windows",
+                    "--warc-file=/data/archive/1707719604.057353/warc/1707721360",
+                    "--page-requisites",
+                    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 ArchiveBox/0.7.3 (+https://github.com/ArchiveBox/ArchiveBox/) wget/GNU Wget 1.21.3",
+                    "--compression=auto",
+                    "https://abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg"
+                ],
+                "cmd_version": "GNU Wget 1.21.3",
+                "end_ts": "2024-02-12T07:02:40.811458+00:00",
+                "index_texts": null,
+                "output": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+                "pwd": "/data/archive/1707719604.057353",
+                "schema": "ArchiveResult",
+                "start_ts": "2024-02-12T07:02:40.702142+00:00",
+                "status": "succeeded"
+            }
+        ]
+    },
+    "icons": null,
+    "is_archived": true,
+    "is_static": true,
+    "latest": {
+        "archive_org": null,
+        "dom": null,
+        "favicon": "favicon.ico",
+        "git": null,
+        "media": null,
+        "pdf": null,
+        "screenshot": null,
+        "singlefile": null,
+        "title": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+        "warc": null,
+        "wget": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg"
+    },
+    "link_dir": "/data/archive/1707719604.057353",
+    "newest_archive_date": "2024-02-12T07:02:40.814112+00:00",
+    "num_failures": 0,
+    "num_outputs": 4,
+    "oldest_archive_date": "2024-02-12T07:02:40.241300+00:00",
+    "path": "/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+    "schema": "Link",
+    "scheme": "https",
+    "snapshot_id": "ddd345f8-d9bf-4dfd-a314-e6b9f88efa07",
+    "sources": [
+        "/data/sources/1707719599.164932-crawl-twitter.com.txt"
+    ],
+    "tags": null,
+    "tags_str": "",
+    "timestamp": "1707719604.057353",
+    "title": "abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg",
+    "updated": "2024-02-12T07:02:40.241248+00:00",
+    "updated_date": "2024-02-12 07:02",
+    "url": "https://abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg"
+}
