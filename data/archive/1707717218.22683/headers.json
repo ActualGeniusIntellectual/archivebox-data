@@ -1,0 +1,23 @@
+{
+    "Status-Code": 404,
+    "Connection": "keep-alive",
+    "Content-Length": "5254",
+    "Server": "GitHub.com",
+    "Content-Type": "text/html; charset=utf-8",
+    "Access-Control-Allow-Origin": "*",
+    "ETag": "W/\"64d39a40-24a3\"",
+    "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'",
+    "Content-Encoding": "gzip",
+    "x-proxy-cache": "MISS",
+    "X-GitHub-Request-Id": "64FE:979A:664C24:7FA420:65C9BE94",
+    "Accept-Ranges": "bytes",
+    "Date": "Mon, 12 Feb 2024 06:50:28 GMT",
+    "Via": "1.1 varnish",
+    "Age": "288",
+    "X-Served-By": "cache-bur-kbur8200155-BUR",
+    "X-Cache": "HIT",
+    "X-Cache-Hits": "1",
+    "X-Timer": "S1707720628.264010,VS0,VE1",
+    "Vary": "Accept-Encoding",
+    "X-Fastly-Request-ID": "f300405a06aa92529224036e5ed8ffe9ed0af669"
+}
