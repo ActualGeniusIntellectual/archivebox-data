@@ -1,0 +1,3 @@
+ This document describes the XML Schema namespace.
+It also contains a directory of links to these related resources, using
+Resource Directory Description Language.
