@@ -1,0 +1,16 @@
+{
+    "Status-Code": 999,
+    "Cache-Control": "no-cache, no-store",
+    "Pragma": "no-cache",
+    "Content-Length": "1530",
+    "Content-Type": "text/html",
+    "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+    "Set-Cookie": "trkCode=bf; Max-Age=5, trkInfo=AQHsOW2fHAz1AgAAAY2b7HsYdKYvj8mZdSnzRuJTDpEumWPD_7bbFJNRro1tnV3UCg2p30liJvLz05PppsP392Qk8Lqt43hKW633XspF2Vr_4mCHaQDvPy9f-tVVp-Vw72-__-8=; Max-Age=5, rtc=AQGAYPRxLk1a8gAAAY2b7HsYhuX_hjVrMAUp7oMQg0w-96b-gITq3g7wnoi0KKoZrd2klk1mPcWbR_G4CFhXuhB2npip6lzE_rxESrsJjFbC4QNlL-CMDjsH0JbS1ig2TaNXAXG9g8FW4KDfrk4S9EqEYdXpxiEkMXZTjpnynt2EUjcxINA997HVK635FtZ7lmL-cFjJM-CVfXndfOgz7IilAms=; Max-Age=120; path=/; domain=.linkedin.com",
+    "X-Li-Fabric": "prod-lva1",
+    "X-Li-Pop": "afd-prod-lva1-x",
+    "X-Li-Proto": "http/1.1",
+    "X-LI-UUID": "AAYRKRPIfLvu1pWCeSzV3Q==",
+    "X-Cache": "CONFIG_NOCACHE",
+    "X-MSEdge-Ref": "Ref A: 4FD116055309468FA97A3D199FB4F292 Ref B: LAX311000112019 Ref C: 2024-02-12T06:06:23Z",
+    "Date": "Mon, 12 Feb 2024 06:06:22 GMT"
+}
