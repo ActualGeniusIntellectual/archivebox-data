@@ -1,0 +1,27 @@
+Updated RIMS II multipliers incorporating 2021 regional data are now available. The new multipliers are based on 2021 regional data and 2012 national benchmark input-output data.
+                
+                
+                2023 RIMS II Update Technical Note (pdf)
+                
+            
+
+    
+        Welcome to the RIMS II Online Order and Delivery System
+        The Regional Input-Output Modeling System (RIMS II), a regional economic model, is a tool used by investors, planners, and elected officials to objectively assess the potential economic impacts of various projects. This model produces multipliers that are used in economic impact studies to estimate the total impact of a project on a region. The idea behind the results of RIMS II is that an initial change in economic activity results in other rounds of spending—for example, building a new road will lead to increased production of asphalt and concrete. The increased production of asphalt and concrete will lead to more mining. Workers hired due to the increase in economic activity will spend more in the region.
+    
+
+    
+        What are RIMS II multipliers?
+        Regional Input-Output Modeling System (RIMS II) multipliers provide a measure of the effects of local demand shocks on total gross output, value added, earnings, and employment. The multipliers are used by investors, planners, and elected officials to objectively assess the potential economic impacts of various projects. 
+        RIMS II multipliers are based on 2012 national benchmark input-output data and 2021 regional data. These multipliers were first released in March 2023.
+    
+    
+        How much do multipliers cost?
+        
+            $275 per Region
+            Multipliers are provided for all industries in the model for the region that is ordered. The region must contain one or more contiguous counties.
+        
+        
+        
+            $75 per Industry
+            Multipliers are provided for 50 states and the District of Columbia for the industry that is ordered.
