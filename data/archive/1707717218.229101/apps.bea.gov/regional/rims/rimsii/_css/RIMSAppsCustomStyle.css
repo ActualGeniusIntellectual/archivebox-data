@@ -1,0 +1,1159 @@
+/* ----------- RIMS Button Styling ----------- */
+
+
+/* Per K.C. for rounded buttons
+    
+  #content a.btn, #rimsform input.btn {
+  border-radius: 0;
+  text-decoration: none;
+}*/
+
+#rimsform #content .vertical_container h3, #accordion h3
+{
+    padding: 15px 0px 15px 0px !important;
+    font-size: 120% !important;
+}
+
+#rimsform #content .rims-blue-btn{
+  color: #fff;
+  background-color: #005189;
+  border-color: #005189;
+  /*border-radius: 0px;*/
+}
+
+#rimsform #content .rims-small-btn{
+    font-size:12px;
+    margin-top:5px;
+    min-width:100px;
+}
+
+#rimsform #content .rims-blue-btn:active,#rimsform #content .rims-blue-btn.active, #rimsform #content .open > .dropdown-toggle.rims-blue-btn {
+    color: #fff;
+    background-color: #073d63;
+    border-color: #073d63;
+}
+
+#rimsform #content .rims-blue-btn:hover{
+    color: #fff;
+    background-color: #073d63;
+    border-color: #073d63;
+}
+
+#rimsform #content .rims-blue-btn:focus, #rimsform #content .rims-blue-btn.focus {
+    color: #fff;
+    background-color: #073d63;
+    border-color: #073d63;
+}
+
+#rimsform #content .rims-blue-btn.active:hover,
+#rimsform #content .open > .dropdown-toggle.rims-blue-btn:hover,
+#rimsform #content .rims-blue-btn.active:focus,
+#rimsform #content .open > .dropdown-toggle.rims-blue-btn:focus,
+#rimsform #content .rims-blue-btn.active.focus,
+#rimsform #content .open > .dropdown-toggle.rims-blue-btn.focus {
+  color: #fff;
+  background-color: #073d63;
+  border-color: #073d63;
+}
+
+#rimsform #content .rims-orange-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #C55420;
+    border-color: #C55420;
+    border-radius: 4px; /* changed border radius from 0 to 4 to match other buttons 1-19-18 WGK*/
+    margin-right: 30px;
+}
+
+    #rimsform #content .rims-orange-btn:active,
+    #rimsform #content .rims-orange-btn.active,
+    #rimsform #content .open > .dropdown-toggle.rims-orange-btn {
+        color: #fff;
+        background-color: #C55420;
+        border-color: #C55420;
+    }
+
+    #rimsform #content .rims-orange-btn:hover {
+        color: #fff;
+        background-color: #C55420;
+        border-color: #c94f05;
+    }
+
+    #rimsform #content .rims-orange-btn:focus,
+    #rimsform #content .rims-orange-btn.focus {
+        color: #fff;
+        background-color: #C55420;
+        border-color: #C55420;
+    }
+
+    #rimsform #content .rims-orange-btn.active:hover,
+    #rimsform #content .open > .dropdown-toggle.rims-orange-btn:hover,
+    #rimsform #content .rims-orange-btn.active.focus,
+    #rimsform #content .rims-orange-btn.active:focus,
+    #rimsform #content .open > .dropdown-toggle.rims-orange-btn.focus,
+    #rimsform #content .open > .dropdown-toggle.rims-orange-btn:focus {
+        color: #fff;
+        background-color: #C55420;
+        border-color: #C55420;
+    }
+
+
+#rimsform #content .rims-grey-btn{
+  text-decoration: none;
+  margin-top: 15px;
+  color: white;
+  background-color:#005189;
+  box-shadow: 0 3px 0 0 #7e7e7e;
+}
+
+#rimsform #content .rims-grey-btn:active, 
+#rimsform #content .rims-grey-btn.active, 
+#rimsform #content .open > .dropdown-toggle.rims-grey-btn {
+  color: white;
+  background-color: #073d63;
+  box-shadow: 0 3px 0 0 #7e7e7e;
+}
+
+#rimsform #content .rims-grey-btn:hover{
+    color: white;
+    background-color: #073d63;
+}
+
+#rimsform #content .rims-grey-btn:focus, 
+#rimsform #content .rims-grey-btn.focus {
+    color: white;
+    background-color: #073d63;
+}
+
+#rimsform #content .rims-grey-btn.active:hover,
+#rimsform #content .open > .dropdown-toggle.rims-grey-btn:hover,
+#rimsform #content .rims-grey-btn.active:focus,
+#rimsform #content .open > .dropdown-toggle.rims-grey-btn:focus,
+#rimsform #content .rims-grey-btn.active.focus,
+#rimsform #content .open > .dropdown-toggle.rims-grey-btn.focus {
+  color: white;
+  background-color: #c3c3c3;
+  border-color: #c3c3c3;
+}
+
+#rimsform #content input.btn.rims-orange-btn {
+  margin-top: 10px;
+}
+
+/* ----------- Side navigation ----------- */
+
+#rimsform #content #RIMSNavColumn {
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-right: 0px;
+}
+
+/* EXCLUDE the rims-blue-btn class for the signin and order multiplier buttons in the nav sidebar */
+#rimsform #content #RIMSNavColumn a:not(.rims-blue-btn) {
+  text-decoration: none;
+  color:  black;
+}
+
+/* nav is a pre-existing bootstrap class */
+#rimsform #content .nav>li>a,  
+#rimsform #content .nav>a>li{
+  display: inline-block; /* makes icons and text display inline */
+  padding: 10px;
+}
+
+#rimsform #content .nav>li:hover, 
+#rimsform #content .nav>li:visited, 
+#rimsform #content .nav>li:active{
+  background-color: #ECEEEE;
+}
+
+#rimsform #content .nav .menuItem {
+  border-bottom: .5px solid #b8b8b8;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 0px !important;
+  color: black;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+#rimsform #content i{
+  color: black;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+#rimsform #content i.buttonicon{
+  color: #ffffff;
+}
+
+
+ /*----------- Breadcrumb styling ----------- */
+
+#rimsform #content .breadcrumb .btn.btn-default {
+  border-color: transparent;
+  background-color: none;
+  padding:9px 15px 6px 15px;
+  font-size: 16px;
+}
+
+#rimsform #content .breadcrumb .btn.btn-default:active, 
+#rimsform #content .btn-default.active, 
+#rimsform #content .open > .dropdown-toggle.btn-default {
+     color: white;
+     text-transform: bold;
+     background-color: #005189; 
+    border-color: #005189;
+}
+
+#rimsform #content .breadcrumb .btn.btn-default:hover, 
+#rimsform #content .btn-default.hover, 
+#rimsform #content .open > .dropdown-toggle.btn-default {
+    color: white;
+     background-color: #005189; 
+    border-color: #005189;
+}
+
+#rimsform #content .breadcrumb .btn.btn-default:focus, 
+#rimsform #content .btn-default.focus, 
+#rimsform #content .open > .dropdown-toggle.btn-default {
+    color: white;
+     background-color: #005189; 
+    border-color: #005189;
+}
+
+#rimsform #content .breadcrumb {
+  padding: 0px 0px 0px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0px;
+  border-bottom: .5px solid #b8b8b8;
+  margin-left: 1px;
+  margin-left: -12px;
+  z-index: 1;
+}
+
+#rimsform #content .breadcrumb .padtop8 {
+  padding-top: 8px;
+}
+
+#rimsform #content .shopping-cart-number {
+  width:40px;
+  height:40px;
+  padding: 10px 0 0 15px;
+  margin-top: 8px;
+  border:1px solid #000;
+}
+
+#rimsform #content .shopping-cart-section {
+  border-left: .5px solid #b8b8b8;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+#rimsform #content .shopping-cart-section .shopping-cart-label {
+    padding: 15px 20px 0 0;
+}
+
+/* ----------- Page Content ----------- */
+
+#rimsform #content ul li.PayStatusItem {
+  margin:  2px 0px;
+  font-size: 12px;
+}
+#rimsform #content #RIMSContentColumn {
+  border-left: .5px solid #b8b8b8;
+  /*border-style: solid;*/
+  min-height: 577px;
+}
+
+#rimsform #content .landing-page-heading {
+    font-size:24px;
+    font-weight:700;
+    margin: 0 15px 15px 0 !important; 
+}
+
+#rimsform #content .landing-page-p{
+  margin: 0 30px 10px 0 !important;
+}
+
+#rimsform #content .landing-page-div{
+  padding-bottom: 10px;
+  padding-top: 20px;
+  /* Clear none so landing page h? doesn't clear both */
+  clear:none
+}
+
+#rimsform #content ul {
+  /*margin-left: -13px;*/
+  margin-left: 0px;
+}
+
+#rimsform #content {
+  padding: 0px 0px 0px 0px;
+}
+
+#rimsform #content #ordering-heading {
+  padding-bottom: 30px;
+}
+
+#rimsform #content .responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+#rimsform #content .column-margin {
+  margin: 0 0 0 10px;
+}
+
+/* Accordion Styling */
+#rimsform #content #RIMSContentColumn #accordion  .panel {
+    margin-bottom: 2px;
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+#rimsform #content #RIMSContentColumn #accordion .panel a {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    text-decoration:none;
+}
+
+#rimsform #content .content-padding {
+    padding: 10px;
+}
+
+#rimsform #content #accordion h3 {
+    margin: 0px;
+    padding: 15px 0px 15px 5px;
+    border: none;
+}
+
+/* ----------- Tooltip styling ----------- */
+
+#rimsform #content .fa.fa-question-circle.custom-tooltip {
+  color:#337ab7;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+/*choose your region tooltips are in a table*/
+
+#rimsform #content table span.fa {
+  float: right;
+}
+
+/*#rimsform #content span.fa {
+  text-decoration: none;
+}*/
+
+#rimsform #content .tooltip > .tooltip-inner  {
+  max-width: 415px;
+  color: black;
+  background-color: #fffeea !important;
+  border: 1px solid grey;
+  text-align: left;
+  padding: 10px;
+}
+
+#rimsform #content .tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  xfont-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: normal;
+  xfilter: alpha(opacity=0);
+  xopacity: 0;
+
+  line-break: auto;
+}
+
+#rimsform #content .tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: 1;
+}
+
+#rimsform #content .tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+#rimsform #content .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: 1px solid grey;
+  border-style: solid;
+}
+
+#rimsform #content .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: grey;
+}
+
+#rimsform #content .tooltip.top-left .tooltip-arrow {
+  right: 5px;
+  bottom: 0;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: grey;
+}
+
+#rimsform #content .tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: grey;
+}
+
+#rimsform #content .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: grey;
+}
+
+#rimsform #content .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: grey;
+}
+#rimsform #content .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #fffeea;
+}
+
+#rimsform #content .tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #fffeea;
+}
+
+#rimsform #content .tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #fffeea;
+}
+
+/* ----------------   Bootstrap Affix  -------------------- */
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+/*#rimsform #content #masthead { 
+ min-height:250px;
+}
+
+#rimsform #content #masthead h1 {
+ font-size: 30px;
+ line-height: 1;
+ padding-top:20px;
+}
+
+#rimsform #content #masthead .well {
+ margin-top:8%;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 50px;
+  }
+}*/
+
+#rimsform #content .navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}
+
+#rimsform #content .affix-top, 
+#rimsform #content .affix{
+ position: static;
+}
+
+
+/*@media (min-width: 979px) {
+#rimsform #content #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+  
+#rimsform #content #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#rimsform #content #sidebar li.active {
+  border:0 #eee solid;
+  border-right-width:5px;
+}*/
+
+/*From bea_refresh*/
+
+/*#rimsform #content .rims-popup h1 {
+	margin: 10px 0px 25px 0px;
+	line-height: normal;
+}
+
+#rimsform #content .rimspopup h1 span {
+	display: block;
+	font-weight: normal;
+}
+
+#rimsform #content .rims-popup h1 ~ ul,
+.rims-popup h1 ~ ol,
+.rims-popup h1 ~ p {
+	margin-left: 5px;
+}
+
+#rimsform #content .rims-popup h2 {
+	font-weight: normal;
+	margin: 25px 15px 15px 15px;
+	line-height: 120%;
+}
+
+
+#rimsform #content .rims-popup h2:nth-of-type(1) {
+	margin: 35px 15px 15px 15px;
+}
+
+#rimsform #content .rims-popup h2 span:not(.label) {
+	display: block;
+	font-weight: 100;
+}
+
+#rimsform #content .rims-popup h2 ~ ul,
+#rimsform #content .rims-popup h2 ~ ol,
+#rimsform #content .rims-popup h2 ~ p {
+	margin-left: 25px;
+}
+
+#rimsform #content .rims-popup h3 {
+	margin: 35px 15px 15px 32px;
+	font-weight: normal;
+	font-size: 120%;
+	line-height: 120%;
+}
+
+#rimsform #content .rims-popup h3 ~ ul,
+#rimsform #content .rims-popup h3 ~ ol,
+#rimsform #content .rims-popup h3 ~ p {
+	margin-left: 42px;
+}
+
+#rimsform #content .rims-popup ul li {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	margin-left: 12px;
+	background-image: url("/_images/bullet-orange.png");
+	background-repeat: no-repeat;
+	background-position: 2px 8px;
+	padding-left: 16px;
+}
+
+#rimsform #content .rims-popup ul.footnotes {
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: solid 1px #B8B8B8;
+	font-size: 90%;
+}
+
+#rimsform #content .rims-popup ul.footnotes li {
+	background-image: none;
+	margin-left: 0px;
+}
+
+#rimsform #content .rims-popup ul.footnotes li sup {
+	margin-right: 3px;
+}*/
+
+#rimsform #content #rimsform input,
+#rimsform #content #rimsform textarea,
+#rimsform #content #rimsform select {
+	padding: 2px 10px 4px 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px #DDDDDD;
+	position: relative;
+	top: -1px;
+}
+
+    #rimsform #content .buttonselect input,
+    #rimsform #content #RIMSPlaceHolder_Button1,
+    #rimsform #content #RIMSPlaceHolder_btnReg,
+    #rimsform #content #RIMSPlaceHolder_btnContinue,
+    #rimsform #content #RIMSPlaceHolder_btnPlaceOrder,
+    #rimsform #content #RIMSPlaceHolder_btnViewPurchased,
+    #rimsform #content #RIMSPlaceHolder_btnReturnToOrders,
+    #rimsform #content #RIMSPlaceHolder_btnReturnOD,
+    #rimsform #content #RIMSPlaceHolder_btnfiledownload2,
+    #rimsform #content #RIMSPlaceHolder_btnOD,
+    #rimsform #content #RIMSPlaceHolder_btnDisplayTable,
+    #rimsform #content #RIMSPlaceHolder_btnDisplayTableLS,
+    #rimsform #content #RIMSPlaceHolder_btnFootnotes,
+    #rimsform #content #RIMSPlaceHolder_btnExportTable,
+    #rimsform #content #RIMSPlaceHolder_btnAddCart,
+    #rimsform #content #RIMSPlaceHolder_btnAutoName,
+    #rimsform #content #RIMSPlaceHolder_btnAdd,
+    #rimsform #content #RIMSPlaceHolder_btnRemove,
+    #rimsform #content #RIMSPlaceHolder_btnRtntoShopping,
+    #rimsform #content #RIMSPlaceHolder_btnRemoveChkdItem,
+    #rimsform #content #RIMSPlaceHolder_btnEmptyCart,
+    #rimsform #content #RIMSPlaceHolder_btnCheckout,
+    #rimsform #content [id*="RIMSPlaceHolder_dgBasket_btnEdit_"],
+    #rimsform #content [id*="RIMSPlaceHolder_dgBasket_btnUpdate"],
+    #rimsform #content [id*="RIMSPlaceHolder_dgBasket_btnCancel"],
+    #rimsform #content #RIMSPlaceHolder_btnCancel,
+    #rimsform #content #RIMSPlaceHolder_btnMyAcct,
+    #rimsform #content #RIMSPlaceHolder_btnUpdate,
+    #rimsform #content #RIMSPlaceHolder_btnPreviousPage,
+    #rimsform #content #RIMSPlaceHolder_btnPrint,
+    #rimsform #content #RIMSPlaceHolder_btnOrder,
+    #rimsform #content #RIMSPlaceHolder_Button2,
+    #rimsform #content #RIMSPlaceHolder_btnCancelEdit {
+        color: rgba(255,255,255,1.00);
+        background-color: #C55420;
+        border: none;
+    }
+
+#rimsform #content #rimsform .buttonselect input,
+#rimsform #content #RIMSPlaceHolder_btnAdd {
+	width: 100% !important;
+}
+
+#rimsform #content form input.button-submit:hover,
+#rimsform #content .buttonselect input:hover,
+#rimsform #content #RIMSPlaceHolder_Button1:hover,
+#rimsform #content #RIMSPlaceHolder_btnReg:hover,
+#rimsform #content #RIMSPlaceHolder_btnContinue:hover,
+#rimsform #content #RIMSPlaceHolder_btnPlaceOrder:hover,
+#rimsform #content #RIMSPlaceHolder_btnViewPurchased:hover,
+#rimsform #content #RIMSPlaceHolder_btnReturnToOrders:hover,
+#rimsform #content #RIMSPlaceHolder_btnReturnOD:hover,
+#rimsform #content #RIMSPlaceHolder_btnfiledownload2:hover,
+#rimsform #content #RIMSPlaceHolder_btnOD:hover,
+#rimsform #content #RIMSPlaceHolder_btnDisplayTable:hover,
+#rimsform #content #RIMSPlaceHolder_btnDisplayTableLS:hover,
+#rimsform #content #RIMSPlaceHolder_btnFootnotes:hover,
+#rimsform #content #RIMSPlaceHolder_btnExportTable:hover,
+#rimsform #content #RIMSPlaceHolder_btnAddCart:hover,
+#rimsform #content #RIMSPlaceHolder_btnAutoName:hover,
+#rimsform #content #RIMSPlaceHolder_btnAdd:hover,
+#rimsform #content #RIMSPlaceHolder_btnRemove:hover,
+#rimsform #content #RIMSPlaceHolder_btnRtntoShopping:hover,
+#rimsform #content #RIMSPlaceHolder_btnRemoveChkdItem:hover,
+#rimsform #content #RIMSPlaceHolder_btnEmptyCart:hover,
+#rimsform #content #RIMSPlaceHolder_btnCheckout:hover,
+#rimsform #content [id*="RIMSPlaceHolder_dgBasket_btnEdit_"]:hover,
+#rimsform #content [id*="RIMSPlaceHolder_dgBasket_btnUpdate"]:hover,
+#rimsform #content [id*="RIMSPlaceHolder_dgBasket_btnCancel"]:hover,
+#rimsform #content #RIMSPlaceHolder_btnCancel:hover,
+#rimsform #content #RIMSPlaceHolder_btnMyAcct:hover,
+#rimsform #content #RIMSPlaceHolder_btnUpdate:hover,
+#rimsform #content #RIMSPlaceHolder_btnPreviousPage:hover,
+#rimsform #content #RIMSPlaceHolder_btnPrint:hover,
+#rimsform #content #RIMSPlaceHolder_btnOrder:hover,
+#rimsform #content #RIMSPlaceHolder_Button2:hover,
+#rimsform #content #RIMSPlaceHolder_btnCancelEdit:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* RIMS generic Remove inline styles - Walt 5-16-2017 */
+#rimsform #content .rims-text-align-right {
+    text-align:right;
+}
+
+#rimsform #content .rims-text-align-left {
+    text-align:left;
+}
+
+#rimsform #content .rims-vertical-align-text-bottom{
+    vertical-align:text-bottom
+}
+
+#rimsform #content .rims-vertical-align-text-top{
+    vertical-align:text-top
+}
+
+#rimsform #content .rims-width-20-percent{
+    width: 20%;
+}
+
+#rimsform #content .rims-width-25-percent{
+    width: 25%;
+}
+
+#rimsform #content .rims-width-35-percent{
+    width: 35%;
+}
+
+#rimsform #content .rims-width-40-percent{
+    width: 40%;
+}
+
+#rimsform #content .rims-width-50-percent {
+    width: 50%; 
+}
+
+#rimsform #content .rims-width-65-percent {
+    width: 65%; 
+}
+
+#rimsform #content .rims-width-75-percent {
+    width: 75%; 
+}
+
+#rimsform #content .rims-width-100-percent{
+    width: 100%;
+}
+
+#rimsform #content .rims-width-123{
+    width: 123px;
+}
+
+#rimsform #content .rims-width-250{
+    width: 250px;
+}
+
+#rimsform #content .rims-width-480{
+    width: 480px;
+}
+
+#rimsform #content .rims-width-600{
+    width: 600px;
+}
+
+#rimsform #content .rims-width-730{
+    width: 730px;
+}
+
+#rimsform #content .rims-height-5{
+    height: 5px;
+}
+
+#rimsform #content .rims-height-13{
+    height: 13px;
+}
+
+#rimsform #content .rims-height-15{
+    height: 15px;
+}
+
+#rimsform #content .rims-height-19{
+    height: 19px;
+}
+
+#rimsform #content .rims-height-20{
+    height: 20px;
+}
+
+#rimsform #content .rims-height-21{
+    height: 21px;
+}
+
+#rimsform #content .rims-height-22{
+    height: 22px;
+}
+
+#rimsform #content .rims-height-25{
+    height: 25px;
+}
+
+#rimsform #content .rims-height-41{
+    height: 41px;
+}
+
+#rimsform #content .rims-height-52{
+    height: 52px;
+}
+
+#rimsform #content .rims-height-289{
+    height: 289px;
+}
+
+#rimsform #content .rims-color-red {
+    color: #FF0000;
+}
+
+#rimsform #content .rims-font-size-115{
+    font-size:115%;
+}
+
+#rimsform #content .rims-font-size-8{
+    font-size:8pt;
+}
+
+#rimsform #content .rims-font-size-12{
+    font-size:12px;
+}
+
+#rimsform #content .rims-font-size-14{
+    font-size:14px;
+}
+
+#rimsform #content .rims-padding-right-10{
+    padding-right: 10px;
+}
+
+#rimsform #content .rims-padding-top-5{
+    padding-top: 5px;
+}
+
+#rimsform #content .rims-display-none{
+    display:none;
+}
+
+#rimsform #content .rims-float-left{
+    float:left;
+}
+
+#rimsform #content .rims-clear-left{
+    clear:left;
+}
+
+#rimsform #content .rims-margin-top-0{
+    margin-top:0px;
+}
+
+#rimsform #content .rims-margin-left-0{
+    margin-left:0px;
+}
+
+#rimsform #content .rims-margin-left-22{
+    margin-left:22px;
+}
+
+#rimsform #content .rims-margin-right-14{
+    margin-right:14px;
+}
+
+#rimsform #content .rims-border-none{
+    border:none;
+}
+
+#rimsform #content .rims-button-margin{
+    margin:0px 3px 3px 3px;border-radius:5px
+}
+
+/* Basket.aspx Remove inline styles - Walt 5-15-2017 */
+#rimsform #content #basket-table {
+    width: 725px; 
+    left: 5px; 
+    position: relative;
+}
+
+#rimsform #content #dgBasket{
+    background-color:#EAEAEA;
+    width:100%;
+    border-collapse:collapse;
+}
+
+/* Billing.aspx Remove inline styles - Walt 5-16-2017 */
+
+#rimsform #content .left-10-position-rel{
+    left: 10px; position: relative;
+}
+
+
+/* home.aspx Remove inline styles - Walt 5-16-2017 */
+
+#rimsform #content #whatsnewdiv{
+    float: right; 
+    width: 40%;
+    margin-top:20px;
+}
+
+/* choose-your-region.aspx Remove inline styles - Walt 5-16-2017 */
+#rimsform #content .btnAutoname{
+    margin: -2px 0 0 -5px;
+}
+
+#rimsform #content #content #chooseregiontable{
+    width: 100%;
+}
+
+/* register.aspx Remove inline styles - Walt 5-17-2017 */
+#rimsform #content #registertable{
+    left: 10px; 
+    position: relative; 
+    width: 640px;
+}
+
+/* RIMS.Master move to stylesheet - Walt 6-14-2017 */
+#rimsform #content #Logoutlnk, 
+#rimsform #content #Loginlnk, 
+#rimsform #content #rimsnavPlaceOrder {
+        text-decoration:none;
+        cursor: pointer;
+        color:white
+    }
+
+    /*#ButtonLogin {
+        position: absolute; top: -1000px;
+    }*/
+
+#rimsform .rims-table-viewer tr th, #rimsform .rims-table-viewer tr td, #rimsform .rims-table-distribution tr th, #rimsform .rims-table-distribution tr td, #content .baskettable tr th, #content .baskettable tr td {
+	padding: 6px 8px;
+}
+#dgBasket {
+	background-color: #EAEAEA;
+	width: 100%;
+	border-collapse: collapse;
+}
+#content .baskettable, #content .baskettable tr th, #content .baskettable tr td {
+	width: auto !important;
+}
+#RIMSPlaceHolder_dgOrderDetails tr th, #rimsform #RIMSPlaceHolder_dgOrders tr th, #rimsform table.viewer tr th, #rimsform table.baskettable tr th {
+	padding: 6px;
+	color: #2d3338 !important;
+	background-color: #fff;
+	width: auto !important;
+	border-bottom: solid 3px #ddd;
+}
+#rimsform #RIMSPlaceHolder_dgOrders tr th, #rimsform table.baskettable tr th {
+	padding: 6px 10px;
+}
+#content .baskettable tr {
+	white-space: normal !important;
+}
+#RIMSPlaceHolder_dgOrderDetails tr, #rimsform #RIMSPlaceHolder_dgOrders tr, #rimsform table.viewer tr, #rimsform table.baskettable tr {
+	background-color: rgba(255,255,255,1.00);
+	height: auto !important;
+}
+table {
+	background-color: transparent;
+    /*1-10-2018 remove border from ViewOrder(Sample) table*/
+    border:none;
+}
+#basket-table {
+	width: 725px;
+	left: 5px;
+	position: relative;
+}
+
+
+/* Noteboxes ============================================================================================================== */
+
+#content [class*="Note_wrapper"],
+#sidebar [class*="Note_wrapper"],
+#content [class*="boxer-"],
+#sidebar [class*="boxer-"],
+#content .warning-note {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/*margin: 20px 15px;*/ /* Remove extaneous space around what's new box 1-19-18 WGK */
+	background: rgba(255,255,255,1.00);
+	color: #2D3338;
+	line-height: normal;
+}
+
+#content [class*="boxer-"].horizon{
+	font-size: 90%;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	margin: 0px 0px 15px 0px;
+	background: rgba(255,255,255,1.00);
+	color: #2D3338;
+	line-height: normal;
+}
+
+#content [class*="Note_header"],
+#sidebar [class*="Note_header"],
+#content [class*="boxer-"],
+#sidebar [class*="boxer-"],
+#content .warning-note {
+	padding: 5px;
+}
+
+#content [class*="Note_content"],
+#sidebar [class*="Note_content"],
+#content [class*="boxer-"],
+#sidebar [class*="boxer-"],
+#content .warning-note {
+	padding: 0px 10px 10px 10px;
+}
+
+#content [class*="boxer-"].horizon{
+	padding: 0px;
+}
+
+
+#content [class*="Note_content"] a,
+#sidebar [class*="Note_content"] a,
+#content [class*="boxer-"] a,
+#sidebar [class*="boxer-"] a,
+#content .warning-note a {
+	color: #005189;
+}
+
+#content [class*="Note_content"] a:hover,
+#sidebar [class*="Note_content"] a:hover,
+#content [class*="boxer-"] a:hover,
+#sidebar [class*="boxer-"] a:hover,
+#content .warning-note a:hover {
+	color: #005189;
+}
+
+#content [class*="Note_content"] p,
+#content [class*="Note_content"] ul,
+#sidebar [class*="Note_content"] p,
+#sidebar [class*="Note_content"] ul,
+#content [class*="boxer-"] p,
+#content [class*="boxer-"] ul,
+#sidebar [class*="boxer-"] p,
+#sidebar [class*="boxer-"] ul,
+#content .warning-note p,
+#content .warning-note ul {
+	margin: 12px 0px;
+}
+
+#content [class*="boxer-"].horizon p,
+#content [class*="boxer-"].horizon ul{
+	margin: 6px 12px 16px 12px;
+}
+
+#content [class*="Note_content"] ul,
+#sidebar [class*="Note_content"] ul,
+#content [class*="boxer-"] ul,
+#sidebar [class*="boxer-"] ul,
+#content .warning-note ul {
+}
+
+#content [class*="Note_content"] ul li,
+#sidebar [class*="Note_content"] ul li,
+#content [class*="boxer-"] ul li,
+#sidebar [class*="boxer-"] ul li,
+#content .warning-note ul li {
+	margin: 10px 0px;
+}
+
+.whatsnewNote_wrapper {
+	border: solid 1px #FDE588;
+}
+
+.whatsnewNote_header {
+	background-color: #FDE588;
+}
+#content .whatsnewNote_content h2{
+font-size: 120%;
+margin:0px !important;
+padding: 10px 0px 3px 0px;
+border-bottom: solid 1px #FDE588;}
+
+
+#content .whatsnewNote_content ul li,
+#sidebar .whatsnewNote_content ul li {
+	background-image: url("../../../../_images/bullet-yellow.png");
+}
+
+
+#content .whatsnewNote_content .email{}
+
+.attentionNote_wrapper,
+.warning-note,
+.boxer-attention {
+    border: solid 1px #C55420;
+}
+
+    .boxer-attention.horizon {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 1px #C55420;
+    }
+
+
+
+.attentionNote_header,
+.warning-note {
+    background-color: #C55420;
+    color: rgba(255,255,255,1.00);
+}
+
+#content .attentionNote_content ul li,
+#sidebar .attentionNote_content ul li,
+#content .warning-note ul li {
+	background-image: url("../../../../_images/bullet-red.png");
+}
+
+.successNote_wrapper {
+	border: solid 1px #5CB85C;
+}
+
+.successNote_header {
+	background-color: #5CB85C;
+	color: rgba(255,255,255,1.00);
+}
+
+#content .successNote_content ul li,
+#sidebar .successNote_content ul li {
+	background-image: url("../../../../_images/bullet-red.png");
+}
+
+.blueNote_wrapper,
+.boxer-information {
+	border: solid 1px #005189;
+}
+
+.blueNote_header,
+#content .boxer-information .boxer-header {
+	background-color: #005189;
+	color: rgba(255,255,255,1.00);
+}
+
+#content .blueNote_content ul li,
+#sidebar .blueNote_content ul li {
+	background-image: url("../../../../_images/bullet-blue.png");
+}
+
+/* copied from bea_refresh used for PDF links*/
+/*#content .file_size {
+    color: #b8b8b8;
+    vertical-align: bottom !important;
+    font-size: 70%;
+    font-weight: normal;
+    line-height: 22px;
+}*/
+
